@@ -6,9 +6,19 @@
 For customizer documentation and samples go [here][1]
 
 ### 2. Community Templates
-For community templates go [here][2]
+For community templates go [here][2]  
 
 
+
+&nbsp;
+&nbsp;
+&nbsp;
+
+  
+
+
+---
+[HCL Connections Documentation](https://help.hcltechsw.com/connections/v7/index.html)
 
 
 [1]: https://github.com/HCL-TECH-SOFTWARE/connections-samples/customizer/README.md
