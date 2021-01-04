@@ -11,9 +11,9 @@ If your organization already makes use of the Customizer technology, then procee
 
 Otherwise, send an email to [hclcnxdev@pnp-hcl.com](mailto:hclcnxdev@pnp-hcl.com) including your **Organization Name** and **Organization ID** number and request that Customizer be enabled for your organization. Once that is done, you will be notified and can proceed with the instructions below.
 
-The files that enable the hiding of the elements are made available and are directly referencable from the public git repository [ibmcnxdev
+The files that enable the hiding of the elements are made available and are directly referencable from the public git repository [connections-samples/customizer
 /
-global-samples](https://github.com/ibmcnxdev/global-samples) in the [disable-content-creation](https://github.com/ibmcnxdev/global-samples/tree/master/disable-content-creation) directory.
+samples](https://github.com/HCL-TECH-SOFTWARE/connections-samples/customizer/samples) in the [disable-content-creation](https://github.com/HCL-TECH-SOFTWARE/connections-samples/customizer/samples/tree/master/disable-content-creation) directory.
 
 As an administrator of the organization, do the following:
 
@@ -25,7 +25,7 @@ As an administrator of the organization, do the following:
 
 4. Click the *New App* button and then select the *Code Editor* option.
 
-5. Remove the example JSON outline that is present by default and then copy/paste the JSON from the [disable-icc-extension.json](https://github.com/ibmcnxdev/global-samples/tree/master/disable-content-creation/disable-icc-extension.json) file.
+5. Remove the example JSON outline that is present by default and then copy/paste the JSON from the [disable-icc-extension.json](https://github.com/HCL-TECH-SOFTWARE/connections-samples/customizer/samples/tree/master/disable-content-creation/disable-icc-extension.json) file.
 
 6. (OPTIONAL) To apply the extension to a subset of users add a *match* rule to the payload section and within it list the email addresses of the users who will be affected by the extension. This can be used in combination with a test account to check the behaviour before enabling for all users. See examples below.
 

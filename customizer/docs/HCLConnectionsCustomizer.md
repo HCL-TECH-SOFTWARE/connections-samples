@@ -883,8 +883,8 @@ and others like it should be explored and leveraged by your extensions.
 
 Besides Hello World, there are a number of other ready-made Customizer
 examples to be available for experimentation. The latest samples can
-always be found in the `global-samples` folder of the IBMCnxDev GitHub
-organization: <https://github.com/hclcnx/global-samples>
+always be found in the `samples` folder of the connections-samples/customizer GitHub
+organization: <https://github.com/HCL-TECH-SOFTWARE/connections-samples/customizer/samples>
 
 Each sample has its own subfolder which contains the App Reg design
 definition (JSON file) and the resources to be injected to perform the

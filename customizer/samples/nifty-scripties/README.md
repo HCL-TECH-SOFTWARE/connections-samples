@@ -6,5 +6,5 @@ On-Premises customers can copy/paste the JSON file in this folder to their local
 
 Watch this space - more information coming shortly...
 
-[1]: https://github.com/ibmcnxdev/global-samples/blob/master/nifty-scripties/niftyScriptiesApp.json
+[1]: https://github.com/HCL-TECH-SOFTWARE/connections-samples/customizer/samples/blob/master/nifty-scripties/niftyScriptiesApp.json
 

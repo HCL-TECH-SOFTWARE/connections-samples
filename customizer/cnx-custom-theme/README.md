@@ -23,4 +23,4 @@ Create a new issue in this repository and include the following information.
 - Tag the issue with environment, app, and type.
 
 ### Updates
-Updates will be released here periodically. When an update it released you can see what was included in the [Update History](https://ibmcnxdev.github.io/cnx-custom-theme/updatehistory.html) page.
+Updates will be released here periodically. When an update it released you can see what was included in the [Update History](https://github.com/HCL-TECH-SOFTWARE/connections-samples/customizer/cnx-custom-theme/updatehistory.html) page.
