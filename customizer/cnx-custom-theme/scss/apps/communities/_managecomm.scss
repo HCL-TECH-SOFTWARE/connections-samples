@@ -1,0 +1,63 @@
+#editCommunityForm {
+  // tabs styling:
+  .lotusTabContainer .lotusTabs li,
+  .lotusTabContainer .lotusTabs li + li {
+      margin-left: 0 !important;
+      margin-right: 1rem !important;
+  }
+  .lotusTabContainer .lotusTabs li {
+    float: none !important;
+    display: inline-block !important;
+    vertical-align: top;
+    margin-bottom: 4px !important; // prevents jump when the active border appears
+  }
+  .lotusTabContainer .lotusTabs li.lotusSelected {
+    margin-bottom: 0 !important;
+  }
+  
+  // form footers
+  .commFormBottomRow {
+    padding-bottom: 0 !important;
+  }
+  .lotusFormFieldRow, 
+  .lotusFormFieldRow td {
+    border: 0 !important;
+  }
+  .commFormFooter,
+  .lotusFormFooter {
+    border: 0 !important;
+    padding-top: 2rem !important;
+  }
+  
+  // set save as primary buttons:
+  input[type="submit"]:first-child,
+  input[type="button"]:first-child {
+    @include btnprimary;
+  }
+  
+  // Community profile:
+  #initialFormContainer {
+    input[type="checkbox"] + label {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+  
+  // blog:
+  #blogsSettingsForm {
+    #tagsAsString {
+      @include textinput;
+      width: 99%;
+    }
+  }
+  
+  // wiki 
+  #WIKIMEMBERSHIP {
+    width: 10rem;
+  }
+  
+  // events 
+  .lotusui30 & .lotusMessage .lconnSprite-iconConfirmation16 + div {
+    padding: 11px 40px 11px 45px;
+  }
+}

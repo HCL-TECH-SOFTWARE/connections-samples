@@ -1,0 +1,44 @@
+//Updates for the overall page framework + footer
+
+//Updates to fit to window and grid
+html {
+  height:100%;
+}
+body:not(.cke_editable) {
+  min-height:100%;
+}
+#lotusFrame, .lotusFrame {
+  #lotusMain, .lotusMain {
+    padding-bottom:24px !important;
+    #lotusColLeft:not(.wpthemeNarrow), .lotusColLeft:not(.wpthemeNarrow) {
+      width: $leftnav-width;
+    }
+    #lotusContent.lotusContent, .lotusContent {
+      left:0;
+      margin-left:0px !important;
+    }
+  }
+  #lotusFooter.lotusFooter {
+    position:relative !important;
+    bottom:0 !important;
+    width: calc(100% - 50px) !important;
+    margin:auto;
+    height:auto;
+    ul {
+      margin:auto;
+      padding:24px 0px;
+    }
+  }
+}
+//Text styling of footer
+.lotusui30 .lotusFooter > ul > li > a, //Org page on cloud
+#lotusFooter.lotusFooter a,
+#footer > .lotusFooter > ul > li > a,
+.meetingBody .lotusFooter a {
+    @include font-size($footer...);
+    color:$text-02 !important;
+}
+//this is for the feed
+.lotusFeeds a {
+  @include font-size($footer...);
+}

@@ -1,0 +1,64 @@
+// stand-alone forum styling 
+h2.lotusHeading .lotusText a {
+  @include link-dark();
+}
+
+#forumOwnerSection {
+  h2 {
+    padding: $leftnav-vertical-padding $leftnav-horizontal-padding $leftnav-vertical-padding calc(#{$leftnav-horizontal-padding} + #{$leftnav-indent-padding}) !important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    
+    span {
+      font-weight: 400 !important;
+    }
+  }
+  
+  a[dojoattachevent="onclick:addOwner"] {
+    display: block;
+    padding: $leftnav-vertical-padding $leftnav-horizontal-padding $leftnav-vertical-padding calc(#{$leftnav-horizontal-padding} + #{$leftnav-indent-padding}) !important;
+    font-size: $leftnav-font-size !important;
+    line-height: $leftnav-line-height !important;
+    
+    &:hover,
+    &:focus {
+      background-color: $background-side-hover !important;
+    }
+  }
+}
+
+
+// horrible selector to override things from the communities leftnav 
+.lotusMain .lotusColLeft > #forumOwnerSection.lotusSection:not(#lconnTagCloudFilter):not(#lconn_communities_catalog_widgets_TagFilter_0) .PeopleList ul li {
+  padding: $leftnav-vertical-padding $leftnav-horizontal-padding $leftnav-vertical-padding calc(#{$leftnav-horizontal-padding} + #{$leftnav-indent-padding}) !important;
+  
+  &:hover,
+  &:focus {
+    background-color: $background-side-hover !important;
+  }
+  
+  > span, > a {
+    &:hover, &:focus {
+      background-color: transparent !important;
+    }
+  }
+
+  a {
+    padding: 0 !important;
+    font-size: $leftnav-font-size !important;
+    line-height: $leftnav-line-height !important;
+    
+    &.lotusDelete {
+      width: auto !important;
+      
+      img {
+        background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-black) !important;
+        background-repeat: no-repeat !important;
+        background-position: center center !important;
+        height: 1.5em !important; // make it as tall as the row's line-height 
+        margin-top: -2px; // then move it up a bit to look like it's on the same baseline as the text
+      }
+    }
+  }
+}

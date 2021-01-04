@@ -1,0 +1,46 @@
+/*
+	 * © Copyright HCL Technologies Limited, 2017, 2019.
+	 *
+	 * Licensed under the Apache License, Version 2.0 (the "License");
+	 * you may not use this file except in compliance with the License.
+	 * You may obtain a copy of the License at:
+	 *
+	 * http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 * Unless required by applicable law or agreed to in writing, software
+	 * distributed under the License is distributed on an "AS IS" BASIS,
+	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+	 * implied. See the License for the specific language governing
+	 * permissions and limitations under the License.
+*/
+/*PROFILES STYLE SHEET*/
+/* Variable and mixin Imports*/
+@import "prereqs/prereqs";
+// Component Imports
+@import "components/components";
+
+// App Specific Imports
+// contacts stuff
+@import "apps/profiles/contactcards";
+@import "apps/profiles/contacts";
+// profile page widgets
+@import "apps/profiles/reportTo";
+@import "apps/profiles/whoConnectsUs";
+@import "apps/profiles/thingsInCommon";
+@import "apps/profiles/network";
+@import "apps/profiles/orgpage";
+@import "apps/profiles/tabContactInfo";
+@import "apps/profiles/tabFiles";
+@import "apps/profiles/tabActivityStream";
+@import "apps/profiles/tabShareboxContainer";
+@import "apps/profiles/tabAboutMe";
+// edit profile
+@import "apps/profiles/editprofile";
+// profile layout
+@import "apps/profiles/heroIsh";
+@import "apps/profiles/metaSpacingLayout";
+@import "components/tags";
+@import "apps/profiles/leftnav";
+// misc
+@import "apps/profiles/misc";
+@import "apps/profiles/directorysearch";

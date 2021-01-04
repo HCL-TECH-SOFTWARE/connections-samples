@@ -1,0 +1,26 @@
+[id*="fileControl"] input,
+fieldset.blogsHiddenBorder > input{
+  &::-webkit-file-upload-button{
+    box-shadow: none;
+    border: none;
+    outline: none;
+    @include btnsecondary;
+  }
+  margin-top:.375rem;
+  &:focus{
+    outline: none;
+    box-shadow: none;
+    &::-webkit-file-upload-button{
+      box-shadow: 0 0 0 1px $btn-primary-fill-hover, 0 0 0 2px $btn-primary-outline !important;
+    }
+  }
+}
+fieldset.blogsHiddenBorder{
+  margin-left:0;
+  padding-left:0;
+}
+
+//2236: Blog: Change the selected border color of image layout
+.lconnInsertImage input.blogImgLayout.lotusSelected {
+  border: 2px solid $border-selected !important;
+}

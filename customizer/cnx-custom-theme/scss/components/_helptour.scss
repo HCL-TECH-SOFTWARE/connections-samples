@@ -1,0 +1,53 @@
+//Help popup tour
+div.hopscotch-bubble {
+	border-radius:$border-radius-tour;
+	.hopscotch-bubble-container {
+		border-radius:$border-radius-tour;
+		width:300px !important;
+		&:focus {
+			border:2px solid $border-focus;
+		}
+		.hopscotch-bubble-content {
+			padding-bottom:60px;
+			h3, .hopscotch-content {
+				color:$text-01;
+			}
+			h3 {
+				padding:40px 30px 0px 30px;
+				text-align: center;
+			}
+			.hopscotch-content {
+				text-align: center;
+				line-height:1.4;
+			}
+		}
+		.hopscotch-actions {
+		  background-color:$background-header;
+			background: linear-gradient(to bottom right, $brand-01, $brand-05);
+			border:1px solid $background-header;
+			position:absolute;
+			bottom:0;
+			width:100%;
+			border-radius:0px 0px 10px 10px;
+			.hopscotch-nav-arrow {
+				background-color:transparent;
+				&.prev {
+					left:18px;
+				}
+				&.next {
+					right:18px;
+				}
+			}
+			.progress-nums {
+				font-weight:400;
+			}
+		}
+		.hopscotch-bubble-close {
+			fill: $icon-default;
+		}
+	}
+	.hopscotch-bubble-arrow-container {
+		color: $icon-white;
+		fill: $icon-white;
+	}
+}

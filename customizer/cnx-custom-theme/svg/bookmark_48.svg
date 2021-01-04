@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>bookmark_48</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons-48-x-48px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bookmark_48" fill="#000000">
+            <path d="M35.966,0 L12.034,0 C8.702,0 6,2.68 6,5.986 L6,48 L23.952,30 L42,48 L42,5.986 C42,2.68 39.298,0 35.966,0 M35.966,2 C38.19,2 40,3.788 40,5.986 L40,43.18 L25.366,28.584 L23.95,27.172 L22.536,28.588 L8,43.162 L8,5.986 C8,3.788 9.81,2 12.034,2 L35.966,2" id="bookmark"></path>
+        </g>
+    </g>
+</svg>

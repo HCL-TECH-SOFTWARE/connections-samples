@@ -1,0 +1,254 @@
+@charset "UTF-8";
+/*
+	 * © Copyright IBM Corp. 2017, 2018
+	 *
+	 * Licensed under the Apache License, Version 2.0 (the "License");
+	 * you may not use this file except in compliance with the License.
+	 * You may obtain a copy of the License at:
+	 *
+	 * http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 * Unless required by applicable law or agreed to in writing, software
+	 * distributed under the License is distributed on an "AS IS" BASIS,
+	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+	 * implied. See the License for the specific language governing
+	 * permissions and limitations under the License.
+*/
+/*COLORS*/
+/*GENERAL STYLES*/
+body {
+  color: #000000;
+  font-family: 'IBM Plex Sans', "Helvetica Neue", Arial, sans-serif; }
+
+h1 {
+  font-size: 2.375rem;
+  line-height: 48px;
+  font-weight: 600;
+  color: #3c6df0; }
+
+h2 {
+  font-size: 1.75rem;
+  line-height: 32px;
+  font-weight: 600;
+  border-bottom: 1px solid #f1f1f1;
+  padding-bottom: 10px;
+  padding-top: 30px; }
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 24px;
+  font-weight: 600; }
+
+h4 {
+  font-size: 1.3rem;
+  line-height: 20px;
+  font-weight: 600; }
+
+p, li {
+  font-size: 1.25rem;
+  font-weight: 400; }
+
+dt {
+  font-weight: 600; }
+
+a {
+  color: #3c6df0;
+  text-decoration: none; }
+  a:hover, a:focus {
+    text-decoration: underline; }
+  a.anchor {
+    color: #000000;
+    text-decoration: none; }
+    a.anchor:target {
+      padding-top: 90px;
+      margin-top: -90px; }
+
+img {
+  box-shadow: 5px 10px 8px #C0BFC0; }
+
+.code {
+  background-color: #f1f1f1;
+  padding: 20px 20px;
+  font-family: Courier, 'New Courier', monospace; }
+
+p.caption {
+  font-size: 12px; }
+
+p.button {
+  padding: 14px 0 20px 0; }
+
+.button a {
+  border-radius: 30px;
+  background-color: #3c6df0;
+  color: #ffffff;
+  padding: .5em 1em;
+  text-decoration: none; }
+  .button a:hover, .button a:focus {
+    background-color: #1D3458;
+    text-decorattion: none;
+    outline: none; }
+.button.disabled a {
+  background-color: #777677;
+  pointer-events: none;
+  cursor: default; }
+
+/*-------------SPECIFIC STYLES-------------*/
+/*-------------SIDE PADDING-------------*/
+.breadcrumb,
+.aboutContent,
+.aboutHeader,
+.bx--tabs__nav {
+  padding-left: 18%;
+  padding-right: 15%; }
+
+/*-------------TOC-------------*/
+.toc {
+  float: left;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 10px;
+  background-color: #ffffff;
+  padding: 40px 30px;
+  max-width: 12%; }
+  .toc ul {
+    padding: 0px 0px; }
+  .toc li {
+    list-style-type: none;
+    padding: 10px 0px;
+    border-top: 1px solid #f1f1f1; }
+    .toc li:first-of-type {
+      border-top: none;
+      border-bottom: 2px solid #C0BFC0; }
+    .toc li:last-of-type {
+      border-top: 2px solid #C0BFC0; }
+    .toc li.tocabout {
+      border-top: 2px solid #C0BFC0; }
+    .toc li.tocexample {
+      border-top: 1px solid #f1f1f1; }
+    .toc li a {
+      color: #595859;
+      font-weight: 400; }
+
+/*-------------HEADER-------------*/
+.headerContainer {
+  background-color: #3c6df0;
+  padding-left: 0;
+  padding-right: 0; }
+  .headerContainer .headText {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .headerContainer .headHero {
+    background-image: url(./img/intro.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-height: 250px;
+    height: 100px;
+    postion: absolute;
+    top: 200px; }
+  .headerContainer h1 {
+    color: #ffffff; }
+
+/*-------------CONTENT-------------*/
+.contentContainer {
+  margin-top: 0px; }
+
+.aboutContent {
+  padding-top: 30px;
+  padding-bottom: 70px; }
+
+/*-------------BREADCRUMB-------------*/
+.breadcrumb {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .breadcrumb p {
+    margin: 10px 0px 0px 0px;
+    font-size: 0.875rem;
+    color: #777677; }
+  .breadcrumb a {
+    color: #777677;
+    text-decoration: none; }
+    .breadcrumb a:hover, .breadcrumb a:focus {
+      text-decoration: underline; }
+
+/*-------------SPECIAL PLACEMENT-------------*/
+/*-------------FOOTER-------------*/
+.footerContainer {
+  padding: 10px 0px 30px 0px;
+  border-top: 1px solid #f1f1f1;
+  width: 100%;
+  margin: auto;
+  text-align: center; }
+  .footerContainer p {
+    font-size: 0.875rem;
+    color: #777677; }
+
+/*-------------VIDEOS--------------*/
+.video1:before,
+.video2:before {
+  position: relative;
+  top: 116px;
+  left: 500px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #ffffff; }
+
+.video1:before {
+  content: "Part 1"; }
+
+.video2:before {
+  content: "Part 2"; }
+
+/*----------------RESOURCE COLUMNS---------------*/
+/*.customizerLinks {
+  vertical-align: top;
+  column-count:2;
+  column-gap:20px;
+  p {
+    margin-top:0px;
+  }
+}*/
+/*-------------NOT BEING USED--------------*/
+/*-------------TABS-------------*/
+.fixednav {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: #ffffff;
+  height: 80px;
+  border-bottom: 1px solid #f1f1f1;
+  box-shadow: 0 5px 5px -5px #C0BFC0; }
+
+.bx--tabs__nav {
+  display: block;
+  color: #777677;
+  padding-top: 1.5em; }
+  .bx--tabs__nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: left; }
+  .bx--tabs__nav li {
+    border-bottom: 4px solid transparent;
+    display: inline;
+    padding: .2em 0.1em .3em 0.1em;
+    margin: .5em .5em; }
+    .bx--tabs__nav li:first-of-type {
+      margin-left: 0px; }
+    .bx--tabs__nav li.selected {
+      color: #000000;
+      border-color: #3c6df0; }
+  .bx--tabs__nav a {
+    text-decoration: none;
+    color: #777677;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    padding: .5em .5em; }
+    .bx--tabs__nav a:hover {
+      background-color: #3c6df0;
+      color: #ffffff; }
+    .bx--tabs__nav a:focus {
+      border: 1px solid #3c6df0;
+      outline: none; }
+
+/*# sourceMappingURL=docs.css.map */

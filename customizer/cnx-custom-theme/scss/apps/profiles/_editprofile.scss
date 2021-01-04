@@ -1,0 +1,136 @@
+// edit profile spacing
+#_profileEditScene_div {
+  .lotusMeta.lotusSection {
+    margin-bottom: 4px !important;
+    margin-top: 24px !important;
+    p {
+      font-size: $body-mini-font-size !important;
+    }
+  }
+  #tableEditProfileContactInfo {
+    width: 100% !important;
+    td {
+      @include editprofileform($editprofile-layout);
+    }
+  }
+  #displayName_ro {
+    font-size: $input-size !important;
+    @include textinput;
+    width: 350px !important;
+    display: inline-block;
+    color: $text-02;
+    cursor: not-allowed;
+  }
+  label {
+    font-weight: 500 !important;
+  }
+  textarea {
+    max-width: 100% !important;
+    width: 100% !important;
+    height: 5rem !important;
+  }
+  input[type="text"] {
+    min-width: 350px !important;
+    width: auto !important;
+    max-width: 100% !important;
+  }
+  .lotusFormLabel + td {
+    margin-top: 4px !important;
+  }
+  .lotusFormLabel select {
+    font-size: $body-mini-font-size !important;
+    padding-bottom: 0 !important;
+    font-weight: 500 !important;
+    margin-bottom: 6px;
+    width: auto !important;
+    min-width: 0 !important;
+    color: $text-01 !important;
+  }
+}
+
+#tableEditProfileAboutMe {
+  tr:nth-child(even) td {
+    margin-top: 14px !important;
+  }
+}
+
+#tableEditPronunciation {
+  .lotusFormFieldRow:first-child {
+    height: 0;
+    display: block;
+    line-height: 0;
+    td {
+      margin: 0 !important;
+    }
+    label {
+      display: block;
+      height: 0;
+      text-indent: -9999px;
+    }
+
+    + .lotusFormFieldRow td {
+      display: flex !important;
+      flex-direction: column;
+      margin-top: 14px !important;
+    }
+  }
+  #audioUploadFileSelectFieldsDiv {
+    order: 2;
+  }
+  #audioUploadDesc {
+    order: 1;
+    margin: 0 0 24px !important;
+    font-size: $body-mini-font-size !important;
+    i {
+      font-style: normal !important;
+    }
+  }
+  #audioUploadFileSelected {
+    cursor: pointer;
+    color: $text-02;
+    &:focus {
+      border-bottom: 1px solid $color-gray-10 !important;
+      box-shadow: none !important;
+    }
+  }
+  #audioUploadFileSelectorButtonSpan {
+    margin-right: 1rem;
+  }
+}
+
+#tableEditPhoto {
+  input[name="lastMod"] + div {
+    line-height: 0;
+    label {
+      text-indent: -9999px;
+      line-height: 0;
+      display: block;
+    }
+  }
+  .lotusFormFieldRow:first-child td {
+    padding: 1rem 0 2rem;
+  }
+  #photoUploadDesc {
+    margin: 0 0 24px !important;
+    font-size: $body-mini-font-size !important;
+    i {
+      font-style: normal !important;
+    }
+    i, p {
+      font-size: $body-mini-font-size !important;
+    }
+    p + p {
+      margin-top: 0 !important;
+    }
+  }
+  #photoDiv label {
+    margin-bottom: 6px;
+    display: block;
+    + br {
+      display: none !important;
+    }
+  }
+  #photoUploadFileSelectorButtonSpan {
+    margin-right: 1rem;
+  }
+}

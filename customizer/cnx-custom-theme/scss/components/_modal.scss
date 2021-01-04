@@ -1,0 +1,781 @@
+// Underlay behind modal dialogs
+.dijitDialogUnderlay {
+	background:$background-underlay !important;
+	opacity:1 !important;
+}
+.lotusDialogBorder{
+	border:none!important;
+}
+.lotusDialogWrapper{
+	box-sizing:border-box!important;
+}
+.lconnPickerSourceArea{
+	margin:0!important;
+	padding-top:0!important;
+}
+body:not(.catalog) .lotusFormTable tbody td{
+	margin-top:20px!important;
+}
+.lotusDialog, .slideDialog {
+	.lotusFormBody {
+		padding: 0 !important;
+	}
+	.lotusDialogFooter, .dialogFooter{
+		margin:0!important;
+		margin-top:16px!important;
+		background-color: $background-main !important;
+		padding: 1rem 2rem 2rem 2rem !important
+	}
+}
+.lconnPickerDialogBody .lotusRightSide.lotusForm,
+.lconnPickerDialogBody .lotusRightSide.lotusForm .switchPane,
+.lconnPickerDialogBody .lotusRightSide.lotusForm .switchPane .lconnPickerSourceArea {
+	width:100%!important;
+}
+.lotusDialogBorder > .lotusDialog,
+.dijitDialogTitleBar{
+  background-color: $background-main !important;
+  border-top: $background-main 4px solid!important;
+  box-shadow:0 12px 24px 0 $box-shadow-10 !important;
+  box-sizing:border-box!important;
+  height: 100% !important;
+  padding-top:0!important;
+  width:100%!important;
+}
+.lotusDialogClose img{
+  display:none!important;
+}
+.lotusDialogClose,
+.dijitDialogCloseIcon
+.lotusPaletteClose {
+	// need to check if this works in all cases;
+	@include bx--modal-close;
+}
+
+.lotusDialogBorder > .lotusDialog > div > .lotusDialogHeader > .lotusDialogClose {
+	right: 0 !important;
+}
+.lotusui30 .lotusDialog .lotusDialogHeader .lotusDialogClose {
+	top: 2rem !important;
+}
+
+//File Picker Dialogs (add a file, upload, share a file, link to a file)
+//Files tab in file picker
+img.lconnPickerSourceLabelIconCloud{
+  background-image:svg-url-with-replaced-fill($svg-icon-files, '#000000', $icon-default) !important;
+  background-size:16px 16px!important;
+  background-position:0px 0px!important;
+}
+//My Computer tab in file picker
+img.lconnPickerSourceLabelIconUpload{
+  background-image:svg-url-with-replaced-fill($svg-icon-upload, '#000000', $icon-default) !important;
+  background-size:16px 16px!important;
+  background-position:0px 0px!important;
+}
+//This Community tab in file picker
+img.lconnPickerSourceLabelIconCommunity{
+  background-image:svg-url-with-replaced-fill($svg-icon-community, '#000000', $icon-default) !important;
+  background-size:16px 16px!important;
+  background-position:0px 0px!important;
+}
+//Hover on tab icon color changes
+.lconnPickerSourceToCheck > div:hover {
+  img.lconnPickerSourceLabelIconCloud{
+    background-image:svg-url-with-replaced-fill($svg-icon-files, '#000000', $icon-white) !important;
+  }
+  img.lconnPickerSourceLabelIconUpload{
+    background-image:svg-url-with-replaced-fill($svg-icon-upload, '#000000', $icon-white) !important;
+  }
+  img.lconnPickerSourceLabelIconCommunity{
+    background-image:svg-url-with-replaced-fill($svg-icon-community, '#000000', $icon-white) !important;
+  }
+}
+
+//Upload File from My Computer Browse and Drop Zone
+.lconnPicker {
+  .pickerDropfilesHorizentalPrompt {
+		width: 99% !important;
+		display: flex !important;
+		flex-direction: column;
+		justify-content: center;
+  }
+  .pickerDropfilesVerticalPrompt {
+    width: auto !important;
+    height:100% !important;
+    max-height:300px !important;
+  }
+  .lconnUploadContainer.pickerInputSpan.pickerBrowserContainer {
+    padding-top:10px;
+  }
+  .lotusDialogBorder .lconnUploadRectangle {
+    background:none;
+  }
+  .pickerDnDLabelRow {
+    margin-bottom:10px;
+  }
+  .pickerDropfilesList {
+    margin-bottom:20px;
+  }
+}
+
+//This community tab updates
+div[id^="lconn_files_widget_CompactFilePicker"] {
+  &[id$="desp"] {
+	  margin-bottom:5px !important;
+	}
+	input[type="checkbox"] {
+    margin-left: 2px !important;
+	}
+}
+div[id^="lconn_files_widget_FilePickerCompactInner_"][id$="_content_searchDiv"] {
+	height:32px !important;
+}
+div[dojoattachpoint="streamNode"] {
+	padding-top:1rem !important;
+}
+
+//Other file picker updates
+.lconnPickerSourceArea, .lotusUploadFile{
+	width:100%!important;
+}
+.lotusDialogHeader,
+.importHeader {
+	background-color: $background-main !important;
+	padding: 0 !important;
+	margin-bottom:1.5rem!important;
+	padding-top:2.75rem!important;
+	color: $text-01 !important;
+	h1 {
+		color: currentColor !important;
+	}
+}
+.lotusDialogBorder > .lotusForm > div,
+.lotusDialogBorder > .lotusDialog > div:not(.lotusTabContainer){
+	padding-right:2rem!important;
+	padding-left:2rem!important;
+}
+
+
+//2238: Blog and Forum: The top spacing is too large, it should be 32px.
+.lconnInsertImage.forum,
+#blogImgTabDlg,
+#blogsImageTabDiv {
+	.lotusDialogHeader {
+		padding-top: 32px !important;
+	}
+}
+
+//2250 POsition top of insert image dialog in forums.
+.lconnInsertImage.forum {
+	top: 4rem !important;
+	position: fixed !important;
+}
+
+// fix for right col too wide in Wiki Move Page dlg
+.lotusDialogBorder > .lotusDialog > div[id^="lconn_share"] {
+	padding-left:2rem!important;
+	padding-top:2rem!important;
+	+ div {
+		padding-left:2rem!important;
+	}
+}
+
+//2240: Wiki and blog insert image, Existing Imges selected border color.
+.images .uploadedImageTd.imageSelected .insertImage,
+.lconnInsertImage .uploadedImageTd .insertImage.lotusSelected {
+    border: 2px solid $border-selected !important;
+}
+
+// Move page checkbox alignment
+input.moveCheckBox {
+	vertical-align: middle !important;
+	label {
+		vertical-align: middle !important;
+	}
+}
+
+// right box on move dialog
+div.qkrMovePageList {
+  width: 296px !important;
+}
+
+div.lconnMovePage {
+ 	display: inline-block;
+}
+
+.lotusui30 div.lconnMovePageColLeft,
+.lotusui30 div.lconnMovePageColRight {
+   display:inline-block !important;
+   width: 296px !important;
+}
+.lotusui30 div.lconnMovePageColRight {
+   margin-left: 20px !important;
+}
+div.qkrMovePageList,
+tr.qkrMovePageList,
+input[id="lconn_share0_widget_Dialog_0mysearchbox"] {
+  width: 296px !important;
+}
+
+/*div[id^="lconn_share0_widget_Dialog_"] {
+  .lotusDialogBorder > .lotusForm > div {
+    padding-right: 1rem !important;
+  }
+}*/
+
+#lconn_btn_browse_files{
+  @include btnprimary
+}
+
+.lotusDialogHeader .lotusHeading,
+.lotusDialogHeader span.dijitDialogTitle,
+.dijitDialogTitleBar span,
+.cke_dialog_title,
+span[id^="lconn_share_widget_LotusDialog_"],
+.app_palette_modal_header_title {
+	color: $text-01 !important;
+	font-weight:500!important;
+	font-size:$title-font-size !important;
+}
+.lotusFormTable td img.lotusArrow{
+	color: $text-03 !important;
+}
+
+// Survey settings dialog
+div.lconn-survey_dialog {
+	width: 600px !important;
+  div.lotusDialogHeader {
+    padding-top: 1.25rem !important;
+    margin-bottom: 0 !important;
+    span.dijitDialogTitle {
+       padding-bottom: 1rem !important;
+       padding-left: 2rem !important;
+     }
+  }
+  .lotusForm2 .lotusText {
+    width: 100% !important;
+  }
+  input[type="radio"] {
+    margin-left: 2px !important;
+  }
+  .lotusui30 img {
+    vertical-align: top !important;
+  }
+}
+//Wiki dialog
+.lotusDialogContent._qkrDialogCompact{
+	overflow:initial!important;
+	td.lotusFormLabel { //1489: Spacing in wiki insert image attachment dialog
+		padding-left: 0 !important;
+	}
+	#image_attachmentList div[dojoattachpoint="streamNode"] {
+		padding-top: 0px !important;
+		label, span {
+			color: $text-01 !important;
+		}
+		.entry-title {
+			cursor: pointer !important;
+			img {
+				margin: 0px 6px;
+			}
+		}
+		tr.qkrHover,
+		tr.qkrSelected {
+			background-color: inherit !important;
+			cursor: default !important;
+		}
+	}
+}
+
+
+html:not(.ie-native-mode) .pickerDropfilesVerticalPrompt{
+	width:calc(100% - 4px)!important;
+}
+.lconnEmptyMsg{
+	border-top:none!important;
+}
+.lotusUploadFile{
+  tbody tr:nth-child(3) > td:not(.lotusFormLabel){
+    margin-bottom:20px!important;
+  }
+	.lotusArrow + a:focus{
+		outline:none!important;
+	}
+}
+form.lotusDialog.lotusForm{
+	.lconnPickerDialogBody > .lotusForm, .lconnPickerSourceArea, div:nth-child(2) > div:nth-child(1){
+		max-width:100%!important;
+	}
+	.lconnPickerSourceArea > div{
+		min-width:0px!important;
+		max-width:100%!important;
+	}
+}
+
+// profile "share a file" modal
+div.lotusDialog[id^="lconn_files_widget_CompactFilePicker_"] {
+  width: 100% !important;
+  font-weight: 400 !important;
+  [id^="lconn_files_widget_CompactFilePicker_"],
+  div.title,
+  div.lconnEmptyMsg {
+    font-weight: 400 !important;
+  }
+  input.lotusText {
+    color: $text-01 !important;
+  }
+
+  .switchContainer, .tabbedSwitch {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .lconnBreadcrumb {
+    font-weight: 400 !important;
+    .lconnBreadcrumbdiv:last-child .lconnBreadcrumbnode {
+      font-weight: 400 !important;
+    }
+  }
+}
+
+// File Picker: Add Files and Share a File dialogs
+[id^="lconn_files_widget_FilePickerCompactInner_"][id$="_content"],
+[id^="lconn_share_widget_TreeWithBreadcrumb_"][id$="_containerNode"] {
+  height:280px !important;
+	.headerSelector {
+    padding-top: 14px !important;
+    padding-bottom: 14px !important;
+    border-top: 1px solid transparent !important;
+    border-bottom: 1px solid transparent !important;
+    &:focus {
+      outline:none !important;
+      border-top:1px solid $border-selected !important;
+      border-bottom: 1px solid $border-selected !important;
+    }
+  }
+}
+
+// file upload sharing
+// #lconn_files_widget_UploadFile_0_shareWithLabel
+// with fixes to tighten spacing and not display scroll bar - issue 2192
+div[id^="lconn_share_widget_Dialog_"] {
+  .lotusDialogHeader {
+    margin-bottom: 0 !important;
+  }
+  div[id^="lconn_files_widget_UploadFile_"] {
+  display: inline-block !important;
+  .lotusFormTable {
+    margin-top: 0 !important;
+      .lotusFormFieldRow {
+      	.lotusFormLabel {
+          margin-top: 0 !important;
+          margin-bottom: 0 !important;
+					a[id^="lconn_share_widget_HelpLauncher_"] {
+						position: relative;
+						bottom: 1px;
+					}
+        }
+        td > div {
+          margin-bottom: 8px !important;
+        }
+      }
+    }
+  }
+}
+
+//fixes for File Preview -> About -> Get Links
+#body .dijitDialogTitleBar{
+	padding-bottom:0px!important;
+	padding-top:35px!important;
+	padding-left:32px!important;
+}
+
+// profile download v-card:
+#exportVcardDialog {
+	min-width: 400px;
+
+	.lotusFormFieldRow {
+		td {
+			display: table-cell !important;
+			padding: 0 0 10px !important;
+		}
+	}
+}
+
+// "remove contact" confirmation modal
+.scRemove.lotusForm2 .lotusIndent10 {
+  padding: 20px 0 !important;
+  position: relative;
+
+  &::before {
+    content: '\2022';
+    margin: 0 10px;
+  }
+}
+
+//Upload Files
+[id^="lconn_share_widget_Dialog_"] .lotusDialogContent._qkrDialogCompact {
+	padding-left:0px !important;
+	padding-right:0px !important;
+}
+
+//1451: Add spacing between tabs and fields on insert image dialog.
+div[id^="lconn_share"][id*="widget_Dialog"] .lotusDialog .lotusDialogContent .lotusFormTable {
+  margin-top: 15px;
+}
+
+// "import contacts" modal
+.sc {
+	.dialogImportList {
+		padding-right:3rem!important;
+		padding-left:3rem!important;
+		box-sizing: border-box !important;
+
+		.lotusStream .lotusPaging .lotusInlinelist .lotusFirst {
+			margin: 0 !important;
+		}
+	}
+	.slideDialog {
+		&,
+		.dialogBody,
+		.scImport .sourceIconHover {
+			background: $color-white !important;
+			box-shadow: none !important;
+		}
+		.scImport .sourceIconHover {
+			outline: 1px solid $border-focus;
+		}
+		.dialogPanel {
+			color: $text-01 !important;
+		}
+		#dialogPanel_5 .lotusLoading,
+		#dialogPanel_2 .lotusLoading {
+			position: relative !important;
+			margin: 0 auto;
+			left: auto !important;
+		}
+		.dialogFooter .lotusInlinelist {
+			margin-top: 4px;
+		}
+	}
+}
+
+// "invite to network"
+form[id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"] {
+	.lotusFormTable {
+		max-width: 350px;
+	}
+	input[type="text"] {
+		@include textinput;
+		max-width: 240px;
+	}
+	textarea {
+		margin: .25rem 0 1rem 0 !important;
+		max-width: 240px;
+	}
+}
+
+// share file to a folder dialog
+div[id^="lconn_files_widget_PersonalFolderPicker_"][id$="_content_searchBar"] {
+	min-height: 3rem;
+	margin-bottom: 1rem;
+}
+.lotusDialog div[id^="lconn_files_widget_CompactFolderPicker_"] {
+	width: 100% !important;
+  margin: 0 0 1.5rem 0 !important;
+	+ .lotusDialogFooter {
+		padding: 0 !important;
+		background-color: transparent !important;
+		margin: 0 !important;
+		text-align: left !important;
+	}
+}
+
+// share folder dialog
+div[id^="lconn_share_widget_Dialog_"] .lotusDialog {
+	> div > table > tbody > tr > td {
+		display: flex !important;
+	}
+	col[width="100%"] {
+    width: auto !important;
+	}
+	tr td,
+	td table td {
+		display: block !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		max-height: 350px !important;
+
+		> div, > span, > img, > input, > select, > fieldset {
+			margin-bottom: 1rem !important;
+		}
+		> img, > img + span {
+			display: inline-block;
+			vertical-align: top;
+		}
+		input[type="text"] {
+			width: 100% !important;
+		}
+		> div[id^="lconn_share_widget_MemberInput"] {
+			table td:nth-child(3) {
+				overflow: visible !important;
+			}
+		}
+	}
+  .lotusFormFieldRow:nth-child(3), .lotusFormFieldRow:nth-child(4) {
+    td:last-child {
+      position: relative;
+      overflow: visible;
+      a {
+        position: absolute;
+        right: 3px;
+        top: -3.5rem;
+      }
+      //Add a file to a status update dialog
+      input[id^="lconn_files_widget_UploadFile_"][id$="_setEncrypt"] ~ a {
+        top: -2px !important;
+      }
+    }
+  }
+	.lotusUploadFile .lotusFormFieldRow:nth-child(3) td:last-child a {
+		position: relative;
+		top: auto;
+		right: auto;
+		left: 1px;
+	}
+	.BrowseGroups {
+		margin-bottom: -1.35rem !important;
+
+	}
+	a[id^="lconn_share_widget_HelpLauncher"] {
+		position: relative;
+		bottom: 1px;
+	}
+}
+
+// START Add app to community popup
+
+//Width of dialog set in two spots
+.lotusui30_body #app_palette_dialog_modal.dijitDialog {
+	&, #app_palette_dialog_modal {
+		width: 500px !important;
+	}
+}
+
+.lotusui30_body #app_palette_dialog_modal {
+	.app_palette_modal {
+		width: 498px !important;
+		.lotusPaletteContent,
+		.lotusPaletteContentAreaNode .lotusPaletteWidget {
+			width: 430px !important;
+	 	}
+	}
+
+	//Header of catalog and layout dialog
+  .app_palette_modal_header {
+    background-color: #ffffff;
+    height: auto;
+    border: 0 !important;
+
+    // display applications added message after adding app
+    p[data-dojo-attach-point='itemAddedTextHolder'] {
+      position: absolute;
+      left: 30px;
+      top: 110px;
+			@include font-size($tabs...);
+      color: $text-01 !important;
+    }
+    .app_palette_modal_tabs_ul {
+      border-bottom: 1px solid $color-gray-10 !important;
+      padding: 10px 0px 0px 0px !important;
+      width: 100% !important;
+			position: relative;
+			left: auto;
+			bottom: auto;
+    }
+		// use larger close icon
+		.lotusPaletteClose {
+			@include bx--modal-close;
+		}
+		.app_palette_modal_close_button img {
+			display:none!important;
+		}
+		//App added message
+		span.lotusAdded {
+			&.lotusHidden {
+				display: none;
+			}
+			float: none;
+			text-align: left;
+			display: block;
+			background-image: svg-url-with-replaced-fill($svg-success-msg, '#000000', $success) !important;
+			background-repeat: no-repeat;
+			p {
+				position: relative;
+				top: auto;
+				left: auto;
+				margin-top: 12px;
+				margin-left: 30px;
+			}
+		}
+  }
+
+	// Body of catalog and layout dialog
+	.lotusPaletteBody {
+
+		.lotusPaletteNav {
+			margin-top: 14px;
+		}
+
+		//Show message in change layout dialog for English only
+		&[id^="lconn_core_palette_ChangeLayout"]:lang(en):before {
+			content: "Community layouts are responsive to your window size. Members might see 3, 2, or 1 column based on the width of their window.";
+			background-image: svg-url-with-replaced-fill($svg-info-msg, '#000000', $information);
+			background-position: 10px 10px;
+			background-repeat: no-repeat;
+			background-size: 30px 30px;
+			margin: 10px 30px;
+			padding: 10px 10px 10px 50px;
+			width: auto;
+			position: relative;
+			display: block;
+			border-radius: $border-radius-message;
+			border:2px solid rgba($color-gray-50, 0.3);
+		}
+	  h4 {
+	    a.homepageUnclickable {
+	      &:active, &:hover, &:focus {
+	        text-decoration: none !important;
+	      }
+	    }
+	    .titleNodeSpanSelected {
+	      color: $text-01 !important;
+	      white-space: normal;
+	    }
+	    .lotusAltText {
+	      color: $text-01 !important;
+	      display: block !important;
+	      &:before {
+	        content: " [";
+	      }
+	      &:after {
+	        content: "]";
+	      }
+	    }
+	  }
+	  .lotusPaletteWidget {
+	    padding: 6px 4px !important;
+			border-bottom: 1px solid $border-separator;
+	    &:focus {
+	      outline: $btn-secondary-outline-hover auto 2px;
+	    }
+	  }
+	  .lotusIcon {
+	    background-position-x: 2px !important;
+	  }
+	}
+}
+// END Add app to community popup
+
+// new group in contacts
+.dijitDialog div[id^="addPeopleLable_"] .dijitTextBox {
+	&, .sc & {
+		padding: 0 !important;
+		border: none !important;
+		&, &:focus {
+			outline: none !important;
+		}
+		.typeaheadInput {
+			padding: 0 !important;
+			width: 100% !important;
+			background-image: svg-url-with-replaced-fill($svg-search, '#000000', $icon-default) !important;
+			background-position: right top !important;
+			background-size: 20px 20px !important;
+		}
+	}
+}
+
+// new insert img dialog
+.lotusTabDialog.lconnInsertImage {
+	width: 645px !important;
+
+	&.forum .lotusDialog .dijitTabListWrapper {
+		border-bottom: 1px solid $border-separator !important;
+	}
+
+	.lotusDialog .layout-prop-table {
+		margin-left: 0;
+	}
+	.lotusDialogBorder > .lotusDialog > div[id^="lconn_share"] + div .lotusTabs {
+		margin: 0 -2rem;
+	}
+	.lotusDialogContent .lconnWebUrlTab .lotusMessage2 {
+		margin-bottom: 1rem;
+	}
+	.lotusTabContainer {
+		padding: 0 !important;
+	}
+}
+.lconnInsertImage.dijitDialog {
+	.lotusTabContainer,
+	.lotusDialogBorder > .lotusDialog > div[id^="lconn_share"] + div {
+		padding: 0 !important;
+	}
+}
+.lconnInsertImage .lconnFileUploadLabel .lotusText::-ms-clear {
+  display: none;
+}
+
+//2247 wiki insert image dialog, space above local files drop zone
+table.lotusFormTable.lconnLocalFilesTab {
+  margin-top: 0 !important;
+}
+
+//2251 forum insert image border issue
+.lconnLocalFilesTab {
+  div[id^="lconn_core_upload_ui_DnDFileField"] {
+    width: inherit !important;
+  }
+}
+
+//2293 Library share dialog
+.qkrDialog .lotusDialog .lotusFormFieldRow {
+	td.qkrShareWithLabel {
+		vertical-align: top !important;
+	}
+	select[aria-describedby^="qkrLW_UserRoleSelection"] {
+	    padding-bottom: .5rem !important;
+			position: relative;
+			bottom: 3px;
+	}
+	td:nth-of-type(2) {
+		select {
+			 padding-left: 5px !important;
+		}
+		span {
+			 padding-left: 5px;
+			 display: inline-block;
+			 padding-top: .5px;
+		}
+	}
+	input[id^="quickr_lw_widget_PeopleTypeAhead"] {
+		position: relative;
+		bottom: 1px;
+	}
+	a.qkrHelpIcon {
+		position: relative;
+		top: 2px;
+	}
+	.lotusFilters2 .lotusFilter .lotusAltText {
+		display:none;
+	}
+}
+
+.qkrDialog .lotusFormInfoSummary .lotusMessage.lotusInfo {
+	padding-top: 5px !important;
+	>img {
+		margin: 1px 5px 6px 0 !important;
+	}
+	a img {
+		margin: 3px 8px 6px 0 !important;
+	}
+}

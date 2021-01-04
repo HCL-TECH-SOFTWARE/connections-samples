@@ -1,0 +1,365 @@
+//Wiki list of pages
+div#list .lotusTable.lotusFixedTable.qkrFixedWidth,
+//onprem wiki list does not include qkrFixedWidth
+div#list .lotusTable.lotusFixedTable {
+  @include datatable(2);
+  tr:not(.lotusDetails):not(.lotusSort) {
+    border-top:1px solid $border-separator;
+  }
+  tr.lotusSort th#qkrSortmodifier {
+    vertical-align: middle !important;
+  }
+  tr.lotusDetails {
+    td {
+      padding-top:0px !important;
+    }
+  }
+  tr td {
+    background-color:$background-main !important;
+  }
+  tr:last-of-type {
+    border-bottom:1px solid $border-separator;
+  }
+}
+//On cloud, adjust all column headers
+div#list .lotusTable.lotusFixedTable.qkrFixedWidth {
+  tr.lotusSort th {
+    vertical-align: middle !important;
+  }
+}
+
+//Manage Blog list of entries
+.blog.admin {
+  .blogsFixedTable, .lotusTable {
+    @include datatable;
+
+    th {
+      vertical-align: middle;
+    }
+
+    //Summary view
+    &#entry_summary_table {
+      tr:not(:first-child) {
+        border-top-width: 0 !important;
+      }
+    }
+
+    // Details view that shows more info on another row
+    &#entry_detail_table {
+      tr:nth-child(4n - 1):not(:first-child),
+      tr:nth-child(4n - 2) {
+        th, td {
+          background-color: $background-side;
+        }
+      }
+      tr.lotusDetails {
+        border-top-width: 0 !important;
+        td {
+          padding-top: 0 !important;
+        }
+      }
+      th, td {
+        background-color: white;
+      }
+    }
+
+  }
+}
+
+//This is the icons that appear for organizing the information in the Data Tables.
+
+html:not(.lconnFiles) #qkrViewControl.lotusViewControl, //wiki index
+html.lconnFiles .lotusCommunities .filesListFilled .lotusViewControl, //Comm files old UI
+html.lconnFiles:not(.files-enable-simplify-left-nav) #qkrViewControl.lotusViewControl, //stand-alone files
+body.blog .lotusViewControl, //Manage blog lists
+#lotusMain div#ideatoins_main .lotusViewControl, //Comm Ideation blog
+.activiyActionBar, //Activity entry lists
+#calendar_view //Comm Events list
+{
+
+  .lotusTileOn,
+  .lotusTileOff,
+  .viewOff,
+  .viewOn,
+  .lotusDetailsOn,
+  .lotusDetailsOff,
+  .lotusSummaryOn,
+  .lotusSummaryOff {
+
+    padding-bottom: 2px!important;
+    background-size: 20px 20px !important;
+    background-position: 2px 2px !important;
+    background-repeat: no-repeat !important;
+    border: 1px solid transparent!important;
+    border-bottom: 2px solid transparent!important;
+    padding: 2px 2px !important;
+    margin:3px!important;
+    height: 20px !important;
+    width: 20px !important;
+
+    &:focus {
+      outline:1px solid $border-selected!important;
+      outline-width:1px!important;
+      outline-style:solid!important;
+    }
+
+  }
+
+  .lotusView.lotusTileOff,
+  .lotusView.viewOff,
+  .lotusView.lotusDetailsOff,
+  .lotusView.lotusSummaryOff {
+    border-color: transparent!important;
+  }
+
+  .viewOn,
+  .lotusTileOn,
+  .lotusDetailsOn,
+  .lotusSummaryOn {
+    position: relative !important;
+    &:after {
+      width: auto;
+      height: 0;
+      border-bottom: 3px solid $border-selected!important;
+      bottom: -5px;
+      content: '';
+      position: absolute;
+      display: block;
+      left: 2px;
+      right: 2px;
+      top: auto !important;
+    }
+  }
+  .lotusTileOff,
+  .lotusTileOn {
+    background-image: svg-url-with-replaced-fill($svg-tile-view, '#000000', $icon-default) !important;
+  }
+  .lotusDetailsOff,
+  .lotusDetailsOn {
+    background-image: svg-url-with-replaced-fill($svg-details-view, '#000000', $icon-default) !important;
+  }
+  .lotusSummaryOn,
+  .lotusSummaryOff {
+    background-image: svg-url-with-replaced-fill($svg-summary-view, '#000000', $icon-default) !important;
+  }
+}
+
+//Forums
+#dfForumList,// list of forums
+#dfTopicList, //List of forum topics in community
+#dfOpenQuestionList, //List of open forum questions in community
+#dfAnsweredQuestionList, //List of answered forum questions in community
+#topicList, //List of forum topics inside forum
+#updatesArea, // stand-alone forums list
+#category .dfForums // stand-alone public forums list
+{
+  .lotusTable{
+    @include datatable(2);
+    td.lotusFirstCell {
+      top: 0 !important;
+    }
+  }
+}
+//Forum lists - Column headings - Align labels on non-sorting columns
+#topicList, //List of topics inside specific forum
+#dfTopicList, //List of topics on comm forums landing page
+#dfOpenQuestionList, //List of open questions on comm forums landing page
+#dfAnsweredQuestionList, //List of answered questions on comm forums landing page
+#updatesArea .forumPagedList {
+  .lotusTable tr.lotusSort {
+    td:first-of-type, //Topic table header in forum list in community
+    td:nth-of-type(2) { //Forum table header in forum list in community
+      padding-right: 16px;
+      padding-left: 46px;
+      vertical-align: middle;
+    }
+  }
+}
+
+// communities wiki versions
+#versionHistory .lotusVersions .lotusTable,
+#attachments .lotusTable {
+  @include datatable();
+}
+// wiki image attachment dialog
+.lotusDialogContent._qkrDialogCompact {
+  #image_attachmentList .lotusTable {
+    @include datatable(2);
+    td {
+      padding: 10px 2px;
+    }
+  }
+}
+
+
+// -----------LISTS NOT DATATABLES-----------
+// bookmarks list
+#bookmarkContentAreaSub {
+  .lotusTable {
+    > tbody > tr:nth-child(3n-2):not(:first-child),
+    form[name="bookmarkEditForm"] fieldset {
+      border-top: 1px solid $border-separator !important;
+
+      .lotusFormFooter {
+        border: 0 !important;
+      }
+    }
+//    .commFocusML {
+//      &, & span { color: $text-01 !important; }
+//    }
+    .lotusFirstCell,
+    .lotusAlignRight.lotusLastCell {
+      padding: 1rem 0 !important;
+    }
+    .lotusDetails .lotusFirstCell {
+      padding-top: 0 !important;
+    }
+    form {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+// calendar events list
+#calendar_view div[id$="listView"] {
+  .lotusTable {
+    margin-top: 1rem;
+
+    > tbody > tr:nth-child(2n-1):not(:first-child) {
+      border-top: 1px solid $border-separator !important;
+    }
+    .lotusTitle a {
+      color: $text-01 !important;
+    }
+    .lotusFirstCell,
+    .lotusFirstCell + td,
+    .lotusAlignRight.lotusLastCell {
+      padding: 1rem 0 !important;
+    }
+    tr.lotusDetail td {
+      padding-top: 0 !important;
+    }
+  }
+}
+
+//Various lists
+#ideatoins_main, //ideation blogs list
+div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysFullpageMode"], //community survey list
+div#fullRecomm, //related communities list
+div#activityList, //activities list, stand-alone and in community
+div.ActivityList
+{
+  .lotusTable {
+    margin-top: 1rem;
+
+    > tbody > tr:nth-child(2n-1):not(:first-child) {
+      border-top: 1px solid $border-separator !important;
+    }
+  }
+}
+
+//Stand-alone blogs list
+.blog .lotusContent .blogsFixedTable {
+  &.lotusTable {
+    margin: 1rem 0;
+    > tbody > tr:not(:first-child) {
+      border-top: 1px solid $border-separator !important;
+    }
+    > tbody > tr[name*='item_detail'] {
+      border-top: none !important;
+    }
+    > tbody > tr td {
+      padding: 1rem 0;
+    }
+  }
+}
+
+//ideation blog list specifics
+#ideatoins_main {
+  .lotusTable {
+    .lotusFirstCell,
+    .lotusAlignRight.lotusLastCell {
+      padding: 1rem 0 !important;
+    }
+  }
+}
+
+//Related communities and survey list specifics
+div[id*="widget_SurveysListFullpage"], //survey list
+div#fullRecomm { //related communities list
+  .lotusTable {
+    td {
+      padding: 1rem 0 !important;
+//1681 list icon spacing
+      &:first-child {
+        padding-right: 8px !important;
+      }
+    }
+  }
+}
+
+//1681 survey list entry title and entry "More" spacing
+//1290 survey icons
+div[id*="widget_SurveysListFullpage"] {
+  div[id*="FULLPAGE_listSection_listWidget"]{
+    padding-top: 32px !important;
+    overflow-x: unset !important;
+  }
+  .lotusTable td {
+    .entry-title {
+      color: $text-04 !important;
+    }
+    img.lconn-survey_draft_32 {
+      background-image: svg-url-with-replaced-fill($svg-survey-draft, '#000000', $icon-default) !important;
+      background-size: 32px 32px;
+      background-position: 0 0 !important;
+      background-repeat: no-repeat !important;
+      margin-top: 4px !important;
+    }
+    img.lconn-survey_incomplete_32 {
+      background-image: svg-url-with-replaced-fill($svg-survey-incomplete, '#000000', $icon-default) !important;
+      background-size: 32px 32px;
+      background-position: 0 0 !important;
+      background-repeat: no-repeat !important;
+      margin-top: 4px !important;
+    }
+    img.lconn-survey_complete_32 {
+      background-image: svg-url-with-replaced-fill($svg-survey-complete, '#000000', $icon-default) !important;
+      background-size: 32px 32px;
+      background-position: 0 0 !important;
+      background-repeat: no-repeat !important;
+      margin-top: 4px !important;
+    }
+    a[id*="listSection_listWidget_rootDiv_more"] {
+      margin-left: 25px !important;
+    }
+  }
+}
+
+//Related communities - more space between comm avatar and content
+div#fullRecomm {
+  .lotusTable .lotusFirstCell {
+    width:48px !important;
+  }
+}
+
+//Activities list specifics
+div#activityList,
+div.ActivityList {
+  .lotusTable {
+    tr:not(.lotusDetails) td {
+      padding: 1rem 0 !important;
+    }
+  }
+}
+
+// 2080 - remove extra padding on Events / Ideation blog
+#lotusMain div#ideatoins_main .lotusViewControl, //Comm Ideation blog
+#calendar_main div#calendar_view .lotusViewControl { //Events
+  padding-right: 0 !important;
+}
+
+//1215 Height of iframe in Surveys responses table.
+div[id*="SurveysFullpageMode"] iframe[id$="FULLPAGE_singleViewSection_iFrame"] {
+  min-height: 1500px;
+}

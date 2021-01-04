@@ -1,0 +1,119 @@
+//Floating search button
+
+//Position search button relative to navbar
+#lotusFrame #lotusTitleBar,
+#lotusFrame .lotusTitleBar2,
+.lotusFrame #lotusTitleBar,
+.lotusFrame .lotusTitleBar {
+  //Most pages where search button appears; Orient Me and Files works with no change
+  .lotusInner {
+    div.icSearchPaneButton {
+      top: calc(#{$navbar-height} + 20px) !important; //Position search button relative to navbar height
+    }
+  }
+  //Community top navigation
+  .tabNavBar {
+    &:not(.tabNavFixed) {
+      .icSearchPaneButton {
+        top: calc(#{$navbar-height} + 20px) !important; //Position search button relative to navbar height
+      }
+    }
+    &.tabNavFixed {
+      .icSearchPaneButton {
+        top: 20px !important; //Position search button when navbar is hidden on scroll
+      }
+    }
+  }
+}
+
+//Style search button
+.icSearchPaneButton {
+  border-radius:$border-radius-search-button !important;
+  background-color: $btn-primary-fill !important;
+  border: 1px solid $btn-primary-outline !important;
+  outline: none !important;
+  right:23px!important;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2) !important;
+  a {
+    width:16px!important;
+    height:16px!important;
+    margin-top:-9px!important;
+    margin-left:8px!important;
+    background-image: svg-url-with-replaced-fill($svg-search, '#000000', $btn-primary-icon);
+    background-size:18px 18px!important;
+    svg{
+      display:none;
+    }
+  }
+  &:hover, &.icSearchFocused {
+    border-color: $btn-primary-outline-hover !important;
+    background-color:$btn-primary-fill-hover !important;
+    cursor:pointer!important;
+    a {
+      background-image: svg-url-with-replaced-fill($svg-search, '#000000', $btn-primary-icon-hover);
+    }
+  }
+
+  //Search button on org page
+  &#bhc_com_searchForm {
+    top:56px !important;
+  }
+  //When search panel is closed after clicking a scope
+  &.icSearchBarMode {
+    background-color:transparent !important;
+    box-shadow:none!important;
+    border: none !important;
+    //Position search field and icon in Files after My Files scope is selected
+    .icSearchIcon {
+      top:-20px !important;
+    }
+    .icSearchBar {
+      padding-top:0px !important;
+    }
+  }
+}
+
+//Onprem, override box-sizing to fix issue if Action Center is enabled
+.icSearchPane,
+.icSearchPane * {
+  box-sizing: border-box !important;
+}
+
+//Position Search pane below navigation bar
+.icSearchPane {
+  top: calc(#{$navbar-height} + 1px) !important;
+}
+
+//Search field on history panel
+.icSearchBar{
+  a.icSearchIcon {
+    width:16px!important;
+    height:16px!important;
+    margin-top:31px!important;
+    margin-left:9px!important;
+    background-image:svg-url-with-replaced-fill($svg-search, '#000000', $icon-default) !important;
+    background-size:18px 18px!important;
+    svg{
+      display:none;
+    }
+  }
+  .dijitTextBox {
+    @include textinput;
+    height:auto !important;
+  }
+  .dijitTextBoxFocused {
+    box-shadow: 0 1px 0 $border-field-focus !important;
+    outline:none!important;
+    border-bottom:1px solid $border-field-focus !important;
+  }
+}
+
+//Hover & focus on entry in search panel
+.search-history-view-ui .icSearchPane {
+  .pfEntry:hover, .pfEntry.spSelected {
+    border-color:$border-selected !important;
+    .lconn_gray {
+      color: $text-02 !important;
+    }
+  }
+}

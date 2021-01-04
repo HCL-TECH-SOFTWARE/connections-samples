@@ -1,0 +1,156 @@
+//Account Settings
+//Titlebar for Account Settings & Invite Guest
+.lotusTitleBar2 .lotusHeading {
+  @include font-size($apptitle...);
+}
+
+//Fields and form elements
+#accessingAccountShow,
+#appPasswordsShow1,
+#langEdit {
+  border-top:1px solid $color-gray-10;
+  margin-top:20px;
+}
+
+#accessingAccountShow {
+  padding-top:30px!important;
+  h2 {
+    //font-size:$body-lg-font-size !important;
+  }
+}
+
+#nameEdit, #passwordEdit {
+  padding:20px 30px !important;
+  //margin-top:20px !important;
+}
+
+.description.descriptionEdit {
+  margin-top:20px !important;
+}
+
+#appPasswordsShow1, #langEdit {
+  padding-top:20px !important;
+}
+.lotusForm2 label {
+  font-weight:normal !important;
+}
+
+#saveLang {
+  margin-top:10px;
+}
+
+.lotusFieldWrapper {
+  padding:5px 1px 10px !important;
+}
+
+#myAccountEditForm {
+  .bssuiInlineError {
+    position:relative !important;
+    display:inline !important;
+  }
+  #ErrorGivenName2.bssuiInlineError {
+    top:38px !important;
+    left:360px !important;
+  }
+  #ErrorFamilyName2.bssuiInlineError {
+    top:98px !important;
+    left:360px !important;
+  }
+  #givenNameLabel1, #familyNameLabel1 {
+    display:block !important;
+  }
+}
+
+#myPwdEditForm {
+  .bssuiInlineError {
+    position:relative !important;
+    display:inline !important;
+  }
+  #ErrorConfirmPassword.bssuiInlineError {
+    top:85px !important;
+    left:300px !important;
+  }
+  #ErrorPassword.bssuiInlineError {
+    top:85px !important;
+    left:300px !important;
+  }
+}
+
+#generateAppPasswordForm #NameErrorAppPasswordGen.bssuiInlineError {
+  position:relative !important;
+  display:inline !important;
+  top:146px !important;
+  left:120px !important;
+}
+
+#langEdit .lotusIndent20 {
+  padding-left:30px;
+  padding-right:30px;
+}
+
+//Update Reset Access Settings dialog
+.lotusDialogBorder > {
+  #ResetSettingsForm.lotusDialog {
+    border:none !important;
+    box-shadow:none !important;
+  }
+  .lotusDialog > div {
+    padding-right:0rem !important;
+    padding-left:0rem !important;
+  }
+  .lotusDialog > .lotusDialogHeader,
+  #ResetSettingsForm.lotusDialog > div {
+    padding-right:3.0rem !important;
+    padding-left:3.0rem !important;
+  }
+}
+.lotusDialogBorder#extendTrialDialogWidth {
+  box-shadow:none !important;
+  width:auto !important;
+}
+
+//Notification Settings
+
+.lotusNewsNotifications {
+
+  .lotusContent .lotusHeader .lotusHeading {
+    @include font-size($apptitle...);
+  }
+
+  //Fix padding on sides to line up with overall page padding
+  .lotusMain.emailPreferences {
+    padding-right:2.0rem !important;
+  }
+  @media screen and (min-width: 1250px) {
+    .lotusNewsNotifications .emailPreferences {
+      padding-right:2.0rem;
+    }
+  }
+
+  .emailPreferences h1 {
+    //font-size:$head2-font-size !important;
+    font-weight:normal !important;
+    color: $text-01 !important;
+  }
+  .notificationPrefTitle {
+    font-weight:500;
+  }
+
+  .prefTable {
+    td {
+      padding: 0.75rem 5px;
+      &:first-child {
+        font-weight:700;
+      }
+    }
+  }
+  //Table
+  .responsesNotifications {
+    table {
+      border-collapse:collapse;
+      width: 100% !important;
+    }
+    @include datatable;
+  }
+
+}

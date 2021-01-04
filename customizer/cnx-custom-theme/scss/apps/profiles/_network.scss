@@ -1,0 +1,47 @@
+#friends .lotusNetworkPerson {
+  img {
+    height: 56px;
+    width: 56px;
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    margin-left: -28px;
+    &:focus {
+      outline: 1px solid $border-focus !important;
+      outline-offset: 1px;
+    }
+  }
+  .x-lconn-userid + .lotusAltText {
+    display: block;
+    color: $text-01;
+    font-weight: normal !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    &:hover {
+      text-decoration-color: $text-01 !important;
+    }
+  }
+  .menu_drop_icon {
+    margin-bottom: 4px;
+  }
+}
+#recent-friends-container .lotusChunk {
+  margin: 0 -3px;
+
+  .lotusNetworkPerson {
+    padding: 1rem 3px 0 !important;
+    width: 33%;
+    box-sizing: border-box !important;
+    text-align: center;
+    position: relative;
+    .vcard {
+      padding-top: 56px;
+      display: block;
+      a:first-child {
+        display: inline-block;
+        max-width: calc(100% - 1.25rem);
+      }
+    }
+  }
+}

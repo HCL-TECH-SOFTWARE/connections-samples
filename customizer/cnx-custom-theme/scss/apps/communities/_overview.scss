@@ -1,0 +1,169 @@
+//Overview page widget styling
+//Widget headers and padding, does not apply to Rich Content widget
+.widgetContainer .lotusWidget2:not(.lconnRemoveContentPadding) {
+  padding:0 30px !important;
+  h2:first-child {
+    padding:20px 30px !important;
+    margin:0 -30px !important;
+  }
+}
+
+/*----SUBCOMMUNITY WIDGET----*/
+#subcommunityNavWidgetContainer {
+  .lotusTable .lotusFirst + tr {
+    > td > .lconnSubcomImageDiv {
+      margin-right: 1.75rem;
+      margin-bottom: 1.75rem;
+      height: auto !important;
+      width: auto !important;
+    }
+    td.flushLeft, a {
+      color: $text-01 !important;
+      text-align: center;
+    }
+  }
+}
+
+/*----RICH CONTENT WIDGET----*/
+// 1721 Rich Content widget - maintain spacing on header only
+.widgetContainer .lotusWidget2.lconnRemoveContentPadding {
+  h2.widgetTitle {
+    padding: 20px 30px !important;
+  }
+}
+
+// rich content widget edit mode tabs
+#editRichContent,
+#showRichContent {
+  #pageDetails {
+    padding-left: 16px;
+    .pageContainerDivStyleIsNotCloudMode ul.lotusTabs#qkrEditorTabs {
+      width: 100% !important;
+      text-align: left !important;
+    }
+    .lotusBtnContainer {
+      padding-bottom: 20px;
+      padding-top: 10px;
+    }
+  }
+}
+
+// 1670: wrap text, links, and alt text in tables
+#showRichContent,
+#descContent {
+  p, a, img {
+    overflow-wrap: break-word;
+    hyphens: auto;
+  }
+  a {
+    word-wrap: break-word;
+  }
+  table {
+    table-layout: fixed;
+  }
+  img {
+    line-height: normal;
+    word-break: break-word;
+  }
+}
+
+// rich content insert / edit image dialog spacing
+div[id^="lconn_share0_widget_Dialog_"] {
+  form .lotusDialogContent._qkrDialogCompact {
+    padding: 15px 0 !important;
+  }
+}
+
+/*----RELATED COMMUNITIES WIDGET----*/
+.lotusContent #recomm .rc_recomm_item {
+  height: auto !important;
+  width: 110px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 1.75rem 1.75rem 0;
+  &.lotusHidden {
+    display: none;
+  }
+  &:last-child {
+    padding-right: 0;
+  }
+  .rc_icon,
+  .rc_text a {
+    text-align: center;
+    display: block;
+  }
+  .rc_text {
+    &, div, a {
+      display: block;
+      width: 100%;
+    }
+  }
+  .rc_icon {
+    padding-right: 0px;
+  }
+}
+
+/*----FEATURED SURVEY WIDGET----*/
+.lotusWidget2 div[id^="com_ibm_form_integrations_formiwidget_widget_SingleSurveyViewMode_"] {
+  padding-bottom: 30px;
+}
+
+/*----MEMBERS WIDGET----*/
+.communities-widget-appearance .lotusui30 .lotusWidget2 div#membersdiv {
+  .lotusChunk.lconnMemberSummary {
+    max-height: none;
+    overflow: auto;
+    margin: 0 -.5rem !important;
+  }
+  div#membersInHikari {
+    padding: 1rem .2rem !important;
+  }
+  .vcard {
+    position: relative;
+    display: block;
+    width: 90px;
+    text-align: center;
+  }
+  .x-lconn-displayname {
+    display: block !important;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+/*----EMAIL COMMUNITY----*/
+#emailForm {
+  .rte {
+    border: none !important;
+  }
+}
+
+/*-----Style arrows on blog, ideation blog, and activities widgets----*/
+#blogsSectionDiv,
+#activitiesListTable,
+#ideations_blogsSectionDiv {
+  img {
+    &.lotusIconHide {
+      background-image: svg-url-with-replaced-fill($svg-chevron-up, '#000000', $icon-default) !important;
+      background-size: 12px !important;
+      background-position: right 2px !important;
+      background-repeat: no-repeat !important;
+    }
+    &.lotusIconShow {
+      background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-default) !important;
+      background-size: 12px !important;
+      background-position: right 2px !important;
+      background-repeat: no-repeat !important;
+    }
+  }
+  .lotusTable {
+    td {
+      padding-bottom: 14px !important;
+    }
+    td.lotusLastCell span[style="padding:0 15px;"] {
+      padding: 0 0 0 5px !important;
+    }
+  }
+}

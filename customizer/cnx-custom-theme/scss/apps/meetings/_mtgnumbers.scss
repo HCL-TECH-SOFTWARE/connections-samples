@@ -1,0 +1,91 @@
+// Glogal Access Numbers List for Meetings
+//Meetings - Global Access Numbers List page
+.lotusui30_body.scloud3.verseTheme {
+  // Banner
+  margin-top:0px !important;
+  div.lotusBanner .lotusRightCorner {
+    background-color: $background-header !important;
+    .lotusInner {
+      top:0px;
+    }
+  }
+  // Heading
+  &.lotusui30 .lotusTitleBar2 .lotusTitleBarContent {
+    text-align: center;
+    display: inline;
+    .lotusHeading {
+      color:$text-01 !important;
+      @include font-size($apptitle...);
+      width: 100%;
+      margin:auto;
+    }
+  }
+  // Body
+  .lotusFrame .lotusMain {
+    padding:0px 50px !important;
+    // Description
+    #accessListglocalNumberDiv p {
+      @include font-size($body...);
+    }
+    // Search
+    #accessListSearchDiv {
+      #searchBoxP {
+        margin-left:0px !important;
+      }
+      .lotusSearch {
+        table.lotusLayout{
+          background-color: $background-main !important;
+          border:transparent !important;
+          td {
+            border-bottom:none !important;
+          }
+        }
+      }
+    }
+    // Global access numbers list
+    #accessListFullListDiv {
+      #dynamicListDiv {
+        overflow-x: auto !important;
+        .lotusTable {
+          @include datatable;
+          td {
+            @include font-size($caption...);
+          }
+        }
+        .lotusTitle {
+          font-weight:400 !important;
+          font-size:$body-sm-font-size !important;
+        }
+        tr td.lotusLastCell {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+  //List of numbers for your audio conference
+  #accessListMyNumberDiv {
+    h4 {
+      @include font-size($header...);
+    }
+    span {
+      @include font-size($body...);
+    }
+    .lotusFormBody {
+      padding:0px 0px;
+      .lotusFormField {
+        width:100%;
+        .lotusFieldWrapper {
+          width:100%;
+          #accessListMyListTextArea {
+            width:100%;
+            @include font-size($body...);
+          }
+        }
+      }
+    }
+    .lotusFormFooter {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+  }
+}

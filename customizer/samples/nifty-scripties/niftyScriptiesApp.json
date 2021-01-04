@@ -1,0 +1,178 @@
+{
+   "app_id":"com.nifty.scripties",
+   "name":"Nifty Scripties App",
+   "title":"Nifty Scripties App",
+   "description":"Provides the Top Ten Customizer Apps",
+   "match":{
+      "user-email":[
+         "userid1@example.com"
+      ]
+   },
+   "services":[
+      "Customizer"
+   ],
+   "extensions":[
+      {
+         "ext_id":"com.nifty.scripties.smooth",
+         "name":"!!Smooth UI Loader",
+         "title":"Smooth UI Loader",
+         "description":"Displays white page until page in the background has loaded completely",
+         "type":"com.ibm.customizer.ui",
+         "payload":{
+            "include-files":[
+               "smoothLoad.js",
+               "smoothLoad.css"
+            ],
+            "include-repo":{
+               "name":"connections-smooth-load"
+            }
+         },
+         "path":"mycontacts"
+      },
+      {
+         "ext_id":"com.nifty.scripties.scroller",
+         "name":"Activity Stream Infinite Scroll",
+         "description":"Enhanced activity stream which load messages as a user scrolls",
+         "type":"com.ibm.customizer.ui",
+         "payload":{
+            "include-files":[
+               "core.js",
+               "scroller.js"
+            ],
+            "include-repo":{
+               "name":"enhanced-activity-stream"
+            }
+         },
+         "path":"homepage"
+      },
+      {
+         "ext_id":"com.nifty.scripties.bulkDelete",
+         "name":"Bulk Delete Members from a Community",
+         "description":"Bulk delete members from a community",
+         "type":"com.ibm.customizer.ui",
+         "payload":{
+            "include-files":[
+               "bulk_delete.js"
+            ],
+            "include-repo":{
+               "name":"communities-bulk-delete-members"
+            }
+         },
+         "path":"communities"
+      },
+      {
+         "ext_id":"com.nifty.scripties.fontSize",
+         "name":"Change CKEditor Font Size",
+         "description":"Change the font size in CKEditor instances in IBM Connections Cloud",
+         "type":"com.ibm.customizer.ui",
+         "payload":{
+            "include-files":[
+               "ckEditorFontSize.js",
+               "ckEditorFontSize.css"
+            ],
+            "include-repo":{
+               "name":"connections-ckeditor-font-size"
+            },
+            "match":{
+               "url":"wikis|blogs|forums|communities"
+            }
+         },
+         "path":"global"
+      },
+      {
+         "ext_id":"com.nifty.scripties.flip",
+         "name":"Community Flipcard Layout",
+         "description":"Renders Communities as flip cards rather than lists",
+         "type":"com.ibm.customizer.ui",
+         "payload":{
+            "include-files":[
+               "flipCard/commListCardsFlipStyle.user.js",
+               "flipCard/commListCardsFlipStyle.css"
+            ],
+            "include-repo":{
+               "name":"global-samples"
+            },
+            "exclude":{
+               "url":"communityUuid|communitycreate"
+            }
+         },
+         "path":"communities"
+      },
+      {
+         "ext_id":"com.nifty.scripties.notifier",
+         "name":"Enhanced Activity Stream Notifier",
+         "description":"Notifies users if there is a new message in their Activity Stream",
+         "type":"com.ibm.customizer.ui",
+         "payload":{
+            "include-files":[
+               "core.js",
+               "notifier.js"
+            ],
+            "include-repo":{
+               "name":"enhanced-activity-stream"
+            }
+         },
+         "path":"homepage"
+      },
+      {
+         "ext_id":"com.nifty.scripties.favourite",
+         "name":"Mark Favourite Community",
+         "description":"Allows you to mark a community as favourite community",
+         "type":"com.ibm.customizer.ui",
+         "payload":{
+            "include-files":[
+               "favourite_communities.js"
+            ],
+            "include-repo":{
+               "name":"favourite-communities"
+            }
+         },
+         "path":"communities"
+      },
+      {
+         "ext_id":"com.nifty.scripties.bookmark",
+         "name":"Open Bookmarks in New Window",
+         "description":"Bookmarks open in a new window",
+         "type":"com.ibm.customizer.ui",
+         "payload":{
+            "include-files":[
+               "bookmark_links_new_tab_window.js"
+            ],
+            "include-repo":{
+               "name":"open-bookmarks-in-new-window"
+            }
+         },
+         "path":"communities"
+      },
+      {
+         "ext_id":"com.nifty.scripties.searchResults",
+         "name":"Open Search Results in New Window",
+         "description":"Open search results in new window",
+         "type":"com.ibm.customizer.ui",
+         "payload":{
+            "include-files":[
+               "cnx-search.js"
+            ],
+            "include-repo":{
+               "name":"cnx-searchresults"
+            }
+         },
+         "path":"search"
+      },
+      {
+         "ext_id":"com.nifty.scripties.social",
+         "name":"Set OrientMe as Homepage",
+         "description":"Automatically change the default homepage to Social",
+         "type":"com.ibm.customizer.ui",
+         "payload":{
+            "include-files":[
+               "setSocialHomepage.js"
+            ],
+            "include-repo":{
+               "name":"set-orientMe-as-homepage"
+            }
+         },
+         "path":"homepage"
+      }
+   ]
+}

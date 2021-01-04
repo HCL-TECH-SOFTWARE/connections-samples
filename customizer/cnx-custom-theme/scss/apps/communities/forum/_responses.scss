@@ -1,0 +1,173 @@
+//Forum response styling within a topic
+#forum {
+  //Update space around Reply to Topic button
+  &> .lotusHeader .lotusBtnContainer,
+  &> .lotusBtnContainer {
+    .lotusBtnAction {
+      margin:2px 0px 0px 1px !important;
+    }
+  }
+
+  .lotusPost {
+    padding:8px 8px;
+    border-radius:$border-radius-tour;
+    box-shadow: 1px 2px 0px $box-shadow-10 !important;
+    border-color: $border-separator !important;
+    //Style Author info
+    .lotusPostAuthorInfo {
+      text-align: center;
+      padding:6px 0px;
+      border-right:1px solid $border-separator;
+      .lotusPostAvatar, .lotusPostName, .lotusMeta {
+        margin: 0 auto;
+        float:none;
+        padding:0px 0px 8px 0px;
+      }
+      .lotusPostAvatar {
+        width:50%;
+      }
+      .lotusPostName, .lotusMeta {
+        width:80%;
+      }
+      .lotusPostName .vcard {
+        width:auto !important;
+        padding-left:0px !important;
+        position:relative;
+        left:8px;
+        display:flex;
+        flex-direction: row;
+        .lotusPerson {
+          width:75%;
+          max-width:120px;
+        }
+        .menu_drop_icon {
+          margin-right:0px !important;
+        }
+      }
+    }
+    //Post content
+    .lotusPostContent {
+      .lotusHeading {
+        @include font-size($title...);
+      }
+      .lotusChunk.lotusMeta, .lotusMeta {
+        @include font-size($caption...);
+        span {
+          margin-bottom:0px;
+        }
+      }
+      > .lotusHeader + .lotusMeta {
+        margin-bottom: .5rem;
+        > span, label {
+          margin: 0;
+          display: inline-block;
+          vertical-align: middle;
+        }
+        // hide spinner:
+        .lotusTags .lotusHidden {
+          display: none;
+        }
+
+        form[style="display: inline;"] {
+          display: inline-block !important;
+          margin: 0 !important;
+
+          input[type="submit"] {
+            @include btnprimary;
+            padding: 6px 16px !important;
+            font-weight: 500 !important;
+            font-size: 0.675rem !important;
+          }
+          a[role="button"] {
+            @include btnsecondary;
+            padding: 6px 16px !important;
+            font-weight: 500 !important;
+            font-size: 0.675rem !important;
+          }
+        }
+      }
+      // post images 
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      //Quoted post
+      .lotusPostDetails .quote {
+        background-color:$background-side;
+        padding:10px 10px;
+        border-radius:0px $border-radius-tour $border-radius-tour 0px;
+        border-left-color: $border-focus;
+      }
+    }
+  }
+  .lotusCommentList {
+    //Accepted Answers
+    &.acceptedAnswers {
+      padding:0px 0px 20px 0px !important;
+      margin-bottom:30px;
+      border-bottom:1px solid $border-separator;
+      .lotusPostAuthorInfo {
+        border:none !important;
+      }
+    }
+    .forumAnswer .lotusPostContent {
+      padding:12px 20px;
+      border-left:6px solid $success;
+      //background-color:transparent;
+      .forumAnswerIndicator.forumQuestionStatus {
+        color:$success;
+        @include font-size($title...);
+      }
+    }
+    //Background color of accepted answer
+    .forumAnswer .lotusPostContent {
+      background-color:transparent;
+      .lotusPostDetails li, .lotusActions li {
+        background-color:transparent;
+      }
+    }
+  }
+  //Messages in Forum responses
+	.forumQuestion {
+		.forumResolvedQuestionIndicator,
+		.forumAcceptedAnswerIndicator {
+			.lotusMessage {
+				margin-bottom:0 !important;
+				padding: 18px 5px 8px 5px !important;
+				.lconnSprite-iconConfirmation16 {
+          border-radius:0px !important;
+          margin: -2px 10px 5px 10px !important;
+          background-image: svg-url-with-replaced-fill($svg-forum-answered, '#000000', $success) !important;
+          background-position:center;
+          height:24px;
+          width:24px;
+				}
+			}
+		}
+		.forumNotResolvedQuestionIndicator {
+			.lotusMessage {
+				margin-bottom:0 !important;
+				padding:18px 5px 8px 5px !important;
+				.lconnSprite-iconQuestion16 {
+					margin: -2px 10px 5px 10px !important;
+					border-radius:0px !important;
+          background-image: svg-url-with-replaced-fill($svg-forum-question, '#000000', $icon-default) !important;
+          background-position:center;
+          height:24px;
+          width:24px;
+				}
+			}
+		}
+	}
+}
+
+div[id^="lconn_core_TempTabbedDialog_"] {
+  .dijitContentPane, .lotusFormFooter {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    label {
+      margin-left: 0 !important;
+    }
+  }
+}

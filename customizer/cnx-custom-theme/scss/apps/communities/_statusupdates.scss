@@ -1,0 +1,36 @@
+div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_myactions"] :not(.ublogActionsList)  {
+  a[role="button"]:not(.ublogPost) {
+    &[dojoattachpoint="attachActionButtonNode"],
+    &[dojoattachpoint="removeAttachmentNode"] {
+      border: none !important;
+      padding: 0 !important;
+      vertical-align: top;
+      &, &:hover {
+        background: transparent !important;
+        border: none !important;
+      }
+    }
+    
+    &[dojoattachpoint="attachActionButtonNode"]:hover {
+      @include link-default();
+    }
+  }
+  img.lconnSprite-iconAttachment16,
+  span[dojoattachpoint="fileAttachmentDetailsNode"] {
+    display: inline-block;
+    vertical-align: top;
+  }
+  span[dojoattachpoint="fileAttachmentDetailsNode"] span {
+    display: inline-block;
+    line-height: 1rem;
+    margin-right: .5rem;
+    &:after {
+      content: '|';
+      display: inline-block;
+      margin-left: .5rem;
+    }
+    &:last-child:after {
+      display: none;
+    }
+  }
+}

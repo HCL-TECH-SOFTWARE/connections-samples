@@ -1,0 +1,88 @@
+.lotusContent #forum,
+.lotusContent #topicList {
+  .lotusPostForm {
+    // make edit form match the styling of responses in the thread
+    padding: 2rem;
+    border-radius:$border-radius-tour;
+    box-shadow: 1px 2px 0px $box-shadow-10 !important;
+    border: 1px solid $border-separator !important;
+  }
+
+  .lotusPostForm,
+  + .lotusPostForm {
+    .lotusTabContainer ul {
+      text-align: right;
+
+      li {
+        float: none !important;
+        display: inline-block;
+      }
+    }
+
+    > div > form,
+    .lotusFormFooter {
+      padding: 0;
+      //Update space around Save button
+      input {
+        margin-left:2px;
+        margin-top:4px;
+      }
+    }
+
+    .lotusFormField {
+        margin: 1rem 0;
+    }
+
+    &:not(.lotusForumNewTopic) div[dojoattachpoint="titleRow"] {
+      label {
+        display: none;
+      }
+    }
+
+    div[dojoattachpoint="titleRow"] {
+      input {
+        @include font-size($title...);
+        width: 30em !important;
+      }
+    }
+
+    input[type="checkbox"] + label {
+      display: inline-block;
+      vertical-align: text-bottom;
+    }
+
+    div[dojoattachpoint="tagEditorDiv"] {
+      > span, > a, > form {
+        display: inline-block !important;
+        vertical-align: middle;
+      }
+      form[style="display: inline;"] {
+        display: inline-block !important;
+        margin: 0 !important;
+
+        input[type="submit"] {
+          @include btnprimary;
+          padding: 6px 16px !important;
+          font-weight: 500 !important;
+          font-size: 0.675rem !important;
+        }
+        a[role="button"] {
+          @include btnsecondary;
+          padding: 6px 16px !important;
+          font-weight: 500 !important;
+          font-size: 0.675rem !important;
+        }
+      }
+    }
+
+    .lotusMeta.lotusIndent10 {
+      @include font-size($caption...);
+      padding: 2rem 0 0 !important;
+    }
+  }
+}
+
+.lotusForumNewTopic div[dojoattachpoint="titleRow"] input {
+    @include font-size($title...);
+    width: 30em !important;
+}

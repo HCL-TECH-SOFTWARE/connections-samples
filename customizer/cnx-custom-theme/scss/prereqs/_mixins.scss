@@ -1,0 +1,556 @@
+//======MIXINS=========
+
+//======BUTTONS MIXIN=========
+// Basic button styling
+@mixin btnbasics {
+  border-radius:$border-radius-buttons !important;
+  border-width: 1px!important;
+  border-style: solid!important;
+  box-shadow:none!important;
+  transform: translateZ(0)!important;
+  -webkit-font-smoothing: antialiased!important;
+  cursor: pointer!important;
+  -webkit-box-align: center!important;
+  -webkit-box-pack: center!important;
+  text-align: center!important;
+  transition: background-color 150ms ease-in, color 150ms ease-in, border-color 150ms ease-in !important;
+  white-space: nowrap!important;
+  padding: 9px 20px!important;
+  background-image: none !important;
+  margin:2px 4px 3px 2px !important; //Important so that focus styling doesn't get cut off
+  &, &:hover, &:active, &:focus {
+    text-decoration: none !important;
+    font-weight: 500!important;
+  }
+  &:hover, &:active {
+    outline:none;
+  }
+  &:focus {
+    box-shadow: 0 0 0 1px $btn-primary-fill-hover, 0 0 0 2px $btn-primary-outline !important;
+    outline: none !important;
+  }
+  .dj_a11y &:focus, .dijit_a11y &:focus {
+    box-shadow: none !important;
+    outline: 1px solid $btn-primary-outline !important;
+    outline-offset: 1px;
+  }
+}
+// Add btnprimary mixin with btnbasics for a primary button
+@mixin btnprimary {
+  @include btnbasics;
+  background-color: $btn-primary-fill !important;
+  border-color: $btn-primary-outline !important;
+  color: $btn-primary-text !important;
+  &:active, &:hover {
+    background-color: $btn-primary-fill-hover !important;
+    color: $btn-primary-text-hover !important;
+    border-color: $btn-primary-outline-hover !important;
+  }
+}
+// Add btnsecondary (Secondary) with btnbasics for a secondar button
+@mixin btnsecondary {
+  @include btnbasics;
+  background-color: $btn-secondary-fill !important;
+  border-color: $btn-secondary-outline !important;
+  color: $btn-secondary-text !important;
+  &:active, &:hover {
+    background-color: $btn-secondary-fill-hover !important;
+    color: $btn-secondary-text-hover !important;
+    border-color: $btn-secondary-outline-hover !important;
+  }
+}
+@mixin btnprimarydisabled {
+  &, &:hover, &:active {
+    cursor: not-allowed !important;
+    background-color: $btn-primary-fill-disabled !important;
+    color: $btn-primary-text-disabled !important;
+    border-color: $btn-primary-outline-disabled !important;
+  }
+  &:focus {
+    box-shadow: 0 0 0 1px $btn-primary-text-disabled, 0 0 0 2px $btn-primary-outline-disabled !important;
+  }
+  .dj_a11y &:focus, .dijit_a11y &:focus {
+    box-shadow: none !important;
+    outline: 1px solid $btn-primary-text-disabled !important;
+    outline-offset: 1px;
+  }
+}
+@mixin btnsecondarydisabled {
+  &, &:hover, &:active {
+    cursor: not-allowed;
+    color: $btn-secondary-text-disabled !important;
+    border-color: $btn-secondary-outline-disabled !important;
+    background-color: $btn-secondary-fill-disabled !important;
+  }
+  &:focus {
+    box-shadow: 0 0 0 1px $btn-secondary-fill-disabled, 0 0 0 2px $btn-secondary-outline-disabled !important;
+  }
+  .dj_a11y &:focus, .dijit_a11y &:focus {
+    box-shadow: none !important;
+    outline: 1px solid $btn-secondary-outline-disabled !important;
+    outline-offset: 1px;
+  }
+}
+@mixin btnsmall {
+  @include font-size($caption...);
+  padding: 7px 14px !important;
+  height: auto !important;
+  display: inline-block; /*make it easier to control height/padding/etc,
+  but no !important flag so that it doesn't override any instance where
+  they should be display: block; */
+}
+
+//======BACKGROUND OPACITY MIXIN=========
+@mixin background-opacity($color, $opacity: 1) {
+    background: $color!important; /* The fallback */
+    background: rgba($color, $opacity)!important;
+}
+
+//======SELECT MIXIN=========
+@mixin select {
+		font-size: $input-size !important;
+		-webkit-appearance: none !important;
+		-moz-appearance: none !important;
+		appearance: none !important;
+		display: block !important;
+		width: auto !important;
+		min-width: 50% !important;
+		max-width: 100% !important;
+		padding: 0 2.75rem 0.75rem 0 !important;
+		color: $text-01 !important;
+		background-color: transparent !important;
+		border: none !important;
+		border-bottom: 1px solid $border-field !important;
+		border-radius: 0 !important;
+		cursor: pointer !important;
+		background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-default) !important;
+		background-size: 0.75rem !important;
+		background-position: right .4rem !important;
+		background-repeat: no-repeat !important;
+		height: auto !important;
+
+		&:focus {
+			border-bottom: 2px solid $border-field-focus !important;
+			//box-shadow: 0 1px 0 $border-field-focus !important;
+			outline: none !important;
+		}
+
+    &[disabled] {
+      cursor: not-allowed !important;
+      color: $disabled !important;
+    }
+}
+
+//======TEXTAREA MIXIN=========
+@mixin textarea {
+	background-color:$background-side !important;
+	border:none!important;
+	border-bottom:1px solid $color-gray-10 !important;
+	padding:1rem!important;
+	//font-size:$body-font-size !important;
+	min-height: 3rem !important;
+	box-sizing: border-box !important;
+	&:focus {
+		outline:none!important;
+		border-color: $border-field-focus !important;
+    box-shadow: 0 1px 0 $border-field-focus !important;
+	}
+}
+
+//======TEXTINPUT MIXIN=========
+@mixin textinput {
+  line-height: 1.5 !important;
+	padding:0!important;
+	background:none!important;
+	border:none!important;
+	border-bottom:1px solid $color-gray-10 !important;
+	font-size: $input-size !important;
+	padding-right:1rem!important;
+  padding-bottom: .375rem !important;
+	box-sizing: border-box !important;
+  height: auto !important;
+	&:focus, .dijitTextBoxFocused {
+		outline:none!important;
+		border-color:$border-field-focus !important;
+    box-shadow: 0 1px 0 $border-field-focus !important;
+	}
+}
+
+//======FILEINPUT MIXIN=========
+@mixin fileinput {
+	@include textinput;
+	cursor: pointer;
+	.dj_webkit &::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+	  @include btnprimary;
+		padding: .575rem 1.15rem;
+	}
+}
+
+//======LINK MIXINS=========
+// the first few are utility mixins - DO NOT EDIT OR USE THEM
+@mixin link-color($color:null) {
+  @if       $color == inherit { color: inherit !important; }
+  @else if  $color == light   { color: $link-light !important; }
+  @else if  $color == dark    { color: $link-dark !important; }
+  @else                       { color: $link-default !important; }
+}
+// DO NOT EDIT OR USE
+@mixin link-override() {
+  &, &:hover {
+    @include link-color('inherit');
+    text-decoration: none !important;
+    font-weight: inherit !important;
+  }
+}
+// DO NOT EDIT OR USE
+@mixin make-links($linkcolor, $underlinecolor) {
+  @include link-color($linkcolor);
+  text-decoration-color: currentColor !important;
+  font-weight: $link-default-font-weight !important;
+  text-decoration: $link-default-decoration !important;
+  &:visited {
+    @include link-color($linkcolor);
+  }
+  &:active,
+  &:hover {
+    outline: none !important;
+    font-weight: $link-hover-font-weight !important;
+    text-decoration-color: currentColor !important;
+    text-decoration: $link-hover-decoration !important;
+  }
+  &:focus {
+    outline: none !important;
+    text-decoration-color: currentColor !important;
+    text-decoration: $link-focus-decoration !important;
+  }
+}
+
+// these are the ones we should use
+@mixin link-default() {
+  @include make-links('', 'currentColor');
+}
+@mixin link-dark() {
+  @include make-links('dark', 'currentColor');
+}
+@mixin link-light() {
+  @include make-links('light', 'currentColor');
+}
+
+//======CLOSE ICON ON DIALOGS MIXIN=========
+/* Note - May also need to include a display:none on an existing button img */
+@mixin bx--modal-close() {
+  background-image: svg-url-with-replaced-fill($svg-close, '#000000', $icon-default)!important;
+  background-position-x: center!important;
+  background-position-y: center!important;
+  height: 24px!important;
+  width: 24px!important;
+  top: 1rem!important;
+  right: 1rem!important;
+  padding: 0.25rem 0.25rem 0.125rem 0.25rem !important;
+  &:focus {
+    outline:1px solid $icon-brand-01!important;
+  }
+}
+
+//======TAG MIXIN=========
+@mixin tags($color: gray) {
+  color: $text-01 !important;
+  border-radius: $border-radius-tags !important;
+  line-height: 1.5rem !important;
+  font-size: $body-mini-font-size !important;
+  height: 1.5rem !important;
+  padding: 0 1rem !important;
+  width: auto !important;
+  max-width: 100%;
+  display: inline-block !important;
+  vertical-align: middle;
+  margin: 0 !important;
+  font-weight: normal !important;
+  border: none !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  a {
+    color: $text-01 !important;
+    font-weight: normal !important;
+  }
+  @if $color == white {
+    background: $background-main !important;
+  }
+  @if $color == gray {
+    background: $background-side !important;
+  }
+  &:hover {
+    text-decoration: none !important;
+    color: $text-01 !important;
+  }
+  &:focus {
+    text-decoration: underline !important;
+    img {
+      border-bottom: 1px solid currentColor;
+    }
+  }
+}
+
+//======DATATABLE MIXIN=========
+@mixin datatable($multiplier: 1) {
+  //Table header
+  //Table header text size, weight, color, transform
+  th, th a, tr.lotusSort td, tr.lotusSort td a {
+    @include font-size($caption...);
+    color:$text-02!important;
+    &:lang(en) {
+      text-transform:uppercase !important;
+    }
+  }
+  //Table header spacing and alignment
+  th {
+    border-bottom:1px solid $border-focus;
+
+    a {
+      text-decoration:none;
+      &:hover {
+        text-decoration:underline;
+      }
+    }
+  }
+  tr.lotusSort {
+    border-bottom:1px solid $border-selected;
+
+    //header
+    td a, th[id^="qkrSort"] a, th a {
+      padding:8px 16px!important;
+      border:1px solid transparent!important;
+      $distance-x: calc(100% - 7px);
+      background-position: $distance-x 13px!important;
+
+      &:hover,&:focus{
+        text-decoration:none!important;
+        border-radius:$border-radius-tabs!important;
+        border-color: $btn-secondary-outline-hover !important;
+      }
+
+      &:hover{
+        background-color: $btn-secondary-fill-hover !important;
+        color:$btn-secondary-text-hover!important;
+      }
+
+      &.lotusDescending, &.lotusAscending{
+        background-size:8px 8px!important;
+        padding:8px 20px 8px 16px!important;
+      }
+
+      &.lotusDescending{
+        background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-default) !important;
+        &:hover{
+          background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $btn-secondary-icon-hover) !important;
+        }
+      }
+
+      &.lotusAscending{
+        background-image: svg-url-with-replaced-fill($svg-chevron-up, '#000000', $icon-default) !important;
+        &:hover{
+          background-image: svg-url-with-replaced-fill($svg-chevron-up, '#000000', $icon-white) !important;
+        }
+      }
+
+    }
+    tr.lotusFirst{
+      border-top:1px solid $border-selected!important;
+    }
+  }
+
+  tr {
+    // Alternating rows where each "row/entry" is 1 tr
+    @if $multiplier == 1 {
+      &:nth-child(even) {
+        &, th, td { background-color:$background-side; }
+      }
+    // Alternating rows where each "row/entry" is really 2 consecutive trs
+    } @else if $multiplier == 2 {
+      &:nth-child(4n+2),
+      &:nth-child(4n+3) {
+        &, th, td { background-color:$background-side; }
+      }
+    }
+    th, td {
+      padding-top:20px !important;
+      padding-bottom:20px !important;
+
+      &:first-child {
+        padding-left:10px !important;
+
+        input {
+          margin:0px 0px;
+        }
+      }
+      &:last-child {
+        padding-right:10px !important;
+      }
+    }
+  }
+
+  tr.normalTopic {
+    td {
+      padding-bottom:12px!important;
+    }
+  }
+
+  tr.lotusMore {
+    td {
+      padding-top:0px!important;
+      padding-bottom:20px!important;
+
+      .lotusMeta > span {
+        vertical-align:baseline!important;
+        margin-bottom:0!important;
+      }
+    }
+  }
+}
+
+//======GRADUATED FLAG=========/
+@mixin graduatedIdea {
+  padding:8px 12px !important;
+  width:auto !important;
+  display:inline-block;
+  border-color:$brand-03;
+  background-color:$brand-03;
+  color: $text-01 !important;
+  font-weight:500;
+  max-width:70px;
+  @include font-size($caption...);
+  &:before,&:after {
+    content:'';
+    position:absolute;
+    border-bottom:40px solid $brand-03;
+    border-left:30px solid transparent;
+    border-right:30px solid transparent;
+    top:16px;
+    left:-14px;
+    transform:rotate(-142deg);
+    z-index:-1;
+  }
+  &:after {
+    left:auto;
+    right:-14px;
+    transform:rotate(142deg);
+  }
+}
+
+//======MESSAGE MIXIN=========
+// Style of notification message for warnings, success, errors, info
+@mixin message {
+	border-radius:$border-radius-message !important;
+	border:2px solid rgba($color-gray-50, 0.3) !important;
+	box-shadow:0 4px 8px 0 rgba($color-black, 0.1) !important;
+	background-color:$background-main !important;
+	padding:0rem 0.5rem !important;
+	img {
+		border-radius: $border-radius-message-icon !important;
+	}
+}
+
+//======TABLE HEADER MIXIN=========
+@mixin tableHeader {
+
+  color:$text-02!important;
+  border:1px solid transparent;
+  border-radius:$border-radius-tabs;
+
+  &:active, &:focus {
+    border-color:$border-selected!important;
+    text-decoration:none!important;
+  }
+
+  &:hover {
+    cursor:pointer;
+    text-decoration:none!important;
+    border-color:$border-selected!important;
+    background-color:$border-selected!important;
+    color:$text-03!important;
+  }
+
+}
+
+//======CUSTOMIZE EDIT PROFILE CONTACT INFO MIXIN=========
+//Customize layout of edit contact information
+@mixin editprofileform($layout) {
+  //Display label above fields
+  @if $layout == above {
+    display: block !important;
+    &.lotusFormLabel {
+      vertical-align: bottom !important;
+    }
+  }
+  //Display label to side of fields, takes up less vertical space
+  @else if $layout == side {
+    display: table-cell !important;
+    &.lotusFormLabel {
+      vertical-align: middle !important;
+    }
+  }
+}
+
+
+
+// ------------------------------------------------- //
+// ==from https://codepen.io/jakob-e/pen/doMoML      //
+// ------------------------------------------------- //
+@function svg-url($svg){
+    //
+    //  Chunk up string in order to avoid
+    //  "stack level too deep" error
+    //
+    $encoded:'';
+    $slice: 2000;
+    $index: 0;
+    $loops: ceil(str-length($svg)/$slice);
+    @for $i from 1 through $loops {
+        $chunk: str-slice($svg, $index, $index + $slice - 1);
+        //
+        //   Encode (may need a few extra replacements)
+        //
+        $chunk: str-replace($chunk,'"','%22');
+        $chunk: str-replace($chunk,'<','%3C');
+        $chunk: str-replace($chunk,'>','%3E');
+        $chunk: str-replace($chunk,'&','%26');
+        $chunk: str-replace($chunk,'#','%23');
+        $encoded: #{$encoded}#{$chunk};
+        $index: $index + $slice;
+    }
+    @return url("data:image/svg+xml;charset=utf8,#{$encoded}");
+}
+
+
+//  Helper function to replace characters in a string
+@function str-replace($string, $search, $replace: '') {
+    $index: str-index($string, $search);
+    @if $index {
+        @return str-slice($string, 1, $index - 1) + $replace +
+            str-replace(str-slice($string, $index +
+            str-length($search)), $search, $replace);
+    }
+    @return $string;
+}
+
+// custom mixin to replace a defined fill color with another one
+@function svg-url-with-replaced-fill($svg, $fill-to-replace, $new-fill) {
+  $replaced-svg: str-replace($svg, $fill-to-replace, $new-fill);
+  $replaced-svg-url: svg-url('#{$replaced-svg}');
+  @return $replaced-svg-url;
+}
+
+// insert the svg code in a variable IN THE ICON FILE
+// make sure the svg only contains double quotes and surround the whole code with single quotes
+// SVG CODE SHOULD INCLUDE A FILL OF #000000 to make our lives easier
+// DO NOT INCLUDE LINE BREAKS
+// $example-svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><path fill="#000000" d="M15,30A15,15,0,1,1,30,15,15,15,0,0,1,15,30ZM15,2A13,13,0,1,0,28,15,13,13,0,0,0,15,2Z" transform="translate(0 0.02)"/><polygon fill="#000000" points="21.98 14.02 15.97 14.02 15.97 8.02 13.97 8.02 13.97 14.02 8.02 14.02 8.02 16.02 13.97 16.02 13.97 21.98 15.97 21.98 15.97 16.02 21.98 16.02 21.98 14.02"/></svg>';
+
+//how to use:
+// body {
+//  background-image: svg-url-with-replaced-fill($example-svg, '#000000', $icon-default) !important;
+// }

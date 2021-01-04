@@ -1,0 +1,28 @@
+.lotusui30 {
+  .lotusSyncViewWelcomeBox {
+    p {
+      font-weight: normal;
+      color: $text-01 !important;
+      font-family: inherit;
+    }
+
+    .lotusSyncLinkSpan {
+      font-weight:normal;
+      color: $text-01 !important;
+      a {
+        margin-left: 10px;
+        &:hover {
+          font-family: inherit !important;
+        }
+      }
+    }
+
+    .lotusSyncButtonDiv .lotusSyncInstallButton {
+      @include btnsecondary;
+      font-family: inherit !important;
+    }
+    #lotusSyncPicBackground {
+      display:none;
+    }
+  }
+}

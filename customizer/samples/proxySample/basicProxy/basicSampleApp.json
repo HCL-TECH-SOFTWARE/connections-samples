@@ -1,0 +1,37 @@
+{
+    "name": "Basic Customizer proxy app",
+    "title": "Basic Customizer proxy app",
+    "description": "Basic Customizer proxy app",
+    "services": [
+        "Customizer"
+    ],
+    "extensions": [
+        {
+            "name": "Basic JSON Proxy Sample",
+            "type": "com.ibm.customizer.proxy",
+            "payload": {
+                "whitelist": [
+                    {
+                        "method": [
+                            "GET"
+                        ],
+                        "url": "https://jsonplaceholder.typicode.com/todos/1"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "proxy ui extension",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "proxySample/basicProxy/basicProxySample.js"
+                ],
+                "include-repo": {
+                    "name": "global-samples"
+                }
+            },
+            "path": "homepage"
+        }
+    ]
+}

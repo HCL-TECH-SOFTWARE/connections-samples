@@ -1,0 +1,14 @@
+/* Global imports*/
+@import "font";
+@import "fileViewer";
+@import "fileTypeIcons";
+@import "leftNav";
+@import "navbar";
+@import "navbar_onprem";
+@import "responsive";
+@import "searchButton";
+@import "searchHistory";
+@import "sharebox_onprem";
+
+/////////////CUSTOMIZE IN EXTENSIONS////////////
+@import "../extensions/global/global";

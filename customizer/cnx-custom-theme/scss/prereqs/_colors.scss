@@ -1,0 +1,200 @@
+//***************************************
+//**************DEFINE COLORS************
+//***************************************
+// -----BRAND COLORS-----
+// Primary / active color used for buttons, links, and selection
+$brand-01: #3C6DF0; //Ultramarine 50
+// Top navigation, headers in tours and pop outs, and hover on actions
+$brand-02: #1D3458; //Blue 80
+// Accent color used for selection on top navigation bar
+$brand-03: #40D5BB; //Teal 20
+$brand-04: #FF509E; //Magenta40
+// Accent used in gradients with $brand-01
+$brand-05: #2E3F8F; //Ultramarine 70
+// Accent background for pinned items
+$brand-06: #E7E9F7; //Ultramarine 10
+// Accent background used for badges
+$brand-07: #E62325; //red50
+
+// -----NEUTRAL COLORS-----
+$color-white: #FFFFFF; //White
+$color-black: #000000; //Black
+// Secondary text and text on gray background
+$color-gray-60: #595859; //Gray 60
+// Labels
+$color-gray-50: #777677; //Gray 50 - does not pass contrast on gray backgrounds
+// Disabled states
+$color-gray-30: #969696; //Gray 30
+// Primary divider lines / separators, for example between files
+$color-gray-10: #d8d8d8; //Gray 10
+// Light colored backgrounds, borders, separator lines
+$color-gray-1: #F3F3F3; //Neutral white 4
+// Disabled / non-active color used to indicate something is not available or functioning
+$disabled: $color-gray-30; //Gray 30
+
+// -----EXTERNAL MEMBERS-----
+// Used to highlight things that are shared with people external to your org
+$external: #fdf4c8;
+
+// -----NOTIFICATION INDICATOR COLORS-----
+// Use these colors for notification indicators. Continue to use text colors above for the messages.
+$success: #34BC6E; //Green 30
+$warning: #E3BC13; //Yellow 30
+$information: #3C6DF0; //Blue 30
+$error: #FF5C49; //Red 40
+
+//-----File type icons-----
+$icon-file-type-default: #777677;
+$icon-file-type-image: #40D5BB;
+$icon-file-type-document: #2D74DA;
+$icon-file-type-spreadsheet: #00AA5E;
+$icon-file-type-presentation: #FE8500;
+$icon-file-type-pdf: #E62325; //red50
+$icon-file-type-archive: #6F7878;
+$icon-file-type-folder: #000000;
+$icon-file-type-audio: #FF509E;
+$icon-file-type-video: #FF509E;
+$icon-file-type-code: #C038D2;
+$icon-file-type-wiki: #000000;
+$icon-file-type-blog: #000000;
+$icon-file-type-files: #000000;
+$icon-file-type-activity: #000000;
+$icon-file-type-forum: #000000;
+$icon-file-type-bookmark: #000000;
+$icon-file-type-calendar: #000000;
+
+//-----METRICS DATA COLORS-----
+$data-overall: $color-gray-50; // Overall; Cool Gray 50
+$data-activities: #e62325; // Activities; Red 50
+$data-blogs: #00884b; // Blogs; Green 50
+$data-bookmarks: #dc267f; // Bookmarks; Magenta 50
+$data-communities: #008673; // Communities; Teal 50
+$data-files: $brand-01; // Files; Ultramarine 50
+$data-forums: #9753e1; // Forums; Violet 50
+$data-homepage: #c22dd5; // Homepage; Purple 50
+$data-ideationblog: #db7c00; // IDEATIONBLOG; Orange 40
+$data-profiles: #188291; // Profiles; Aqua 50
+$data-wikis: #047cc0; // Wikis; Cerulean 50
+
+//*****IMPORT CUSTOM OVERRIDES TO HEX VALUES BELOW HERE*****
+//Import your custom color definitions here, after the default hex values are set
+/////////////CUSTOMIZE IN EXTENSIONS////////////
+@import "../extensions/prereqs/colors";
+
+//***************************************
+//*******COMPONENT COLOR VARIABLES*******
+//***************************************
+// The following variables inherit their colors from above
+
+// -----TEXT COLORS-----
+$text-01: $color-black; // Primary text color on all backgrounds
+$text-02: $color-gray-60; // Secondary text color
+$text-03: $color-white; // Light color on dark background
+$text-04: $brand-01; // links; deprecated. Use vars below.
+
+// -----LINK COLORS-----
+$link-default: $brand-01;
+$link-dark: $text-01; // use over light backgrounds
+$link-light: $text-03; // use over dark backgrounds
+
+//-----ICON COLORS-----
+$icon-default: $color-gray-60; // Primary icon color
+$icon-brand-01: $brand-01; // Brand-01 colored icons
+$icon-brand-02: $brand-02; // Brand-02 colored icons
+$icon-white: $text-03; // Icons on dark backgrounds
+$icon-black: $text-01; // Text-colored icons
+
+// -----BACKGROUND COLORS-----
+// Background colors used in the main body of most pages
+$background-main: $color-white;
+$background-main-hover: $color-gray-1; // Background gray hover on white background
+// Background colors used in the side navigation on most pages
+$background-side: $color-gray-1; //Light gray Note: Use text-01 on this background to pass color contrast tests. //***$color-gray-1
+$background-side-hover: $color-gray-10; // Hover on secondary background color
+// Background color of navigation bar -- See global/_navbar.scss
+// Background color of headers
+$background-header: $brand-02; //Background color of some headers
+$background-header-hover: $brand-03; //Accent color on headers
+// Background color and opacity used behind modal dialog and file preview
+$background-underlay: rgba($color-black,0.6);
+// Background accent colors
+$background-pinned-row: $brand-06; //Background color for pinned topics in list
+$background-chart-header: $color-gray-50; //Chart headers in community metrics
+$background-badge: $brand-07; //red50
+$background-unread: $brand-01; //Use for background and border of unread dot in notification center
+
+// -----BORDER COLORS-----
+$border-selected: $brand-01; // Selected, focus border color
+$border-focus: $brand-01; // Used for focus styling
+$border-separator: $color-gray-10; // Used for separator lines
+$border-field: $color-gray-10; // Field border color
+$border-field-focus: $brand-01; // Field border focus color
+$border-header-focus: $color-white; // Focus border in navigation bar
+
+// -----CHECK BOXES-----
+$checkbox-border: $color-gray-60; // Checkbox border color, unchecked
+$checkbox-border-checked: $brand-01; // Checkbox border color, checked
+$checkbox-background: $color-white; // Checkbox background, unchecked
+$checkbox-background-checked: $brand-01; // Checkbox background, checked
+
+// -----BUTTONS-----
+// Primary button - main call to action - Filled color button
+$btn-primary-fill: $brand-01; //Background color
+$btn-primary-outline: $brand-01; //Border color
+$btn-primary-text: $text-03; //Text color
+$btn-primary-icon: $color-white; //Icon color that appears on button, match text
+
+$btn-primary-fill-hover: $color-white; //Background color on hover
+$btn-primary-outline-hover: $brand-01; //Border color on hover
+$btn-primary-text-hover: $brand-01; //Text color on hover
+$btn-primary-icon-hover: $brand-01; //Icon color on hover, match text
+
+$btn-primary-fill-disabled: $disabled; //Disabled background color
+$btn-primary-outline-disabled: $disabled; //Disabled border color
+$btn-primary-text-disabled: $text-03; //Disabled text color on filled button
+$btn-primary-icon-disabled: $color-white; //Disabled icon color, match text
+
+// Secondary button - secondary call to action - Outlined button
+$btn-secondary-fill: $color-white; //Background color
+$btn-secondary-outline: $brand-01; //Border color
+$btn-secondary-text: $brand-01; //Text color
+$btn-secondary-icon: $brand-01; //Icon color, match text
+
+$btn-secondary-fill-hover: $brand-01; //Background color on hover
+$btn-secondary-outline-hover: $brand-01; //Border color on hover
+$btn-secondary-text-hover: $text-03; //Text color on hover
+$btn-secondary-icon-hover: $color-white; //Icon color on hover, match text
+
+$btn-secondary-fill-disabled: $color-white; //Disabled background color
+$btn-secondary-outline-disabled: $disabled; //Disabled border color
+$btn-secondary-text-disabled: $disabled; //Disabled text color
+$btn-secondary-icon-disabled: $disabled; //Disabled icon color, match text
+
+//-----TAB COLORS-----
+$tab-background: transparent; //Default background of tab
+$tab-border: transparent; //Default border of tab
+$tab-text: $text-02; //Default text color on tab
+$tab-icon: $text-02; //Default icon color on tab
+$tab-border-selected: $brand-01; //Border-bottom color when selected state
+$tab-text-selected: $text-01; //Text color when selected state
+$tab-background-hover: $brand-01; //Background color on hover
+$tab-border-hover: $brand-01; //Border color on hover
+$tab-text-hover: $text-03; //Text color on hover
+$tab-icon-hover: $color-white; //Icon color on hover
+$tab-background-focus: transparent; //Background color on focus
+$tab-border-focus: $brand-01; //Border color on focus
+$tab-text-focus: $text-02; //Text color on focus
+$tab-icon-focus: $text-02; //Icon color on focus
+
+//-----TABLE SORT HEADERS----
+$table-header-icon: $icon-default; //Default Icon color
+$table-header-background-hover: $brand-01; //Background color on hover of table header
+$table-header-border-hover: $brand-01; //Border color on hover or focus of table header
+$table-header-text-hover: $text-03; //Text color on hover of table header
+$table-header-icon-hover: $color-white; //Icon color on hover of table header
+
+
+//*****IMPORT CUSTOM OVERRIDES TO VARIABLES BELOW HERE*****
+//Import your custom color variables here, after the default variables are set
+/////////////CUSTOMIZE IN EXTENSIONS////////////
+@import "../extensions/prereqs/colors";

@@ -1,0 +1,35 @@
+//Downloads page
+//Title of page
+.lotusui30 .lotusTitleBar2 {
+  .lotusWrapper {
+    padding-left: 48px !important;
+    .lotusHeading.downloads a {
+      @include font-size($apptitle...);
+      @include link-color(dark);
+    }
+  }
+}
+
+//Content of page
+.lotusMain {
+  .lotusContent.downloads {
+    //Download details
+    .lldwn-details {
+      padding: 10px 0 !important;
+      h2 {
+        @include link-color(dark);
+        @include font-size($header...);
+      }
+      > div {
+        @include font-size($body...);
+      }
+    }
+
+    //Error message when there are no downloads
+    .lldwn-errorText {
+      > b {
+        @include font-size($emptystate...);
+      }
+    }
+  }
+}

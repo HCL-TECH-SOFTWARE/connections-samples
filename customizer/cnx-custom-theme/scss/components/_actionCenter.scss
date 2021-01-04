@@ -1,0 +1,186 @@
+#notificationsMenu{
+  #headerPopupNode,  .icBanner-popover-footer ul{
+    padding:18px 24px 18px 24px!important;
+  }
+  .header-left{
+    font-weight:700!important;
+    padding:0px!important;
+    font-size:1rem;
+    width:63%;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+  }
+  .header-right span, .header-right a{
+    color: $link-default !important;
+    padding:0px!important;
+    margin:0px!important;
+    &:hover,&:focus{
+      text-decoration: underline!important;
+      outline:none;
+    }
+  }
+  .header-right{
+    padding:0px!important;
+    #separator{
+    display:none!important;
+   }
+   a.icBanner-popover-notificationSettings{
+     position:absolute!important;
+     bottom:17px!important;
+     right:24px!important;
+
+   }
+   span.icBanner-popover-notificationReadAll{
+     position:absolute!important;
+     right:24px;
+     top:22px;
+     text-align:right;
+     width:32%;
+     overflow:hidden;
+     white-space: nowrap;
+     text-overflow: ellipsis;
+   }
+  }
+  .icBanner-popover-header {
+    border-bottom:1px solid $color-gray-1;
+  }
+  .icBanner-popover-footer{
+    border-top:1px solid $color-gray-1;
+    ul{
+      padding-bottom:16px!important;
+    }
+    .icBanner-footer-link{
+      font-size:14px!important;
+      color: $link-default !important;
+      &:hover{
+        text-decoration:underline!important;
+      }
+    }
+  }
+  .icBanner-popover-content{
+    .icNotification-post{
+      .icNote-body:not(.selected) .bluedot{
+        background-color: $background-unread !important;
+        &:hover{
+          border-color: $background-unread !important;
+        }
+      }
+      //bluedot hidden when we have read the notif.
+      .icNote-body.selected {
+        .bluedot{
+          display:none!important
+        }
+        .icNote-title, .icNote-title a {
+          &.fn.url {
+            color:$text-02 !important;
+          }
+          font-weight:400 !important;
+        }
+      }
+
+      //do we need this? Not a part of the sketches?
+      .icNote-summary{
+        img {
+          height:auto;
+          width:auto;
+          max-width:100%;
+          clear:both;
+          float:left;
+        }
+        text-overflow:ellipsis !important;
+        p:lang(en):after {
+          content:'No comment provided';
+          color:$text-02;
+          font-weight:400;
+          position:relative;
+          bottom:0;
+          left:-13px;
+          width:400px;
+          height:10px;
+          background:$background-main;
+          display:inline-block;
+        }
+      }
+      .bluedot{
+        border-color: $background-unread !important;
+        top:19px!important;
+        left:45px!important;
+        width:8px!important;
+        height:8px!important;
+      }
+      .icNote-title{
+        font-weight:600 !important;
+        a {
+          @include link-default();
+        }
+        a.fn.url{
+          color:black!important;
+          display:block;
+        }
+      }
+      .icNote-time abbr{
+        text-decoration:none!important;
+        font-weight:normal!important;
+        color: $text-02!important;
+      }
+      padding-left:14px!important;
+      padding-top:16px!important;
+      padding-bottom:16px!important;
+      &:before{
+        width:100%!important;
+      }
+      &:hover{
+        background-color:$background-side !important;
+        .icNote-summary p:after {
+          background-color:$background-side !important;
+        }
+      }
+    }
+  }
+}
+//Make action center a full height panel
+/*Notificaiton panel full length*/
+.navsimplelist.notificationCenterContainer,
+#lotusBannerNotifications_dropdown {
+  height: auto;
+  right:-129px !important;
+  left: auto !important;
+  top: calc( #{$navbar-height} + 1px) !important;
+  border:none !important;
+  width: 392px;
+  box-shadow: rgba(0, 0, 0, 0.37) 0px 0px 12px !important;
+  -webkit-box-shadow:0 0 12px rgba(0,0,0,0.37);
+  /*panel inside panel*/
+  .icBanner-popover-inner {
+    border-radius:0px !important;
+    border: 0px solid rgba(0, 0, 0, 0.38);
+    width: 100%;
+    box-shadow: none !important;
+  }
+  /*list inside inner panel*/
+  .icBanner-popover-content {
+    height: calc(100vh - 158px);
+    // tighten spacing for nonotification Bee and text - issue 490
+    .icBanner-NoNotification-bee {
+      margin-top: 10% !important;
+    }
+    .icBanner-NoNotification {
+      top: auto !important;
+      left: auto !important;
+      right: auto !important;
+      position: relative !important;
+      margin: 0 auto !important;
+      width: 80% !important;
+    }
+  }
+}
+#lotusBannerNotifications_dropdown {
+  right: 1px !important;
+}
+#lconnheadermenu-notifications {
+  box-shadow: none !important;
+}
+div#lconnheadermenu-notifications {
+  margin-top: 0;
+}

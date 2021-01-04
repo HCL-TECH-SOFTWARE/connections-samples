@@ -1,0 +1,225 @@
+//Navigator tabs at the top of a community
+#tabNavContainer.tabNavTabBar #bizCardNavMenu,
+#tabNavContainer.tabNavTabBar #lotusNavBar.lotusTabs,
+#dropdownNavMenu #lotusNavBar,
+#dropdownNavMenu #bizCardNavMenu,
+#dropdownSubMenu .lotusMenuSubsection ul {
+  li {
+    padding: 0.625rem 0 0.375rem 0!important;
+    margin: 0 0 0 1rem!important;
+
+    a {
+      margin: 0!important;
+      color: $tab-text!important;
+      padding: .5rem!important;
+      border: 1px solid $tab-border !important;
+      border-radius: $border-radius-tabs !important;
+      text-transform: capitalize!important;
+      background-color: $tab-background !important;
+      @include font-size($tabs...);
+
+      .tabNavItemInline {
+        img#moreButtonArrow {
+          background-position: 0 0!important;
+          opacity:1!important;
+          position:relative!important;
+          top:2px!important;
+          background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $tab-icon);
+        }
+      }
+
+      &:hover {
+        color: $tab-text-hover !important;
+        background-color: $tab-background-hover !important;
+        border-color: $tab-border-hover !important;
+        text-decoration: none!important;
+
+        .tabNavItemInline {
+          img#moreButtonArrow {
+            background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $tab-icon-hover);
+          }
+        }
+      }
+
+      &:focus {
+        color: $tab-text-focus!important;
+        border-color: $tab-border-focus !important;
+        background-color: $tab-background-focus !important;
+        .tabNavItemInline {
+          img#moreButtonArrow {
+            background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $tab-icon-focus);
+          }
+        }
+      }
+    }
+    &:focus {
+      box-shadow: none!important;
+      border: none!important;
+      outline: none!important;
+
+      a {
+        color: $tab-text-focus !important;
+        border-color: $tab-border-focus !important;
+        background-color: $tab-background-focus !important;
+      }
+    }
+    //override focus dark text
+    a:hover{
+      color: $tab-text-hover !important;
+      background-color: $tab-background-hover !important;
+      border-color: $tab-border-hover !important;
+
+      .tabNavItemInline {
+        img#moreButtonArrow {
+          background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $tab-icon-hover);
+        }
+      }
+    }
+    &.lotusSelected {
+      border-color: $tab-border-selected !important;
+      &:focus{
+        border-bottom: 4px solid $border-selected!important;
+      }
+      a {
+        color: $tab-text-selected !important;
+        &:hover {
+          color: $tab-text-hover !important;
+        }
+      }
+    }
+  }
+}
+
+
+.tabNavBar{
+  padding-bottom: 23px!important;
+}
+.tabNavActionsMenu{
+  margin-top: 15px!important;
+}
+
+//Aligning the title
+#tabNavCommunityName{
+  padding-left: 44px!important;
+}
+
+//App switcher & Sub-community menus on side of community - updated to group styles together
+
+//Common styles for apps & sub-communities on side of community
+#lotusMain {
+  #dropdownNavMenuContainer,
+  #dropdownSubMenuContainer {
+    margin:12px 20px 18px 10px !important;
+    width:206px;
+    min-width:210px;
+  }
+  #dropdownNavMenuContainer #dropdownNavMenuTitle,
+  #dropdownNavMenuContainer #dropdownNavMenu,
+  #dropdownSubMenuContainer #dropdownSubMenuTitle,
+  #dropdownSubMenuContainer #dropdownSubMenu {
+    margin-left: 13px !important;
+    min-width: 197px !important;
+  }
+}
+#dropdownNavMenuTitle #dropdownNavMenuTitleLinkAnc,
+#dropdownSubMenuTitle #dropdownSubMenuTitleLinkAnc {
+  padding-bottom:8px!important;
+  padding-top:8px !important;
+  border-top:1px solid transparent !important;
+  border-left:1px solid transparent !important;
+  border-right:1px solid transparent !important;
+  font-weight: 600 !important;
+  &:focus{
+    border-radius:$border-radius-tabs;
+    outline:none !important;
+  }
+}
+
+//Side app switcher specific styles
+#lotusMain div[id^="dropdown"][id$="MenuContainer"],
+.lotusMain div[id^="dropdown"][id$="MenuContainer"] {
+  //Title of nav menu
+  #dropdownNavMenuTitle #dropdownNavMenuTitleLinkAnc,
+  #dropdownSubMenuTitle #dropdownSubMenuTitleLinkAnc {
+    border: 1px solid transparent !important;
+    border-bottom: 1px solid $border-field !important;
+    span[id^="dropdown"][id$="MenuIcon"] {
+      background-position: 0 0!important;
+      opacity:1!important;
+      position:relative!important;
+      top:4px!important;
+      background-size: 12px;
+      background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-default) !important;
+    }
+    &:focus{
+      border:1px solid $border-field-focus !important;
+    }
+    &:hover {
+      color: $btn-secondary-text-hover !important;
+      background-color: $btn-secondary-fill-hover !important;
+      border-color: $btn-secondary-outline-hover !important;
+      text-decoration: none !important;
+      border-radius: $border-radius-tabs !important;
+      span[id^="dropdown"][id$="MenuIcon"] {
+        background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $btn-secondary-icon-hover) !important;
+      }
+    }
+  }
+  // selected indicator for app navigator
+  #dropdownNavMenu ul#lotusNavBar li.lotusSelected,
+  #dropdownNavMenu #bizCardNavMenu li.lotusSelected {
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 4px;
+      left: -11px;
+      top: -1px;
+      bottom: -1px;
+      height: auto;
+      background-color: $border-selected;
+      padding: 0 !important;
+    }
+  }
+  //Contents of nav menu
+  #dropdownNavMenu,
+  #dropdownSubMenu {
+    width:210px !important;
+    height:auto !important;
+    background-color: $background-main !important;
+    ul#lotusNavBar,
+    #bizCardNavMenu,
+    .lotusMenuSubsection ul {
+      li {
+        padding: 4px 0 4px 0!important; // fix spacing for side dropdown menus
+        margin-right:10px!important;
+        margin-left:10px!important;
+        border: 1px solid transparent !important;
+        &:hover {
+          border-top-color: $border-field !important;
+          border-bottom-color: $border-field !important;
+        }
+        &:focus {
+          border-top-color: $border-field-focus !important;
+          border-bottom-color: $border-field-focus !important;
+        }
+        &.lotusSelected, &.lotusSelected:focus {
+          text-decoration: none!important;
+          a {
+            color: $text-01 !important;
+          }
+        }
+        a {
+          border: 1px solid transparent !important;
+        }
+        a {
+          background-color:transparent !important;
+          color:$text-02!important;
+        }
+      }
+      overflow:auto!important;
+      max-height: 360px;
+    }
+  }
+}

@@ -1,0 +1,138 @@
+.lotusui.lotusui30dojo.lotusui30_body .lotusFrame.activities .lotusMain {
+  .lotusColLeft,
+  #activitypage,
+  #recentupdatesid {
+    position:relative!important;
+    top:-15px!important;
+    margin-left:0px!important;
+    box-sizing: border-box !important;
+    .lotusMenu {
+      width: $leftnav-width;
+      position:relative!important;
+      top:5px!important;
+      padding-top:1rem!important;
+      .lotusBottomCorner:not(:first-child) {
+        div[dojoattachpoint="prioritizedPane_AP"],
+        div[dojoattachpoint="organizationPane_AP"],
+        div[dojoattachpoint="publicPane_AP"],
+        div[dojoattachpoint="sectionsPane_AP"] {
+          h3 {
+            box-sizing:border-box;
+            margin-top:0!important;
+            margin-bottom:0!important;
+            padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+            padding-left: calc(#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) !important;
+            font-weight: 400 !important;
+            &:hover{
+              background-color:$background-side-hover!important;
+              cursor:pointer;
+            }
+          }
+          ul li {
+            padding-left: calc(#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) !important;
+            border-left-width: 0 !important;
+            &.lotusSelected {
+              padding-left: calc(#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) !important;
+              border-left: $leftnav-active-border-thickness solid $border-selected !important;
+              a {
+                font-weight:700!important;
+                border: none !important;
+              }
+            }
+          }
+        }
+        div[dojoattachpoint="organizationPane_AP"] {
+          #dashNavPanel-orgSectionAria {
+            overflow: hidden;
+            white-space: pre-line;
+            text-overflow: ellipsis;
+            display: block;
+          }
+        }
+        div[dojoattachpoint="newSectionLink_AP"] {
+          margin: 0px 0px;
+          a {
+            @include font-size($bodylink...);
+            box-sizing: border-box !important;
+            margin: 0px 0px !important;
+            padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+            padding-left: calc(#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) !important;
+          }
+        }
+        ul li {
+          box-sizing:border-box;
+          margin-top: 0 !important;
+          margin-bottom: 0 !important;
+          padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+          padding-left: calc(#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) !important;
+          transition: $leftnav-border-slide;
+
+          &.lotusSelected {
+            border-left: $leftnav-active-border-thickness solid $border-selected !important;
+            padding-left: calc(#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding} - #{$leftnav-active-border-thickness}) !important;
+            a {
+              font-weight:700!important;
+            }
+          }
+          a {
+            padding:0!important;
+            margin:0!important;
+            font-weight: 400 !important;
+            &:hover,&:focus{
+              border-color:transparent!important;
+              text-decoration: none !important;
+            }
+          }
+          &:hover {
+            background-color:$background-side-hover!important;
+            cursor:pointer;
+            text-decoration: none !important;
+          }
+        }
+        #actNavPanel-sectionsSection,
+        #dashNavPanel-prioritySection,
+        #dashNavPanel-publicSection {
+          ul li {
+            padding-left: calc( ( #{$leftnav-indent-padding} * 2 ) + #{$leftnav-horizontal-padding} ) !important;
+            &.lotusSelected {
+              border-left: $leftnav-active-border-thickness solid $border-selected !important;
+              padding-left: calc( ( #{$leftnav-indent-padding} * 2 ) + #{$leftnav-horizontal-padding} - #{$leftnav-active-border-thickness}) !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//Tags section of left nav
+.TagCloud {
+  .lconnTagCloudFilter,
+  .lconnTagFilterActivity {
+    .lconnTagCloudContent.lotusSectionBody {
+      padding-left: 42px !important;
+      padding-right: 24px !important;
+    }
+  }
+}
+
+.lotusSection {
+  > h2  {
+    margin-left:0!important;
+    padding-left:calc(#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) !important;
+    padding-right:$leftnav-horizontal-padding!important;
+    margin-bottom:0!important;
+    padding-top:calc(#{$leftnav-vertical-padding} + 2px)!important;
+    padding-bottom:calc(#{$leftnav-vertical-padding} - 2px)!important;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    &:not([aria-labelledby^="lconnTagCloudFilter_"]):hover,
+    &:not([aria-labelledby^="lconnTagCloudFilter_"]):focus {
+      background-color:$background-side-hover !important;
+    }
+  }
+  .lconnTagCloudContent,
+  &.lconnTagFilterActivity {
+    margin: 0 !important;
+  }
+}

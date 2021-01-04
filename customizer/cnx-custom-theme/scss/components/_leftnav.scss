@@ -1,0 +1,44 @@
+.lotusMain{
+  padding-left:0!important;
+  #lotusColLeft:not(.wpthemeNarrow),
+  .lotusColLeft:not(.wpthemeNarrow){
+    width: $leftnav-width;
+    padding: 1rem 0 0 !important;
+    margin:0!important;
+    #lotusSidenav{
+      margin:0!important;
+    }
+    #menu_allfolders,
+    #menu_allfiles{
+      margin-top:0!important;
+    }
+    * {
+      max-width: 100% !important;
+    }
+  }
+  .lotusContent:not(.wpthemeBanner):not(.wpthemeNarrow){
+    padding-left:48px!important;
+    margin-left:0px !important;
+  }
+  &.metricsLotusMain {
+    .lotusContent:not(.wpthemeBanner):not(.wpthemeNarrow){
+      padding-left: 8px!important;
+    }    
+  }
+  .lotusWidget_3columnLayoutWithBanner & .lotusContent.wpthemeWide:not(.wpthemeBanner):not(.wpthemeNarrow) {
+    padding-left: 0 !important;
+  }
+}
+
+//Making the content as wide as we need it
+@media screen and (min-width: 1250px){
+  .files-independent-scrollbars-compatible,
+  .lotusui30_body,
+  .lotusMain,
+  .lconnFiles,
+  .lotusTopNav,
+  .lotusTitleBar,
+  .lotusRightCorner{
+    max-width:100%!important;
+  }
+}

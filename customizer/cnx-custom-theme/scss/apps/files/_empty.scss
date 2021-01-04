@@ -1,0 +1,26 @@
+//Update style of empty state drag and drop
+.lconnFiles {
+
+  //Drag and drop empty state in personal files
+  .tallDropfilesPrompt {
+    img.dropfilesIcon64 {
+        background-image:svg-url-with-replaced-fill($svg-empty-state-files, '#000000', '#000000') !important;
+        background-repeat: no-repeat;
+        background-size: 144px 111px;
+        width: 144px;
+        height: 111px;
+    }
+    .filesDnDTitle,
+    .filesDnDDesc {
+      font-family: inherit !important;
+    }
+  }
+
+  //Text that appears in empty state of personal and community files
+  #scene-body .lconnEmpty {
+    @include font-size($emptystate...);
+    text-align: center;
+    font-style: normal;
+    margin: 20px 60px !important;
+  }
+}

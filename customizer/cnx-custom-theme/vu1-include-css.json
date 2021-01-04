@@ -1,0 +1,324 @@
+{
+  "app_id": "com.ibm.connections.vu1css",
+  "name": "Visual Update 1 - Direct CSS",
+  "title": "Visual Update 1 - Direct CSS",
+  "description": "Customizer extension to re-theme Connections",
+  "services": [
+    "Customizer"
+  ],
+  "extensions": [
+    {
+      "name":"Account Settings",
+      "type": "com.ibm.customizer.ui",
+      "payload": {
+        "include-files": [
+          "css/settings.css"
+        ],
+        "include-repo": {
+          "name": "cnx-custom-theme"
+        }
+      },
+      "path": "manage",
+      "application": "Visual Update 1 for HCL Connections"
+    },
+    {
+      "name":"Activities",
+      "type": "com.ibm.customizer.ui",
+      "payload": {
+        "include-files": [
+          "css/activities.css"
+        ],
+        "include-repo": {
+          "name": "cnx-custom-theme"
+        }
+      },
+      "path": "activities",
+      "application": "Visual Update 1 for HCL Connections"
+    },
+    {
+      "name": "Blogs",
+      "type": "com.ibm.customizer.ui",
+      "payload": {
+        "include-files": [
+          "css/blogs.css"
+        ],
+        "include-repo": {
+          "name": "cnx-custom-theme"
+        }
+      },
+      "path": "blogs",
+      "application": "Visual Update 1 for HCL Connections"
+    },
+    {
+      "name": "Bookmarks",
+      "type": "com.ibm.customizer.ui",
+      "payload": {
+        "include-files": [
+          "css/dogear.css"
+        ],
+        "include-repo": {
+          "name": "cnx-custom-theme"
+        }
+      },
+      "path": "dogear",
+      "application": "Visual Update 1 for HCL Connections"
+    },
+    {
+      "name": "Bookmarklet",
+      "type": "com.ibm.customizer.ui",
+      "payload": {
+        "include-files": [
+          "css/dogear.css"
+        ],
+        "include-repo": {
+          "name": "cnx-custom-theme"
+        }
+      },
+      "path": "connections",
+      "application": "Visual Update 1 for HCL Connections"
+    },
+    {
+      "name": "Communities",
+      "type": "com.ibm.customizer.ui",
+      "payload": {
+        "include-files": [
+          "css/communities.css"
+        ],
+        "include-repo": {
+          "name": "cnx-custom-theme"
+        }
+      },
+      "path": "communities",
+      "application": "Visual Update 1 for HCL Connections"
+    },
+    {
+      "name": "Downloads",
+      "type": "com.ibm.customizer.ui",
+      "payload": {
+        "include-files": [
+          "css/settings.css"
+        ],
+        "include-repo": {
+          "name": "cnx-custom-theme"
+        }
+      },
+      "path": "downloads",
+      "application": "Visual Update 1 for HCL Connections"
+    },
+    {
+      "name": "Files",
+      "type": "com.ibm.customizer.ui",
+      "payload": {
+        "include-files": [
+          "css/files.css"
+        ],
+        "include-repo": {
+          "name": "cnx-custom-theme"
+        }
+      },
+      "path": "files",
+      "application": "Visual Update 1 for HCL Connections"
+    },
+    {
+      "name": "Forums",
+      "type": "com.ibm.customizer.ui",
+      "payload": {
+        "include-files": [
+          "css/forums.css"
+        ],
+        "include-repo": {
+          "name": "cnx-custom-theme"
+        }
+      },
+      "path": "forums",
+      "application": "Visual Update 1 for HCL Connections"
+    },
+    {
+      "name": "AAGlobal Ex",
+      "title":"Global Settings",
+      "type": "com.ibm.customizer.ui",
+      "payload": {
+        "include-files": [
+          "css/global.css"
+        ],
+        "include-repo": {
+          "name": "cnx-custom-theme"
+        }
+      },
+      "path": "global",
+      "application": "Visual Update 1 for HCL Connections"
+    },
+    {
+      "name": "Homepage Old",
+      "title":"Homepage",
+      "type": "com.ibm.customizer.ui",
+      "payload": {
+        "include-files": [
+          "css/home.css"
+        ],
+        "include-repo": {
+          "name": "cnx-custom-theme"
+        }
+      },
+      "path": "homepage",
+      "application": "Visual Update 1 for HCL Connections"
+    },
+    {
+      "name": "Meetings",
+      "type": "com.ibm.customizer.ui",
+      "payload": {
+        "include-files": [
+          "css/meetings.css"
+        ],
+        "include-repo": {
+          "name": "cnx-custom-theme"
+        }
+      },
+      "path": "meetings",
+      "application": "Visual Update 1 for HCL Connections"
+    },
+    {
+      "name": "Metrics",
+      "type": "com.ibm.customizer.ui",
+      "payload": {
+        "include-files": [
+          "css/metrics.css"
+        ],
+        "include-repo": {
+          "name": "cnx-custom-theme"
+        }
+      },
+      "path": "metrics",
+      "application": "Visual Update 1 for HCL Connections"
+    },
+    {
+      "name": "MyContacts",
+      "type": "com.ibm.customizer.ui",
+      "payload": {
+        "include-files": [
+          "css/profiles.css"
+        ],
+        "include-repo": {
+          "name": "cnx-custom-theme"
+        }
+      },
+      "path": "mycontacts",
+      "application": "Visual Update 1 for HCL Connections"
+    },
+    {
+      "name": "Notification Settings",
+      "type": "com.ibm.customizer.ui",
+      "payload": {
+        "include-files": [
+          "css/settings.css"
+        ],
+        "include-repo": {
+          "name": "cnx-custom-theme"
+        }
+      },
+      "path": "news",
+      "application": "Visual Update 1 for HCL Connections"
+    },
+    {
+      "name": "Open social",
+      "title":"Open Social Gadgets",
+      "type": "com.ibm.customizer.ui",
+      "payload": {
+        "include-files": [
+          "css/opensocial.css"
+        ],
+        "include-repo": {
+          "name": "cnx-custom-theme"
+        }
+      },
+      "path": "connections",
+      "application": "Visual Update 1 for HCL Connections"
+    },
+    {
+      "name": "Org page",
+      "title":"Organization Page",
+      "type": "com.ibm.customizer.ui",
+      "payload": {
+        "include-files": [
+          "css/profiles.css"
+        ],
+        "include-repo": {
+          "name": "cnx-custom-theme"
+        }
+      },
+      "path": "contacts",
+      "application": "Visual Update 1 for HCL Connections"
+    },
+    {
+      "name": "Homepage New",
+      "title":"OrientMe",
+      "type": "com.ibm.customizer.ui",
+      "payload": {
+        "include-files": [
+          "css/home.css"
+        ],
+        "include-repo": {
+          "name": "cnx-custom-theme"
+        }
+      },
+      "path": "social",
+      "application": "Visual Update 1 for HCL Connections"
+    },
+    {
+      "name": "Profiles",
+      "type": "com.ibm.customizer.ui",
+      "payload": {
+        "include-files": [
+          "css/profiles.css"
+        ],
+        "include-repo": {
+          "name": "cnx-custom-theme"
+        }
+      },
+      "path": "profiles",
+      "application": "Visual Update 1 for HCL Connections"
+    },
+    {
+      "name": "Search",
+      "type": "com.ibm.customizer.ui",
+      "payload": {
+        "include-files": [
+          "css/search.css"
+        ],
+        "include-repo": {
+          "name": "cnx-custom-theme"
+        }
+      },
+      "path": "search",
+      "application": "Visual Update 1 for HCL Connections"
+    },
+    {
+      "name": "Surveys",
+      "type": "com.ibm.customizer.ui",
+      "payload": {
+        "include-files": [
+          "css/surveys.css"
+        ],
+        "include-repo": {
+          "name": "cnx-custom-theme"
+        }
+      },
+      "path": "surveys",
+      "application": "Visual Update 1 for HCL Connections"
+    },
+    {
+      "name": "Wikis",
+      "type": "com.ibm.customizer.ui",
+      "payload": {
+        "include-files": [
+          "css/wikis.css"
+        ],
+        "include-repo": {
+          "name": "cnx-custom-theme"
+        }
+      },
+      "path": "wikis",
+      "application": "Visual Update 1 for HCL Connections"
+    }
+  ]
+}

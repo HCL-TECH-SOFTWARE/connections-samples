@@ -1,0 +1,256 @@
+.lotusMeta{
+  .lotusDivider{
+    margin-bottom:0!important;
+  }
+  .lotusPerson.vcard{
+    a.menu_drop_icon{
+      margin-left:3px!important;
+      position:relative;
+      top:3px!important;
+    }
+  }
+  .lotusLikeCount{
+    padding:0!important;
+    margin:0!important;
+    border:none!important;
+    &:hover{
+      text-decoration: none!important;
+      outline:none!important;
+      border:none!important;
+    }
+    *:not(.lotusAltText){
+      display:inline-block!important;
+      position:relative!important;
+    }
+    .lotusAltText:hover{
+      text-decoration:underline;
+      cursor:pointer!important;
+    }
+    img{
+      top:-2px!important;
+      left:0!important;
+    }
+  }
+  span[dojoattachpoint="inlineLikeActions"] *{
+    position:relative;
+  }
+}
+
+//Community files
+#lotusFrame.lotusCommunities {
+  .filesListFilled {
+    #scene-body {
+      span.lotusDivider {
+        margin-bottom: 0.25rem !important;
+      }
+    }
+  }
+}
+
+//Blogs
+.blog{
+  .lotusTable{
+    .lotusMeta{
+      *{
+        margin-bottom:0!important;
+      }
+      .vcard a.menu_drop_icon{
+          margin-left:3px!important;
+          position:relative;
+          top:3px!important;
+      }
+    }
+  }
+}
+
+.blog #entries .lotusTable.blogsFixedTable td .lotusMeta,
+.lotusContent .lotusTags,
+.lotusFilters2 {
+  @include font-size($body...);
+  span[role="listitem"] a,
+  li.lotusTag a.bidiAware {
+      font-weight: inherit !important;
+      &:hover {
+        color: $text-01 !important;
+      }
+  }
+  .lotusFilter {
+    @include tags();
+    vertical-align: middle;
+  }
+}
+
+// split out this fix for issue 816
+.blog.admin.tabbedpage .lotusFilters2 {
+  .blogsPaddingRight {
+    &:after {
+       content: ":";
+    }
+  }
+}
+
+.blog #entries .lotusTable.blogsFixedTable td .lotusMeta {
+  span.vcard, span.lotusDivider, span[role="listitem"] {
+    padding-bottom:3px;
+  }
+//1503 Ideation blog entry tags
+  .lotusTags span[role="listitem"] {
+    margin-bottom: 3px !important;
+  }
+}
+
+// tags in onprem blogs app
+.blog #lotusMain {
+  table.blogsFixedTable {
+    .lotusMeta > span {
+      vertical-align: inherit;
+    }
+  }
+}
+
+//Wiki Page Meta
+.wikiHeader {
+   .lotusMeta, .lotusLike, .lotusLike a, .lotusLikeCount span, .lotusTags a {
+    @include font-size($caption...);
+  }
+  .lotusLike {
+    .lotusLikeCount, .lotusLikeAction {
+      top:3px;
+    }
+    .lotusLikeCount img {
+      margin-right:0px;
+    }
+  }
+}
+
+//Wiki Index List Meta under More
+div#list {
+  .lotusTable.lotusFixedTable.qkrFixedWidth {
+    tr.lotusDetails {
+      td {
+        .lotusMeta, .lotusMeta a, .lotusMeta span,
+        .lotusTags span, .lotusTags a.qkrAdd {
+          @include font-size($caption...);
+        }
+        .lotusLike .lotusLikeDescription, .lotusTags span {
+          color:$text-02;
+        }
+      }
+    }
+  } // onprem wiki more... metatags
+  .lotusTable.lotusFixedTable {
+    a.qkrAdd {
+      @include font-size($caption...);
+    }
+    li.lotusFirst {
+      float: none !important;
+    }
+    .lotusTags > span:not(.lotusHidden),
+    li span,
+    .lotusFirst > a.lotusPerson,
+    li.lotusTags {
+      @include font-size($caption...);
+      vertical-align: inherit !important;
+    }
+  }
+}
+
+// 1522 Adjust vertical placement of meta line elements to match 'You like this' text.
+.wikiHeader {
+  #span\.recommendation {
+    margin-bottom: 0;
+    .lotusLikeAction,
+    .lotusDivider {
+      top: 0 !important;
+    }
+    .lotusLikeText {
+      top: -3px !important;
+    }
+    .lotusIconLike {
+      top: -5px !important;
+    }
+  }
+  .lotusTags > span {
+    @include font-size($caption...);
+  }
+}
+
+// Wiki index page tags in pages list
+.lconnWikis table.lotusTable.qkrFixedWidth tr {
+  .lotusMeta .lotusInlinelist .lotusFirst.lotusLeft {
+    float: none;
+    display: inline-block !important;
+    margin-bottom: 1rem;
+  }
+  .lotusTags {
+    .qkrInlineList {
+      display: inline-block !important;
+    }
+    form {
+      input[type="submit"] {
+        @include btnprimary;
+        padding: 6px 16px !important;
+        font-weight: 500 !important;
+        font-size: 0.675rem !important;
+        height: 1.5rem !important;
+        box-sizing: border-box !important;
+      }
+      a[role="button"] {
+        display: inline-block;
+        @include btnsecondary;
+        padding: 6px 16px !important;
+        font-weight: 500 !important;
+        font-size: 0.675rem !important;
+        height: 1.5rem !important;
+        box-sizing: border-box !important;
+      }
+    }
+  }
+  .lotusMeta + .lotusTags > *:not(.lotusFormError) {
+    margin-top: 1rem;
+    vertical-align: text-bottom;
+
+    &.qkrEmpty {
+      margin-left: .5rem;
+    }
+  }
+}
+
+// 1475 Wiki topic - spacing between Tags label and tags.
+.lotusHeader .lotusTags span {margin-right: .25rem;}
+
+// bookmark details - 1165
+#bookmarkContentAreaSub {
+  .lotusMeta span {
+    vertical-align: top !important;
+    line-height: 18px !important;
+    height: 18px !important;
+    &.lotusTags {
+      vertical-align: top !important;
+    }
+  }
+  .lotusMeta .lotusDivider {
+    margin-bottom: 4px !important;
+  }
+}
+
+// ideation blog - 1317
+#ideationsListContainer {
+  .lotusDivider {
+    padding: 5px !important;
+  }
+}
+
+// activities list - 1525
+#activitiesListTable {
+  span {
+    margin-bottom: 0.25rem !important;
+    &.lotusTags {
+      margin-bottom: 0 !important;
+      padding-bottom: 2px !important;
+    }
+    span {
+      margin-bottom: 0 !important;
+    }
+  }
+}

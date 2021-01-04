@@ -1,0 +1,112 @@
+//Comment field in wikis
+#comments {
+  padding-left: 0px !important;
+  .qkrAddComment.lotusForm {
+    .cke_contents{
+      width:100%!important;
+      min-width:240px!important;
+      background-color: $background-side !important;
+      border: none !important;
+      border-bottom: 2px solid $border-selected !important;
+    }
+  }
+  .lotusFeeds.lotusMeta {
+    padding-left: 10px;
+  }
+  .lconnRTE ,
+  .lotusFormFooter{
+    padding-left:0!important;
+    input[type="submit"] {
+      @include btnprimary;
+    }
+  }
+}
+//Event commnents
+.lotusui30 div[id^="section_eventcomments_"] {
+  //No comment text
+  div[dojoattachpoint="noCommentHintAP"] {
+    padding-bottom: 20px;
+  }
+  //Comment list
+  div[id$="_commentList"] {
+    padding-bottom: 20px;
+    .lotusMeta {
+      @include font-size($caption...);
+      span.vcard {
+        margin-bottom: 0px;
+      }
+    }
+  }
+  //Button to add a comment
+  a[id$="_addCommentLink"] {
+    @include btnsecondary;
+  }
+  //Comment textarea
+  .lotusForm2 {
+    padding-top: 10px;
+    .lconnRTE {
+      [id^="cke_editor"] {
+        width: 100%;
+        .cke_contents{
+          width:100%!important;
+          min-width:240px!important;
+          border: none !important;
+          border-bottom: 2px solid $border-selected !important;
+        }
+      }
+    }
+  }
+}
+
+//Blog comments
+#blogCommentPanel{
+  #blogAddCommentForm {
+    .lotusPostContent {
+      display:inline;
+      .lotusFormTitle {
+        padding-top: 0px;
+      }
+      .lotusFormBody {
+        padding-left: 0px;
+        padding-right: 0px;
+        [id^="cke_editor"] {
+          width: 100% !important;
+          .cke_contents{
+            outline:none!important;
+            padding:0!important;
+            min-width:240px!important;
+            background-color: $background-side !important;
+            border: none !important;
+            border-bottom: 2px solid $border-selected !important;
+          }
+        }
+        input#postCommentAsTrackback {
+          margin-left: 2px;
+        }
+        label {
+          margin-top: 3px;
+        }
+        div[dojoattachpoint="selectBlogAP"] {
+          padding-top: 10px;
+          select#postCommentAsTrackbackWeblogSelect {
+            margin-left: 0px !important;
+          }
+        }
+      }
+      .lotusFormFooter {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+  }
+}
+
+//Fix typography for commnents in a Wiki page
+#comments div[id^="lconn_wikis_widget_CommentsMentions_"] {
+  div.lotusMeta, .lotusMeta > a, .lotusMeta > span {
+    @include font-size($caption...);
+  }
+  .lotusMeta > span {
+    margin-bottom: 0px !important;
+  }
+}

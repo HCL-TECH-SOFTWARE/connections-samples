@@ -1,0 +1,102 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.7",
+    "version": "1.0.0",
+    "id": "2418645c-c344-4b0e-985a-5ab940309778",
+    "packageName": "com.hcl.connections",
+    "developer": {
+        "name": "HCL",
+        "websiteUrl": "https://www.hcltechsw.com/connections",
+        "privacyUrl": "https://www.hcltechsw.com/wps/portal/legal/privacy",
+        "termsOfUseUrl": "https://www.hcltechsw.com/wps/portal/legal/terms-use",
+        "mpnId": "1416163"
+    },
+    "icons": {
+        "color": "Connections192x192.png",
+        "outline": "ConnectionsOutline32x32.png"
+    },
+    "name": {
+        "short": "Connections",
+        "full": "HCL Connections"
+    },
+    "description": {
+        "short": "HCL Connections for Microsoft Teams",
+        "full": "HCL Connections delivers a collaborative platform that keeps your employees connected and engaged. HCL Connections helps create a personalized, well-designed, digital office with role-based content and tools to keep your teams focused on achieving business goals and objectives.\n\nUse this app to easily access your favorite HCL Connections communities in a channel, or use the Messaging Extension to share Connections content with other Microsoft Teams users in your organization."
+    },
+    "accentColor": "#01539B",
+    "configurableTabs": [
+        {
+            "configurationUrl": "https://%Connections_Hostname%/teams-tab",
+            "canUpdateConfiguration": true,
+            "scopes": [
+                "team",
+                "groupchat"
+            ]
+        }
+    ],
+    "bots": [
+        {
+            "botId": "%Connections_AzureApplicationId%",
+            "scopes": [
+                "team",
+                "groupchat"
+            ],
+            "supportsFiles": true,
+            "isNotificationOnly": false
+        }
+    ],
+    "composeExtensions": [
+        {
+            "botId": "%Connections_AzureApplicationId%",
+            "canUpdateConfiguration": true,
+            "commands": [
+                {
+                    "id": "shareConnectionsContent",
+                    "type": "action",
+                    "title": "Connections Share",
+                    "description": "Share Connections content with other Microsoft Teams users",
+                    "initialRun": true,
+                    "fetchTask": true,
+                    "context": [
+                        "commandBox",
+                        "compose",
+                        "message"
+                    ],
+                    "parameters": [
+                        {
+                            "name": "param",
+                            "title": "param",
+                            "description": ""
+                        }
+                    ],
+                    "taskInfo": {
+                        "title": "Connections Share",
+                        "width": "medium",
+                        "height": "medium",
+                        "url": "https://%Connections_Hostname%/teams-share-service/api/msteams/command"
+                    }
+                }
+            ]
+        }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [
+        "%Connections_Hostname%"
+    ],
+    "webApplicationInfo": {
+        "id": "%Connections_AzureApplicationId%",
+        "resource": "api://%Connections_Hostname%/%Connections_AzureApplicationId%"
+    },
+    "localizationInfo": {
+        "defaultLanguageTag": "en",
+        "additionalLanguages": [
+            {
+                "languageTag": "en",
+                "file": "en.json"
+            }
+        ]
+    }
+}

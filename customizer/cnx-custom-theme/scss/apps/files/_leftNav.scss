@@ -1,0 +1,408 @@
+//FOR OLD FILES UI; WON'T NEED ONCE GATEKEEPERS BECOME PERMANENT
+html.lconnFiles {
+  .lotusMain{
+    #lotusColLeft{
+      #lconnFolderNavPanel,
+      #lconnFilterPanel {
+        width: $leftnav-width !important;
+      }
+      #lconnFilterPanel .lotusSection {
+        margin-right: 0 !important;
+      }
+      #menu_allfolders,
+      #menu_allfiles{
+        margin-top:0!important;
+      }
+      .lotusMenuSection > .lotusClickable:first-child,
+      .lotusMenuSection .subNavigationMenu {
+        padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+        margin-top: 0 !important;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        &.lotusSelected,
+        &:focus{
+          padding-left:calc(#{$leftnav-horizontal-padding} - #{$leftnav-active-border-thickness})!important;
+          border-left:$leftnav-active-border-thickness solid $border-selected !important;
+          transition: $leftnav-border-slide;
+        }
+      }
+      .lotusMenuSubsection{
+        .lotusClickable{
+          margin-left:0!important;
+          margin-top:0!important;
+          padding-left:calc(#{$leftnav-horizontal-padding} + #{$leftnav-indent-padding})!important;
+          padding-top:$leftnav-vertical-padding!important;
+          padding-bottom:$leftnav-vertical-padding!important;
+          padding-right:$leftnav-horizontal-padding!important;
+          &#label_sharedfolders{
+            padding-left:calc((#{$leftnav-horizontal-padding} + #{$leftnav-indent-padding}) + 19px)!important;
+            &.lotusSelected{
+              padding-left:calc(((#{$leftnav-horizontal-padding} - #{$leftnav-active-border-thickness}) + #{$leftnav-indent-padding}) + 19px)!important;
+              transition:$leftnav-border-slide;
+            }
+          }
+        }
+        .lotusClickable.lotusSelected{
+            padding-left:calc((#{$leftnav-horizontal-padding} + #{$leftnav-indent-padding}) - #{$leftnav-active-border-thickness})!important;
+            border-left:$leftnav-active-border-thickness solid $border-selected !important;
+            transition:$leftnav-border-slide;
+        }
+        .lotusMenuSubsection{
+          margin-top:0!important;
+        }
+        .headerOuter {
+          margin-top:0!important;
+          border:none!important;
+          .headerSelector{
+            border:none!important;
+          }
+        }
+      }
+      .lotusMenuSection {
+        &:first-child {
+          .lotusClickable:first-child > div {
+            max-width: calc(100% - #{ $leftnav-horizontal-padding }) !important;
+            a {
+              display: inline-block;
+            }
+          }
+        }
+      }
+      .subNavigationMenu,
+      .lotusMenuSection > .lotusClickable:first-child,
+      .myDriveNormalItem > div {
+        &:hover {
+          background: $background-side-hover !important;
+        }
+      }
+    }
+  }
+
+  #menu_myfolders_childContainer{
+    margin-left:55px!important;
+    padding-right: $leftnav-horizontal-padding;
+    > div .lconnFilesTree{
+      margin-left:6px!important;
+    }
+  }
+
+  //Display options
+  #lotusContentSceneActions{
+    a.lotusSprite.lotusView{
+      margin:3px;
+      &:focus{
+        outline:1px solid $border-selected!important;
+      }
+    }
+  }
+
+}
+//End old Files UI
+
+//FILES SEPT 2018 OVERRIDES: DEPENDENT ON GATEKEEPER CLASSES
+  //Update to indent new tree nodes
+html.lconnFiles.files-enable-simplify-left-nav {
+  .lotusMain {
+    #lotusColLeft {
+
+      .lotusMenuSection > .lotusClickable {
+        padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+        margin-top:0!important;
+
+        > .dojoDndItem {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        &.lotusSelected,
+        &:focus{
+          padding-left:calc(#{$leftnav-horizontal-padding} - #{$leftnav-active-border-thickness})!important;
+          border-left:$leftnav-active-border-thickness solid $border-selected !important;
+          transition:$leftnav-border-slide;
+        }
+      }
+
+      //Fix for when onprem Action Center is enabled 2207
+      .myDriveNavigation .lotusInner {
+        box-sizing: content-box;
+      }
+
+      //Update indent of folders
+      #menu_myfolders_childContainer {
+        margin-left: 32px !important;
+        padding-right: $leftnav-horizontal-padding;
+        > div .lconnFilesTree{
+          margin-left: 6px !important;
+        }
+      }
+      //Truncate long org Files name
+      .myDriveNavigation .myDriveNormalItem > div {
+        > a#public span.bidiAware {
+          wbr {
+            display: none;
+          }
+        }
+      }
+      //Files Shared With Me long name fix
+      .myDriveNavigation .myDriveNormalItem > div {
+        > a#withme span.bidiAware {
+          wbr {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+//End new Files UI
+
+//FILES SEPT 2018: Left panel closed, content fills window
+.lconnFiles #lotusColLeft.lconnInvisible,
+.lconnFiles #lotusColLeft.lotusHidden {
+  width: 0 !important;
+}
+
+//FILES SEPT 2018: New Filter panel
+.lconnFiles .lotusMain #lconnFilterPanel {
+
+  //Style filter options in each section
+  .lotusSectionBody:not(#lconnTagCloudContent) {
+    margin-left: 10px;
+    li a {
+      @include font-size($body...);
+    }
+  }
+
+  //Style tags on white background
+  ul[id*="_tagList"]:not(#tagsDiv_tagList) > li {
+    a, > span {
+      background: $background-side !important;
+    }
+  }
+}
+//End new filter panel
+
+.files-independent-scrollbars-compatible,
+.lotusStyledScroll{
+  margin-left:0!important;
+  padding-left:0!important;
+  padding-right:0!important;
+}
+.headerOuter:hover{
+  background:none!important;
+}
+.node{
+  margin:0!important;
+}
+.headerSelector{
+  padding-top:$leftnav-vertical-padding!important;
+  padding-bottom:$leftnav-vertical-padding!important;
+  .header{
+    height:22px!important;
+    line-height: 1.25em;
+  }
+  .icon{
+    span img{
+      height:20px!important;
+      width:20px!important;
+    }
+  }
+}
+//A ::before element that covers the background with a border on the left
+.headerSelector:hover::before{
+  background-color:$background-side-hover !important;
+}
+.headerSelector::before{
+  content:"";
+  width:100%;
+  position:absolute;
+  left:0;
+  height: $leftnav-line-item-height;
+  margin-top:-($leftnav-vertical-padding);
+  display:block;
+  z-index:-1;
+  transition:border 0.23s ease-in;
+}
+.headerSelector.selected::before{
+  transition:border 0.23s ease-in;
+  border-left:$leftnav-active-border-thickness solid $border-selected !important;
+}
+
+#menu_allfiles_childContainer{
+  > div{
+    margin:0!important;
+    a{
+      margin-left:0!important;
+    }
+    padding-top:$leftnav-vertical-padding!important;
+    padding-bottom:$leftnav-vertical-padding!important;
+    padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) + 21px)!important;
+    border:none!important;
+    &.lotusSelected{
+      padding-left:calc(((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) - #{$leftnav-active-border-thickness}) + 21px)!important;
+      transition:$leftnav-border-slide;
+      border-left:4px solid $border-selected !important;
+      a{
+        margin-left:0!important;
+      }
+    }
+  }
+}
+
+
+//Fixing the position of the My Drive section and sub folders
+#menu_fileSync_childContainer{
+  .headerOuter{
+    border:none!important;
+  }
+  .headerSelector{
+    border:none!important;
+  }
+  > .lconnFilesTree{
+    margin-left:calc(#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding})!important;
+    padding-right: $leftnav-horizontal-padding !important;
+    .lconnFilesTree{
+      margin-left:6px!important;
+    }
+    //Long title was not displaying
+    .node .title {
+      float:none !important;
+    }
+  }
+}
+
+//Changing Trash, Pinned Folders, Pinned Files
+.myDriveNormalItem > div{
+  padding-top: $leftnav-vertical-padding !important;
+  padding-bottom: $leftnav-vertical-padding !important;
+  padding-left: calc(#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) !important;
+  padding-right: $leftnav-horizontal-padding !important;
+  margin-top: 0 !important;
+  border-color:$border-selected !important;
+  height:20px!important;
+  a{
+    border-top:none!important;
+    border-bottom:none!important;
+    margin:0!important;
+    padding:0!important;
+    line-height:1.5!important;
+    span{
+      line-height:1.5!important;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      display: inline-block;
+    }
+  }
+  &.lotusSelected{
+    padding-left:calc((((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) - #{$leftnav-active-border-thickness})))!important;
+    transition:$leftnav-border-slide;
+    a{
+      margin:0!important;
+      padding:0!important;
+    }
+  }
+}
+.lotusInner > .lotusMenuSection{
+  margin-bottom:0!important;
+  padding-bottom:0!important;
+}
+
+//Changing tags, sharing updating
+.lotusColLeft{
+  .lotusSection{
+    margin-left:0!important;
+    padding-left:42px!important;
+    padding-right:$leftnav-horizontal-padding!important;
+    margin-bottom:0!important;
+    padding-top:calc(#{$leftnav-vertical-padding} + 2px)!important;
+    padding-bottom:calc(#{$leftnav-vertical-padding} - 2px)!important;
+    &:hover:not([id^="section_"],[id^="#lconnTagCloudFilter"]) {
+      background-color:$background-side-hover !important;
+    }
+    > h2{
+      padding-top:0!important;
+      padding-bottom:0!important;
+      height:20px!important;
+    }
+  }
+}
+
+//1550 Search field under Created by
+.files-independent-scrollbars-compatible {
+  .lotusSearch {
+ 	margin-right: 0 !important;
+  }
+  .lotusSection {
+ 	padding-right: 19px !important;
+  }
+}
+
+.myDriveNavigation{
+  margin-bottom:0!important;
+}
+
+//#97 Fix
+.lotusui30_layout .lotusContent .filesList > div {
+  width: calc(100% - 50px)!important;
+}
+
+//A11Y arrow focus state
+#body #lotusColLeft #lconnSideNavBody,
+.lconnFiles #lotusColLeft #lconnSideNavBody {
+
+  .lotusHeading,
+  .myDriveNormalItem span {
+    color: $text-01;
+    @include font-size($body...);
+  }
+
+  .lotusHeading.lotusSelected a,
+  .myDriveNormalItem .lotusSelected span {
+    font-weight: 600 !important;
+  }
+
+  .lotusHeading,
+  .headerSelector,
+  .myDriveNormalItem {
+    a:hover {
+      text-decoration: none !important;
+    }
+    &:focus, a:focus {
+      text-decoration: underline !important;
+      outline: none !important;
+    }
+  }
+
+  .lotusArrow.lotusSprite:focus{
+    outline:1px solid black!important;
+  }
+}
+
+//A11y Fixes: Left Navigation Fixing folders that don't get an underline when focused.
+.lotusMenuSubsection{
+  .headerSelector:focus{
+    outline:none!important;
+    & > .header .title span{
+      text-decoration: underline!important;
+    }
+  }
+}
+
+// long folder name fix:
+.lotusMain #lotusColLeft {
+  #menu_fileSync_childContainer,
+  #menu_myfolders_childContainer,
+  #menu_allfolders {
+    .tree .header .title {
+      word-wrap: break-word;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 100% !important;
+      box-sizing: border-box !important;
+      float: none !important;
+    }
+  }
+}

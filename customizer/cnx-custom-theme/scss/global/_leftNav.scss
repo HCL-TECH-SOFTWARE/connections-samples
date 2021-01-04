@@ -1,0 +1,23 @@
+.lotusui30_layout .lotusColLeft:after {
+  position: fixed !important;
+}
+
+.lotusMain #lotusColLeft:not(.wpthemeNarrow),
+.lotusMain .lotusColLeft:not(.wpthemeNarrow) {
+  & {
+    #lconnTagCloudFilter > h2,
+    #lconnTagCloudFilter > h3,
+    #lconnTagCloudFilter > div > h2,
+    #menu_allfiles_childContainer > div {
+      a, span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space:nowrap;
+      }
+    }
+    #menu_allfiles_childContainer > div > a {
+      display: inline-block;
+      max-width: 85% !important;
+    }
+  }
+}

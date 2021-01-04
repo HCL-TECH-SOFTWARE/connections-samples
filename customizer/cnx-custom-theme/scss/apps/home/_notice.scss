@@ -1,0 +1,44 @@
+//Announcement bar that appears below navbar on homepage. Admin can set this.
+.bhcNotice,
+.bhcNoticePicker {
+  background-color:$background-main !important;
+  background:$background-main !important;
+}
+.bhcNotice {
+  border-bottom:1px solid $border-separator;
+  .bhcNoticeSummary img {
+    background-image: svg-url-with-replaced-fill($svg-info-msg, '#000000', $information) !important;
+    background-position:0px 0px!important;
+    background-repeat: no-repeat;
+  }
+}
+//Switch between announcments
+.bhcNoticePicker {
+  border: none;
+  .bhcNoticeArrow {
+    .bhcNoticePevious {
+      background-image: svg-url-with-replaced-fill($svg-chevron-left, '#000000', $icon-black) !important;
+      background-position:0px 0px!important;
+      background-repeat: no-repeat;
+    }
+    .bhcNoticeNext {
+      background-image: svg-url-with-replaced-fill($svg-chevron-right, '#000000', $icon-black) !important;
+      background-position:0px 0px!important;
+      background-repeat: no-repeat;
+    }
+    &:hover {
+      .bhcNoticePevious {
+        background-image: svg-url-with-replaced-fill($svg-chevron-left, '#000000', $icon-brand-01) !important;
+      }
+      .bhcNoticeNext {
+        background-image: svg-url-with-replaced-fill($svg-chevron-right, '#000000', $icon-brand-01) !important;
+      }
+    }
+  }
+  .bhcNoticeEmphasis {
+    outline: 1px solid $border-focus;
+    color: $text-04;
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+}

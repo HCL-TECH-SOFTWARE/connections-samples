@@ -1,0 +1,24 @@
+#body .filesList table tbody{
+  tr td:nth-child(4),
+  // trash view on col 3 - issue 1241
+  tr td:nth-child(3) {
+    a[role="button"] {
+      position:relative!important;
+      top:2px!important;
+    }
+    a[role="button"] img.lconnSprite {
+      background-position:0 0!important;
+      background-image: svg-url-with-replaced-fill($svg-down-arrow-outline, '#000000', $icon-default);
+      }
+    a[role="button"]:hover img.lconnSprite {
+      background-image: svg-url-with-replaced-fill($svg-down-arrow-filled, '#000000', $icon-default);
+    }
+  }
+}
+
+//Fix for issue 256
+.lotusTable tr.lotusDetails{
+  a{
+    font-weight:normal!important;
+  }
+}

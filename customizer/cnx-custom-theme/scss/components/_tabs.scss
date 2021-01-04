@@ -1,0 +1,491 @@
+// normal tabs and app_palette_modal _tabs
+.lotusTabContainer,
+#activitiesTitleBar .lotusTitleBar2Tabs, //Stand-alone Activities
+.app_palette_modal_header,
+.ic-orient .ic-stream-controls, //Orient Me
+#lotusHeaderNavigation_UL
+ {
+  border-bottom: 1px solid $border-separator !important;
+  @include font-size($tabs...);
+
+  &:after {
+    content: '';
+    display: block;
+    height: 0;
+    width: 100%;
+    clear: both;
+  }
+}
+
+//Community Activities community top app navigator override
+#activitiesTitleBar .lotusTitleBar2.lotusTitleBar2Tabs {
+  margin-bottom: 0 !important;
+}
+
+.lotusTabs,
+.lotusNavTabs#activitiesNagvigationToolbar,
+.lotusNavTabs#pageTabs,
+.lotusNavTabs#bookmarksNav,
+.blog.admin .lotusNavTabs,
+.blog.lotusui .lotusNavTabs,
+.app_palette_modal_tabs_ul,
+.bx--tabs__nav,
+.streamHeaderWrapper span[id^="com_ibm_social_as_filter_FilterContainer_"],
+#lotusHeaderNavigation_UL,
+.lotusPaletteBody .lotusPaletteNav .lotusMenu ul[role="tablist"] {
+  li {
+    margin: 0 0 4px !important;
+    padding: 0.625rem 0 0.375rem !important;
+
+    &:hover, &:hover a, &:focus, &:focus a, &:active, &:active a {
+      text-decoration: none !important;
+    }
+    &:focus {
+      outline: none !important;
+    }
+
+    + li {
+      margin-left: 1rem !important;
+    }
+
+    a {
+      padding: 0.5rem 1rem !important;
+      margin: 0 !important;
+      border-radius: $border-radius-tabs !important;
+      border: 1px solid transparent !important;
+      color: $tab-text !important;
+      @include font-size($tabs...);
+      &, &:visited {
+        &, strong {
+          color: $tab-text !important;
+        }
+      }
+
+      strong, .lotusTabInner {
+        color: $tab-text !important;
+        padding-bottom: 0px !important;
+        @include font-size($tabs...);
+      }
+      &:focus {
+        color: $tab-text-focus !important;
+        background-color: $tab-background-focus !important;
+        border-color: $tab-border-focus !important;
+        text-decoration: none !important;
+      }
+      &:hover {
+        background-color: $tab-background-hover !important;
+        border-color: $tab-border-hover !important;
+        color: $tab-text-hover !important;
+        strong, .lotusTabInner {
+          color: $tab-text-hover !important;
+        }
+      }
+      &._linkHolder.lotusLeft {
+        @include font-size($tabs...);
+        &:hover {
+          color: $tab-text-hover !important;
+        }
+      }
+    }
+
+    #about_link,
+    #share_link {
+      @include font-size($tabs...);
+      &:hover {
+        color: $tab-text-hover !important;
+      }
+    }
+
+    &.lotusSelected,
+    &.bx--tabs__nav-item--selected  {
+      border-bottom: 4px solid $tab-border-selected !important;
+      margin-bottom: 0 !important;
+      a {
+        &, strong, .lotusTabInner {
+          color: $tab-text-selected !important;
+        }
+        &:active, &:focus {
+          text-decoration: none !important;
+        }
+        &:hover,
+        &:hover strong,
+        &:hover .lotusTabInner {
+          color: $tab-text-hover !important;
+        }
+      }
+    }
+  }
+}
+
+//Add Apps dialog specifics
+.lotusPaletteBody .lotusPaletteNav {
+  width: calc(100% - 60px);
+  border-bottom: 1px solid $border-separator;
+  margin-left: 30px;
+  padding: 0 !important;
+
+  .lotusMenu {
+    margin: 0 !important;
+    ul[role="tablist"] li {
+      float: left;
+      + li {
+        margin-left: 1rem !important;
+      }
+      &.lotusSelected {
+        border-left-width: 0 !important;
+      }
+    }
+  }
+}
+
+//Orient Me specifics
+.ic-orient .ic-stream-controls {
+  border-bottom: 1px solid transparent !important; //Use bottom border that is already there
+  .bx--tabs__nav li {
+    margin: 0px 0px !important; //Move selection bar down a bit
+  }
+  //Override orient me styling
+  .ic-stream-controls-options ul.bx--tabs__nav li.bx--tabs__nav-item.ic-stream-controls-item {
+    border: transparent;
+  }
+}
+
+// Actvities specifics
+#activitiesTitleBar .lotusTitleBar2Tabs {
+  border-bottom-color: transparent !important;
+  ul {
+    border-bottom: 1px solid $border-separator;
+  }
+  .lotusTabInner {
+    text-transform: none;
+  }
+}
+
+//File picker for selecting or sharing files
+.lconnPicker {
+  .tabbedSwitch .lconnPickerSourceLabelSpan {
+    text-transform: initial !important;
+  }
+
+  // share a file
+  .tabbedSwitch,
+  div[id^="lconn_share_widget_Dialog_"],
+  div[id^="lconn_files_widget_CompactFilePicker_"] {
+    .switchPane {
+      margin-bottom: 1rem !important;
+      max-width: 100%;
+    }
+  }
+}
+
+.dijitTabListContainer-top,
+.switchContainer {
+  border-bottom: 1px solid $border-separator !important;
+  @include font-size($tabs...);
+  height: auto !important;
+  background: none !important;
+  margin-left: 0 !important;
+
+  .dijitTabListWrapper {
+    position: relative !important;
+    left: auto !important;
+  }
+
+  .lconnPickerSourceSwitchingContentArea, fieldset {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  > div {
+    height: auto !important;
+  }
+  .tablist > div {
+    display: inline-block !important;
+  }
+  // li
+  .lconnPickerSourceToCheck {
+      margin: 0 !important;
+      padding: 0.625rem 0 0.375rem !important;
+      //font-size: inherit !important;
+      //font-weight: inherit !important;
+      display: inline-block !important;
+
+      + .lconnPickerSourceToCheck {
+        margin-left: 1rem !important;
+      }
+
+  }
+  // selected styling:
+  .pickerSourceChecked {
+    border-bottom: 4px solid $tab-border-selected !important;
+    background-image: none !important;
+    .lconnPickerSourceLabel {
+      color: $tab-text-selected !important;
+      border-radius: $border-radius-tabs !important;
+      &:hover {
+        color: $tab-text-hover !important;
+        background-color: $tab-background-hover !important;
+        border-color: $tab-border-hover !important;
+      }
+      &:focus {
+        color: $tab-text-focus !important;
+        background-color: $tab-background-focus !important;
+        border-color: $tab-border-focus !important;
+      }
+    }
+  }
+}
+
+div[role="tablist"],
+.tablist,
+.lconnPickerSourceToCheck,
+.lconnPickerSourceLabel,
+.lconnPickerSourceToCheck span {
+  //font-size: inherit !important;
+  //font-weight: inherit !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  position: relative !important;
+}
+// tab list items styling (a):
+.dijitTabInner.dijitTabContent,
+.lconnPickerSourceToCheck .lconnPickerSourceLabel {
+  display: inline-block !important;
+  position: relative;
+  padding: 0.5rem 1rem 0.5rem 2.25rem !important;
+  margin: 0 !important;
+  //font-size: inherit !important;
+  //font-weight: 500 !important;
+  color: $tab-text !important;
+  border-radius: $border-radius-tabs !important;
+  border: 1px solid transparent !important;
+  width: auto !important;
+  .lconnPickerSourceLabelSpan {
+    color: inherit !important;
+  }
+  &:hover {
+    color: $tab-text-hover !important;
+    background-color: $tab-background-hover !important;
+    border-color: $tab-border-hover !important;
+    //font-weight: 500 !important;
+  }
+  &:focus {
+    color: $tab-text-focus !important;
+    background-color: $tab-background-focus !important;
+    border-color: $tab-border-focus !important;
+    outline: none !important;
+  }
+  img {
+    left: .75rem;
+    position: absolute;
+
+    &[class*="Folder"] {
+      left: .25rem;
+    }
+  }
+}
+
+// some overrides needed for lconn-survey_dialog settings dialog
+div.lconn-survey_dialog .dijitTabContainer {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  .dijitTabListContainer-top {
+    width: 100% !important;
+  }
+  a[id^="com_ibm_form_integrations_formiwidget_widget_HoverHelp"] {
+    &:focus {
+      outline: 1px solid currentColor !important;
+    }
+  }
+  a[id^="com_ibm_form_integrations_formiwidget_widget_HoverHelp_1"],
+  a[id^="com_ibm_form_integrations_formiwidget_widget_HoverHelp_2"] {
+    padding: 4px 0px 4px 6px !important;
+  }
+  a[id^="com_ibm_form_integrations_formiwidget_widget_HoverHelp_3"],
+  a[id^="com_ibm_form_integrations_formiwidget_widget_HoverHelp_4"],
+  a[id^="com_ibm_form_integrations_formiwidget_widget_HoverHelp_5"] {
+    padding: 6px 0px 2px 6px !important;
+  }
+  a[id^="com_ibm_form_integrations_formiwidget_widget_HoverHelp_6"],
+  a[id^="com_ibm_form_integrations_formiwidget_widget_HoverHelp_7"] {
+    padding: 6px 0px 6px 6px !important;
+  }
+}
+
+// forum reply -> insert image -> file picker dialog
+// these tabs hide the icons already so we should fix the left padding
+// also applies to Survey settings on div.lconn-survey_dialog
+.dijitTabContainer .dijitTabListContainer-top {
+  padding: 0 !important;
+  background: transparent !important;
+
+  div[role="tablist"] {
+    padding-bottom: calc(.375rem + 3px) !important;
+    .dijitTabInner.dijitTabContent {
+      padding: 0 !important;
+      border: none !important;
+
+      + .dijitTabInner.dijitTabContent {
+        margin-left: 1rem !important;
+      }
+
+      .tabLabel {
+        position: relative;
+        color: $tab-text !important;
+        display: block;
+        padding: 0.5rem 1rem !important;
+        border-radius: $border-radius-tabs !important;
+        border: 1px solid transparent !important;
+        text-transform: none !important;
+        @include font-size($tabs...);
+        &:hover {
+          color: $tab-text-hover !important;
+          background-color: $tab-background-hover !important;
+          border-color: $tab-border-hover !important;
+          cursor: pointer;
+        }
+        &:focus {
+          color: $tab-text-focus !important;
+          background-color: $tab-background-focus !important;
+          border-color: $tab-border-focus !important;
+          outline: none !important;
+        }
+      }
+      &.dijitTabChecked {
+        .tabLabel {
+          color: $tab-text-selected !important;
+          &:hover {
+            color: $tab-text-hover !important;
+          }
+          &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            border-bottom: 4px solid $tab-border-selected !important;
+            top: 100%;
+            margin-top: .375rem;
+            left: -1px;
+            width: calc(100% + 2px);
+            height: 0;
+          }
+        }
+        background-image: none !important;
+      }
+    }
+  }
+}
+
+// profile tabs
+ul[id^="lconn_tabsWidget"][id$="_CenterTabsUL"] {
+  min-width: 1px !important;
+  padding-right: 2rem;
+}
+
+// classic home page tabs
+.streamHeaderInner > div[id^="com_ibm_social_sharebox_ContextualSharebox_"] + .lotusPaging.lotusPagingTop {
+  height: auto !important;
+}
+.streamHeaderWrapper span[id^="com_ibm_social_as_filter_FilterContainer_"] {
+  white-space: nowrap;
+
+  span[dojoattachpoint="containerNode"] {
+    max-width: calc(100% - 50px);
+  }
+
+  ul {
+    white-space: normal;
+  }
+
+  li {
+    display: inline-block !important;
+  }
+}
+
+// onprem standalone blogs
+#blogsNavigationSelectedTab {
+  &:hover {
+    color: $tab-text-hover !important;
+    background-color: $tab-background-hover !important;
+    border-color: $tab-border-hover !important;
+    strong, .lotusTabInner {
+      color: $tab-text-hover !important;
+    }
+  }
+}
+body.blog.admin #pageTabs.lotusNavTabs {
+  border-bottom: 1px solid $border-separator;
+
+  li {
+    float: none;
+    display: inline-block;
+  }
+}
+
+//1715 Initial caps for standalone blogs tabs
+.lotusui30 .lotusTitleBar2 .lotusNavTabs .lotusTabInner {
+	text-transform: initial;
+}
+
+// onprem contacts and profiles
+.lotusProfiles,
+.myProfile,
+.editMyProfile {
+  .lotusTitleBarContent {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.75rem;
+  }
+  div.lotusTitleBar2 .lotusInner {
+    height: auto;
+  }
+  .lotusHeading {
+    float: none !important;
+    margin-right: 45px !important;
+  }
+  .lotusHeading + div[aria-controls="lotusMain"] {
+    flex-grow: 1;
+  }
+}
+#myNetwork_contentDiv,
+.myProfile #lotusMain {
+  margin-top: 1.75rem;
+}
+
+// insert img new ui
+.lotusui30dojo .lconnInsertImage.forum .lotusDialog {
+  .dijitTabListContainer-top.dijitTabController {
+    margin-right: 0;
+
+    ~ .dijitTabPaneWrapper {
+      padding: 0;
+    }
+  }
+  .dijitTabListWrapper {
+    border-bottom: none;
+  }
+}
+
+// 1747 rich content widget tabs
+.lotusCommunities .lotusWidget2 .lotusTabs {
+  #qkrRefHide + li {
+    margin-left: 0 !important;
+  }
+  a:not([role="tab"]) {
+    color: $tab-text !important;
+
+    &:focus {
+      color: $tab-text-focus !important;
+    }
+    &:hover {
+      color: $tab-text-hover !important;
+    }
+  }
+}
+
+// social home updates tabs -CR4 2359
+.ic-orient nav.ic-stream-controls-options {
+  #om_latest_updates {
+    margin-left: 1rem !important;
+  }
+}

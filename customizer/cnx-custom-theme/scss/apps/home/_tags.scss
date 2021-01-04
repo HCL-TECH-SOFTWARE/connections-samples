@@ -1,0 +1,12 @@
+// Orient me filter chiclets / tags
+.ic-web-chiclet {
+  @include tags(gray);
+  line-height: 2.0rem !important;
+  height:2.0rem !important;
+  display:flex !important;
+  border-radius:$border-radius-tags !important;
+  margin-right:.5rem !important;
+  &:focus {
+    outline:none !important;
+  }
+}

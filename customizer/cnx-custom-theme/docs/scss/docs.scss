@@ -1,0 +1,305 @@
+/*
+	 * © Copyright IBM Corp. 2017, 2018
+	 *
+	 * Licensed under the Apache License, Version 2.0 (the "License");
+	 * you may not use this file except in compliance with the License.
+	 * You may obtain a copy of the License at:
+	 *
+	 * http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 * Unless required by applicable law or agreed to in writing, software
+	 * distributed under the License is distributed on an "AS IS" BASIS,
+	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+	 * implied. See the License for the specific language governing
+	 * permissions and limitations under the License.
+*/
+/*COLORS*/
+$color-black: #000000;
+$color-white: #ffffff;
+$brand-01: #3c6df0;
+$brand-02: #1D3458;
+$color-gray-60: #595859;
+$color-gray-50: #777677;
+$color-gray-20: #C0BFC0;
+$color-gray-1: #f1f1f1;
+
+/*GENERAL STYLES*/
+body {
+  color:$color-black;
+  font-family:'IBM Plex Sans', "Helvetica Neue", Arial, sans-serif;
+}
+h1 {
+  font-size: 2.375rem;
+  line-height: 48px;
+  font-weight:600;
+  color:$brand-01;
+}
+h2 {
+  font-size: 1.75rem;
+  line-height: 32px;
+  font-weight: 600;
+  border-bottom:1px solid $color-gray-1;
+  padding-bottom:10px;
+  padding-top:30px;
+}
+h3 {
+  font-size: 1.5rem;
+  line-height: 24px;
+  font-weight: 600;
+}
+h4 {
+  font-size: 1.3rem;
+  line-height: 20px;
+  font-weight: 600;
+}
+p, li {
+  font-size:1.25rem;
+  font-weight:400;
+}
+dt {
+  font-weight:600;
+}
+a {
+  color:$brand-01;
+  text-decoration:none;
+  &:hover, &:focus {
+  text-decoration:underline;
+  }
+  &.anchor {
+    color:$color-black;
+    text-decoration:none;
+    &:target {
+      padding-top:90px;
+      margin-top: -90px;
+    }
+  }
+}
+
+img {
+  box-shadow:5px 10px 8px #C0BFC0;
+}
+.code {
+  background-color:$color-gray-1;
+  padding:20px 20px;
+  font-family: Courier, 'New Courier', monospace;
+}
+p.caption {
+  font-size:12px;
+}
+p.button {
+  padding:14px 0 20px 0;
+}
+.button {
+  a {
+    border-radius:30px;
+    background-color: $brand-01;
+    color:$color-white;
+    padding:.5em 1em;
+    text-decoration:none;
+    &:hover, &:focus {
+      background-color:#1D3458;
+      text-decorattion:none;
+      outline:none;
+    }
+  }
+  &.disabled a {
+    background-color:$color-gray-50;
+    pointer-events:none;
+    cursor:default;
+  }
+}
+
+/*-------------SPECIFIC STYLES-------------*/
+/*-------------SIDE PADDING-------------*/
+.breadcrumb,
+.aboutContent,
+.aboutHeader,
+.bx--tabs__nav {
+  padding-left:18%;
+  padding-right:15%;
+}
+
+/*-------------TOC-------------*/
+.toc {
+  float:left;
+  position:sticky;
+  position:-webkit-sticky;
+  top:10px;
+  background-color:$color-white;
+  padding:40px 30px;
+  //margin:0px 0px 20px 20px;
+  max-width:12%;
+  ul {
+    padding:0px 0px;
+  }
+  li {
+    list-style-type: none;
+    padding:10px 0px;
+    border-top:1px solid $color-gray-1;
+    &:first-of-type {
+      border-top:none;
+      border-bottom:2px solid $color-gray-20;
+    }
+    &:last-of-type {
+      border-top:2px solid $color-gray-20;
+      //border-bottom:1px solid $color-gray-20;
+    }
+    &.tocabout {
+      border-top:2px solid $color-gray-20;
+    }
+    &.tocexample {
+      border-top:1px solid $color-gray-1;
+    }
+    a {
+      color:$color-gray-60;
+      font-weight:400;
+    }
+  }
+}
+
+/*-------------HEADER-------------*/
+.headerContainer {
+  background-color:$brand-01;
+  //position:relative;
+  //top:80px;
+  padding-left:0;
+  padding-right:0;
+  .headText {
+    padding-top:30px;
+    padding-bottom:30px;
+  }
+  .headHero {
+    background-image: url(./img/intro.png);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    max-height: 250px;
+    height:100px;
+    postion:absolute;
+    top:200px;
+  }
+  h1 {
+  color:$color-white;
+  }
+}
+
+/*-------------CONTENT-------------*/
+.contentContainer {
+  //margin-top:80px; /*only when tabs are at the top*/
+  margin-top:0px;
+}
+.aboutContent {
+  padding-top:30px;
+  padding-bottom:70px;
+}
+
+/*-------------BREADCRUMB-------------*/
+.breadcrumb {
+  padding-top:10px;
+  padding-bottom:10px;
+  p {
+    margin:10px 0px 0px 0px;
+    font-size:0.875rem;
+    color:$color-gray-50;
+  }
+  a {
+    color:$color-gray-50;
+    text-decoration:none;
+    &:hover, &:focus {
+      text-decoration:underline;
+    }
+  }
+}
+
+/*-------------SPECIAL PLACEMENT-------------*/
+/*-------------FOOTER-------------*/
+.footerContainer {
+  padding:10px 0px 30px 0px;
+  border-top:1px solid $color-gray-1;
+  width:100%;
+  margin:auto;
+  text-align:center;
+  p {
+    font-size:0.875rem;
+    color:$color-gray-50;
+  }
+}
+
+/*-------------VIDEOS--------------*/
+.video1:before,
+.video2:before {
+  position:relative;
+  top:116px;
+  left:500px;
+  font-size:1.2rem;
+  font-weight:400;
+  color:$color-white;
+}
+.video1:before {
+  content:"Part 1";
+}
+.video2:before {
+  content:"Part 2";
+}
+
+/*----------------RESOURCE COLUMNS---------------*/
+/*.customizerLinks {
+  vertical-align: top;
+  column-count:2;
+  column-gap:20px;
+  p {
+    margin-top:0px;
+  }
+}*/
+
+/*-------------NOT BEING USED--------------*/
+/*-------------TABS-------------*/
+.fixednav {
+  position:fixed;
+  top:0px;
+  width:100%;
+  background-color:$color-white;
+  height:80px;
+  border-bottom:1px solid $color-gray-1;
+  box-shadow:0 5px 5px -5px #C0BFC0;
+}
+
+.bx--tabs__nav {
+  display:block;
+  color:$color-gray-50;
+  padding-top:1.5em;
+  ul {
+    margin:0;
+    padding:0;
+    list-style-type: none;
+    text-align:left;
+  }
+  li {
+    border-bottom:4px solid transparent;
+    display:inline;
+    padding:.2em 0.1em .3em 0.1em;
+    margin:.5em .5em;
+    &:first-of-type {
+      margin-left:0px;
+    }
+    &.selected {
+      color:$color-black;
+      border-color:$brand-01;
+    }
+  }
+  a {
+    text-decoration:none;
+    color:$color-gray-50;
+    border:1px solid transparent;
+    border-radius:2px;
+    padding:.5em .5em;
+    &:hover {
+      background-color:$brand-01;
+      color:$color-white;
+    }
+    &:focus {
+      border:1px solid $brand-01;
+      outline:none;
+    }
+  }
+}

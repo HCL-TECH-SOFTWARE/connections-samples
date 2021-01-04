@@ -1,0 +1,84 @@
+// profile photo should be an increment of 8:
+#imgProfilePhoto {
+  width: 152px !important;
+  height: 152px !important;
+}
+#smallBizCardInfoPhotoDiv > a {
+  display: inline-block;
+  position: relative;
+  &:focus {
+    outline: 1px solid $border-focus !important;
+    outline-offset: 2px;
+    display: inline-block;
+    position: relative;
+  }
+}
+// edit profile photo button 
+#spanEditProfilePhoto {
+  float: none !important;
+  position: absolute !important;
+  right: 0;
+  top: 0;
+  height: 24px !important;
+  width: 24px !important;
+  background-color: $btn-secondary-fill;
+  border-radius: $border-radius-avatar;
+  border: 1px solid $btn-secondary-outline;
+  padding: .5rem;
+  box-sizing: content-box;
+  #aEditProfilePhoto {
+    background-color: transparent !important;
+    opacity: 1 !important;
+    height: 24px !important;
+    width: 24px !important;
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    padding: 0 !important;
+  }
+  .lconnSprite {
+    background-image: svg-url-with-replaced-fill($svg-edit, '#000000', $icon-brand-01) !important;
+    background-position: center center !important;
+    height: 24px !important;
+    width: 24px !important;
+    display: block;
+  }
+}
+// profile top buttons:
+#businessCardActions {
+  padding: 1.75rem 0 .275rem !important;
+  .lotusActionBar {
+    font-size: $body-md-font-size;
+  }
+}
+#businessCardContent {
+  a {
+    color: $text-01 !important;
+    font-size: $head0-font-size;
+    font-weight: normal !important;
+  }
+  + #businessCardDetails {
+    strong, a, span {
+      //font-size: $body-rem !important;
+      line-height: 1.375em !important;
+    }
+    strong, span {
+      font-weight: normal !important;
+    }
+  }
+  > div {
+    float: none !important;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  #connectionIndicator {
+    color: $text-02 !important;
+    background-color: transparent !important;
+    margin-top: 0 !important;
+    font-size: $body-md-font-size;
+  }
+}
+#StatusIMAwarenessDisplayedUser img {
+  position: relative !important;
+  left: auto !important;
+}

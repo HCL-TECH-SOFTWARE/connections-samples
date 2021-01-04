@@ -1,0 +1,196 @@
+div[class$="directory"] {
+  a[href="javascript:;"]:not(.company):focus,
+  a[href="javascript:void(0);"]:focus,
+  div:focus {
+    outline: 1px solid $text-02 !important;
+    outline-offset: -1px;
+  }
+}
+.networkAction a:focus {
+  outline: none !important;
+}
+.sc .lotusStream .scdirectory {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  > a:focus {
+    outline-color: $border-focus !important;
+  }
+  .lotusFloatContent div:not(.scFontItalic) {
+    display: flex;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    .jobTitle, .company {
+      flex-shrink: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: auto;
+    }
+    .company {
+      flex-shrink: 0;
+      padding: 0 .25em;
+      display: inline-block;
+    }
+  }
+  > a {
+    padding: .5rem !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    font-weight: normal !important;
+    @media only screen and (min-width: 0px) {
+      width: 50% !important;
+    }
+    @media screen and (min-width: 1360px) {
+      width: 33.33% !important;
+    }
+    &.itemHover {
+      .sccontact,
+      .lotusPhoto img {
+        border-color: $border-focus !important;
+      }
+      .actionGroup {
+        opacity: 1 !important;
+        background: transparent !important;
+      }
+    }
+    .sccontact {
+      box-shadow: 0px 2px 5px $box-shadow-30;
+    }
+
+    .lotusPhoto  {
+      height: 64px !important;
+      width: 64px !important;
+      img {
+        border-radius: $border-radius-avatar !important;
+        background-color: $background-main;
+      }
+      a:first-child img {
+        width: 64px !important;
+        height: 64px !important;
+      }
+    }
+  }
+  .sccontact {
+    &.contactSelected {
+      border-color: $border-selected !important;
+      .ccMember {
+        background-color: $color-gray-1 !important;
+      }
+      .lotusPhoto a:first-child img {
+        border: 2px solid $border-selected !important;
+      }
+    }
+    .ccMember {
+      display: flex;
+      flex-direction: row;
+      padding: 1.5rem 3.5rem 1.5rem 1.5rem;
+      box-sizing: border-box !important;
+      position: relative;
+
+      .lotusFloatContent,
+      .memberRightWrap,
+      .lotusPhoto {
+        float: none !important;
+        margin: 0 !important;
+        display: block;
+      }
+      .lotusInlinelist.scFontItalic {
+        display: inline-block;
+        width: auto;
+      }
+      .lotusFloatContent {
+        height: 3.75rem !important;
+        width: calc(100% - 2rem) !important;
+        .lotusPerson span:hover {
+          color: $text-01 !important;
+        }
+      }
+      .memberRightWrap {
+        order: 2;
+        flex-grow: 1;
+        flex-shrink: 1;
+        overflow: hidden;
+        width: auto !important;
+
+        div, span {
+          color: $text-01 !important;
+        }
+
+        * {
+          max-width: 100% !important;
+        }
+
+        div.lotusLeft {
+          margin-left: 1rem !important;
+          margin-top: 0 !important;
+          padding: 0;
+        }
+        .lotusPerson {
+          font-weight: bold !important;
+          &:hover, &:hover span, span:hover {
+            color: $text-01 !important;
+          }
+        }
+      }
+      .lotusPhoto {
+        order: 1;
+        flex-grow: 0;
+        flex-shrink: 0;
+      }
+      .actionGroup {
+        float: none !important;
+
+        .lotusBtnContainer {
+          position: relative;
+          position: absolute;
+          bottom: 1.5rem;
+          top: 1.5rem;
+          right: 1.5rem;
+          left: auto;
+          height: auto;
+          width: 1.5rem;
+
+          .scActionIcon {
+            margin: 0 auto 10px !important;
+            padding: 0 !important;
+            display: inline-block;
+            box-sizing: border-box !important;
+            width: 20px !important;
+            height: 20px !important;
+
+            &:nth-child(2) img {
+              background-position: -46px -32px !important;
+            }
+
+            img {
+              margin: 0 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// forward contacts dlg
+.sc {
+  .dijitDialog {
+    .lotusDialogContent {
+      padding-top: 0 !important;
+    }
+    .scShare {
+      .shareSection:not(:first-child) {
+        padding-top: 16px !important;
+      }
+      .peoplePickerTypeahead {
+        .dijitTextBox {
+          border: none !important;
+        }
+      }
+    }
+    .lotusDialogFooter {
+      margin-top: 0 !important;
+    }
+  }
+}

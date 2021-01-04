@@ -1,0 +1,30 @@
+.blog.admin {
+    #websiteForm {
+    td {
+      padding: 1rem 0 !important;
+      &.label {
+        text-align: left !important;
+      }
+      &[colspan="3"] {
+        padding: 1rem 0 0 !important;
+      }
+    }
+  }
+
+  //Updates to display icons
+  #lotusMain .lotusActionBar .lotusViewControl {
+    a {
+      border: 1px solid transparent !important;
+      border-bottom-width: 2px !important;
+      &.lotusSelected {
+        border-bottom-color: $border-selected !important;
+      }
+    }
+  }
+}
+
+form[name='commentManagementForm'] {
+  .lotusTable .lotusSort th:nth-child(2){
+    padding-left:18px!important;
+  }
+}

@@ -1,0 +1,160 @@
+// onprem ShareBoxGadget DIALOGS
+body.lotusui30_body .uploadFileGadgetDiv {
+  width: 500px !important;
+  fieldset[id="lconn_files_widget_UploadFile_0_share_with_fieldset"] {
+    min-width: 380px !important;
+  }
+}
+body.lconnShareboxGadget {
+  min-width: 500px !important;
+  max-width: 100%;
+}
+//Set right and left side of sharebox
+.lotusui30dojo .lcSharebox div.dijitDialogTitleBar,
+.lcSharebox .dijitTabContainer {
+  padding-right: 2rem !important;
+  padding-left: 2rem !important;
+  margin-left: 0 !important;
+}
+.lotusui30dojo .lcSharebox div.dijitDialogTitleBar {
+  box-shadow: none !important;
+}
+//Fix for narrow sharebox - CR4 2347
+.lotusui30dojo .lcSharebox {
+  div.shareTabContainer {
+    width: 584px !important;
+  }
+}
+//Set bottom of sharebox
+.lotusDialogHeader.shareBoxBottomHeader {
+  margin-bottom: 0 !important;
+	padding-top: 0 !important;
+}
+
+//Sharebox Status Update tab
+body.lconnShareboxGadget {
+  input[type="button"][dojoattachpoint="postButtonNode"],
+  input[type="button"][dojoattachpoint="resetButtonNode"],
+   {
+    &.lotusBtnDisabled {
+      @include btnsecondary;
+    }
+    @include btnprimary;
+  }
+  select {
+    @include select;
+    min-width: 45% !important;
+  }
+  input[type="text"],
+  input.lotusText {
+    @include textinput;
+    padding-top: .375rem !important;
+  }
+  div[role="search"] {
+    border: none !important;
+  }
+  li.lotusFirst a {
+    outline: none !important;
+  }
+  button[id="lconn_btn_browse_files"] {
+    @include btnprimary;
+  }
+  input[type="submit"] {
+    @include btnprimary;
+    &.lotusBtnDisabled {
+      @include btnprimarydisabled;
+    }
+  }
+  input[value="Cancel"] {
+    @include btnsecondary;
+  }
+  .lotusDialogHeader {
+  	background-color: $background-main !important;
+  	color: $text-01 !important;
+  	h1 {
+      color: $text-01 !important;
+    	font-weight:500!important;
+    	font-size: $title-font-size !important;
+  	}
+  }
+  .lotusDialogClose img {
+  	display:none!important;
+  }
+  .lotusDialogClose {
+  	@include bx--modal-close;
+  }
+  div[role="tablist"] {
+    padding-bottom: calc(.375rem + 3px) !important;
+  }
+  // tab list items styling (a):
+  .dijitTabInner.dijitTabContent,
+  .lconnPickerSourceToCheck .lconnPickerSourceLabel {
+    position: relative;
+    padding: 8px 16px 4px 32px !important;
+    margin: 0 !important;
+    color: $tab-text !important;
+    border-radius: $border-radius-tabs !important;
+    border: 1px solid transparent !important;
+    width: auto !important;
+    .lconnPickerSourceLabelSpan {
+      color: inherit !important;
+    }
+    &:hover {
+      color: $tab-text-hover !important;
+      background-color: $tab-background-hover !important;
+      border-color: $tab-border-hover !important;
+    }
+    &:focus {
+      color: $tab-text-focus !important;
+      background-color: $tab-background-focus !important;
+      border-color: $tab-border-focus !important;
+      outline: none !important;
+    }
+    img {
+      left: .75rem;
+      position: absolute;
+      &[class*="Folder"] {
+        left: .25rem;
+      }
+    }
+  }
+}
+
+//Sharebox Files tab
+body.lotusui30_body > .uploadFileGadgetDiv {
+  button[id="lconn_btn_browse_files"],
+  input[type="submit"] {
+    @include btnprimary;
+  }
+  input[value="Cancel"] {
+    @include btnsecondary;
+  }
+  a[id^="additionalOptions"] {
+    &:focus {
+      outline: none !important;
+    }
+  }
+  input[type="text"] {
+    @include textinput;
+    padding-bottom: 11px !important;  }
+  select {
+    @include select;
+  }
+  textarea {
+    @include textarea;
+  }
+}
+
+div[id^="com_ibm_social_sharebox_controls_TabContainer"] {
+  margin-left: .5rem !important;
+  .dijitTabListContainer-top div[role="tablist"] .dijitTabInner.dijitTabContent.dijitTabChecked .tabLabel:hover {
+    color: $tab-text-hover !important;
+    background-color: $tab-background-hover !important;
+  }
+  .dijitTabInner.dijitTabContent.dijitTabHover {
+    background-color: transparent !important;
+  }
+  .tabLabel {
+    margin-bottom: 0 !important;
+  }
+}

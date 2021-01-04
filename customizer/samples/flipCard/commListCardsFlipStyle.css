@@ -1,0 +1,114 @@
+.commTiles {
+  width: 100%;
+  margin:  0px 2px;
+}
+
+.cTile {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(250,250,250);
+  cursor: pointer;
+  position: relative;
+  margin: 5px 15px 15px 0;
+  white-space: normal;
+}
+
+.cTileTextContainer {
+  padding: 5px;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.cTileImg {
+  background: linear-gradient(white,black);
+  border-radius: .5em;
+}
+
+.cTileImg img {
+  width: 200px;
+  height: 200px;
+  opacity: 0.80;
+  border-radius: .5em;
+}
+
+.cTileTitle a,
+.cTileTitle a:visited {
+  font-family: Roboto,arial,sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: #333;
+}
+
+.cTileTitle a:visited {
+  color:#000
+}
+
+.cTileSmallTextDiv {
+  font-size: smaller;
+  margin-top: 2px;
+}
+
+.cTileType {
+  position: absolute;
+  right: 4px;
+  top:280px;
+  font-size:0px;
+}
+
+.cTileTrash {
+  position: absolute;
+  left: 3px;
+  top: 280px;
+}
+
+.flip-container {
+  perspective: 1000;
+  -webkit-perspective: 1000;
+}
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back {
+  width: 200px;
+  height: 200px;
+}
+
+.flipper {
+  transition: 0.35s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: .5em;
+  border: 1px solid #aaa;
+  box-shadow: 5px 5px 15px #ddd;
+}
+
+.front {
+  z-index: 2;
+}
+
+.front:hover {
+  opacity: .15;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-color: pink;
+  color: #505050;
+  text-align: left;
+  border: 1px solid black;
+  overflow: hidden;
+}

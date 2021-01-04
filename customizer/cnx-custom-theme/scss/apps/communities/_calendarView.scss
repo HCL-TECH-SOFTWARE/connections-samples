@@ -1,0 +1,41 @@
+// Calendar view
+#calendar_view {
+  // today's date
+  .s-cv-grid-today {
+    border-color: $border-focus !important;
+    border-width: 2px !important;
+    background-color: $background-side !important;
+  }
+  .s-cv-grid-dark,
+  .s-cv-nav {
+    background-color: $background-side !important;
+  }
+  .s-cv-text {
+    padding: 4px !important;
+  }
+  #dwa_cv_calendarView_0-grid {
+    top: 46px !important;
+  }
+  .s-cv-grid-header {
+    height: 22px !important;
+  }
+  .s-dateHeader {
+    background-color: $background-side !important;
+  }
+  #dwa_cv_calendarView_0-navigator-prev img {
+    background-image: svg-url-with-replaced-fill($svg-chevron-left, '#000000', $icon-default) !important;
+  	background-size:10px 10px;
+  }
+  #dwa_cv_calendarView_0-navigator-next img {
+    background-image: svg-url-with-replaced-fill($svg-chevron-right, '#000000', $icon-default) !important;
+  	background-size:10px 10px;
+  }
+  .s-cv-nav-button {
+    border: 1px solid transparent;
+    background-color: transparent !important;
+    &:focus {
+      border-color: $border-focus !important;
+      outline: none;
+    }
+  }
+}

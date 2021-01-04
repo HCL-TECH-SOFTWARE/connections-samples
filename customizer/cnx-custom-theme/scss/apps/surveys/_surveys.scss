@@ -1,0 +1,529 @@
+// Surveys Settings
+// Add a question dialog
+div[id^="freedom_widget_ide_environment_QuestionCreatorDialog"] {
+  left: 0 !important;
+  top: 0 !important;
+  .lotusDialogHeader {
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+    padding-top: 2.75rem !important;
+  }
+  .lotusDialogContent {
+    overflow-x: hidden !important;
+  }
+  .dijitTabContainer {
+    .dijitTabListContainer-top {
+      width: 100% !important;
+      height: 58px !important;
+      .dijitTabListWrapper {
+        height: auto !important;
+      }
+      div[role="tablist"] {
+        padding-bottom: calc(.375rem + 3px) !important;
+        .dijitTab {
+          padding: 0.625rem 0 0.375rem 0 !important;
+          margin: 0 0 0 1rem !important;
+          border-bottom: none !important;
+          &.dijitTabChecked {
+            border-bottom: 4px solid $tab-border-selected !important;
+          }
+          .dijitTabInner.dijitTabContent {
+            margin-left: 0 !important;
+            span {
+              padding: 0.2rem 1rem !important;
+              text-transform: capitalize !important;
+              &:focus {
+                text-decoration: none !important;
+                border-color: $tab-border-focus !important;
+                color: $tab-text !important;
+             }
+             &:hover {
+                border-color: $tab-border-focus !important;
+                background-color: $tab-background-hover !important;
+                color: $tab-text-hover !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    .dijitContentPane {
+      padding: 0 20px !important;
+      .dijitTextBox {
+        border: none !important;
+        input[type="text"] {
+          @include textinput;
+        }
+      }
+      select {
+        &:focus {
+          border-bottom-width: 1px !important;
+        }
+      }
+      a.lotusIcon:focus {
+        padding: 1px 6px !important;
+      }
+      a.upIcon, a.downIcon, a.addIcon, a.removeIcon {
+        &:focus {
+          outline: 1px solid currentColor !important;
+        }
+      }
+    }
+    .lotusMessage {
+      img {
+        margin-top: 12px !important;
+      }
+      span {
+      font-size: 1.3em !important;
+      }
+    }
+  }
+  .lotusDialogFooter {
+    padding: 6px 0 8px 0!important;
+    margin: 0 !important;
+    span.dijitButton.lotusFormButton {
+      &.dijitButtonHover {
+        background-color: $btn-secondary-fill-hover !important;
+        border-color: $btn-secondary-outline-hover !important;
+        .dijitButtonText {
+          color: $btn-secondary-text-hover !important;
+        }
+      }
+      &.dijitButtonFocused {
+        box-shadow: 0 0 0 1px $btn-primary-text-disabled, 0 0 0 2px $btn-primary-outline-disabled !important;
+      }
+    }
+    .dijitButtonContents {
+      outline: none !important;
+    }
+  }
+}
+// START Summary - Responses Tabs ==========
+.lfSummaryWrapper {
+  div.dijitVisible {
+    top: 24px !important;
+    .dijitContentPane {
+      top: 0 !important;
+      left: 0 !important;
+      padding-top: 8px !important;
+      padding-bottom: 8px !important;
+      &.lfOverviewToolbar {
+        padding: 0 !important;
+      }
+    }
+  }
+  .lfViewResponseControls {
+    border-bottom: none !important;
+    .lotusInlinelist {
+      height: 54px !important;
+      bottom: 0 !important;
+    }
+    ul[role="tablist"] {
+      li {
+        padding: 0.625rem 0 0.375rem 0 !important;
+        margin: 0 0 0 1rem !important;
+        border-bottom: none !important;
+        &.active {
+          border-bottom: 4px solid $tab-border-selected !important;
+          }
+        &:focus {
+          outline: none !important;
+        }
+        a {
+          padding: 0.5rem 1rem !important;
+          color: $tab-text !important;
+          border: 1px solid transparent !important;
+          line-height: 1.2 !important;
+          @include font-size($tabs...);
+          &:focus {
+            text-decoration: none !important;
+            border-color: $tab-border-focus !important;
+          }
+          &:hover {
+            border-color: $tab-border-focus !important;
+            background-color: $tab-background-hover !important;
+            color: $tab-text-hover !important;
+          }
+        }
+      }
+    }
+  }
+}
+// END Summary - Responses Tabs ==========
+
+//2219 Start style survey dialogs and buttons
+.lfMn.lotusui30dojo {
+  .lotusDialogHeader {
+    padding-top: 2rem !important;
+    background-image: none !important;
+  }
+  .lotusDialogContent {
+    padding: 0px 20px !important;
+  }
+  .lfSummaryView,
+  .lfnExt_ViewResponses_Toolbar,
+  .lotusDialogContent,
+  .lotusDialogFooter,
+  .lfFormFooter,
+  .optionActionsCell.trailingCell {
+    .dijitButton.lotusFormButton,
+    span[id^="dijit_form_DropDownButton"] {
+      font-family: inherit !important;
+      span.dijitArrowButtonInner {
+        background-position: 100% 3px !important;
+      }
+      &:hover {
+        transition: color 150ms ease-in, background-color 150ms ease-in, border-color 150ms ease-in !important;
+        border-color: $btn-secondary-outline-hover !important;
+        background-color: $btn-secondary-fill-hover !important;
+        span {
+          color: $btn-secondary-text-hover !important;
+        }
+        span.dijitArrowButtonInner {
+          background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $btn-primary-icon) !important;
+        }
+      }
+      &:focus {
+        outline: 1px solid $btn-primary-outline !important;
+      }
+      &.dijitFocused {
+        box-shadow: 0 0 0 1px $btn-primary-text-disabled, 0 0 0 2px $btn-primary-outline-disabled !important;
+      }
+      .dijitButtonContents {
+        &:focus {
+          outline: none !important;
+        }
+      }
+    }
+    a.upIcon, a.downIcon, a.addIcon, a.removeIcon {
+      &:focus {
+        outline: 1px solid currentColor !important;
+      }
+    }
+    span[id^="dijit_form_DropDownButton"] {
+      padding: 2px;
+    }
+    div.dijitRadio {
+      padding-left: 6px !important;
+      .dijitCheckBoxInput {
+        outline: none !important;
+      }
+    }
+    label {
+      vertical-align: bottom;
+      &.dijitFocusedLabel {
+        outline: 1px solid $btn-primary-outline !important;
+      }
+    }
+  }
+  .lfDialogContent {
+    .dijitCheckBox {
+      width: 17px !important;
+    }
+  }
+  div[id^="freedom_widget_solution_environment_OptionsList"] .dijitCheckBox {
+    margin-right: 3px;
+  }
+  .input-cell .dijitTextBox {
+    @include textinput;
+    height:auto !important;
+  }
+  .secondary-action .dijitDropDownButtonHover .dijitButtonNode .dijitButtonText {
+    text-decoration: none !important;
+  }
+  .dijitDropDownButton .dijitButtonNode {
+    @include font-size($caption...);
+    .dijitButtonText {
+      color: $color-black !important;
+      text-align: left !important;
+      min-width: 8.5em !important;
+    }
+  }
+  .lfAdvancedSearchConditionsWrapperContainer {
+    padding-left: 0;
+  }
+  .framed-wrapper,
+  .hovered-wrapper,
+  .selected-wrapper {
+    border: none;
+    background-color: $color-white !important;
+    padding-left: 0px !important;
+  }
+  .dijitArrowButtonInner {
+    background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-default) !important;
+    background-position:100% 5px!important;
+    background-size:0.75rem;
+    background-repeat: no-repeat !important;
+  }
+  .dijitButtonContents {
+    outline: none !important;
+  }
+  .lfAdvancedSearchBody {
+    padding-left: 0px;
+  }
+}
+//2219 End style survey dialogs and buttons
+
+// Compose question - no default focus on span text fields
+#freedom-composer {
+  span {
+    outline: none;
+  }
+}
+
+//2259 Survey error popup
+div[id^="freedom_widget_common_environment_StatusDialog"] .statusContent {
+  outline: none;
+}
+
+//1215 Start style Responses table
+.lfMn.lotusui30dojo {
+  // No borders above or below the pager
+  .dijitContentPane .lfDataPager {
+    border-top: none !important;
+    border-bottom: none !important;
+    margin: 10px 0;
+    padding: 5px 0;
+  }
+  // Open up space above and below the data table
+  div[id^="freedomapplication_widget_overviewF_Form1"] {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  //Remove vertical separator between Previous and Next links.
+  .toolbar-list-trail {
+    position: relative;
+    right: 2em;
+    li:nth-child(2) {
+      color:$color-white;
+    }
+  }
+  .lfAppOverviewArea {
+    .dojoxGrid {
+      .dojoxGridMasterView {
+        //position right half of table body
+        div[class="dojoxGridView"]:last-child {
+          left: 450px !important;
+        }
+      }
+      //Remove unwanted vertical line in middle of table.
+      div > .dojoxGridRow:first-child .dojoxGridCell,
+      .dojoxGridCell.firstFieldCell {
+        border-left-style: none !important;
+      }
+      .dojoxGridCell.lastMetaCell {
+        border-right-style: none !important;
+      }
+      //Top border on first row of table body.
+      div > .dojoxGridRow:first-child .dojoxGridCell {
+        border-top: $color-white !important;
+      }
+      .dojoxGridHeader {
+        //Remove dashed outline from table header cell.
+        .dojoxGridCell,
+        .dojoxGridCellFocus {
+          border-style: none !important;
+          //Vertically position the arrow icon in a cell with focus.
+          .dojoxGridArrowButtonNode,
+          .dojoxGridColCaption {
+            position: relative;
+            top: 10px !important;
+          }
+        }
+        th.idCell {
+          width: 4em !important;
+        }
+
+        //correct vertical spacing above and below header. make labels all upper-case.
+        .dojoxGridCell {
+          padding-top: 20px !important;
+          padding-bottom: 15px !important;
+          text-transform: uppercase;
+          .dojoxGridArrowButtonNode {
+            position: relative;
+            left: 9000px;
+          }
+          //Up arrow next to header column label
+          .dojoxGridSortUp {
+              background-image: svg-url-with-replaced-fill($svg-chevron-up, '#000000', $icon-default);
+              background-size: 8px 8px !important;
+              padding: 0px 0px 0px 0px !important;
+              background-position: calc(100% - 7px) 15px !important;
+              background-repeat: no-repeat;
+              &:hover {
+                background-image: svg-url-with-replaced-fill($svg-chevron-up, '#000000', $icon-white) !important;
+              }
+          }
+          //Down arrow next to header column label
+          .dojoxGridSortDown {
+             background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-default);
+             background-size: 8px 8px !important;
+             padding: 0px 0px 0px 0px !important; //was 8px for top, 20px for right, 16px for left
+             background-position: calc(100% - 7px) 15px !important;
+             background-repeat: no-repeat;
+             &:hover {
+               background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-white) !important;
+             }
+          }
+        }
+
+        // blue line below header column labels
+        .dojoxGridRowTable {
+          border-bottom: 1px solid $brand-01 !important;
+        }
+      }
+      .dojoxGridMasterHeader {
+        height: 81px;
+        .dojoxGridSortNode {
+          color: $color-gray-60 !important;
+          text-decoration: none !important;
+          border-radius: 2px !important;
+          border-color: $brand-01 !important;
+          text-align: center;
+          @include font-size($caption...);
+          &:hover {
+            background-color: $brand-01;
+            color: $color-white !important;
+          }
+          height: 40px;
+          // Vertically position a header cell that does not have focus.
+          > .dojoxGridCellContent {
+            position: relative;
+            top: 10px;
+            display: inline-block;
+          }
+        }
+      }
+      // height of table rows
+      .dojoxGridCell {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+  // Make Next/Previous text black when it is not a link.
+  li.dijitDisabled a {
+    font-weight: 400 !important;
+    color: $color-black !important;
+    text-decoration: none !important;
+  }
+  //Correct label in bottom pager, hide the vertical separators.
+  .pageSizeController li {
+    &:nth-child(1) {
+      &::after {
+        content: ":";
+      }
+    }
+    &:nth-child(9) {
+      text-transform: lowercase;
+    }
+    &:nth-child(3),
+    &:nth-child(5),
+    &:nth-child(7) {
+      color: $color-white;
+    }
+  }
+  // no scroll bars
+  .lfSummaryWrapper {
+    .dijitLayoutContainer {
+      overflow: hidden !important;
+    }
+  }
+}
+
+
+//1215 End style Responses table
+
+//2299 Position View properties, Search, and Export dialogs within surveys iframe
+.viewDataSessionDialog,
+#export-dialog_dialog,
+.lfAdvancedSearchDialog {
+  top: 0px !important;
+}
+
+//2259 Survey error popup
+div[id^="freedom_widget_common_environment_StatusDialog"] .statusContent {
+  outline: none;
+}
+
+//2298 Response page header scrollbar
+div[id^="freedom_widget_solution_environment_CurrentItemViewDialog"] {
+  .lotusDialogHeader {
+    overflow: hidden !important;
+  }
+}
+
+//2295 discard changes dialog
+div[id^="freedom_widget_common_environment_Dialog"] {
+  .lotusDialogContent {
+    ul {
+      padding-left: 0 !important;
+    }
+  }
+  .lotusDialogFooter {
+    span.dijitButton {
+      @include btnsecondary;
+      &.dijitButtonHover {
+        background-color: $btn-secondary-fill-hover !important;
+        border-color: $btn-secondary-outline-hover !important;
+        .dijitButtonText {
+          color: $btn-secondary-text-hover !important;
+        }
+      }
+      &.dijitButtonFocused {
+        box-shadow: 0 0 0 1px $btn-primary-text-disabled, 0 0 0 2px $btn-primary-outline-disabled !important;
+      }
+    }
+    .dijitButtonContents {
+      outline: none !important;
+    }
+  }
+}
+
+// FF issue with tall buttons on surveys dialogs
+@-moz-document url-prefix() {
+  div[id^="freedom_widget"],
+  #export-dialog_dialog,
+  .lfSummaryWrapper {
+    .dijitInline {
+      padding: 3px 6px !important;
+    }
+  }
+  div[id^="freedom_widget_solution_environment_ViewDataSessionPropertyDialog"] {
+    .dijitInline {
+      padding: 2px 6px !important;
+    }
+  }
+}
+
+// 2304 - The survey draft view table - hover and select colors
+.lfMn.cnx {
+  table.grid-layout-table {
+    > .grid-layout-body > .grid-layout-row > .grid-layout-cell.selected,
+    > .grid-layout-body > .grid-layout-row > .grid-layout-cell.hovered.selected,
+    .grid-layout-action-bar {
+      border: 1px solid #aaa !important;
+    }
+    td.grid-layout-cell {
+      .selected-wrapper, .hovered-wrapper {
+        background-color: transparent !important;
+      }
+    }
+  }
+}
+
+// Featured survey widget - issue 2333
+#summary-view {
+  .lfCarousel {
+    .lfCarouselFooter {
+      padding: 0 !important;
+    }
+    .lfCarouselBody {
+      table.dojoxLegendNode {
+        label.dojoxLegendText {
+          display: initial !important;
+        }
+      }
+    }
+  }
+}

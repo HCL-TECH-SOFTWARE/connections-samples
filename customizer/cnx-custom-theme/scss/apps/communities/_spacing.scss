@@ -1,0 +1,309 @@
+//Communities app name in top left
+.lotusTitleBar h2.lotusHeading .lotusText a, //Stand-alone forums app title
+.lotusTitleBar h2.lotusHeading .lotusText a:hover, //Stand-alone forums app title
+#lotusTitleBar h2,
+#lotusTitleBar h2 a {
+  @include font-size($apptitle...);
+  color:$text-01 !important;
+}
+//Name of community in main area
+#pagePlaceBar .lotusInner h2, //Blog
+.lotusPlaceBar .lotusInner h2, //Forum
+.pagePlaceBar .lotusInner h2, //Ideation blog
+#lotusPlaceBar .lotusInner h2 { //Wiki page
+  @include font-size($apptitle...);
+  color:$text-01 !important;
+  margin-left:260px !important;
+}
+
+//Wiki changes(mostly)
+.lotusContent:not(.wpthemeBanner):not(.wpthemeNarrow):not(.wpthemeWide){
+  padding-left:48px!important;
+  .lotusBreadcrumbs,#wikiPageHeader{
+    margin-bottom:16px!important;
+  }
+  #wikiPageHeader {
+    @include font-size($title...);
+  }
+}
+// create sub-community in a top-nav no banner community
+#lotusColLeft ~ .lotusContent.wpthemeNarrow.wpthemeNarrowPlus {
+  #newCommunityForm {
+    padding-left:48px!important;
+  }
+}
+// 2406 Don't adjust top and padding for wiki left nav with scrollbar.
+// 2460 update to fix issue with file dialog scrolling off page
+body:not(.catalog),
+html:not(.catalog-ui-updated) .catalog {
+  #lotusColLeft.lotusColLeft:not(.wpthemeNarrow):not(.lotusStyledScroll) {
+    padding-top: 32px !important;
+    position: relative !important;
+    top: -24px !important;
+  }
+}
+.wikiHeader{
+  .lotusMeta,.lotusBtnContainer{
+    padding-top:0!important;
+    margin-top:0!important;
+  }
+  .lotusMeta {
+    margin-bottom: 10px !important;
+  }
+}
+.lconnWikis .lotusHeader h1 {
+  @include font-size($title...);
+}
+
+//Blog Changes overwrite the wiki counterpart
+.blog {
+  .lotusMain{
+    padding-top:0!important;
+  }
+  .lotusContent,#lotusColRight{
+    padding-top:32px!important;
+  }
+  #lotusColLeft:not(.wpthemeNarrow){
+    position:relative!important;
+    top:4px!important;
+    padding-top:28px!important;
+  }
+  .lotusContent{
+    margin-left:234px!important;
+  }
+  .lotusHeader,
+  .lotusActionBar,
+  .lotusPaging,
+  .lotusSort{
+    margin-top:0!important;
+    margin-bottom:16px!important;
+  }
+  #lotusColRight{
+    margin-left:48px!important;
+    .lotusSection > h2 {
+      padding-left: 0 !important;
+    }
+  }
+}
+
+//Wiki, images in pages
+.qkrWikiPreview {
+  img:not(.lconn-ftype16) {
+    max-width: 100%;
+  }
+}
+
+//Wiki Index Page right side gutter
+.qkrQuota{
+  margin-right:0!important;
+}
+.qkrViewControl{
+  position:relative!important;
+  left:9px!important
+}
+
+//Forum form footer
+div[id^="lconn_forums_PostForm_"] {
+  .lotusFormTitle, .lotusFormBody, .lotusFormFooter {
+    padding-left:0px !important;
+    padding-right:0px !important;
+  }
+}
+
+// community actions
+%headreset {
+  float: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  right: auto !important;
+}
+#lotusTitleBar .lotusWrapper .lotusRightCorner .lotusInner {
+  padding-top: 22px !important;
+
+  .lotusTitleBarContent h2 {
+      line-height: 1.5;
+  }
+}
+.lotusui30 #activitiesTitleBar .lotusRightCorner.tabNavPlaceBarRightCorner {
+  @extend %headreset;
+}
+#lotusFrame .lotusPlaceBar {
+  @extend %headreset;
+  .lotusRightCorner {
+    @extend %headreset;
+    .lotusInner {
+      @extend %headreset;
+      h2 {
+        @extend %headreset;
+        margin-left: 288px !important;
+        margin-top: -47px !important;
+      }
+      // interim fix for firefox issue to display top of community overview
+      @-moz-document url-prefix() {
+        h2 {
+          margin-top: 0px !important;
+        }
+      }
+    }
+  }
+}
+h2 + div.lotusTitleBarExt > ul.lotusInlinelist.lotusActions:not(#communityActions) {
+  padding: 1rem 1.75rem 0 !important;
+}
+h2 + div#communityActionBar,
+.blog .lotusRightCorner:not(.tabNavPlaceBarRightCorner) ul#blogsActionBar {
+  display: block !important;
+  right: 2.5rem !important;
+  padding-top: 1rem !important;
+}
+.blog .lotusRightCorner:not(.tabNavPlaceBarRightCorner) ul#blogsActionBar {
+  right: 1.75rem !important;
+}
+.lotusPlaceBar .lotusRightCorner {
+  .lotusActions, #communityActions {
+    li a {
+      @include font-size($bodylink...)
+    }
+  }
+}
+
+// three column community layout
+.lotusMain #lotusColBanner ~ #lotusColLeft.wpthemeNarrow {
+  width: 432px !important;
+  padding: 0;
+  margin: 0 2rem 0 0 !important;
+}
+.lotusMain #lotusColBanner[style*="display: none;"] ~ #lotusColLeft.wpthemeNarrow {
+  width: $leftnav-width !important;
+}
+.lotusWidget_3columnsTopMenuLayout #lotusColLeft.wpthemeNarrow {
+  width: 370px !important;
+  margin: 0 30px 0 0 !important;
+}
+
+#commonSearchControlContainer.icSearchBarMode {
+  top: 12px !important;
+  right: 0 !important;
+}
+
+// invite entries spacing - issue 1214
+#inviteEntriesFullMembers {
+  .lotusCheckbox {
+    margin: 0 4px !important;
+    vertical-align: middle !important;
+  }
+}
+
+// margins on recent updates - issue 1146
+#RecentUpdatesSection,
+#widget-container-col2statusposts div {
+  padding-left: 0 !important;
+  h2 {
+    margin: 0 !important;
+    padding-left: 0 !important;
+  }
+  .activityStreamNewsItemContainer {
+    padding-left: 25px !important;
+  }
+}
+
+// events
+#calendar_event_viewer .eventHeader + .lotusActionBar.lotusBtnContainer {
+  height: auto !important;
+  float: none;
+
+  > span {
+    float: none;
+    display: inline-block;
+  }
+}
+
+// left nav layout tweaks
+.communities-widget-appearance .lotusWidget_3columnLayoutWithBanner #lotusMainColumns {
+  margin-left: $leftnav-width !important;
+}
+
+// community members
+#Members {
+  #wai_memberInviteFormDiv {
+    .lotusFormLabel {
+      width: auto !important;
+
+      label {
+        white-space: nowrap;
+      }
+    }
+    .lotusFormTable .lotusTable {
+      width: 100% !important;
+    }
+  }
+  #memberAddFormDiv .lotusFormTable > tbody > tr > td {
+    &.lotusFormLabel {
+      width: auto !important;
+    }
+    > .lotusTable {
+      width: 100% !important;
+      table-layout: fixed;
+
+      tbody {
+        display: flex;
+      }
+
+      #addMembersWidgetTD {
+        width: 100%;
+      }
+
+      div.memberList {
+        white-space: normal;
+      }
+    }
+  }
+  #MembersPanel .lotusForm {
+  	tr#controlsRow > td + td {
+  		padding-bottom: 3.5rem;
+  	}
+  	tr#findRow {
+      position: absolute;
+      right: 0;
+      top: 40%;
+  	}
+  	#findLabel,
+  	#filterLabel {
+  		@include font-size($body...);
+  	}
+  	#filterLabel,
+  	span.lotusIndent10 {
+  		display: inline-block;
+  	}
+  	#roleFilter {
+  		width: 10rem !important;
+  	}
+  }
+  #communitiesAddButton {
+    display: none;
+  }
+}
+
+// External title and members message
+.lconnSharedExternalPlaceBar {
+  h2 {
+    background: none !important;
+    .comNavInline {
+      background: $external !important;
+    }
+  }
+}
+//External community note
+#lotusFrame:not([class$="TopMenuLayout"]) #lotusMain #commMayHaveExternals {
+  @extend %headreset;
+  margin-left: 288px !important;
+  margin-bottom: 20px !important;
+}
+#lotusContent #Members {
+  span.lconnIconListSharedExternal {
+    margin: 0 4px 0 6px;
+  }
+}

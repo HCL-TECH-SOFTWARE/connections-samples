@@ -1,0 +1,139 @@
+// syling for cke editor elements
+
+// starting from the table properties cke dialog, but a lot of this looks pretty general
+.cke_dialog {
+  // the title bar; includes the title text
+  .cke_dialog_body {
+    .cke_dialog_title {
+      background-color: $background-main;
+      padding-top: 1.25rem !important;
+    }
+    [id^="cke_dialog_close_button"].cke_dialog_close_button {
+      @include bx--modal-close;
+    }
+    .cke_dialog_tabs {
+      padding: 20px 10px 12px 20px !important;
+      font-size: $tab-font-size !important;
+      height: auto;
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 0;
+        width: auto;
+        left: 20px;
+        right: 20px;
+        border-bottom: 1px solid $color-gray-10 !important;
+      }
+
+      .cke_dialog_tab {
+        @include font-size($tabs...);
+        padding: 0.5rem 1rem !important;
+        margin: 0 !important;
+        color: $text-02 !important;
+        border-radius: $border-radius-tabs !important;
+        border: 1px solid transparent !important;
+        text-transform: none !important;
+        display: inline-block;
+        position: relative;
+        + .cke_dialog_tab {
+          margin-left: 1rem !important;
+        }
+        &:after {
+          content: '';
+          display: none;
+          bottom: -13px;
+          left: 0;
+          height: 4px;
+          width: 100%;
+          background-color: $border-selected;
+          position: absolute;
+        }
+        &:hover {
+          color: $text-03 !important;
+          background-color: $btn-secondary-fill-hover !important;
+          border-color: $btn-secondary-outline-hover !important;
+        }
+        &:focus {
+          color: $text-01 !important;
+          background-color: transparent !important;
+          border-color: $btn-secondary-outline-hover !important;
+        }
+        &.cke_dialog_tab_selected {
+          color: $text-01 !important;
+          &:after {
+            display: block;
+          }
+          &:hover {
+            color: $text-03 !important;
+            background-color: $btn-secondary-fill-hover !important;
+            border-color: $btn-secondary-outline-hover !important;
+          }
+          &:focus {
+            border-color: $btn-secondary-outline-hover !important;
+          }
+          &:active, &:focus {
+            text-decoration: none !important;
+          }
+        }
+      }
+      .cke_dialog_tab[id^="cke_advanced_"] {
+        margin-left: 0.5rem !important;
+      }
+    }
+    .cke_dialog_contents {
+      .cke_dialog_ui_text {
+        div.cke_dialog_ui_input_text {
+          border: none;
+        }
+        input.cke_dialog_ui_input_text {
+          @include textinput;
+        }
+        &.cke_disabled {
+          background:transparent !important;
+          div.cke_dialog_ui_input_text {
+            background-color:$color-gray-1 !important;
+          }
+          input.cke_dialog_ui_input_text {
+            background:transparent !important;
+            color:$disabled !important;
+          }
+        }
+      }
+      .cke_dialog_ui_input_select {
+        padding-bottom: .6rem !important;
+        &:focus {
+          padding-bottom: .5375rem !important;
+        }
+      }
+      .cke_dialog_ui_button {
+        &.cke_dialog_ui_button_ok {
+          @include btnprimary;
+          span {
+            color: $btn-primary-text !important;
+          }
+          &:hover span {
+            color: $btn-primary-text-hover !important;
+          }
+        }
+        &.cke_dialog_ui_button_cancel {
+          @include btnsecondary;
+          span {
+            color: $btn-secondary-text !important;
+          }
+          &:hover span {
+            color: $btn-secondary-text-hover !important;
+          }
+        }
+      }
+      .cke_dialog_ui_html {
+        text-align: left !important;
+      }
+    }
+  }
+}
+//Select Color dialog for tables
+//1602 add space between selected color and field to enter color
+[id$="_selhicolor"] {margin-bottom: 8px;}

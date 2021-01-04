@@ -1,0 +1,32 @@
+// some button changes that are too general (no good trustworthy selectors/IDs) to put in _buttons.scss
+div[id^="com_ibm_sc_widget_SlideDialog_"] {
+  .lotusBtn {
+    &.lotusBtnDisabled:hover {
+      @include btnprimary;
+    }
+
+    &[data-dojo-attach-point="cancelBtn"],
+    &[data-dojo-attach-point="previousBtn"] {
+      // secondary btn styling
+      @include btnsecondary();
+
+      &:not([disabled]):hover {
+        @include btnprimary;
+      }
+    }
+  }
+}
+
+// onprem profiles - my links bookmark icon
+#profilePaneRight li[id^="lconn_profiles_widgets_linkRoll_Item"] {
+  background-image: svg-url-with-replaced-fill($svg-icon-bookmark, '#000000', $icon-file-type-bookmark) !important;
+  background-position: 0px 4px !important;
+  background-repeat: no-repeat !important;
+  background-size: 16px !important;
+  > img {
+    display:none;
+  }
+  > a.lotusLeft {
+    margin-left: 24px;
+  }
+}

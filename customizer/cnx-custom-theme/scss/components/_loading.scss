@@ -1,0 +1,107 @@
+@keyframes rotate{
+	0%{
+		transform:rotate(0deg);
+	}
+	100%{
+		transform:rotate(360deg);
+	}
+}
+.lotusLoading {
+	background: svg-url-with-replaced-fill($svg-loading, '#000000', $icon-brand-01) !important;
+	animation-name:rotate;
+	animation-duration:500ms;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
+	width:16px!important;
+	height:16px!important;
+	position:absolute!important;
+	left:calc(50% - 8px)!important;
+}
+
+.lotusContent .filesList {
+	.lotusLoading {
+		width:48px!important;
+		height:48px!important;
+		position:absolute!important;
+		left:calc(50% - 24px)!important;
+		top:calc(50% - 24px)!important;
+		background-color: $background-main !important;
+	}
+	.qkrLoading{
+		margin-top:15%!important;
+		margin-bottom:0px !important;
+		color: $text-03 !important;
+		font-size:0px!important;
+		position:relative!important;
+		margin-left:0!important;
+		background-color:$background-main !important; //Cover line from footer paging
+		padding-bottom:100px !important; //Cover line from footer paging
+	}
+}
+
+//Fix for the loading icon in Files File Viewer
+.ics-viewer .loading, .loading {
+	span{
+		display:none!important;
+	}
+	.lotusLoading{
+		width:48px!important;
+		height:48px!important;
+		background-color:transparent!important;
+		position:relative;
+		top:-13px;
+		background-image: svg-url-with-replaced-fill($svg-loading, '#000000', $icon-white) !important;
+	}
+}
+
+//Fix for the tag loading in Left Nav
+[dojoattachpoint ="_loadTags"]{
+	color:transparent!important;
+	height:0!important;
+	.lotusLoading{
+		position:relative!important;
+		top:-30px!important;
+		left:69px!important;
+	}
+}
+
+//Loading in metrics
+#loadingDivContainerID {
+	position:relative;
+  #loadingDivID {
+		position:absolute;
+		top:100px;
+		bottom:0;
+		left:0;
+		right:0;
+		text-align: center;
+		margin-top: 50px;
+		@include font-size($head2...);
+		color:$text-02;
+    .lotusLoading {
+			width: 64px !important;
+			height: 64px !important;
+			bottom:16px;
+			left: calc(50% - 24px) !important;
+			animation-duration:800ms !important;
+	  }
+  }
+}
+
+//Loading Activity Stream
+.lotusStreamTopLoading {
+  .loaderMain {
+    @include font-size($head2...);
+    border:none !important;
+    color:$text-02;
+    padding-top:150px;
+    padding-bottom:60px;
+    img {
+      animation-duration:800ms;
+      width:64px !important;
+      height:64px !important;
+      left:calc(50% - 32px) !important;
+      top:230px !important;
+    }
+  }
+}

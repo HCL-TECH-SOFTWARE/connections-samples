@@ -1,0 +1,702 @@
+// tags on a profile page:
+#socialTags {
+  #tagsYouAddedList_div, #tagsListTags_div {
+    max-height: 12.75rem;
+    overflow: auto;
+  }
+  #tagsYouAddedView, #tagsList {
+    h3 {
+      border: 0 !important;
+      font-weight: bold;
+      margin: 1rem 0 0;
+    }
+    .lotusTags {
+      > li {
+        display: flex !important;
+        margin: 0;
+        padding: 0 !important;
+        margin: .75rem 0;
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+
+        > span, > a {
+          float: none !important;
+        }
+
+        a:focus {
+          outline: none !important;
+        }
+      }
+      .lotusCommentBubbleBody {
+        padding-top: 0 !important;
+        .lotusMeta {
+          font-size: $body-mini-font-size;
+        }
+        .lotusTags > li {
+          display: block !important;
+          margin: 0 !important;
+          text-align: left;
+          &:before {
+            content: '\2022';
+            margin: 0 .5rem;
+            display: inline-block;
+          }
+          a {
+            padding: 0 !important;
+            background: none !important;
+          }
+        }
+      }
+      a {
+        @include tags(white);
+      }
+      .profileTag {
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+        order: 1;
+        position: relative !important;
+        left: auto !important;
+        padding-right: .5rem !important;
+        max-width: calc(100% - 58px) !important;
+        box-sizing: border-box !important;
+      }
+      span.lotusRight {
+        order: 2;
+        .lotusDelete {
+          img {
+            background: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-default) !important;
+            background-position:0px 0px!important;
+            height: 9px;
+            width: 9px;
+            opacity: 1;
+            background-size: contain !important;
+          }
+        }
+        .lotusDelete, .lconnTagCount {
+          border-top-left-radius: 0 !important;
+          border-bottom-left-radius: 0 !important;
+          padding-left: .5rem !important;
+          order: 2;
+          position: relative;
+          overflow: visible;
+          z-index: 2;
+          &:before {
+            content: '\2022';
+            display: block;
+            position: absolute;
+            left: -.15rem;
+            top: 0;
+          }
+        }
+        .lconnTagCount + .lotusDelete {
+          margin-left: -.45rem !important;
+          &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -.25rem;
+            z-index: -10;
+            width: 2em;
+            background: $color-white;
+            height: 100%;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  #tagsYouAddedView .lotusTags span.lotusRight .lconnTagCount{
+    padding-left: 0 !important;
+    &:before {
+      display: none;
+    }
+  }
+  #add-tag-view {
+    #tagInputForm > .lotusBtnImg {
+      padding: 0 !important;
+      height: auto !important;
+    }
+    #addTagButtonId {
+      display: block;
+      padding: 2px;
+      img {
+        background: svg-url-with-replaced-fill($svg-add, '#000000', $icon-brand-01) !important;
+        opacity: 1 !important;
+        margin: 0 !important;
+      }
+      &:hover img {
+        background: svg-url-with-replaced-fill($svg-add, '#000000', $icon-brand-02) !important;
+      }
+    }
+  }
+  div[id^="SocialTaggerList"] {
+    width: 100%;
+    order: 3;
+  }
+  #tagsList .lotusChunk10.lotusTiny {
+    li {
+      border: none !important;
+      padding: 0 !important;
+
+      a {
+        @include font-size($bodylink...);
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+}
+
+
+// tags on a search page:
+// in the search field:
+.contactsSearch,
+#searchInfo,
+.lotusMeta,
+.lotusSearchFilterSection {
+  > span {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: .25rem;
+    font-size: .75rem;
+  }
+  a.lotusFilter {
+    @include tags;
+    vertical-align: top !important;
+    max-width: 100rem !important;
+    margin: .5rem .5rem 0 0 !important;
+    span.name {
+      vertical-align: middle;
+      width: auto !important;
+    }
+    img.lotusDelete {
+      background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-default) !important;
+      height: 9px;
+      width: 9px;
+      opacity: 1 !important;
+      margin: 0 5px !important;
+      vertical-align: middle !important;
+      background-size: contain !important;
+      background-position:0px 0px!important;
+    }
+  }
+  .lotusFilters2 {
+    line-height: 1.5rem !important;
+    font-size: $body-mini-font-size !important;
+    width: 100% !important;
+  }
+}
+#searchInfo a.lotusFilter {
+  margin: 0 .5rem !important;
+}
+#lconnTagWidget_tagList,
+#lconnTagWidget_tagCloudView,
+ul[id*="_tagList"]:not(#tagsDiv_tagList) {
+  > li {
+    display: flex !important;
+    padding: 0 !important;
+    margin: .75rem 0 !important;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    wbr {
+      display: none !important;
+    }
+
+    > span, > a {
+      float: none !important;
+      @include tags(white);
+    }
+    .lotusLeft {
+      border-top-right-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+      order: 1;
+      position: relative !important;
+      left: auto !important;
+      padding-right: .5rem !important;
+      max-width: calc(100% - 58px) !important;
+      box-sizing: border-box !important;
+    }
+    .lotusRight {
+      border-top-left-radius: 0 !important;
+      border-bottom-left-radius: 0 !important;
+      padding-left: .5rem !important;
+      order: 2;
+      position: relative;
+      overflow: visible;
+      z-index: 2;
+      &:before {
+        content: '\2022';
+        display: block;
+        position: absolute;
+        left: -.15rem;
+        top: 0;
+      }
+    }
+    .lotusDelete img {
+      margin: 6px 0;
+    }
+  }
+}
+
+// related tags in the left menu:
+ul.lotusRelatedTags a {
+  @include tags(white);
+  box-sizing: border-box !important;
+  wbr {
+    display: none !important;
+  }
+}
+// selected tags in the left menu:
+div[dojoattachpoint="_selectedTagsSection"],
+div[data-dojo-attach-point="_selectedTagsSection"] {
+  .lotusList {
+    > li {
+      display: flex !important;
+      margin: 0;
+      padding: 0 !important;
+      margin: .75rem 0 !important;
+      align-items: flex-start;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: nowrap;
+
+      > span, > a {
+        float: none !important;
+      }
+
+      a {
+        @include tags(white);
+      }
+      span.lotusLeft {
+        @include tags(white);
+        display: inline-block;
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+        order: 1;
+        position: relative !important;
+        left: auto !important;
+        padding-right: .5rem !important;
+        max-width: calc(100% - 58px) !important;
+        box-sizing: border-box !important;
+      }
+      a.lotusDelete {
+        order: 2;
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        padding-left: 0 !important;
+        img {
+          background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-default) !important;
+          height: 9px;
+          width: 9px;
+          opacity: 1;
+          background-size: contain !important;
+          background-position:0px 0px!important;
+        }
+      }
+    }
+  }
+}
+// headings in the left tag menu:
+#lconnTagWidget {
+  > div > div {
+    margin-bottom: 1rem;
+  }
+}
+// left tag menu search field:
+#lconnTagWidgetcommonTagsTypeAhead {
+  font-size: $body-sm-font-size !important
+}
+
+// chiclets in search all need to get out the way:
+.contactsSearch {
+  position: relative;
+  display: flex !important;
+  align-items: flex-start;
+  margin-bottom: 0 !important;
+  flex-direction: column;
+  float: none !important;
+  position: relative;
+  .contactsSearchIconDiv {
+    position: absolute;
+    top: .35rem;
+  }
+  .contactsSearchIcon {
+    margin: 0 !important;
+  }
+  .inputWrap {
+    min-width: 30rem !important;
+    padding-left: 0 !important;
+  }
+  .scSearchInput {
+    margin-left: 0 !important;
+  }
+  .lotusFilters2 {
+    order: 3;
+    padding: 0 !important;
+    margin: .25rem 0 0 0 !important;
+  }
+}
+
+.commonTags #lconnTagWidget ul.lotusList.lotusRelatedTags {
+  max-height: 12.75rem;
+  overflow: auto;
+}
+
+// FILES: fix search button to right of input when adding tags to query:
+input.lotusText.scTagTypeahead {
+  max-width: calc(100% - 24px);
+  min-width: 100px !important;
+  + span.lotusBtnImg {
+    margin: 6px 0;
+  }
+}
+
+// Tags in Files app
+.lotusHeader .lotusMeta  {
+  line-height:2.5rem;
+
+  .lotusFilter {
+    margin-top: 0 !important;
+    margin-bottom: .5rem !important;
+    vertical-align: middle !important;
+  }
+
+  ul {
+    line-height: 1.25em;
+  }
+}
+.lconnFiles #lconnTagCloudContent {
+  .lotusInlinelist.lotusActions li {
+    border: none !important;
+    padding: 0 !important;
+  }
+  div[dojoattachpoint="_tagCloudLink"],
+  div[dojoattachpoint="_tagListLink"] {
+    span.lotusBold {
+      display:none;
+    }
+  }
+}
+// Tags search field in Files
+.lotusChunk.lotusSearch {
+  width:100%;
+}
+
+// Tags in "Files -> More -> Add Tags"
+// and in blog -> entry, wiki -> entry
+.lotusMain .lotusTags.lotusMeta,
+.lotusMain .lotusTags {
+  > ul, > span:not(.lotusHidden), > form {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  ul {
+    margin-top: -1px;
+  }
+  span[role="list"],
+  ul[role="listbox"]{
+    position:relative!important;
+    //top:7px!important;
+  }
+  span[role="separator"]{
+    display:none!important;
+  }
+  span[role="listitem"],
+  li.lotusTag {
+    @include tags();
+    margin-left:4px!important;
+    margin-right:4px!important;
+    vertical-align: middle;
+    a.bidiAware{
+      color:$text-01!important;
+      font-weight:normal!important;
+    }
+    a.bidiAware:hover{
+      text-decoration: underline !important;
+    }
+    a[role="button"],
+    a.qkrRemove{
+      position:relative;
+      height: 100%;
+      margin: 0 3px;
+      padding: .45rem 0;
+      box-sizing: border-box !important;
+      display: inline-block;
+      vertical-align: middle;
+      img{
+        background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-black) !important;
+        background-position:0px 0px!important;
+        width:9px;
+        height:9px;
+        background-size: contain;
+      }
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 20%;
+        left: 100%;
+        width: 13px;
+        height: 60%;
+        background-color: $background-side;
+      }
+    }
+  }
+  &:not([aria-expanded="true"]) {
+    li.lotusTag a {
+      display: block;
+      position: relative;
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 20%;
+        left: 100%;
+        width: 5px;
+        height: 60%;
+        background-color: $background-side;
+      }
+    }
+  }
+  form[style="display: inline;"]{
+    display:block!important;
+    margin-top:14px!important;
+    margin-bottom:8px!important;
+  }
+}
+// Tags in "Files -> Dialog Boxes -> Share With"
+.lotusDialogContent{
+  div[class ^= "lotusFilters"]{
+    a.lotusFilter{
+      @include tags();
+      &:hover{
+        text-decoration:none!important;
+      }
+    }
+    a[role="button"] img{
+      background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-black) !important;
+      background-position:0px 0px!important;
+      width:9px;
+      height:9px;
+      background-size: contain !important;
+    }
+  }
+}
+
+// tags for contacts
+#contactsTagWidget_tagListView {
+  max-height: 12.75rem;
+  overflow: auto;
+}
+.lotusContent form#entryform {
+  .lotusTags {
+    span[role="listitem"] {
+      overflow: visible !important;
+      position: relative;
+      a, a:hover, a:focus {
+        color: $text-02 !important;
+      }
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 3px;
+        left: 100%;
+        height: 100%;
+        width: 7px;
+        background-color: $background-main;
+      }
+    }
+  }
+}
+
+// tags in forum
+#forum .lotusPostContent .lotusMeta .lotusTags span,
+#topicList #forumTagEditer > span,
+.lotusContent span[id^="lconn_forums_TagEditor_"] > span  {
+  // hide commas:
+  font-size: 0;
+  > span[role="listitem"] {
+    cursor: default !important;
+  }
+  span:not(.lotusAltText),
+  a[role="listitem"] {
+    @include tags;
+    margin: .15rem !important;
+  }
+  a[role="listitem"] + a[role="button"],
+  span[role="listitem"] + a[role="button"] {
+    @include tags;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    margin: .15rem !important;
+    margin-left: -.75rem !important;
+    padding: 0 1rem 0 0 !important;
+    vertical-align: middle;
+
+    img {
+      height: 100% !important;
+      width: 12px !important;
+      background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-default) !important;
+      background-position: center center !important;
+      background-size: 9px 9px;
+    }
+  }
+}
+#topicList .lotusFilters a {
+  @include tags;
+  cursor: default !important;
+
+  .lotusClose {
+    cursor: pointer !important;
+    text-indent: -999px;
+    display: inline-block;
+    height: 100% !important;
+    width: 12px !important;
+    background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-default) !important;
+    background-position: center center !important;
+    background-size: 9px 9px;
+    background-repeat: no-repeat;
+  }
+}
+
+// wiki tags
+.lconnWikis .lotusContent .lotusTags li.lotusTag {
+  margin: .15rem !important;
+}
+
+// communities invert colors
+.lotusCommunities .widgetContainer #tagsContainer {
+  #tagsDiv_tagList li {
+    @include tags;
+    margin: 0 .5rem .5rem 0 !important;
+    display: inline-flex !important;
+    flex-direction: row;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+
+    a {
+      background-color: transparent !important;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      order: 1;
+      float: none;
+    }
+
+    .lotusRight {
+      flex-grow: 0;
+      flex-shrink: 1;
+      order: 2;
+      float: none !important;
+      &:before {
+        content: '\2022';
+        display: inline-block;
+        margin: 0 .25rem;
+      }
+    }
+  }
+}
+
+// this is defined here so that I can extend it below to
+// the different cloud and on-prem mebers tags instances
+%membersTagStylingModule {
+  border: none;
+  @include tags;
+  padding-right: 1.5rem !important;
+  float: left;
+  margin-bottom: .5rem !important;
+  box-sizing: border-box !important;
+  position: relative;
+
+  img.lotusDelete {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 12px !important;
+    width: 12px !important;
+    right: 10px;
+    background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-default) !important;
+    background-position: center center;
+    margin-right: 0;
+  }
+}
+
+#memberAddFormDiv #memberList,
+#memberInviteFormDiv #memberList {
+  .lotusFilter.filterSpacing {
+    @extend %membersTagStylingModule;
+  }
+}
+#addMembersWidget #memberList,
+#inviteMembersWidget #memberList {
+  border: none;
+
+  .member {
+    @extend %membersTagStylingModule;
+
+    > .P {
+      display: none;
+    }
+
+    .nameContent {
+      padding-left: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .type {
+      color: $text-01;
+      margin-right: 1rem;
+    }
+  }
+}
+
+// cloud differentiations
+
+.lotusui30 .lotusTagCloud li {
+  // set font size here so that we can use ems below and they'll be relative to this parent:
+  @include font-size($body...);
+  a {
+    @include link-dark();
+    // inherit the font size and weight by default:
+    @include font-size(inherit, inherit);
+    // now apply the pre-periscope styles to the different classes of tags:
+    &.lotusF5, &:hover.lotusF5 { font-size:1.5em !important; font-weight: inherit !important; }
+    &.lotusF4, &:hover.lotusF4 { font-size:1.167em !important; font-weight:600 !important; }
+    &.lotusF3, &:hover.lotusF3 { font-size:1.167em !important; font-weight: inherit !important; }
+    &.lotusF2, &:hover.lotusF2 { font-size:.917em !important; font-weight:600 !important; }
+    &.lotusF1, &:hover.lotusF1 { font-size:.917em !important; font-weight: inherit !important; }
+    &:hover {
+      background: transparent !important;
+      text-decoration: underline !important;
+    }
+  }
+}
+
+// on-prem forum filter tags
+#category, #updatesArea {
+  .lotusFilters .lotusFilter {
+    @include tags();
+    vertical-align: middle;
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .lotusClose {
+      height: 12px !important;
+      width: 12px !important;
+      background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-default) !important;
+      background-position: center center;
+      font-size: 0;
+      background-repeat: no-repeat;
+    }
+  }
+}

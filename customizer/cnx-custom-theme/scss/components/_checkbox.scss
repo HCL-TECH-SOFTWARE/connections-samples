@@ -1,0 +1,163 @@
+input:not(.xccEllipsis):not([name^="likesAndComments"]):not([name^="allowContentCreation"]):not([value^="personalized"]):not([name^="useProxy"])[type=checkbox] {
+  height:16px!important;
+	width:20px!important;
+	//overflow:hidden!important;
+	// added for Safari Issue
+	position:relative;
+  //////////////////////////
+	transition:none!important;
+  -webkit-appearance: none;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  border: none !important;
+  // to address issue 1185
+  vertical-align: bottom;
+  &::after{
+		content:""!important;
+		// added for Safari Issue
+		position:absolute;
+		left:1px;
+		//////////////////////////
+		display:inline-block!important;
+		width:12px!important;
+		height:12px!important;
+		z-index:99!important;
+		border-radius:2px!important;
+		transition:none!important;
+    background-color: $checkbox-background !important;
+    border: 2px solid $checkbox-border !important;
+    background-position:0 0!important;
+	}
+	&:hover::after,&:focus::after {
+		content:""!important;
+		position:absolute;
+    outline:1px solid $checkbox-border !important;
+    outline-offset: 2px !important;
+	}
+  &:focus {
+    outline:none !important;
+  }
+}
+
+.ic-thumb-widget-flip-card .card-back .check,
+.ic-thumb-widget-flip-card .card-front .check{
+	text-shadow:none!important;
+	background-color: $checkbox-background !important;
+	border: 2px solid $checkbox-border !important;
+	border-radius:2px!important;
+	transition:none!important;
+	&:hover, &:focus {
+		//border: 2px solid $checkbox-border-checked !important;
+    outline:1px solid $color-white !important;
+    outline-offset: 2px !important;
+	}
+}
+input[type=checkbox]:not(.xccEllipsis):checked::after,
+.ic-thumb-widget-flip-card-is-checked .card-back .check,
+.ic-thumb-widget-flip-card-is-checked .card-front .check {
+	border-color:$checkbox-border-checked !important;
+  background:svg-url-with-replaced-fill($svg-checkbox-background, '#000000', $checkbox-background-checked)!important;
+	transition:none!important;
+}
+input[type=checkbox]:checked {
+  &:hover::after,&:focus::after {
+    outline-color: $checkbox-border-checked !important;
+  }
+}
+
+tbody .lotusFirstCell{
+	vertical-align:middle;
+}
+.lconnFilesTreeCheckbox input{
+	margin-top:0px!important;
+}
+/*For Files Tile view quick fix put this code somewhere more relevant once its done*/
+.ic-thumb-widget-flip-card-is-checked .card-front, .ic-thumb-widget-flip-card-is-checked .card-back{
+	box-shadow:0 0 0 2px $checkbox-border-checked !important;
+}
+.card-back .check{
+	background-image:none!important;
+}
+.lotusLeft.lconnSelectAllContainer{
+	position:relative!important;
+	top:-3px!important;
+}
+
+#scene-body {
+  // general fix for checkbox hover cut-off - 1138
+  padding-left: 2px !important;
+  // icon alignment in files list
+  .filesList {
+    .lconnSelectAllContainer {
+    }
+  }
+}
+
+// 1372 Files: Restrict padding to select all checkbox in Files component, prevent it in Community files feature.
+//1428 Files: Align checkboxes and prevent focus cut-off.
+#scene-body {
+  .lconnSelectAllContainer,
+  .lotusTable tr td:first-child {
+    padding-left: 10px !important;
+  }
+}
+
+// sub community add members form
+#memberAddFormDiv #addAllParentMembersRow > td {
+  padding-left: 2px;
+
+  input[type="checkbox"], label {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+
+// 1521 vertically align checkboxes on wiki trash page
+.lconnWikis .hentry .lotusFirstCell input[type="checkbox"] {
+    margin-top: 0 !important;
+}
+
+// Activities checkboxes
+//1691: Prevent clipping of checkboxes in to-do and entry edit fields.
+div[dojoattachpoint="content_AP"] {
+
+  div[dojoattachpoint="checkboxes_AP"] {
+
+    .lotusFieldWrapper {
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+    .lotusCheckbox {
+      top: -1px !important;
+    }
+  }
+
+  div[dojoattachpoint="notifyArea_AP"] {
+    .lotusFieldWrapper {
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+    .lotusCheckbox {
+      top: -1px !important;
+    }
+    div[dojoattachpoint="filteringContainer_AP"] {
+      .lotusSearch {padding-top: 10px;}
+      .peopleList .lconnNotify {
+        padding: 2px 0;
+      }
+    }
+  }
+}
+
+//1694: Start community activity - Allow all other community members checkbox
+div[dojoattachpoint="addAllReadersContainer_AP"] {
+  padding-bottom: 3px;
+  padding-top: 4px;
+  .lotusFieldWrapper {
+    margin-left: 10px !important;
+  }
+  .lotusFieldWrapper .lotusCheckbox {
+	top: 0;
+  }
+}

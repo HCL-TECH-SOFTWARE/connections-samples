@@ -1,0 +1,18 @@
+form[name="rollerConfigForm"] {
+  .formtableNoDesc {
+    td.field, td.label {
+      border: none;
+      text-align: left;
+    }
+    td.label {
+      padding-left: 0;
+    }
+  }
+  > .control {
+    padding-top: 1rem;
+  }
+}
+
+#lotusTitleBar.lotusTitleBar2.lotusTitleBar2Tabs .lotusInner {
+  height: auto !important;
+}

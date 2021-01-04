@@ -1,0 +1,14 @@
+/* Border radius */
+// Set how rounded you want borders to be on profile pictures, community images, and buttons
+
+$border-radius-avatar: 50%; // Radius of people avatar images
+$border-radius-comm-icon:50%; // Radius of community images in lists
+$border-radius-buttons:2rem; // Radius of buttons
+$border-radius-tabs: 2px; // Radius of tabs
+$border-radius-search-button:50%; // Radius of floating search button
+$border-radius-tags: .75rem; // Radius of tags
+// Radius of notification message icons
+$border-radius-message-icon:50%;
+$border-radius-message:20px;
+// Radius of help tours
+$border-radius-tour:10px;

@@ -1,0 +1,96 @@
+//Changes for the Insert Link to Files in Wiki Edit page
+#body .lconnPickerSourceArea .headerSelector {
+  .checkbox{
+    margin-top:5px!important;
+  }
+  .icon img.lconn-ftype16{
+    background-position:0 0!important;
+    position:relative;
+    top:5px;
+  }
+}
+#image_attachmentList {
+  .lotusPaging {
+    padding-right: 1rem !important;
+  }
+  .lotusTable {
+    tr.lotusSort {
+      border-bottom: 1px solid $border-focus;
+    }
+  }
+}
+//Help icon in Insert Link to Files dialog
+div[id^="lconn_files_widget_CompactFilePicker"]{
+  margin:20px 0!important;
+  a[id^="lconn_share_widget_HelpLauncher"]{
+    position:relative!important;
+    bottom:3px!important;
+    margin-left:5px!important;
+  }
+}
+
+// delete community dialog
+body > div[id*="dialogs_deleteConfirm"] {
+  height: auto !important;
+  box-shadow: 2px 2px 6px $box-shadow-30 !important;
+  border: 1px solid $border-separator !important;
+
+  * {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .lotusDialog.lotusForm2._lotusDelete {
+    border: none !important;
+  }
+
+  .lotusErrorContent {
+    padding: 0 !important;
+    position: relative;
+
+    .iconsMessages48 {
+      position: absolute;
+      top: 2rem;
+      left: 1rem;
+      background-image: svg-url-with-replaced-fill($svg-error, '#000000', $error) !important;
+      background-repeat: no-repeat;
+      background-position: left 2px !important;
+      width: 2rem !important;
+      height: 2rem !important;
+    }
+
+    #warning {
+      padding: 2rem 2rem 2rem 3rem;
+      display: block;
+    }
+
+    .lotusErrorForm {
+      margin-left: 0;
+      border: 1px solid $error;
+
+      .lotusMessage2 {
+        border: none !important;
+        box-shadow: none !important;
+      }
+    }
+
+    div[style="clear:both"],
+    br {
+      display: none;
+    }
+
+    span[dojoattachpoint="signDirection"],
+    > .lotusMeta {
+      display: block;
+      padding: 1rem 0;
+    }
+
+    span[dojoattachpoint="signDirection"] {
+      position: relative;
+    }
+
+    > .lotusMeta {
+      @include font-size($body...);
+    }
+  }
+}

@@ -1,0 +1,365 @@
+label {
+	font-weight: 500 !important;
+	color: $text-02 !important;
+}
+
+:not([id^="lconn_profiles_invite_InvitePanel_"][id$="_networkInviteForm"]) .lotusFormFieldRow{
+	td {
+		display:block!important;
+		margin:0!important;
+		padding:0!important;
+	}
+	fieldset{
+		width:400px!important;
+	}
+	.lotusText{
+		width:calc(100% - 2rem)!important;
+	}
+	html:not(.dj_safari) & td:nth-child(3){
+		display:none!important;
+	}
+	td:nth-child(1){
+		margin-top:20px!important;
+	}
+	td:nth-child(3),td:nth-child(2){
+		margin-top:8px!important;
+	}
+}
+
+//Create a Community Form
+#newCommunityForm{
+	.lotusFormTitle h2 label{
+		//font-size:$head1-font-size !important;
+		font-weight:300!important;
+		color: $text-02 !important;
+		line-height:1.25;
+		letter-spacing:.5px;
+	}
+	#addCommunityName,#autocompletetags{
+		width:25%!important;
+		min-width:10rem!important;
+	}
+	td{
+		margin-top:8px!important;
+		margin-bottom:8px!important;
+	}
+	input[type=radio]{
+		position:relative!important;
+		left:3px!important;
+		margin-right:6px!important;
+	}
+	#listRestrictedWarningNodeContainer{
+		width:570px!important;
+	}
+	#addMemberHelpSPN img{
+		position:relative!important;
+		top:-1px!important;
+	}
+	.lotusFormFooter{
+		border-top:none!important;
+	}
+	#addCommunityDescriptionDiv,#cke_addCommunityDescription,tr:nth-child(7){
+		width:586px;
+	}
+	td:focus,#addCommunityDescriptionDiv,#cke_addCommunityDescription{
+		outline:none!important;
+	}
+}
+
+.lotusDialogContent{
+	.lotusFormFieldRow:not([dojoattachpoint=serverTypesList]) {
+		.lotusFormLabel{
+			margin-top:10px!important;
+		}
+	}
+}
+
+// New Document/Presentation/Spreadsheet dialog
+[id^="lconn_share_widget_LotusDialog_"] {
+	min-width: 400px;
+
+	.lotusCheckbox {
+		min-width: 0;
+	}
+}
+
+// Files > Upload > Advanced Options > People or Communities
+[id^="lconn_files_widget_UploadFile_"] {
+	// Hide scroll bar
+	table table tr:nth-child(2) {
+		td:nth-child(2) {
+			overflow: hidden !important;
+		}
+	}
+}
+
+// Files > Upload > Advanced Options > People or Communities
+// Align error msg
+/*[id^="com_ibm_oneui_controls_MessageBox_"] {
+	.lotusMessageBody {
+		max-width: 500px !important;
+	}
+}*/
+
+// Share folder
+[id^="lconn_share_widget_Dialog_"] > div:nth-child(2) > div > form {
+	div:nth-child(2) > div > table > tbody {
+		tr:nth-child(2) > td:nth-child(2),
+		tr:nth-child(4) > td:nth-child(2) {
+			overflow: hidden !important;
+		}
+	}
+}
+div[id^="lconn_files_widget_ui_FileField_"]{
+	position:relative!important;
+}
+a[id^="lconn_share_widget_HelpLauncher_"] {
+	&:focus {
+		outline: none !important;
+	}
+}
+
+[id^="lconn_share_widget_MemberInput_"] {
+	// Files > Upload > Advanced Options > People or Communities
+	// Unhide input field
+	table > tbody > tr > {
+		td:nth-child(3){
+      margin-left:3px;
+		}
+	}
+	// Files > Upload > Advanced Options > People or Communities
+	// Hide background search icon
+	div.typeaheadInput {
+		padding-left: 0 !important;
+		margin-left: 0 !important;
+		background-image: none !important;
+	}
+
+	// hide sprite
+	table > tbody > tr {
+		td:nth-child(3) > a > img {
+			display: none !important;
+		}
+	}
+
+	[id*="_people"] {
+		width: 100% !important;
+	}
+}
+
+
+[id^="lconn_share_widget_Dialog"] > div:nth-child(2) {
+	div > form > div:nth-child(2) > {
+		div > table > tbody > {
+			tr:nth-child(3) > td:nth-child(2) {
+				overflow: hidden !important;
+			}
+
+			tr:nth-child(8) > td:nth-child(1) {
+				display: none !important;
+			}
+		}
+	}
+}
+
+// edit contact's information form
+li.addressFormLi {
+	.addressFormField {
+		.addressFormInput {
+			float: none;
+		}
+	}
+}
+.sc .dropDown .dijitComboBox.dijitTextBox {
+	padding: 0 !important;
+}
+.profileDataTable .dijitComboBox.lotusIndent10  {
+	border: none !important;
+	padding: 0 !important;
+	position: relative;
+	.dijitDownArrowButton {
+		border-left: 1px solid $color-gray-10;
+		float: none !important;
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 100%;
+		width: 25px;
+		z-index: 2;
+		.dijitArrowButtonInner {
+			background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-default) !important;
+			background-size: .75rem !important;
+			background-position: right .75rem !important;
+			background-repeat: no-repeat !important;
+			height: 100% !important;
+			width: 100% !important;
+		}
+	}
+	.dijitInputField.dijitInputContainer {
+		width: auto !important;
+		min-width: 50% !important;
+		max-width: 100% !important;
+		color: $text-02 !important;
+
+		.dijitInputInner {
+			//font-size: $body-font-size !important;
+			border-bottom: 1px solid $color-gray-10 !important;
+			padding: .75rem 2.75rem .75rem 0 !important;
+			box-sizing: border-box !important;
+
+			&:focus {
+				border-color: $border-field-focus !important;
+				box-shadow: 0 1px 0 $border-field-focus !important;
+				outline: none !important;
+			}
+		}
+	}
+}
+//Fixing Stop Sharing File Prompt padding in File Viewer
+.ics-viewer-open .ics-dialog-action{
+	padding-left:32px!important;
+	padding-right:32px!important;
+}
+
+body:not(.catalog) .lotusDialogContent .lotusFormFieldRow .lotusFormLabel {
+	margin-top: 1rem !important;
+	font-weight: 500 !important;
+	font-size: $body-mini-font-size !important;
+	margin-bottom: 4px !important;
+	color: $text-02 !important;
+	label, span {
+		font-weight: inherit !important;
+		font-size: inherit !important;
+		color: inherit !important;
+	}
+}
+
+// community add members group search pop-up
+.lotusui30 .lotusDialogBorder form.lotusDialog {
+	border: none;
+}
+
+// community import members
+form[id^="importMembersForm"] {
+	input[type="radio"] {
+		margin-bottom: .75rem;
+	}
+	select[id^="selectRoleimportMembersForm"] {
+		margin: .75rem 0 1.5rem;
+	}
+	textarea[disabled],
+	input[type="file"][disabled] {
+		display: none;
+	}
+}
+form[id^="exportMembersForm"] {
+	.lotusui30 .lotusDialog & .lotusFormFieldRow {
+		padding-left: 2px;
+	}
+	input[type="checkbox"] {
+		vertical-align: middle;
+	}
+}
+
+// calendar edit event form
+#calendar_event_editor {
+	.dijitTextBox .dijitInputField input,
+	input[id^="lconn_calendar_FilteringCheckbox_"][type="text"] {
+		@include textinput;
+	}
+	div#widget_calendar_event_editor-subject,
+	div#widget_calendar_event_editor-location,
+	div#widget_calendar_event_editor-sdate,
+	div#widget_calendar_event_editor-stime,
+	div#widget_calendar_event_editor-edate,
+	div#widget_calendar_event_editor-etime,
+  div#widget_calendar_event_editor_rec-until {
+		border: none !important;
+	}
+
+	label[id^="lconn_calendar_FilteringCheckbox"] {
+		width: 130px !important;
+	}
+
+	div.lconnNotify {
+		height: 24px !important;
+		label {
+			line-height: 22px !important;
+		}
+	}
+
+  .person_picker {
+    .menu_drop_icon {
+      vertical-align: middle !important;
+    }
+    .lotusDelete {
+      vertical-align: middle !important;
+    }
+  }
+}
+
+// Event notification filter
+div[id^="lconn_calendar_Notification"] {
+  input[id^="lconn_calendar_FilteringCheckbox"]{
+    @include textinput;
+		min-width: initial !important;
+		padding-right: 0 !important;
+		padding-bottom: 0 !important;
+  }
+  label[id^="lconn_calendar_FilteringCheckbox"] {
+		width: 130px !important;
+	}
+	.lconnNotify {
+		overflow: visible !important;
+	}
+}
+
+// Create survey Form
+form[name="surveysCreateForm"] {
+	max-width: 800px;
+  fieldset {
+    width: 100% !important;
+    table {
+      width: 100% !important;
+      input.lotusText,
+      textarea.lotusText {
+        width: 100% !important;
+      }
+      td {
+        padding: 4px 0px !important;
+        margin-top: 5px !important;
+      }
+      input.lotusBtn {
+        margin-top: 20px !important;
+      }
+    }
+  }
+}
+
+// onprem create community web address field
+#newCommunityForm {
+  input[id="autocompletehandle"] {
+    @include textinput;
+  }
+  tr[id="advHandleRow1"] {
+    span.lotusMeta {
+      @include font-size($body...);
+    }
+  }
+  tr[id="advHandleRow3"] {
+    td.lotusFormLable {
+      padding-top: 4px !important;
+    }
+    td.lotusMeta {
+      padding-top: 4px !important;
+      @include font-size($caption...);
+    }
+  }
+}
+
+body.catalog {
+	input[type=text],
+	input[type=password] {
+		@include textinput;
+	}
+}

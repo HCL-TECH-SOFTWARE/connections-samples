@@ -1,0 +1,7 @@
+.icSearchPane .icHistoryContent .pfEntry:after {
+  content: '';
+  display: block;
+  height: 0;
+  width: 100%;
+  clear: both;
+}

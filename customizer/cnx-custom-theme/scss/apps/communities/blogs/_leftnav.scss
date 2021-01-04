@@ -1,0 +1,20 @@
+#lotusColLeft {
+  img[src$="edit.gif"],
+  img[src$="iconComments.gif"] {
+    display: none !important;
+  }
+
+  div[aria-labelledby="nav_settings_title"] {
+    h3.lotusHeading {
+      margin: 0 !important;
+      padding: $leftnav-vertical-padding $leftnav-horizontal-padding $leftnav-vertical-padding calc(#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) !important;
+    }
+    #section_admin_menu ul li a {
+      padding-left:calc( (2 * #{$leftnav-indent-padding}) + #{$leftnav-horizontal-padding})!important;
+    }
+  }
+  
+  #section_memberPermissionsHelp {
+    white-space: normal !important;
+  }
+}

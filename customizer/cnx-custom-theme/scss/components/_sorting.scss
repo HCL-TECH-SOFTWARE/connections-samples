@@ -1,0 +1,36 @@
+.lotusSort{
+  ul li{
+    border:none!important;
+    a {
+      color: $text-02 !important;
+
+      &[aria-pressed="true"] {
+        @include link-color(dark);
+      }
+    }
+  }
+  th{
+    padding:0!important;
+    padding-bottom:16px!important;
+    a{
+      padding:.5rem 1rem!important;
+      @include tableHeader;
+      transition:none!important;
+      &.lotusActiveSort{
+        padding-right:1.50rem!important;
+        background-image:svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-file-type-default) !important;
+        background-size:8px 8px!important;
+        background-position:90% calc(50% - 1px)!important;
+        &:hover{
+          background-image:svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-white) !important;
+        }
+      }
+    }
+    &#qkrSortmodifier{
+      padding:.5rem 1rem!important;
+    }
+    &#qkrSortmostpopular{
+      width:100px!important;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+.lotusTitleBar2 .lotusWrapper {
+  padding-left: $leftnav-horizontal-padding !important;
+}
+.lotusMain{
+  #lotusColLeft,
+  .lotusColLeft {
+    width: 255px !important;
+    margin-left: 0 !important;
+    .dijitTreeNode {
+      position: relative;
+    }
+    padding-right:0px !important;
+    margin-right:0px !important;
+
+    .lotusMenuSection h3 {
+      margin-left:0!important;
+      padding-left:42px!important;
+      padding-right:$leftnav-horizontal-padding!important;
+      margin-bottom:0!important;
+      padding-top:calc(#{$leftnav-vertical-padding} + 2px)!important;
+      padding-bottom:calc(#{$leftnav-vertical-padding} - 2px)!important;
+      font-size: .875rem !important;
+      font-weight: normal !important;
+    }
+    h3 + .lotusMenuSubsection > ul > li {
+        padding: 0 !important;
+        margin: 0!important;
+        a {
+          padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+          padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) + 21px)!important;
+          margin: 0 !important;
+          display: block;
+          border: none !important;
+          transition:$leftnav-border-slide!important;
+          box-sizing: border-box !important;
+          font-weight: normal !important;
+          &:hover {
+            background-color:$background-side-hover !important;
+            border: none !important;
+          }
+        }
+        .dijitTreeNodeSelected {
+          border: none !important;
+          span {
+            border: none !important;
+            padding: 0 !important;
+          }
+        }
+        &.lotusSelected,
+        &:focus {
+          border: none !important;
+          a {
+            border: none !important;
+            border-left:$leftnav-active-border-thickness solid $border-selected !important;
+            padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) + 21px - #{$leftnav-active-border-thickness})!important;
+            font-weight: 700 !important;
+            span {
+              border: none !important;
+              padding: 0 !important;
+            }
+          }
+        }
+      }
+  }
+}
+.lotusInner > .lotusMenuSection{
+  margin-bottom:0!important;
+  padding-bottom:0!important;
+}

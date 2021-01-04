@@ -1,0 +1,145 @@
+//Change bizcard drop down icon
+.vcard a.menu_drop_icon {
+	background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-default) !important;
+	background-size:0.65rem !important;
+	background-position:2px !important;
+	background-repeat:no-repeat !important;
+	margin-left:0px !important;
+	margin-right:5px !important;
+}
+
+#javlinDiv{
+	.personMenu{
+		width:320px!important;
+		.photoCard{
+			height:75px!important;
+			width:75px!important;
+			img{
+				height:75px!important;
+				width:75px!important;
+			}
+		}
+		.businessCard{
+			margin-left:0rem!important;
+			width:180px!important;
+			margin-right:1.2rem!important;
+			margin-bottom:1rem!important;
+		}
+		li.lotusBreakWord:nth-child(4){
+			margin-top:1rem!important;
+		}
+		ul.topActionHolder{
+			background-color:white!important;
+			border-bottom:1px solid $border-separator !important;
+			margin:0 1rem 1rem 1rem!important;
+			padding:0.5rem 0!important;
+			li.topAction a{
+				color: $link-default !important;
+				&:hover{
+					text-decoration-color: currentColor !important;
+				}
+				&:after{
+					content:"";
+					padding-left:1px;
+					margin-left:8px!important;
+					background-color: $border-separator !important;
+					margin-top:3px!important;
+				}
+			}
+			li.topAction:before{
+				padding:0!important;
+			}
+			li.topAction:nth-child(2) a:after{
+				margin-left:0!important;
+				padding-left:0!important;
+			}
+			li.topAction:last-child a:after {
+				padding-left: 0 !important;
+			}
+			li.topActionClose{
+				padding-right:0!important;
+				a {
+					background-image: svg-url-with-replaced-fill($svg-close, '#000000', $icon-default) !important;
+					background-size: 18px !important;
+					background-position: right 0px !important;
+					background-repeat: no-repeat !important;
+					color: transparent !important;
+				}
+			}
+		}
+		.personMenuActionsCompact{
+			border-top:1px solid $border-separator !important;
+			padding:0.5rem 0!important;
+			margin:0 1rem!important;
+			span{
+				color:$border-separator !important;
+			}
+		}
+	}
+}
+// onprem contact cards
+#cardDiv {
+  width: 320px !important;
+  box-shadow: 0 0 5px rgba(34, 34, 34, 0.5) !important;
+  border: 0 !important;
+  #cardTable {
+    #cardHeader > td {
+      border-bottom: 1px solid $border-separator !important;
+    }
+    #cardBody {
+			#slimTwistyDiv img {
+				&.otherFramework16-HideMore12 {
+					background-image: svg-url-with-replaced-fill($svg-chevron-up, '#000000', $icon-default) !important;
+					background-size: 12px !important;
+					background-position: right 2px !important;
+					background-repeat: no-repeat !important;
+				}
+				&.otherFramework16-ShowMore12 {
+					background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-default) !important;
+					background-size: 12px !important;
+					background-position: right 2px !important;
+					background-repeat: no-repeat !important;
+				}
+			}
+      .lotusPhoto  {
+        img {
+          width: 72px !important;
+          height: 72px !important;
+          border-radius: $border-radius-avatar !important;
+          background-color: $background-main;
+        }
+        a:first-child img {
+          width: 48px !important;
+          height: 48px !important;
+        }
+      }
+      .lotusPersonInfo {
+        margin-left: 102px !important;
+        h2 {
+          font-size: 12pt !important;
+          font-weight: 600 !important;
+          color: black !important;
+        }
+      }
+    }
+    #cardFooter {
+      .lotusPersonActions {
+        padding-top: 12px;
+        border-top: 1px solid $border-separator !important;
+				img.otherFramework16-TriangleMediumGrayDown12 {
+					background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-default) !important;
+					background-size: 10px !important;
+					background-position: right 2px !important;
+					background-repeat: no-repeat !important;
+				}
+      }
+			.lotusActionMenu {
+				font-size: 11px; //specific size to match links on card
+				margin-top: -20px;
+				a:hover, a:focus {
+					background-color: $brand-06;
+				}
+			}
+    }
+  }
+}

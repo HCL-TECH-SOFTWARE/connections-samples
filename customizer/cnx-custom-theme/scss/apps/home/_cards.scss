@@ -1,0 +1,96 @@
+//CARDS USED ON ORIENT ME PAGE
+.ic-icon,
+.ic-icon-button,
+.ic-stack-tile,
+.ic-tile,
+.ic-group-nav-left,
+.ic-group-nav-right {
+  &:focus {
+    outline:1px solid $border-selected;
+  }
+}
+.ic-tile.ic-tile-active:before {
+  background:$border-selected;
+}
+//Avatar on cards
+.ic-avatar-container:focus:before {
+  border: 1px solid $border-focus !important;
+}
+//Menu on cards
+.ic-actions-dlg p.om-more-actions-focused:before, .ic-actions-dlg p:hover:before {
+  background:$border-focus;
+}
+
+//Border on actual file thumbnails, to help when background is white
+.ic-tile .ic-thumbnail a {
+  img {
+    border:1px solid $border-separator;
+  }
+}
+
+//Thumbnail placeholders for Files by file type
+.ic-tile .ic-thumbnail .ic-file-thumbnail {
+  background-repeat:no-repeat;
+  background-size:64px;
+  background-position:50%;
+  svg {
+    visibility: hidden;
+  }
+  &.ic-icon-audio {
+    background-color:$icon-file-type-audio;
+    background-image:svg-url-with-replaced-fill($svg-icon-audio, '#000000', $icon-black) !important;
+  }
+  &.ic-icon-code {
+    background-color:$icon-file-type-code;
+    background-image:svg-url-with-replaced-fill($svg-icon-code, '#000000', $icon-black) !important;
+  }
+  &.ic-icon-document {
+    background-color:$icon-file-type-document;
+    background-image:svg-url-with-replaced-fill($svg-icon-document, '#000000', $icon-black) !important;
+  }
+  &.ic-icon-flash {
+    background-color:$icon-file-type-pdf;
+    background-image:svg-url-with-replaced-fill($svg-icon-pdf, '#000000', $icon-black) !important;
+  }
+  &.ic-icon-image {
+    background-color:$icon-file-type-image;
+    background-image:svg-url-with-replaced-fill($svg-icon-image, '#000000', $icon-black) !important;
+  }
+  &.ic-icon-pdf {
+    background-color:$icon-file-type-pdf;
+    background-image:svg-url-with-replaced-fill($svg-icon-pdf, '#000000', $icon-black) !important;
+  }
+  &.ic-icon-presentation {
+    background-color:$icon-file-type-presentation;
+    background-image:svg-url-with-replaced-fill($svg-icon-presentation, '#000000', $icon-black) !important;
+  }
+  &.ic-icon-spreadsheet {
+    background-color:$icon-file-type-spreadsheet;
+    background-image:svg-url-with-replaced-fill($svg-icon-spreadsheet, '#000000', $icon-black) !important;
+  }
+  &.ic-icon-video {
+    background-color:$icon-file-type-video;
+    background-image:svg-url-with-replaced-fill($svg-icon-video, '#000000', $icon-black) !important;
+  }
+  &.ic-icon-zip {
+    background-color:$icon-file-type-archive;
+    background-image:svg-url-with-replaced-fill($svg-icon-compressed, '#000000', $icon-black) !important;
+  }
+  //Thumbnail placeholders for apps by app type
+  &.ic-icon-activity {
+    background-color:$icon-file-type-default;
+    background-image:svg-url-with-replaced-fill($svg-icon-activity, '#000000', $icon-black) !important;
+  }
+  &.ic-icon-blog {
+    background-color:$icon-file-type-default;
+    background-image:svg-url-with-replaced-fill($svg-icon-blog, '#000000', $icon-black) !important;
+  }
+  &.ic-icon-forum {
+    background-color:$icon-file-type-default;
+    background-image:svg-url-with-replaced-fill($svg-icon-forum, '#000000', $icon-black) !important;
+  }
+  &.ic-icon-wiki {
+    background-color:$icon-file-type-default;
+    background-image:svg-url-with-replaced-fill($svg-icon-wiki, '#000000', $icon-black) !important;
+  }
+}

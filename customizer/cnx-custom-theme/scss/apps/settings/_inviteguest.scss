@@ -1,0 +1,28 @@
+// Invite a Guest page
+.dijitInline {
+  outline:none !important;
+  padding:8px 0px !important;
+}
+
+.lotusFieldWrapper {
+  margin:4px 0px 10px !important;
+  .dijitTextBox {
+    border:none !important;
+    height:auto;
+  }
+}
+.dijitPlaceHolder {
+  font-style:normal !important;
+  left:4px;
+  color: $text-02 !important;
+}
+
+// Work around for name field focus
+.lotusFieldWrapper {
+  #widget_givenName1 #givenName1,
+  #widget_familyName1 #familyName1 {
+    &:focus {
+      border-bottom: 2px solid $border-field-focus !important;
+    }
+  }
+}

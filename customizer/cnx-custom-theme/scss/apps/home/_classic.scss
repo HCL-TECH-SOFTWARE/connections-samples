@@ -1,0 +1,219 @@
+//Classic home page
+
+//Status update sticky field
+.lotusStream .lotusWidgetBody#activityStreamMain .streamHeaderWrapper.isSticky {
+  width:687px !important;
+  @media screen and (min-width: 1300px) {
+    width: calc(100% - 596px) !important;
+  }
+  @media screen and (min-width: 1433px) {
+    width:calc(100% - 660px) !important;
+  }
+  @media screen and (min-width: 1600px) {
+    width:calc(100% - 724px) !important;
+  }
+  .streamHeaderInner {
+    background:$background-pinned-row;
+  }
+}
+
+//Status update tabs
+.lotusui30 .lotusStream .lotusWidgetBody#activityStreamMain {
+  .streamHeaderWrapper {
+    div[dojoattachpoint="successMessageNode"] {
+      padding-top: 16px !important;
+      .lotusSuccess {
+        .lotusMessageBody {
+          &:focus {
+            outline: none !important;
+          }
+        }
+        .lotusDelete {
+          top: 4px !important;
+        }
+      }
+    }
+    .lotusPaging.lotusPagingTop {
+      background:$background-main !important;
+      border:none;
+      border-bottom:1px solid $border-separator !important;
+      margin-top:8px !important;
+      margin-bottom:10px;
+      .lotusInlinelist li {
+        &.lotusFirst {
+          margin-left:0px;
+        }
+        border-left:none !important;
+        margin-left:16px;
+        padding-top:10px;
+        padding-bottom:6px;
+      }
+      a {
+        @include font-size($body...);
+        font-weight:500 !important;
+        color:$text-02 !important;
+        padding:8px 16px !important;
+        margin:0px 0px !important;
+        border-radius: $border-radius-tabs!important;
+        border: 1px solid transparent!important;
+        line-height: 1 !important;
+        text-decoration: none !important;
+        position:relative;
+        overflow:visible;
+        // Search icon on classic home Page
+        &#asSearchMenuOption {
+          width:16px!important;
+          height:15px!important;
+          background-image:svg-url-with-replaced-fill($svg-search, '#000000', $btn-secondary-icon) !important;
+          background-color: $background-main !important;
+
+          background-repeat: no-repeat;
+          background-size: 18px 18px;
+          background-position: center !important;
+          border: 1px solid transparent !important;
+          img {
+            display:none;
+          }
+          &:hover {
+            background-color: $btn-secondary-fill-hover !important;
+            background-image:svg-url-with-replaced-fill($svg-search, '#000000', $btn-secondary-icon-hover) !important;
+          }
+          &:focus {
+            border: 1px solid $btn-secondary-outline-hover !important;
+          }
+        }
+        &:hover {
+          &:focus {
+            color: $text-03!important;
+          }
+          color: $text-03!important;
+          background-color: $btn-secondary-fill-hover;
+          border-color: $btn-secondary-outline-hover;
+        }
+        &:focus {
+          color: $text-01!important;
+          border-color: $btn-secondary-outline-hover !important;
+        }
+        &.filterSelected {
+          color:$text-01 !important;
+          &:before {
+            content:'';
+            position:absolute;
+            bottom:-12px;
+            left:0px;
+            height:4px;
+            width:100%;
+            background:$border-selected;
+          }
+          &:hover {
+            color:$text-03 !important;
+          }
+        }
+      }
+    }
+  }
+  .headerFins {
+    display:none;
+  }
+}
+
+//Stream
+.lotusStream {
+  .filterArea {
+    padding:0px 0px !important;
+  }
+  ul.lotusStream > li {
+    border:1px solid $border-separator !important;
+    box-shadow:0 4px 8px 0 $box-shadow-10;
+    margin:16px 0px 16px 0px;
+    .activityStreamNewsItemContainer {
+      &.lotusPostHover {
+        background-color:$background-side;
+      }
+      border:2px solid transparent !important;
+      &:focus {
+        outline:none;
+        border:2px solid $border-selected !important;
+      }
+      //Primary avatar
+      .lotusPostAuthorInfo {
+        padding-right: 25px !important;
+        .lotusPostAvatar img.activityStreamPhotoOf {
+          @include avatarSize($size4);
+          border:1px solid $border-separator;
+          border-radius:$border-radius-avatar;
+        }
+      }
+      //Move comment list over because avatar is larger
+      .lotusCommentList {
+        margin-left:118px;
+      }
+      //Secondary avatars
+      .lotusCommentItem,
+      .activityStreamSummary {
+        .lotusPostAuthorInfo {
+          padding:0px 8px !important;
+          .lotusPostAvatar img.activityStreamPhotoOf {
+            @include avatarSize($size1);
+          }
+        }
+      }
+      .lotusPostContent {
+        .fileBody {
+          margin-left:50px !important;
+          padding:10px 6px 0px 6px !important;
+        }
+      }
+      // survey icons 2139
+      img[src$="survey_draft_32.png"] {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 32px;
+        height: 32px;
+        background-image: svg-url-with-replaced-fill($svg-survey-draft, '#000000', $icon-default) !important;
+        background-size: 32px 32px;
+        background-position: 0 0 !important;
+        background-repeat: no-repeat !important;
+        margin-top: 4px !important;
+        padding-left: 32px;
+      }
+      img[src$="survey_incomplete_32.png"] {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 32px;
+        height: 32px;
+        background-image: svg-url-with-replaced-fill($svg-survey-incomplete, '#000000', $icon-default) !important;
+        background-size: 32px 32px;
+        background-position: 0 0 !important;
+        background-repeat: no-repeat !important;
+        margin-top: 4px !important;
+        padding-left: 32px;
+      }
+      img[src$="survey_complete_32.png"] {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 32px;
+        height: 32px;
+        background-image: svg-url-with-replaced-fill($svg-survey-complete, '#000000', $icon-default) !important;
+        background-size: 32px 32px;
+        background-position: 0 0 !important;
+        background-repeat: no-repeat !important;
+        margin-top: 4px !important;
+        padding-left: 32px;
+      }
+    }
+  }
+}
+
+//Right side - Recommendations widget
+div[dojoattachpoint="recommendContainer"] {
+  a {
+    @include link-color(dark);
+  }
+}
+
+//1572 Classic homepage "Saved" link
+.savethisAction.activityStreamActionInactive a {
+    color: $text-02 !important;
+    text-decoration: none !important;
+}

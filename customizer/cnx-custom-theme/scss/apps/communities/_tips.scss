@@ -1,0 +1,9 @@
+#lotusInfoBox{
+  margin: 0!important;
+  padding: 32px!important;
+  padding-top:0px!important;
+  &, h3{
+    border: none!important;
+    background-color: $background-side!important;
+  }
+}

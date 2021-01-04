@@ -1,0 +1,13 @@
+@function first($list) {
+  @return nth($list, 1);
+}
+$leftnav-font-size: first($body);
+$leftnav-line-height: calc(#{$leftnav-font-size} * 1.5);
+
+$leftnav-horizontal-padding: 24px;
+$leftnav-vertical-padding: 14px;
+$leftnav-active-border-thickness: 4px;
+$leftnav-indent-padding: 15px;
+$leftnav-border-slide: border .23s ease, padding .23s ease;
+$leftnav-width: 240px;
+$leftnav-line-item-height: calc( (#{$leftnav-vertical-padding} * 2) + #{$leftnav-line-height} );

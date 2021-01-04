@@ -1,0 +1,123 @@
+<html>
+<head>
+    <title>Cloud App - Visual Update 1 for HCL Connections</title>
+  <link rel="stylesheet" type="text/css" href="docs.css">
+  <link rel="shortcut icon" href="./img/cnx-theme.ico">
+</head>
+<!--
+	 * © Copyright HCL Technologies Limited 2017, 2019
+	 *
+	 * Licensed under the Apache License, Version 2.0 (the "License");
+	 * you may not use this file except in compliance with the License.
+	 * You may obtain a copy of the License at:
+	 *
+	 * http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 * Unless required by applicable law or agreed to in writing, software
+	 * distributed under the License is distributed on an "AS IS" BASIS,
+	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+	 * implied. See the License for the specific language governing
+	 * permissions and limitations under the License.
+-->
+<body>
+
+<!--HEADER CONTAINER-->
+<div class="headerContainer subpage">
+  <div class="aboutHeader">
+    <div class="headText">
+      <h1>Visual Update 1 for HCL Connections</h1>
+    </div>
+  </div>
+</div>
+<!--END HEADER CONTAINER-->
+
+<div class="toc">
+  <ul>
+    <li>CONTENTS</li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#prereq">Prerequisites</a></li>
+    <li><a href="#install">Install and Configure the App</a></li>
+    <li><a href="#subset">Enable for sub-set</a></li>
+    <li><a href="#org">Enable for org</a></li>
+    <li><a href="./index.html">&#8592; Back to Main</a></li>
+  </ul>
+</div>
+
+<!--CONTENT CONTAINER-->
+<div class="contentContainer">
+
+<div class="aboutContent">
+  <h1><a name="about"></a>Install and Configure from Cloud App Catalog</h1>
+  <h2>About</a></h2>
+  <p>This topic walks you through installing and configuring Visual Update 1 for HCL Connections from the Cloud App Catalog. You can enable the application for your entire organization in a few clicks. You can also enable the app for a specific sub-set of users.</p>
+
+  <h2><class="anchor" name="prereq">Prerequisites</a></h2>
+  <p>Customizer is available on HCL Connections Cloud for tenants of the North America and Europe data centers. Before using Customizer, your organization must first register for the service by sending an email with some simple information. Refer to section 3 of the <a href="https://github.com/ibmcnxdev/customizer" target="_blank">HCL Connections Customizer documentation</a> for more details.</p>
+
+<!--install-->
+<h2><a class="anchor" name="install">Install and Configure the App</a></h2>
+  <ol>
+    <li>As an administrator go to <strong>Manage Organization</strong>.</li>
+    <li>Go to <strong>Apps</strong> and then <strong>App Catalog</strong>.</li>
+    <li>Locate <strong>Visual Update 1 for HCL Connections</strong> and click <strong>Get</strong>.</li>
+    <li>When configuring the application, on the Users step, select to enable it for the Entire Organization or Individuals.</li>
+    <li>Click <strong>Next</strong> past Extensions. There is not support for individual extensions at this time.</li>
+    <li>Click <strong>Next</strong> until you get to the last page and click <strong>Finish</strong>. </li>
+  </ol>
+<!--subset-->
+  <h2><a class="anchor" name="subset">Enable for a set of individuals</a></h2>
+  <p>Because this is a new visual style, it is recommended that you enable the application for a sub-set of users first. This lets you review and get feedback about the application before turning it on for your entire organization.</p>
+
+  <p>To enable for a sub-set of users:</p>
+  <ol>
+    <li>From the App Catalog, Configure Visual Update 1.</li>
+    <li>On the Users step select Individuals and click through to Finish.</li>
+    <li>When the configuration is finished go to Organization Extensions.</li>
+    <li>At the top of the page, follow the new Apps Manager link.</li>
+    <li>Click on the name of the app to edit the extension and select Code Editor.</li>
+    <li>In the .json, in each extension playload look for "match", "user-email", and a sample email address. Replace the sample email address with the email address of the users you want to enable.
+      <p>Here's and example of how multiple email addresses would appear.
+  <pre class="code">
+  "payload": {
+    "include-files":[
+      "periscope.js"
+    ],
+    "include-repo": {
+      "name":"periscope"
+    },
+    "match": {
+      "user-email": [
+        "userid1@example.com",
+        "userid2@example.com"
+      ]
+    }
+  },</pre>
+      </p>
+  </li>
+</ol>
+
+<!--org-->
+  <h2><a class="anchor" name="org">Enable for an entire organization</a></h2>
+  <p>If you previously enabled for a set of users, follow these steps to enable for the entire organization.</p>
+  <ol>
+    <li>From the App Catalog, Configure Visual Update 1.</li>
+    <li>On the Users step select Entire Organization. This will result in the email addresses being removed from the payload section of the .json file.</li>
+    <li>Click through to Finish.</li>
+  </ol>
+</div>
+
+<div class="breadcrumb">
+  <p><a href="./index.html">Back to main</a> | <a href="#top">Back to top</a></p>
+</div>
+
+</div>
+<!--END CONTENT CONTAINER-->
+
+<!--FOOTER CONTAINER-->
+<div class="footerContainer">
+  <p>Copyright 2017, 2019, HCL Technologies Limited</p>
+</div>
+<!--END FOOTER CONTAINER-->
+
+</body>
+</html>

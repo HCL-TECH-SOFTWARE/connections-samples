@@ -1,0 +1,190 @@
+// page header
+.lotusui.lotusui30dojo.lotusui30_body .lotusFrame{
+  .lotusWrapper{
+    position:relative;
+    z-index:940 !important;
+    margin-left:0px!important;
+    margin-right:0!important;
+    padding-left:39px!important;
+    max-width:100%;
+    box-shadow: 0 1px 4px 0 rgba(40,40,40,.2)!important;
+    background-color:white!important;
+    .lotusInner{
+      height:47px!important;
+      padding-top:18px!important;
+    }
+    .lotusHeading span{
+      color:$color-black!important;
+      padding-left:294px!important;
+      font-weight:900!important;
+      font-size:1.125rem!important;
+    }
+  }
+}
+// search bar area
+.lotusHeader.lconnSearchHeader {
+  padding-top: 1rem !important;
+  margin-right: -1.5rem;
+  .lotusSearch {
+    border: 0 !important;
+    .icSearchInputBox input.lotusText {
+      font-size: 1rem !important;
+      color: $text-01 !important;
+    }
+    .icSearchBarButtons {
+      position: relative;
+      left: -1.5rem;
+    }
+  }
+  .lotusBtnImg.lotusClose:focus img {
+    outline:1px solid $icon-default !important;
+  }
+  .lotusBtn.icSubmitSearch {
+    @include btnprimary;
+  }
+}
+#contentContainer_results {
+  #filtersContainer {
+    > div, > span {
+      display: inline-block;
+      vertical-align: baseline;
+      float: none !important;
+
+      a {
+        @include btnsecondary;
+      }
+    }
+    div[id^="contentContainer_results_FiltersForm_"] {
+      margin-right: 1rem !important;
+    }
+    div:empty[id^="contentContainer_results_FiltersForm_"] {
+      display:none;
+    }
+    > div:last-child {
+      margin-left: 0 !important;
+    }
+  }
+  .icFiltersRight {
+    text-align: right;
+    > div {
+      padding: 0 !important;
+      display: block !important;
+    }
+  }
+  #contentContainer_results_View_Sorting {
+    a {
+      color: $text-01 !important;
+    }
+  }
+  #contentContainer_results_View_CenterPaging {
+    a {
+      color: $text-01 !important;
+    }
+    .icSelected {
+      color: $text-02 !important;
+      text-decoration: underline !important;
+    }
+  }
+}
+
+//Focus and hover on results
+.icSearchResultsPage {
+
+  .lotusMeta {
+    color:$text-02 !important;
+  }
+
+  tr {
+    border-left: 0 !important;
+    &.icSearchResultSelected,
+    &:focus {
+      border-color: $border-selected !important;
+      border-top: 1px solid $border-selected !important;
+      border-bottom: 1px solid $border-selected !important;
+      outline:none !important;
+    }
+    &:hover {
+      background-color:$background-main-hover !important;
+      border-left-color:$border-selected !important;
+      color:$text-02 !important;
+    }
+  }
+
+}
+.lconnApplicationLoading{
+  img{
+    width:40px!important;
+    height:40px!important;
+    left:calc(50% - 20px)!important
+  }
+  div{
+    display:none!important;
+  }
+}
+
+// main content alignment
+.lotusui30_layout .lotusMain .lotusContent {
+  padding: 0 28px !important;
+}
+.lotusui.lotusui30dojo.lotusui30_body .lotusFrame .lotusWrapper .lotusHeading span {
+  padding-left: 248px !important;
+  // interim fix for firefox issue to display top of community overview
+  @-moz-document url-prefix() {
+    padding-left: 0px !important;
+  }
+}
+
+//Update content of results row
+.icSearchResultsPage #contentContainer_results_View > .lotusTable {
+  .icSearchTitle {
+
+    //Update font size of result title
+    h4 {
+      @include font-size($header...);
+    }
+
+    //Graduated flag on ideation posts
+    > span {
+      position: relative;
+      z-index: 2;
+      .lconnSearchIdeaGraduated {
+        @include graduatedIdea;
+        &:before, &:after {
+          top: 14px; //exception to mixin
+        }
+        &:after {
+          right: 16px; //exception to mixin
+        }
+      }
+    }
+
+  }
+}
+
+
+// advanced search left nav
+.lotusColLeft .lotusInfoBox {
+  &, h3 {
+    background: transparent !important;
+    border: none !important;
+  }
+  & {
+    margin: 0 -20px 0 0 !important;
+    padding: 2rem;
+  }
+}
+
+// advanced search form
+#everythingForm {
+  .lconnSearchInputContainer {
+    padding:15px 10px 15px 0px !important;
+  }
+}
+#advancedSearchForm1 .lotusBtn{
+  @include btnprimary;
+}
+
+.lotusMeta > span.searchDateClass {
+  font-size: inherit;
+  margin: 0;
+}

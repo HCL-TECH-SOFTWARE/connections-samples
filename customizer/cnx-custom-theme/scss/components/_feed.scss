@@ -1,0 +1,20 @@
+.lotusui30 .lotusBoard .lotusStream .lotusPostHover, .lotusui30 .lotusBoard .lotusStream .lotusPostSelected {
+  background-color: $background-side;
+}
+
+.lotusui30 .lotusFlyout .lotusFlyoutHeader {
+  background-color: $background-header;
+  padding: .5rem .5rem 0.275rem;
+  .flyoutTitleInner .vcard a {
+    color: $text-03 !important;
+  }
+}
+
+.lotusui30 .lotusFlyoutConnector {
+  background-image: none !important;
+  width: 0;
+  height: 0;
+  border: .5rem solid transparent;
+  border-right: .5rem solid $background-header;
+  margin: -1rem 0 0 -1.15rem;
+}

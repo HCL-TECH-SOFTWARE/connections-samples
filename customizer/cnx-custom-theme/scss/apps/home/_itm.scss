@@ -1,0 +1,50 @@
+//IMPORTANT TO ME BAR USED ON ORIENT ME PAGE
+
+html > body {
+  overflow-x: visible;
+}
+
+// Update colors used on important to me bar
+.ic-itm-bar {
+  .set-base {
+    .remove-entry:hover {
+      border-color: $border-focus;
+      .minus {
+        fill: $icon-brand-01;
+      }
+    }
+    &.selectedSet {
+      border-color: $border-selected;
+    }
+  }
+  .people-set {
+    .ic-bizcard-section1 {
+      .action {
+        fill:$icon-brand-01;
+        .biz-card {
+          fill:$icon-brand-01 !important;
+        }
+        &:hover:before, &:focus:before {
+          border:1px solid $border-selected !important;
+        }
+      }
+      .selected {
+        box-shadow: 0 0 0 3px $border-selected;
+      }
+    }
+    &.circle-set-focus:focus:not(.dragging):before {
+      border: 1px solid $border-selected;
+    }
+  }
+  //Add and remove ITM bubbles
+  .setSideBar {
+    .add-contacts, .remove-contacts:hover, .remove-contacts .editing {
+      &:hover {
+        fill: $icon-brand-01;
+      }
+    }
+  }
+  .typeaheadDiv {
+    background-color:$background-header;
+  }
+}

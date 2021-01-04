@@ -1,0 +1,50 @@
+//Organization page
+
+//Title of the page
+.claro.scloud3 .lotusTitleBar2 .lotusTitleBarContent {
+  padding-left:256px;
+  a {
+    color: $text-01 !important;
+    @include font-size($apptitle...);
+  }
+}
+
+//Left navigation
+#partnerPageContentFF {
+
+  #partnerPageBody,
+  #editPartnerPageBody {
+    .lotusColLeft {
+      margin:0px !important;
+      width: $leftnav-width;
+      #showPhoto {
+        margin:0 0 20px 0;
+        padding-left:18px;
+      }
+      li a {
+        padding: $leftnav-vertical-padding $leftnav-horizontal-padding;
+        font-size: $leftnav-font-size !important;
+        line-height: $leftnav-line-height !important;
+        margin:0;
+        &:hover,
+        &:focus {
+          background-color: $background-side-hover !important;
+        }
+      }
+      li.lotusSelected a {
+        border-left: 4px solid $border-selected !important;
+      }
+      &:after {
+        border-left-color: $background-side !important;
+        border-right-width: calc(#{$leftnav-width} - 1px);
+        border-right-color: $background-side !important;
+      }
+      .llProfilePhoto {
+        img#editPhotoTmp {
+          width: 155px;
+          height: 155px;
+        }
+      }
+    }
+  }
+}

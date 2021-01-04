@@ -1,0 +1,321 @@
+<html>
+<head>
+    <title>Customize - Visual Update 1 for HCL Connections</title>
+  <link rel="stylesheet" type="text/css" href="docs.css">
+  <link rel="shortcut icon" href="./img/cnx-theme.ico">
+</head>
+<!--
+	 * © Copyright HCL Technologies Limited 2017, 2019
+	 *
+	 * Licensed under the Apache License, Version 2.0 (the "License");
+	 * you may not use this file except in compliance with the License.
+	 * You may obtain a copy of the License at:
+	 *
+	 * http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 * Unless required by applicable law or agreed to in writing, software
+	 * distributed under the License is distributed on an "AS IS" BASIS,
+	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+	 * implied. See the License for the specific language governing
+	 * permissions and limitations under the License.
+-->
+<body>
+
+<!--HEADER CONTAINER-->
+<div class="headerContainer subpage">
+  <div class="aboutHeader">
+    <div class="headText">
+      <h1>Visual Update 1 for HCL Connections</h1>
+    </div>
+  </div>
+</div>
+<!--END HEADER CONTAINER-->
+
+<div class="toc">
+  <ul>
+    <li>CONTENTS</li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#prereq">Prerequisites</a></li>
+    <li><a href="#steps">Overview of Steps</a></li>
+    <li><a href="#included">Files and Folders</a></li>
+    <li><a href="#test">View as You Work</a></li>
+    <li><a href="#exampleChanges">Make Modifications</a></li>
+    <li><a href="#share">Share with Others</a></li>
+    <!--<li><a href="./configure.html">Create application  &#8594;</a></li>-->
+    <li><a href="./index.html">&#8592; Back to Main</a></li>
+  </ul>
+</div>
+
+<!--CONTENT CONTAINER-->
+<div class="contentContainer">
+
+<div class="aboutContent">
+
+
+  <h1><a name="about"></a>Customize Visual Update 1</h1>
+  <h2>About</h2>
+  <p>The release of Connections Customizer provides some great opportunities to customize Connections. Visual Update 1 is a a working example of how you can modify the existing appearance of Connections by overriding styles used on the site.</p>
+  <p>Visual Update 1 was actually written with visual customization in mind. In this topic you will learn the basics about the struture and variables used which make quick customizations, such as changing colors, possible.</p>
+
+<!--prereq-->
+  <h2><a class="anchor" name="prereq">Prerequisites</a></h2>
+<dl>
+  <dt>Connections Customizer</dt>
+  <dd>
+  <p>In this Visual Update example we use Customizer to apply the new design specification to Connections, simply by overriding CSS. Before using Customizer your organization must first register for the service by sending an email with some simple information. Refer to section 3 of the <a href="https://github.com/hclcnx/customizer" target="_blank">HCL Connections Customizer documentation</a> for more details.</p></dd>
+  <dt>Sass compiler</dt>
+  <dd>
+  <p>This example is written using Sass, which is compiled into CSS that will be injected into pages by Customizer. This example uses Sass to create CSS files and a script that instructs Customizer to return these CSS overrides with responses.</p></dd>
+  <dt>"Verse Theme (Default)" or "Hikari" theme</dt>
+  <dd><p>Connections must be set to use one of these default themes: "Verse Theme (Default)" or "Hikari".</p></dd>
+</dl>
+
+
+<!-----RECOMMENDED STEPS----->
+<h2><a class="anchor" name="steps">Overview of Steps</a></h2>
+<ol>
+  <li>Become familiar with the files and structure.</li>
+  <li>View the visual updates as you work.</li>
+  <li>Make a small modification, such as changing the brand colors.</li>
+  <li>Share your customizations with others.</li>
+  <li>Create a Chrome extension to share your modifications with others.</li>
+  <li>Add your modifications to Connections for more people to see.</li>
+</ol>
+
+<!-----FILES AND FOLDERS----->
+<h2><a class="anchor" name="included">Files and Folders</a></h2>
+<h4>1. Fork and clone <a href="https://github.com/hclcnx/cnx-custom-theme" target="_blank">hclcnx/cnx-custom-theme</a> files on your local system</h4>
+<p>We recommend creating a fork and then clone that fork to your local file system. You can clone files using GitHub Desktop or a terminal window.</p>
+<p>Once you have the files locally you are set to go. Make note of the local path for the next step.</p>
+
+<h4>2. Browse the files and folders to become familiar.</h4>
+    <ul>
+      <li>/css -- Contains output CSS files after compiling scss</li>
+      <li>/docs -- Documentation about this application and the Visual Update 1 application</li>
+      <li>/extension -- Contains files used to create Chrome extension</li>
+      <li>/scss -- SCSS files that contain the style changes
+        <ul>
+         <li>/apps -- Contains app specific folders
+           <ul>
+             <li>/profiles and more -- Contains app specific SCSS partial file
+               <ul>
+                 <li>_contactcards.scss and more -- SCSS partial file</li>
+               </ul>
+             </li>
+           </ul>
+         </li>
+         <li>/components -- SCSS files for common components used across apps, such as buttons and links
+           <ul>
+             <li>_buttons.scss and more -- SCSS partial file</li>
+           </ul>
+         </li>
+         <li>/global -- SCSS files for global style changes applied regardless of application
+           <ul>
+             <li>_repoName.scss and more -- SCSS partial file</li>
+           </ul>
+         </li>
+         <li>/prereqs -- SCSS files for style changes that are used by other scss files, such as color variables
+           <ul>
+             <li>_colors.scss and more -- SCSS partial file</li>
+           </ul>
+         </li>
+         <li>files.scss -- SCSS file that references partial scss files used in the Files application</li>
+         <li>global.scss -- SCSS file that references partial scss files used globally</li>
+         <li>meetings.scss -- SCSS file that references partial scss files used in the Meetings application</li>
+         <li>profiles.scss -- SCSS file that references partial scss files used in the Profiles and Contacts applications</li>
+         <li>search.scss -- SCSS file that references partial scss files used in the Search application</li>
+         <li>settings.scss -- SCSS file that references partial scss files used in the Settings pages</li>
+         <li>etc...</li>
+       </ul>
+     </li>
+      <li>/svg -- Copy of SVG images that are streamlined and stored in _icons.scss as variables</li>
+      <li>manifest.json -- Used to define Chrome extension</li>
+      <li>org-ext.json -- Sample .json file used when adding your customizations as an Organization Extension [DEPRECATED]</li>
+      <li>periscope.js -- Javascript file used with Tampermonkey to indicate which CSS file to load based on the page you are on.</li>
+      <li>readme.md -- Points to where you can find complete documentation</li>
+      <li>tmScript.js -- Tampermonkey script</li>
+      <li>vu1-include-css.json -- .json file to use when creating your app in the registry. This tells Customizer what CSS to inject and what repo the files are in. This includes the CSS files directly into pages without use of Javascript, which allows styles to load faster.</li>
+  </ul>
+
+  <h4>3. Understand why some SCSS files start with a "_" (underscore)</h4>
+    <p>You may have noticed, there are a lot of SCSS files but there are only a few CSS files generated. The point of this is to send less requests to the server and make the load time as fast as possible. The way this is achieved is by placing a "_" (underscore) before every .scss file that we don't want to create a CSS file for. We refer to these "_.scss" files as "partials". The main scss files, such as files, global, meetings, profiles, search, and settings don't have a "_" in front of their file name. The main scss files import "partials" and compile them into large CSS files.</p>
+
+    <h4>4. Keep your local clone up to date</h4>
+    <p>Periodically pull updates from hclcnx/cnx-custom-theme to keep your local clone up to date. We will post updates to fix issues and to add styles to more pages and applications. Pull updates into your local clone from hclcnx/cnx-custom-theme master branch.</p>
+
+<!-----VIEW VISUAL UPDATES----->
+<h2><a class="anchor" name="test">View the visual updates as you work</a></h2>
+  <p>Use a browser extension that allows you to override elements and CSS of a page with local files, such as Tampermonkey for Chrome. The extension allows you to see the changes you make in your local files.</p>
+
+  <p>Follow these steps to use Tampermonkey for Chrome to override the styles on the site with the styles defined in the files on your local machine.</p>
+  <ol>
+    <li>Install the Tampermonkey extension in Chrome.</li>
+    <li>On the Extensions page, locate Tampermonkey and select the box to "Allow access to file URLs".</li>
+    <li>Access Tampermonkey and go to the Dashboard to create a new script.</li>
+    <li>In the editor, replace all the code with the code found in the /tmScript.js file.</li>
+    <li>Replace "YOURFILEPATHGOESHERE" with the full path to the cloned /cnx-custom-theme directory.</li>
+    <ul>
+      <li>Note: file:/// has 3 slashes.</li>
+      <li>Mac example:
+        <pre class="code">
+...
+// @require      file:///User/username/folder/cnx-custom-theme/periscope.js
+// @resource     files file:///User/username/folder/cnx-custom-theme/css/files.css
+// @resource     profiles file:///YOURFILEPATHGOESHERE/cnx-custom-theme/css/profiles.css
+...</pre>
+    </li>
+    <li>Windows example:
+      <pre class="code">
+...
+// @require      file:///C:/folder/cnx-custom-theme/periscope.js
+// @resource     files file:///C:/folder/cnx-custom-theme/css/files.css
+// @resource     profiles file:///YOURFILEPATHGOESHERE/cnx-custom-theme/css/profiles.css
+...</pre>
+    </li>
+  </ul>
+  <li>After you replace the file paths, save the script.</li>
+  <li>Go to Connections Cloud and Files to see the changes included in this application.</li>
+</ol>
+
+<!-----MAKE MODIFICATIONS----->
+<h2><a class="anchor" name="exampleChanges">Try Making Modifications</a></h2>
+  <p>To make CSS easier to manage, all of the styling is written is Scss which needs to be compiled into CSS using a Sass Compiler.</p>
+
+<!--compile-->
+<h3><a class="anchor" name="compile">How to Compile the Scss Files</a></h3>
+  <p>You can use an open source Sass compiler to compile Scss into CSS. <a href="http://sass-lang.com/" target="_blank">Learn more and install a Sass compiler.</a></p>
+  <p>After you install a Sass compiler you can set it to watch the /cnx-custom-theme directory for changes to files in /scss and it will automatically compile and output files to /css. The easiest way to do this is to run a watch command in a terminal window.</p>
+  <ol>
+    <li>Open terminal and navigate to the /cnx-custom-theme folder.</li>
+    <li>Run this command:
+  <pre class="code">
+  sass --watch scss:css</pre>
+  </li>
+  <li>Now when you make changes to scss files and save, they are compiled and the appropriate CSS files are updated in the /css folder.</li>
+</ol>
+<!--colors-->
+<h3>Change the brand colors</h3>
+<ul>
+<li>The colors are defined as variables and are centrally located in this file:
+<pre class="code">
+/scss/prereqs/_colors.scss
+</pre>
+</li>
+<li>Brand color variables are defined and used on colorful components such as buttons, links, and the top navigation bar. In many cases you only need to change the brand colors to significantly update the user interface with the colors for your company.</li>
+<li>Additional neutral colors are defined for text, borders, separators, backgrounds, etc.</li>
+</ul>
+<h4>Try to change the colors</h4>
+<ol>
+  <li>Locate /scss/prereqs/_colors.scss</li>
+  <li>Change the primary brand colors, $brand-01, $brand-02, and $brand-03, with different hex values.</li>
+  <li>Save the changes and if the compiler is watching it will generate all the css files because _colors.scss is used in all of them.</li>
+  <li>Reload the web page to see the changes.</li>
+</ol>
+
+<!--navbar-->
+<h3>Increase the height of the top navigation bar</li>
+  <ul>
+  <li>The properties of the top navigation bar are defined as variables and are centrally located in this file:
+  <pre class="code">
+  /scss/prereqs/_navbar.scss
+  </pre>
+  </li>
+  </ul>
+  <h4>Try to change the height and font-size</h4>
+  <ol>
+    <li>Locate /scss/prereqs/_navbar.scss</li>
+    <li>Change $navbar-height to 80px.</li>
+    <li>Change $navbar-font-size to 16px.</li>
+    <li>Save the changes and if the compiler is watching it will generate the necessary css files. It might only generate global.css because the navigation bar is a global item.</li>
+    <li>Reload the web page to see the changes.</li>
+  </ol>
+
+<!--icons-->
+<h3>Change icons on a page</h3>
+<p>The way Connections was built, most icons are loaded via a sprite sheet as background and to show the certain icon, the developers used background-position and set x,y values to some specific value.</p>
+
+<p>If we want to replace an icon, we can add in an svg file. However since we can't modify the DOM to insert the svg, we can override the background and include the svg as encoded in base64. Since this example has many icons changed, we made this process as simple as possible.
+<ol>
+  <li>Edit the .svg in a text editor.
+    <ul>
+      <li>Remove any unnecessary comments or attributes.</li>
+      <li>Remove all the line returns so that the .svg markup is all on one line and save the file.</li>
+      <li>Include fill="#000000" on parts of the SVG where you want to be able to change the color. The logic used in this example looks for fill="#000000" and replaces it with the color you specify.<br />
+      Note: This only supports changing one color at this time.</li>
+    </ul>
+  <li>Add the .svg as a variable to use in Connections. Find the scss/prereqs/_icons.scss file and add your icon as a variable:
+<pre class="code">
+$svg-myIcon:'&ltsvg width="24px height="24px" blah blah blah;&gt;&lt;path fill="#000000" d="blah blah"&gt;&lt/path&gt;&lt;/svg&gt;';
+</pre>
+</li>
+<li>Apply the icon variable to be used as a background-image for any element you need by doing the following:
+<pre class="code">
+.myElement{
+   background-image:svg-url-with-replaced-fill($svg-myIcon, '#000000', $colorVariable) !important;
+}
+</pre>
+</li>
+</ol>
+
+<!--SHARE-->
+<h2><a class="anchor" name="share">Share your customizations with others</a></h2>
+
+<!-----CREATE CHROME EXTENSION----->
+<h3><a class="anchor" name="chrome">Create a Chrome extension</a></h3>
+<p>Create a Chrome extension to share your changes with others.</p>
+<ol>
+  <li>Create a new folder for the extension, such as /theme-extension, and put a copy of the /cnx-custom-theme folder inside of it.</li>
+  <li>In the extension, edit the /manifest.json file if:
+    <ul>
+      <li>You want to modify the version number of the extension</li>
+      <li>You changed the name of the periscope.js file</li>
+    </ul>
+  </li>
+  <li>In the extension folder, remove the following folders that aren't needed and to save space:
+    <ul>
+      <li>/.git</li>
+      <li>/.sass-cache</li>
+      <li>/docs</li>
+      <li>/scss</li>
+      <li>/svg</li>
+    </ul>
+  </li>
+  <li>Zip up only the /theme-extension folder.</li>
+  <li>Share theme-extension.zip with others along with the following instructions to install it.</li>
+</ol>
+<h4>Instructions to install the Chrome extension</h4>
+<ol>
+  <li>Download this zip file and unzip it where you want.</li>
+  <li>Go to chrome://extensions</li>
+  <li>Check "Developer mode"</li>
+  <li>Click "Load unpacked extension..."</li>
+  <li>Locate and select the /theme-extension folder you unzipped. If you see /theme-extension/theme-extension select the nested folder.</li>
+</ol>
+<h4>Instructions to update the Chrome extension with an updated version</h4>
+<ol>
+  <li>Download and replace the zip and folder from before.</li>
+  <li>Go to chrome://extensions</li>
+  <li>Click "Reload" on your existing Chrome extension to get the updates.</li>
+</ol>
+
+<!--create application-->
+<h3>Create application in app registry</h3>
+<p>When you are ready to share these changes with a wider audience, follow the instructions to <a href="./configure.html">Create and Enable</a> an application in the app registry.</p>
+
+</div>
+
+<div class="breadcrumb">
+  <p><a href="./index.html">Back to main</a> | <a href="#top">Back to top</a></p>
+</div>
+
+</div>
+<!--END CONTENT CONTAINER-->
+
+<!--FOOTER CONTAINER-->
+<div class="footerContainer">
+  <p>Copyright 2017, 2019, HCL Technologies Limited</p>
+</div>
+<!--END FOOTER CONTAINER-->
+
+</body>
+</html>

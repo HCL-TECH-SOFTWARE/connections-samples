@@ -1,0 +1,169 @@
+#newCommunityForm {
+  tr.lotusFormFieldRow > td.lotusFormTitle {
+    padding: 0 !important;
+    h2 {
+      margin-top: 0 !important;
+    }
+  }
+  h2 #addCommunityTitle {
+    @include font-size($title...);
+  }
+  label[for="addCommunityName"] {
+    display: block;
+    padding-top: .7rem;
+  }
+  #addCommunityName {
+    @include font-size($title...);
+    min-width: 36rem !important;
+  }
+  #autocompletetags {
+    min-width: 36rem !important;
+  }
+  #addPublicInviteOnlyAccess, #addPublicAccess {
+    &, & + label {
+      margin-top: 1.25rem;
+    }
+  }
+  input[type="checkbox"] {
+    &, & + label {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: .5rem;
+    }
+  }
+  #listRestrictedWarningNodeContainer > div {
+    margin-top: .75rem;
+  }
+  #listRestrictedRow > td {
+    padding-top: 0 !important;
+  }
+  tr.lotusFormFieldRow > td {
+    padding-top: 1.25rem !important;
+    &[role="radiogroup"] {
+      padding-bottom: 2px !important;
+    }
+  }
+  #photoUploadHelp .lotusMeta {
+    display: block;
+    max-width: 35rem;
+    @include font-size($body...);
+  }
+  #addComMembersWidget > div.field {
+    padding: 0 !important;
+  }
+  #addMembersContainer {
+    span.lotusMeta {
+      @include font-size($body...);
+    }
+    #widget_bhc_lconn_core_PeopleTypeAhead {
+      margin-top: 1.25rem;
+      border: none !important;
+    }
+    #addComMembersWidgetPeopleTypeAhead {
+      margin-top: 1.25rem;
+    }
+    .typeaheadInput {
+      margin-left: 0 !important;
+      padding-bottom: 1px;
+      input {
+        padding-left: 1.5rem !important;
+        margin-left: -1rem !important;
+      }
+    }
+  }
+  .AddMembers {
+    #memberList {
+      border: 0 !important;
+      margin-left: -1rem;
+      min-width: 37rem;
+
+      .member {
+        border: 0 !important;
+        padding: .25rem 0;
+      }
+      .nameContent {
+        padding: 0 !important;
+        @include font-size($body...);
+        span {
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          color: inherit !important;
+          font-style: inherit !important;
+        }
+      }
+      span.type {
+        display: inline-block;
+        margin-right: .5rem;
+      }
+      //Style selected names for cloud
+      .member {
+        @include tags();
+        margin-bottom: 8px !important;
+        margin-right: 8px !important;
+        padding-right: 30px !important;
+        padding-left: 2px !important;
+      }
+      //Style selected names for onprem
+      .lotusFilter.filterSpacing {
+        margin-top: 10px !important;
+        margin-right: 4px !important;
+        margin-left: 12px !important;
+      }
+      //Style for cloud and onprem
+      .member, .lotusFilter {
+        .lotusDelete {
+          opacity: 0.55 !important;
+        }
+      }
+    }
+  }
+  .lotusDelete {
+    opacity: 1 !important;
+    &:focus {
+      outline: 1px solid $border-focus;
+      outline-offset: 2px;
+    }
+  }
+  // who even knows
+  #communitiesAddButton {
+    display: none !important;
+  }
+}
+
+#selectCommForm {
+  #communityTypeAhead {
+    padding-left: 2rem !important;
+  }
+  .commTypeAheadIcon {
+    background-image: svg-url-with-replaced-fill($svg-search, '#000000', $icon-default) !important;
+    background-position: center center !important;
+    background-repeat: no-repeat;
+    margin-bottom: .15rem;
+
+    svg {
+      display: none;
+    }
+  }
+}
+
+.dijitComboBoxMenuPopup {
+  border: 0 !important;
+  box-shadow: 0px 4px 10px $box-shadow-10 !important;
+  .dijitMenuItem {
+    span {
+      font-weight: 500 !important;
+    }
+    b {
+      font-weight: inherit !important;
+      color: $text-04;
+    }
+
+    &.dijitMenuItemSelected,
+    &.dijitMenuItemHover {
+      background-color: $background-main-hover !important;
+    }
+  }
+  .dijitMenuNextButton {
+    border-top: 1px solid $border-separator !important;
+  }
+}

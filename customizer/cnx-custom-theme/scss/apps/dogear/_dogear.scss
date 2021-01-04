@@ -1,0 +1,112 @@
+// Stand-alone bookmarks overrides
+.lotusui30_layout {
+  div[role="banner"] {
+    .lotusTitleBar2Tabs#lotusTitleBar {
+     border-bottom-color: transparent !important;
+     ul {
+       border-bottom: 1px solid $border-separator;
+       height: 62px !important;
+       margin-left: 232px !important;
+       padding-left: 0 !important;
+     }
+     .lotusTabInner {
+       text-transform: none;
+     }
+   }
+  }
+  .lotusMain {
+    .lotusContent {
+      margin-top: 2rem;
+      padding-left: 28px !important;
+      .lotusDelete img {
+          margin:10px 15px 0 0 !important;
+      }
+      .lotusForm2 .lotusFormTitle .lotusHeading,
+      .lotusHeader h1 {
+        @include font-size($title...);
+        padding-top: 0;
+      }
+      .lotusTags {
+        font-size: 12px !important;
+      }
+      table.dogearTableFix {
+        .lotusFirstCell input {
+          margin: 0px 3px !important;
+        }
+        a[id^="MoreActions"] {
+          padding-right: 4px !important;
+        }
+        span.lotusDivider {
+          margin-bottom: 0.25rem !important;
+        }
+        span[role="listitem"]:not(.vcard):not(.Date) {
+          margin-bottom: 0px !important;
+        }
+      }
+    }
+  }
+}
+
+#importDialog,
+#exportDialog,
+#manageTagDialog {
+  .lotusDialogHeader {
+    margin-bottom: 0 !important;
+  }
+  .lotusDialogContent {
+    padding: 15px 32px !important;
+    input[type="text"] {
+      @include textinput;
+      padding-right: 8rem !important;
+    }
+    div ul {
+      list-style-type: decimal !important;
+      margin: 14px !important;
+    }
+  }
+}
+
+// onprem new bookmark dialog
+form#bookmarkletForm {
+  .lotusDialogHeader {
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  table.lotusDialogContent {
+    padding: 0px 20px !important;
+    tr#lotusTabContainer {
+      margin-top: 0 !important;
+      ul.lotusTabs {
+        bottom: 0 !important;
+        li a {
+          padding: .5rem .5rem !important;
+        }
+        li + li {
+          margin-left: .5rem !important;
+        }
+      }
+    }
+    tr.lotusFormTabContentFirst {
+      td.lotusFormFieldRow {
+        padding-top: 4px !important;
+      }
+    }
+    tr#communitiesFields,
+    tr#activitiesFields,
+    tr#blogsFields {
+      select {
+        border: 1px solid $color-gray-10 !important;
+      }
+    }
+    td.lotusFormFieldRow {
+      padding-bottom: 4px !important;
+      padding-top: 2px !important;
+      textarea {
+        padding: 4px !important;
+      }
+    }
+    td label {
+      padding: 2px !important;
+    }
+  }
+}

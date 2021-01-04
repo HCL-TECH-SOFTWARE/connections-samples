@@ -1,0 +1,87 @@
+.lotusColLeft {
+  margin: 0px !important;
+  padding: 0 !important;
+  & {
+    #lconnTagCloudFilter > h2,
+    .lotusSection > h2 {
+      a, span {
+        font-weight: normal !important;
+        white-space: nowrap;
+      }
+    }
+  }
+  div.lotusSection.lotusFirst {
+    margin-left: 16px;
+    &[aria-labelledby="dogearSubsTitle"] {
+      margin-left: 40px;
+    }
+  }
+  div.lotusSection#lconnTagCloudFilter,
+  div.lotusSection[aria-labelledby="dogearPeopleTitle"] {
+    margin-left: 40px;
+  }
+  #subscriptionsHolder {
+    .vcard {
+      padding-right: 8px !important;
+    }
+  }
+  #subsHelpIcon,
+  #tagHelpIcon,
+  #peopleHelpIcon
+    {
+      padding-right: 6px !important;
+    }
+  a[id*="_HelpLauncher_"] {
+    padding-left: 20px !important;
+  }
+}
+
+ul#bookmarksMyUpdateNav li {
+  padding-top:$leftnav-vertical-padding!important;
+  padding-bottom:$leftnav-vertical-padding!important;
+  position: relative;
+  min-height: 21px;
+  font-size: $body-sm-font-size;
+  margin: 0 !important;
+  a {
+    padding-top:$leftnav-vertical-padding!important;
+    padding-bottom:$leftnav-vertical-padding!important;
+    padding-left: 28px !important;
+    margin: 0 !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box !important;
+    width: 100%;
+    font-weight: 400 !important;
+    &:hover, &:focus {
+      border-bottom: 1px solid transparent !important;
+      border-top: 1px solid transparent !important;
+    }
+  }
+  &.lotusSelected a {
+    font-weight: 700 !important;
+    padding-left: 26px !important;
+  }
+  &:hover, &:focus {
+    background-color:$background-side-hover !important;
+    border: none !important;
+    text-decoration: none !important;
+  }
+  &.lotusSelected {
+    border: none !important;
+
+    &::before {
+      content: '';
+      display: block;
+      box-sizing: border-box !important;
+      width: $leftnav-active-border-thickness;
+      height: $leftnav-line-item-height;
+      position: absolute;
+      left: auto;
+      margin-top: -($leftnav-vertical-padding);
+      right: calc( #{$leftnav-width} - #{$leftnav-active-border-thickness} );
+      border-left: $leftnav-active-border-thickness solid $border-selected !important;
+    }
+  }
+}

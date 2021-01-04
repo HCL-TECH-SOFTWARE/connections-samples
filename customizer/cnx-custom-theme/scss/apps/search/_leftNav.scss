@@ -1,0 +1,65 @@
+.lotusui.lotusui30dojo.lotusui30_body .lotusFrame{
+  .lotusColLeft{
+    position:relative!important;
+    top:-15px!important;
+    margin-left:0px!important;
+    box-sizing: border-box !important;
+    .lotusMenu{
+      width: $leftnav-width;
+      position:relative!important;
+      top:5px!important;
+      padding-top:1rem!important;
+      margin: 0 !important;
+    }
+    ul.searchFilter{
+      li{
+        box-sizing:border-box;
+        margin-top:0!important;
+        margin-bottom:0!important;
+        padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+        padding-left: calc(#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) !important;
+        transition: $leftnav-border-slide;
+
+        &.searchFilterSelected{
+          border-left: $leftnav-active-border-thickness solid $border-selected !important;
+          padding-left: calc(#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding} - #{$leftnav-active-border-thickness}) !important;
+          a{
+            font-weight:700!important;
+          }
+        }
+        a{
+          padding:0!important;
+          margin:0!important;
+          font-weight: 400 !important;
+          &:hover,&:focus{
+            border-color:transparent!important;
+            text-decoration: none !important;
+          }
+        }
+        &:hover{
+          background-color:$background-side-hover!important;
+          cursor:pointer;
+        }
+      }
+    }
+    #facetsContainer { // tags, people, dates 
+      //padding-left:28px!important;
+      .lotusSection{
+        //margin-bottom:21px!important;
+        margin: 0 !important;
+        span{
+          font-weight:400!important;
+        }
+        h2 {
+          padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+          padding-left: calc(#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) !important;
+          
+          + .lconnFacet {
+            margin: 0 !important;
+            padding: 0 $leftnav-horizontal-padding $leftnav-vertical-padding calc(#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) !important;
+          }
+        }
+      }
+    }
+  }
+}

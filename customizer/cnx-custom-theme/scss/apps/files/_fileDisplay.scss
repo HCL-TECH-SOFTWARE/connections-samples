@@ -1,0 +1,118 @@
+#body{
+  //pin
+  .lconnPinnedToggle {
+    display:inline-block!important;
+    img{
+      background-position:0!important;
+      background-size:20px!important;
+      width:18px;
+      height:18px;
+    }
+    img.lconnSprite-iconPinned16-off{
+      background-image:svg-url-with-replaced-fill($svg-pin-unchecked, '#000000', '#000000') !important;
+    }
+    img.lconnSprite-iconPinned16-on{
+      background-image:svg-url-with-replaced-fill($svg-pin-checked, '#000000', '#000000') !important;
+    }
+    &:focus{
+      outline:1px solid black!important;
+      outline-offset: 1px!important;
+    }
+  }
+  //heart
+  .lotusLikeCount.lotusLikeSimple{
+    img{
+      background-position:0px;
+      background-size:18px!important;
+      width:18px;
+      height:18px;
+      position:absolute!important;
+      left:-8px!important;
+    }
+    img{
+      background-image:svg-url-with-replaced-fill($svg-heart-outline, '#000000', '#000000') !important;
+    }
+  }
+  .qkrDropAvatar {
+    .DropAvatarBadge > div {
+      background-color:$brand-01!important;
+    }
+    .DropAvatarContainer {
+      background-color:$color-white!important;
+      color:$text-01!important;
+      border-color:$brand-01!important;
+      border-width:2px!important;
+      img{
+        margin-right:4px!important;
+        background-repeat:no-repeat!important;
+        background-position:0 0!important;
+        margin-top:0px!important;
+        &.dndFolderIcon {
+          margin-top:-5px !important;
+        }
+      }
+    }
+  }
+}
+
+.lotusPerson.vcard .menu_drop_icon{
+  background-position-x:2px!important;
+}
+
+#body{
+  #lotusContentHeaderTitleBar #scene-title{
+    .lconnPinnedToggle._folderPinned{
+      margin-top:1px;
+      &:focus{
+        outline:1px solid $icon-default!important;
+      }
+    }
+  }
+  div[id^="lconn_files_action_title_more"],
+  .lconnBreadcrumbitem.lconnBreadcrumbnode{
+    img{
+      background-image: svg-url-with-replaced-fill($svg-down-arrow-outline, '#000000', $icon-default);
+      background-size:18px!important;
+      margin-top:1px!important;
+    }
+    &:focus{
+      outline:none!important;
+      text-decoration:underline!important;
+      img{
+        background-image: svg-url-with-replaced-fill($svg-down-arrow-filled, '#000000', $icon-default);
+      }
+    }
+  }
+}
+
+// focus for the share / globe icon
+#scene-body {
+  a[href$="section=share"] {
+    &:focus {
+      outline: 1px solid black !important;
+      outline-offset: 1px !important;
+    }
+  }
+  .filesList,
+  #list  {
+    ul.lotusActions {
+      float: right;
+      li:last-child {
+        padding: 0 0 0 7px !important;
+      }
+    }
+  }
+  // line up quota text with table - issye 1241
+  .qkrQuota {
+    margin-right: 44px !important;
+    margin-left: 44px !important;
+  }
+}
+
+// File viewer dropdown arrow - 1174
+.ics-viewer .ics-viewer-details .ics-viewer-details-shelf h3 div.moreButton span.dijitArrowButtonInner {
+  background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-default) !important;
+  background-position:100% 5px!important;
+  background-size:8px 8px!important;
+  background-repeat: no-repeat !important;
+ }

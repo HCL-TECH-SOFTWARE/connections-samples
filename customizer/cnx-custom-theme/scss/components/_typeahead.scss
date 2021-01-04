@@ -1,0 +1,62 @@
+.dijitComboBoxMenuPopup {
+  margin-top: 2px !important;
+}
+.dijitComboBoxMenu.bhcPeopleTypeAheadMenu {
+  border: none !important;
+  box-shadow: 0px 4px 10px $box-shadow-10 !important;
+  top: 3px !important;
+  .listPaginationInfo {
+    font-style: normal !important;
+  }
+  .containerNode {
+    .dijitMenuPreviousButton,
+    .dijitMenuNextButton {
+      font-style: normal !important;
+      color: $link-default !important;
+      font-weight: 500 !important;
+    }
+    .dijitMenuItem {
+      border: none !important;
+      font-weight: 500;
+      padding: .5rem .75rem !important;
+      &:hover, &.dijitMenuItemSelected {
+        background-color: $background-side !important;
+        font-weight: 500 !important;
+      }
+      b {
+        font-weight: inherit !important;
+        color: $link-default !important;
+      }
+      .bhcBizCardFloat {
+        padding: 0 .75rem 0 0 !important;
+        + .bhcBizCardText {
+          max-width: calc(100% - 50px) !important;
+        }
+      }
+      .bhcBizCardText .bhcBizCardEllipsis {
+        color: $text-01 !important;
+        white-space: nowrap;
+        max-width: 100% !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        .bhcPeopleTypeAheadUserName {
+          font-size: $typeahead-name-font-size;
+          color: $text-01 !important;
+        }
+        + .bhcBizCardEllipsis {
+          color: $text-02 !important;
+        }
+      }
+    }
+  }
+}
+
+// new group in contacts typeahead:
+div[id^="widget_com_ibm_sc_lotuslive_PeopleTypeAhead_"][id$="_dropdown"] {
+  max-width: 17rem !important;
+  margin-left: 2px;
+  .dijitComboBoxMenu.bhcPeopleTypeAheadMenu .containerNode .dijitMenuItem .bhcBizCardText,
+  .dijitComboBoxMenu.bhcPeopleTypeAheadMenu .containerNode .dijitMenuItem .bhcBizCardText .bhcBizCardEllipsis {
+    max-width: 199px !important;
+  }
+}

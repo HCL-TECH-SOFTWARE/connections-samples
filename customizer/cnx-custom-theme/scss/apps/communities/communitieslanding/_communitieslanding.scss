@@ -1,0 +1,117 @@
+//Header updates
+.lotusTitleBar2 h2 a {
+  color: $text-01 !important;
+  @include font-size($apptitle...);
+  padding-left: 7px;
+}
+
+//Button updates
+.lotusActionBar.lotusBtnContainer {
+  overflow: visible !important;
+}
+
+input[type="submit"]#addCommunityButton {
+  @include btnprimary;
+}
+
+//Filter by tags updates
+.lotusFilters[id^="lconn_communities_catalog_widgets_Breadcrumbs_"] {
+  .lotusHeader {
+    font-size: .75rem;
+  }
+  span:not(.lotusAltText), img {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  a {
+    @include tags();
+    cursor: default;
+    margin: .15rem !important;
+
+    .lotusDelete {
+      margin-right: 0 !important;
+      opacity: 1;
+      background-image: svg-url-with-replaced-fill($svg-close-12px, '#000000', $icon-default) !important;
+      background-size: .5625rem .5625rem;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: .5625rem;
+      background-position: center 45% !important;
+      cursor: pointer;
+    }
+
+    &:hover .lotusDelete {
+      opacity: 1;
+    }
+  }
+}
+
+//Update style of empty state text in old catalog page - 2044
+html:not(.catalog-ui-updated) div[dojoattachpoint="zeroResultsNode"] {
+  @include font-size($emptystate...);
+  text-align: center;
+}
+//Update style of empty state text in new catalog page - 2044
+.catalog .zeroResultsNode {
+  @include font-size($emptystate...);
+}
+
+//Style new back to top button
+.catalog .backToTop {
+  z-index: 1;
+  &:focus, &:hover {
+    outline: none;
+    box-shadow: 0 0 0 1px $icon-black;
+    background-color: $background-main;
+  }
+}
+
+//List update
+.lotusContent {
+  div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"] {
+    .placeRow {
+      border-bottom:1px solid $border-separator;
+      td[dojoattachpoint="communityIcon"] {
+        vertical-align: middle;
+        img {
+          height:84px;
+          width:84px;
+        }
+      }
+      td {
+        padding-top:20px;
+        h4 {
+          @include font-size($header...);
+        }
+        .lotusMeta {
+          @include font-size($caption...);
+        }
+        div[dojoattachpoint="detailsSection"] p {
+          @include font-size($body...);
+        }
+      }
+    }
+  }
+}
+
+// recommendations links color
+div[id^="lconn_communities_catalog_widgets_RecommendationsBox_"] {
+  h2, a {
+    color: $text-01 !important;
+  }
+  a {
+    font-weight: 600 !important;
+  }
+}
+
+.lotusWidget2 span {
+  &.lotusDivider,
+  &.dueDate,
+  &.lotusTags,
+  &[role="listitem"] {
+    display: inline-block;
+    vertical-align: middle !important;
+    line-height: 1.75em;
+    margin-bottom: 0;
+  }
+}

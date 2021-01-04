@@ -1,0 +1,153 @@
+.blog.admin #entryform,
+form.lotusForm.qkrEdit {
+  .wikiPageTable {
+    label strong {
+      font-weight: inherit !important;
+    }
+  }
+  #title, #name {
+    @include font-size($title...);
+    margin-bottom: .5em;
+    width: 32em !important;
+    text-overflow: ellipsis;
+    padding-right: 0 !important;
+  }
+  #editTitle {
+    display: none;
+  }
+  .entryEditTable {
+    tr:nth-child(3), tr:nth-child(4) {
+      display: inline-block;
+      vertical-align: middle;
+
+      td {
+        padding-top: 0 !important;
+        padding-bottom: 0;
+
+        label {
+          line-height: 38px;
+        }
+      }
+    }
+  }
+  #lconn_share0_widget_Tagger_0 > span {
+    line-height: 38px !important;
+  }
+  #qkrAutosaveContainer {
+    line-height: 3.25rem;
+  }
+  #section_miscControl {
+    input[type="checkbox"]  {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1.5em;
+      &,
+      + label,
+      + script + label {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    #delayedPub + label + div {
+      margin-left: 1.65rem !important;
+    }
+    #widget_publishDate {
+      position: relative;
+      margin-right: 1rem;
+
+      &.dijitTextBoxDisabled {
+        background: transparent;
+        opacity: 1;
+
+        &, *, ~ select {
+          color: $disabled !important;
+          cursor: not-allowed !important;
+        }
+      }
+    }
+    #publishDate {
+      padding-bottom: 9px !important;
+    }
+    .dijitDateTextBox {
+      border: none !important;
+    }
+    .dijitDownArrowButton {
+      position: absolute;
+      right: 0;
+      top: 0;
+      float: none;
+  		background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $icon-default) !important;
+  		background-size: 0.75rem !important;
+  		background-position: right .4rem !important;
+  		background-repeat: no-repeat !important;
+      z-index: 99;
+    }
+    #entryUpdatetime {
+      ~ select,
+      ~ span {
+        display: inline-block !important;
+        width: auto !important;
+        min-width: 0 !important;
+      }
+    }
+    #commentDays {
+      width: auto !important;
+      display: inline-block !important;
+      min-width: 0 !important;
+    }
+    #permlink_url_describe {
+      margin-top: .5rem;
+      display: block;
+    }
+  }
+  .pageContentDivStylePadding {
+    display: none;
+  }
+  #pageDetails {
+    #tabContainerId {
+      border-bottom: 0 !important;
+      margin-bottom: 0 !important;
+    }
+    // both cloud and on-prem
+    ul.lotusTabs#qkrEditorTabs {
+      width: 100% !important;
+      text-align: right;
+      position: relative !important;
+
+      li {
+        float: none;
+        display: inline-block;
+
+    		&#qkrRefHide {
+    		  padding-top: 4px !important;
+    		}
+        &#qkrRefHide + li {
+          margin-left: 0 !important;
+        }
+      }
+    }
+  }
+  .qkrWikiPreview {
+    border-top: 1px solid $border-separator;
+  }
+  .lotusTabs.aria_toolbar {
+    width: 100% !important;
+    text-align: right;
+    li {
+      float: none !important;
+      display: inline-block !important;
+    }
+  }
+}
+
+.pageContainerDivStyleWidthpageContentDivStyleMargin .lotusActionBar.lotusBtnContainer,
+.pageContainerDivStyleIsCloudMode,
+.pageContainerDivStyleIsNotCloudMode {
+  height: auto !important;
+}
+
+div[id^="lconn_share0_widget_Dialog_"] {
+  form .lotusDialogContent._qkrDialogCompact {
+    padding: 0 !important;
+  }
+}

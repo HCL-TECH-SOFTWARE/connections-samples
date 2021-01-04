@@ -1,0 +1,190 @@
+//Style blog posts
+//Border on each post
+.blog {
+  #entries {
+    table.lotusTable.blogsFixedTable {
+      border-spacing:0px 30px;
+      border-collapse:separate;
+    }
+    .lotusTable.blogsFixedTable {
+      td[style="width:95px"],
+      td.entryContentContainerTD {
+        box-shadow:0 4px 8px 0 $box-shadow-10;
+        padding:20px 30px !important;
+        border:1px solid $color-gray-10;
+        position:relative;
+        // Title of the post
+        h4, h4 a {
+            color:$text-01 !important;
+            text-decoration:none;
+            @include font-size($title...);
+        }
+        //meta info
+        .lotusMeta, .lotusMeta a {
+          @include font-size($caption...);
+          color:$text-02 !important;
+        }
+        .lotusMeta {
+          margin:10px 0px;
+        }
+        //Move like to align with meta by making their parent containers inline
+        .lotusMeta.lotusLeft,
+        .lotusMeta.lotusLeft + .lotusRight {
+          display: inline !important;
+          float: none !important;
+        }
+        .rating.lotusRating .lotusLike {
+          @include font-size($caption...);
+          .lotusLikeCount {
+            padding-bottom: 0 !important;
+            margin-bottom: 0 !important;
+          }
+        }
+      }
+      // ideation vote td... prevent double border
+      td[style="width:95px"] {
+        border-right: none !important;
+      }
+    }
+  }
+  .entryContentContainer {
+    margin-bottom:10px;
+    img:not(.lconn-ftype16) {
+      max-width:100%;
+      width:auto;
+      height:auto;
+    }
+  }
+}
+
+//Style ideation blog voting on posts
+.blog #entries {
+  //General styling for enabled and disabled voting
+  .ideaVotingDiv, .ideaVotingDivDisabled {
+    background:transparent !important;
+    border:none !important;
+    width:auto;
+    padding:0px 0px;
+    .ideaVotingNumber {
+      @include font-size($head1...);
+      padding:0px 0px;
+      cursor:default;
+      color:$text-02;
+    }
+    .ideaVotingButtonDiv, .ideaVotingButtonDivDisabled {
+      background-color:transparent !important;
+      padding-top:10px;
+      .ideaVotingButton, .ideaVotingButtonDisabled {
+        @include font-size($title...);
+        [dojoattachpoint="voteText"] {
+          display:block;
+        }
+      }
+    }
+  }
+  .lotusMeta > * {
+    vertical-align: baseline !important;
+  }
+  //Style voting link
+  .ideaVotingDiv {
+    .ideaVotingButtonDiv {
+      .ideaVotingButton {
+        @include link-default;
+      }
+    }
+  }
+  //Voting is disabled
+  .ideaVotingDivDisabled {
+    .ideaVotingButtonDivDisabled {
+      a[aria-pressed="false"] {
+        display:none !important;
+      }
+      .ideaVotingButtonDisabled {
+        color:$text-02 !important;
+        &:hover, &:focus, &:active, &:visited {
+          text-decoration:none !important;
+        }
+      }
+    }
+  }
+  //Idea has Graducated flag
+  .ideaVotingDiv + div, .ideaVotingDivDisabled + div {
+    text-align:center;
+    position:relative;
+    .ideaGraduated {
+      @include graduatedIdea;
+    }
+  }
+}
+
+//Style graduated flag on stand-alone blog list
+.blog .blogsFixedTable.lotusTable {
+  > tbody > tr {
+    td.blogsRatingTD {
+      position: relative;
+      .ideaGraduated {
+        @include graduatedIdea;
+        &:before, &:after {
+          top: 30px; //exception to mixin
+        }
+        &:before {
+          left: -12px; //exception to mixin
+        }
+        &:after {
+          right: -18px; //exception to mixin
+        }
+      }
+    }
+  }
+}
+
+// archive list
+#section_archive {
+  max-height: 300px;
+  overflow: auto;
+  padding: 0 1.2rem !important;
+  border: 1px solid $border-separator;
+}
+
+#NotificationFormEx {
+  box-shadow:0 4px 8px 0 $box-shadow-10;
+  border:1px solid $border-field;
+  margin-bottom: 1rem;
+
+  .lotusTabContent {
+    border: none !important;
+  }
+  .fieldborder {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .fieldborder .fieldcontent {
+    background-color: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+  }
+  .notifyList label {
+    float: none;
+    display: inline-block;
+    position: static;
+    @include font-size($body...);
+  }
+  #notificationForm_typeahead,
+  #notificationForm_filteringcheckboxFilterTextbox {
+    margin: 1rem 0 !important;
+    width: 22rem !important;
+  }
+  .peopleList .lconnNotify {
+    padding: .15rem;
+  }
+}
+
+// font size for blog actions links; onprem 1668
+.lotusBoard.blogsBoard {
+  ul.lotusInlinelist > li {
+    a {
+      @include font-size($caption...);
+    }
+  }
+}

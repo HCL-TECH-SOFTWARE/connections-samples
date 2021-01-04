@@ -1,0 +1,106 @@
+//Navigation bar at the top of all pages
+
+//Moves body of site down to be below the navbar
+.lotusui30_body.scloud3:not(.compactMode):not(.concord) {
+  margin-top: $navbar-height !important; //Height of navbar
+}
+
+.ics-scbanner {
+  background-color: $navbar-bg-color !important;
+  height: $navbar-height !important; //Height of navbar
+
+  //Help reduce jumping on load
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  html.catalog-ui-updated .catalog &:not(.isfixed) {
+    position: absolute;
+    top: -$navbar-height;
+  }
+  box-sizing: border-box !important;
+
+  //Text on the navbar
+  &>div.navmenu, &>a { //Words on navbar directly inside .ics-scbanner
+    font-size:$navbar-font-size;
+    font-weight: $navbar-font-weight !important;
+    //color:$navbar-text-color !important; //Fixed to white for now
+    text-decoration:none;
+    -webkit-font-smoothing:antialiased!important;
+    &.selected:after {
+      border-bottom: $navbar-selected-height solid $navbar-selected-color;
+    }
+    &:focus:before {
+      border: 1px solid $navbar-focus-color !important;
+    }
+    &:hover {
+      font-weight: $navbar-font-weight !important;
+    }
+	}
+  //Menus and Submenus from navbar entries - Submenus only appear on narrow window
+  div.navmenu .navsimplelist {
+    top: $navbar-height !important; //Moves menus down to align with bottom of navbar
+    li a,
+    li div.submenu {
+      color:$navmenu-text-color !important;
+      text-decoration:none !important;
+      font-size:$navmenu-font-size;
+      font-weight:$navmenu-font-weight !important;
+    }
+    &> li a:focus,
+    &> li div.submenu:focus {
+      border-bottom: 1px solid $border-focus !important;
+      border-top: 1px solid $border-focus !important;
+    }
+    &> li a.selected {
+      border-left: 4px solid $border-selected !important;
+    }
+    div.submenu ul {
+      top: 0px !important;
+    }
+    &.stproxy_navbarMenuNonVerse_onlineMenu {
+      top: -1px !important;
+    }
+  }
+
+  //Hover on navbar entry
+  &> a:hover::after,
+  &> button:hover::after,
+  &> .navmenu:hover::after {
+    border-bottom: $navbar-hover-height solid $navbar-hover-color !important;
+  }
+}
+
+//Right side of navbar
+.ics-scbanner {
+  //User icon
+  .user .avatar{
+    height: $navbar-avatar-height !important; //1.75rem!important;
+	  width: $navbar-avatar-width !important; //1.75rem!important;
+  }
+  //Help Icon
+  .help, #headerHelpLi a {
+    background-position: center !important;
+    background-repeat:no-repeat!important;
+    background-image:svg-url-with-replaced-fill($svg-help-icon, '#000000', $icon-white) !important;
+    background-size:20px 20px !important;
+    .help-image{
+      visibility: hidden!important;
+    }
+    .menu-image {
+      position:relative;
+      left:6px;
+    }
+  }
+  //alert Icon
+  .notifications{
+    .navmenu-button{
+      background-position:center;
+      background-repeat:no-repeat!important;
+      background-image:svg-url-with-replaced-fill($svg-notification-icon, '#000000', $icon-white) !important;
+      background-size:20px 20px;
+      .nav-icon{
+        visibility:hidden!important;
+      }
+    }
+  }
+}

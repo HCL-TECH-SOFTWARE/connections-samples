@@ -1,0 +1,14 @@
+//======AVATARS=========
+//Avatar size variables
+$size1: 32px;
+$size2: 40px;
+$size3: 56px; //Should be 56px per design guide
+$size4: 80px;
+$size5: 112px;
+$size6: 176px;
+
+//mixin usage: @include avatarSize($size3)
+@mixin avatarSize($size) {
+  width:$size;
+  height:$size;
+}

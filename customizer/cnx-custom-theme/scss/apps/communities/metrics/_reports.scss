@@ -1,0 +1,365 @@
+//Views and option drop downs
+.lotusContent {
+  margin-top: 32px !important; //General selectors but this css should only be on metrics page
+
+  .metricsDateRangeFilter,
+  #selectDropDownContainerID,
+  #divGroupByFilterID {
+    label, select {
+      @include font-size($body...);
+    }
+  }
+}
+
+//Date range label
+#dateRangeTextPID {
+  b {
+    color: $text-01 !important;
+    @include font-size($header...);
+  }
+}
+
+// People / Participation chart summary section
+#statisticHeadDivId {
+  & .LineChartHeaderRectClz {
+    fill: $background-chart-header !important;
+  }
+  & .LineChartBodyRectClz {
+    fill: $background-side !important;
+  }
+  & text.LineChartHeaderRectDespClz {
+    alignment-baseline: middle;
+    font-size: 16px !important;
+  }
+  & text.LineChartBodyRectDespClz {
+    font-style: italic;
+  }
+}
+
+//Summary, Chart, and Table widths
+.metricsReport {
+  outline: none !important;
+
+  &#reportContainerDivID {
+    overflow-x: auto !important;
+  }
+
+  #statisticHeadDivId, //People & Participation summary
+  #lineChartViewTable, //People & Participation tabs header
+  #appFilterDivId, //People & Participation chart header
+  #reportDivId, //People & Participation chart lines
+  #lineChartTableDiv, //People & Participation table
+  #hBarViewTable, //Content tabs header
+  #hBarAppFilterDivId, //Content chart header
+  #hBarChartDivId //Content chart
+  {
+    width: 100% !important;
+    svg,
+    g[class^="data-"] rect {
+      width: 100% !important;
+    }
+  }
+}
+
+//Right side view
+.metricsReport {
+  //space between right column and chart on left
+  #rightMsgContainerDivID,
+  #lineChartRightDivID {
+    margin-left: 20px;
+
+    //Header of right column, when no content
+    div {
+      background-color: $background-main !important;
+      color: $text-01 !important;
+      @include font-size($header...);
+      border-bottom: 1px solid $border-separator;
+    }
+    //empty state msg
+    span.warning {
+      white-space: normal;
+      display: block;
+      max-width: 260px;
+      padding: 20px 10px;
+      @include font-size($emptystate...);
+    }
+
+    //Header of right column, when there is content
+    #topUsersSvgID {
+      //Header
+      rect.topUHeaderRect {
+        fill: $background-main !important;
+        border-bottom: 1px solid $border-separator;
+      }
+      text.TopUHeaderRectDespClz {
+        fill: $text-01 !important;
+        @include font-size($header...);
+      }
+      //Person block & data block
+      //Gray background
+      > g:nth-child(even) {
+        rect.topUItemHeader,
+        rect.followedNoRect,
+        rect.postsNoRect, //cloud
+        rect.topUClearBlackLineRect, //cloud
+        rect.topUItemBody //cloud, expand person
+        {
+          fill: $background-side !important;
+        }
+      }
+      //White background
+      > g:nth-child(odd) {
+        rect.topUItemHeader,
+        rect.followedNoRect,
+        rect.postsNoRect, //cloud
+        rect.topUClearBlackLineRect, //cloud
+        rect.topUItemBody //cloud, expand person
+        {
+          fill: $background-main !important;
+        }
+      }
+      text.postsNo,
+      text.postText {
+        fill: $text-01 !important;
+      }
+    }
+    #topUViewTable,
+    #topUViewChart {
+      a {
+        @include font-size($caption...);
+      }
+    }
+  }
+}
+
+//Group By table
+#groupByTableDivID {
+  @include font-size($body...);
+
+  table tr {
+    th, td {
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+  }
+}
+
+// People / Participation chart details
+#appFilterDivId {
+  & .data-Total > rect {
+    fill: $background-chart-header !important;
+  }
+  & .appflitertext {
+    font-weight:bold !important;
+  }
+}
+
+// People / Participation table
+#statisticHeaderTableID {
+  & tbody {
+    & tr > th {
+      font-size: 16px !important;
+      height: 2.4em !important;
+      padding-left: 0em !important;
+    }
+    & tr > td {
+      padding-left: 0em !important;
+    }
+    & tr:nth-child(3) {
+      font-style: italic;
+    }
+  }
+}
+#lineChartTableID {
+  & tbody > tr:nth-child(1) > th {
+    background: $background-side !important;
+  }
+  & tbody > tr > th:nth-child(n+2), td:nth-child(n+2) {
+    padding-left: 0em !important
+  }
+}
+
+// Content metrics
+#reportContainerDivID,
+#hBarTableDiv,
+#lineChartTableID,
+#hBarAppFilterDivId {
+  & td span:before,
+    th span:before {
+    width: 8px !important;
+  }
+  & td, th {
+    padding-left: 1.6em !important;
+  }
+  & g[name="hBBottomBar"] {
+    rect {
+      fill: $background-main !important;
+    }
+  }
+  #svgLine .line {
+    stroke-width: 4 !important;
+  }
+  & .data-OVERALL > rect {
+    fill: $data-overall !important;
+    stroke: $data-overall !important;
+  }
+  & .data-ACTIVITIES {
+    &.line {
+      stroke: $data-activities !important;
+    }
+    & rect {
+      fill: $data-activities !important;
+      stroke: $data-activities !important;
+    }
+    & td span:before,
+      th span:before,
+      td:first-child span:before {
+        background-color: $data-activities !important;
+    }
+  }
+  & .data-BLOGS {
+    &.line {
+      stroke: $data-blogs !important;
+    }
+    & rect {
+      fill: $data-blogs !important;
+      stroke: $data-blogs !important;
+    }
+    & td span:before,
+      th span:before,
+      td:first-child span:before {
+        background-color: $data-blogs !important;
+    }
+  }
+  & .data-BOOKMARKS {
+    &.line {
+      stroke: $data-bookmarks !important;
+    }
+    & rect {
+      fill: $data-bookmarks !important;
+      stroke: $data-bookmarks !important;
+    }
+    & td span:before,
+      th span:before,
+      td:first-child span:before {
+        background-color: $data-bookmarks !important;
+    }
+  }
+  & .data-COMMUNITIES {
+    &.line {
+      stroke: $data-communities !important;
+    }
+    & rect {
+      fill: $data-communities !important;
+      stroke: $data-communities !important;
+    }
+    & td span:before,
+      th span:before,
+      td:first-child span:before {
+        background-color: $data-communities !important;
+    }
+  }
+  & .data-FILES {
+    &.line {
+      stroke: $data-files !important;
+    }
+    & rect {
+      fill: $data-files !important;
+      stroke: $data-files !important;
+    }
+    & td span:before,
+      th span:before,
+      td:first-child span:before {
+        background-color: $data-files !important;
+    }
+  }
+  & .data-FORUMS {
+    &.line {
+      stroke: $data-forums !important;
+    }
+    & rect {
+      fill: $data-forums !important;
+      stroke: $data-forums !important;
+    }
+    & td span:before,
+      th span:before,
+      td:first-child span:before {
+        background-color: $data-forums !important;
+    }
+  }
+  & .data-HOMEPAGE {
+    &.line {
+      stroke: $data-homepage !important;
+    }
+    & rect {
+      fill: $data-homepage !important;
+      stroke: $data-homepage !important;
+    }
+    & td span:before,
+      th span:before,
+      td:first-child span:before {
+        background-color: $data-homepage !important;
+    }
+  }
+  & .data-IDEATIONBLOG {
+    &.line {
+      stroke: $data-ideationblog !important;
+    }
+    & rect {
+      fill: $data-ideationblog !important;
+      stroke: $data-ideationblog !important;
+    }
+    & td span:before,
+      th span:before,
+      td:first-child span:before {
+        background-color: $data-ideationblog !important;
+    }
+  }
+  & .data-PROFILES {
+    &.line {
+      stroke: $data-profiles !important;
+    }
+    & rect {
+      fill: $data-profiles !important;
+      stroke: $data-profiles !important;
+    }
+    & td span:before,
+      th span:before,
+      td:first-child span:before {
+        background-color: $data-profiles !important;
+    }
+  }
+  & .data-WIKIS {
+    &.line {
+      stroke: $data-wikis !important;
+    }
+    & rect {
+      fill: $data-wikis !important;
+      stroke: $data-wikis !important;
+    }
+    & td span:before,
+      th span:before,
+      td:first-child span:before {
+        background-color: $data-wikis !important;
+    }
+  }
+}
+
+#hBarChartBodyDivId {
+    border: none !important;
+}
+// slider dot on metrics reports (sp of id does = moveCirleId !)
+#moveCirleId {
+  fill: $color-gray-50 !important;
+}
+// text under slider
+#HorizontalRuleLabelsContain a {
+  @include link-color('dark');
+}
+
+// 1389: Center summary values in table view in metrics app.
+#reportContainerDivID #statisticHeaderTableID {
+  th, td {
+    padding-left: 0em !important;
+  }
+}

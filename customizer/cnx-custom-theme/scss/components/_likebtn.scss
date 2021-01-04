@@ -1,0 +1,89 @@
+$like-shape: 'heart'; // available options: 'heart', 'thumbs-up'
+$like-color: $icon-brand-01;
+
+
+// --------- DO NOT EDIT BELOW THIS POINT ---------- //
+$like-icon-vars: (
+  heart: (
+    liked: $svg-heart-filled,
+    not-liked: $svg-heart-outline
+  ),
+  thumbs-up: (
+    liked: $svg-like-checked,
+    not-liked: $svg-like-unchecked
+  )
+);
+@function icon-var-get($map, $keys...) {
+    @each $key in $keys {
+        $map: map-get($map, $key);
+    }
+    @return $map;
+}
+$liked: icon-var-get($like-icon-vars, $like-shape, "liked");
+$not-liked: icon-var-get($like-icon-vars, $like-shape, "not-liked");
+%like-base {
+  background-repeat: no-repeat;
+  background-position: center center !important;
+}
+@mixin not-liked($actionable: true) {
+  @if $actionable == true { // boolean check not string
+    background-image: svg-url-with-replaced-fill($not-liked, '#000000', $like-color) !important;
+  }
+  @else {
+    background-image: svg-url-with-replaced-fill($not-liked, '#000000', $icon-default) !important;
+  }
+}
+@mixin liked($actionable: true) {
+  @if $actionable == true { // boolean check not string
+    background-image: svg-url-with-replaced-fill($liked, '#000000', $like-color) !important;
+  }
+  @else {
+    background-image: svg-url-with-replaced-fill($liked, '#000000', $icon-default) !important;
+  }
+}
+
+.lotusRating .lotusLikeCount,
+.lotusLike .lotusLikeCount {
+  .lotusIconLike {
+    @extend %like-base;
+  }
+  // liked
+  .lotusIconLike:not([style='background-position: -1395px -8px;']) {
+    @include liked;
+  }
+  // not liked
+  .lotusIconLike[style='background-position: -1395px -8px;'] {
+    @include not-liked;
+  }
+  // not actionable
+  .lconnWikis #list .lotusTable &.lotusLikeSimple .lotusIconLike {
+    @include liked($actionable: false);
+  }
+  .lconnWikis #list .lotusTable &.lotusDisabled.lotusLikeSimple .lotusIconLike[style='background-position: -1395px -8px;'] {
+    @include not-liked($actionable: false);
+  }
+}
+
+.ics-viewer-action-like{
+  .unchecked img{
+    @include not-liked($actionable: false);
+  }
+  .checked img{
+    @include liked($actionable: false);
+  }
+}
+
+// replace heart icons that don't work...
+#section_relatedblogs .lotusLike,
+.dfCommunityForums .lotusLike .lconnLikeCountNoBackground {
+  &:hover {
+    text-decoration: none !important;
+  }
+  .lotusIconLike {
+    @extend %like-base;
+    @include not-liked($actionable: false);
+  }
+}
+html[class*="communities"] .filesListFilled .lotusLike .lotusLikeCount .lotusIconLike {
+  @include not-liked($actionable: false);
+}

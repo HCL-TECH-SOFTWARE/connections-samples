@@ -1,0 +1,135 @@
+// Design Guide .bx--link
+a {
+  @include link-default();
+  -webkit-font-smoothing: antialiased !important;
+}
+
+[id^="section_"] > ul > li > a,
+[id^="lconnTagWidget_"] > div > div > a,
+[id^="lconnTagWidget_"] > div > ul > li > a,
+[id^="lconnTagWidget_"] > li > a,
+[id^="#lconnTagWidget_"] > div > div:nth-child(7) > div.lotusChunk.lotusSubsection > div > ul > li > a,
+.lotusColLeft a {
+  @include link-dark();
+}
+
+#tagsListTags_div + div span,
+.lotusTagCloud + div span {
+  text-decoration: underline;
+  &:focus, &:hover {
+    outline: 1px solid $text-01 !important;
+  }
+}
+
+// Design Guide .link-dark
+#scene-title > a:not(.lconnInternalLink),
+[id^="lconn_files_action_title_more_"] > div,
+#scene-body > div.lotusFeeds.lotusLeft._qkrHideWhenEmpty > a,
+#about > div > div > a,
+.entry-title,
+#qkrViewControl > tbody > tr > td:nth-child(3) > a,
+#list > div > ul.lotusRight.lotusInlinelist > li:nth-child(3) > a,
+#scene-body > div.lotusFeeds.lotusLeft._qkrHideWhenEmpty > span.lotusNowrap > a,
+#lotusContentHeader > div.lotusPaging > div:nth-child(1) > ul > li > span > a,
+#lotusContentHeader > div.lotusPaging > div.lotusRight.lconnSelectAllContainer > div > ul > li > a{
+  @include link-dark();
+}
+
+
+// Periscope link style overrides
+
+// White links
+// Folders/Files
+[id^="lconn_share_widget_FolderThumbnail_"] > div.card-back > h4 > a,
+[id^="lconn_share_widget_FileThumbnail_"] > div.card-back > h4 > a,
+// Business card
+#javlinDiv > div > div.semtag_header > ul > li > a,
+[id^="com_ibm_oneui_controls_EEPreviewDialogPresentation_"] > a:nth-child(1) {
+  @include link-light();
+}
+
+// Dark when active
+#about_link,
+#share_link,
+a._linkHolder.lotusLeft {
+  @include link-override();
+
+  &:active,
+  &:hover,
+  &:focus {
+    @include link-color('dark');
+    font-weight: bold !important;
+  }
+}
+
+//Community overview specific link overrides
+.lotusCommunities .lotusWidget2 {
+  a:not([role="tab"]):not([role="button"]) {
+    @include link-default();
+  }
+  a.lotusPerson {
+    @include link-dark();
+  }
+  #tagsContainer #tagsDiv_tagCloudView a {
+    @include link-dark();
+    &, &:hover, &:focus {
+      font-weight: inherit !important;
+    }
+  }
+  a.lotusAction {
+    &, &:hover, &:focus {
+      @include font-size($caption...);
+    }
+  }
+  // icon links need focus/hover/active states
+  a.menu_drop_icon,
+  a.lotusIcon,
+  a.lotusAdd,
+  div.lotusPostIndicator a {
+    &:focus {
+      outline: 1px solid currentColor !important;
+    }
+  }
+}
+
+// Files left nav
+[id^="menu_"] a,
+#lotusTitleBar > div > div > h2 > span > a,
+// Contacts left nav
+#lotusSidenav > div.lotusBottomCorner > div > div > ul > li > a,
+#scGroupTreeContent > div.groupActionBar > a {
+  @include link-override();
+}
+
+// Left Nav - match UI text color
+[id^="lconnTagWidget_"][id$="_tagCloudView"] > div > ul > li > a {
+  color: $text-01 !important;
+}
+
+// icon links need focus/hover/active states
+a.menu_drop_icon,
+a.lotusIcon,
+a.lotusAdd,
+div.lotusPostIndicator a {
+  &:focus {
+    outline: 1px solid currentColor !important;
+  }
+}
+
+// allow ckeditor links to be not bold
+#wikiContentDiv.qkrWikiPreview,
+.entryContentContainer.blogsWrapText,
+#forum .entry-content.lotusPostDetails,
+.entryContent div[id^="activityPageNodeContainer"] {
+  a {
+    font-weight: normal !important;
+  }
+  strong * {
+    font-weight: 600 !important;
+  }
+}
+
+// On prem wiki page links to wiki
+#lotusPlaceBar .lotusInner h2 a {
+  color:$text-01 !important;
+}

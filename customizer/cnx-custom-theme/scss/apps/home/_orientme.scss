@@ -1,0 +1,14 @@
+//MISCELLANEOUS UPDATES ON ORIENT ME PAGE
+//Filter button
+.ic-stream-controls-item.ic-filter-tab {
+  &:hover, &:focus {
+    color:$text-01;
+    text-decoration:underline;
+    outline:none;
+  }
+}
+
+//Go to Top
+.template-homepage .om-go-to-top-container .om-go-to-top-btn {
+  background-color:$btn-primary-fill;
+}

@@ -1,0 +1,21 @@
+.lotusSort{
+  ul li{
+    border:none!important;
+    a{
+      color: $text-02 !important;
+    }
+  }
+}
+#body #list ul[dojoattachpoint="topPageNavigateNode"],
+#body #list ul[dojoattachpoint="bottomPageNavigateNode"]{
+  li > a.numShape{
+    color: $link-default !important;
+    text-decoration: none!important;
+    &:hover{
+      text-decoration: underline!important;
+    }
+  }
+}
+#body #list ul[dojoattachpoint="topPageNavigateNode"] li > a.numShape:focus, #body #list ul[dojoattachpoint="bottomPageNavigateNode"] li > a.numShape:focus{
+    text-decoration:underline!important;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>blog_48</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Icons-48-x-48px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="blog_48">
+            <g id="blog" transform="translate(2.000000, 2.000000)">
+                <path d="M39.9986,0 L4.0006,0 C1.7906,0 0.0006,1.792 0.0006,4.002 L0.0006,39.998 C0.0006,42.208 1.7906,44 4.0006,44 L39.9986,44 C42.2086,44 44.0006,42.208 44.0006,39.998 L44.0006,4.002 C44.0006,1.792 42.2086,0 39.9986,0 M39.9986,2 C41.1026,2 42.0006,2.898 42.0006,4.002 L42.0006,39.998 C42.0006,41.102 41.1026,42 39.9986,42 L4.0006,42 C2.8986,42 2.0006,41.102 2.0006,39.998 L2.0006,4.002 C2.0006,2.898 2.8986,2 4.0006,2 L39.9986,2" id="Fill-1" fill="#000000"></path>
+                <rect id="Rectangle" stroke="#000000" stroke-width="2" x="11" y="11" width="22" height="10"></rect>
+                <rect id="Rectangle-2" fill="#000000" x="10" y="26" width="24" height="2"></rect>
+                <rect id="Rectangle-2-Copy" fill="#000000" x="10" y="32" width="12" height="2"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

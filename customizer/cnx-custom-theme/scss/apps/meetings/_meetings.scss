@@ -1,0 +1,68 @@
+// Meetings landing page
+
+.meetingBody {
+  // Headings
+  .lotusTitleBar2 h2 {
+    margin: auto !important;
+    width:100% !important;
+    text-align: center !important;
+  }
+  h2 {
+    color:$text-01 !important;
+  }
+  //Buttons
+  .lotusBtn {
+    @include btnprimary;
+  }
+  //Host meeting ID
+  #meetingSection #upperSection #code:focus {
+    outline:none !important;
+  }
+
+  //Join drop down menu
+  #widget_joinMenu {
+    &.dijitComboBox, &.dijitComboBoxHover {
+      background-image:none !important;
+      background-color:transparent !important;
+      height:24px;
+  		border:none !important;
+  		border-bottom:1px solid $border-field !important;
+    }
+		&.dijitComboBoxFocused {
+      border-color: $border-field-focus !important;
+      box-shadow: 0 1px 0 $border-field-focus !important;
+      outline:none !important;
+		}
+		.dijitButtonNode {
+	    background-color: transparent !important;
+	    border-color: transparent !important;
+    }
+	}
+  // Menu popup
+  .dijitComboBoxMenuPopup .dijitMenuItem {
+    padding: 0.6em !important;
+  }
+  // Recently joined meetings table
+  #recentjoin_section {
+    @include datatable;
+  }
+  // Link hover
+  &.verseTheme .lotusFrame a:hover,
+  &.verseTheme .lotusFrame a:focus {
+    color: $link-default !important;
+  }
+  // Expanding sections
+  #audio_section_link,
+  #meetingReportTb_link,
+  #meetingRecordingTb_link {
+    &:hover, &:focus {
+      outline: 1px solid $border-focus !important;
+      outline-offset:1px;
+    }
+  }
+  // Moderator code dialog
+  #showModeratorCodeDiv {
+    border:none !important;
+    padding-bottom:1.2rem;
+  }
+}

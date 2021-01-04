@@ -1,0 +1,108 @@
+<html>
+<head>
+    <title>Support - Visual Update 1 for HCL Connections</title>
+  <link rel="stylesheet" type="text/css" href="docs.css">
+  <link rel="shortcut icon" href="./img/cnx-theme.ico">
+</head>
+<!--
+	 * © Copyright HCL Technologies Limited 2017, 2019
+	 *
+	 * Licensed under the Apache License, Version 2.0 (the "License");
+	 * you may not use this file except in compliance with the License.
+	 * You may obtain a copy of the License at:
+	 *
+	 * http://www.apache.org/licenses/LICENSE-2.0
+	 *
+	 * Unless required by applicable law or agreed to in writing, software
+	 * distributed under the License is distributed on an "AS IS" BASIS,
+	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+	 * implied. See the License for the specific language governing
+	 * permissions and limitations under the License.
+-->
+<body>
+
+<!--HEADER CONTAINER-->
+<div class="headerContainer subpage">
+  <div class="aboutHeader">
+    <div class="headText">
+      <h1>Visual Update 1 for HCL Connections</h1>
+    </div>
+  </div>
+</div>
+<!--END HEADER CONTAINER-->
+
+<div class="toc">
+  <ul>
+    <li>CONTENTS</li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#supported">Apps supported</a></li>
+    <li><a href="#browsers">Browsers support</a></li>
+    <li><a href="#getsupport">Getting support</a></li>
+    <li><a href="./index.html">&#8592; Back to Main</a></li>
+  </ul>
+</div>
+
+<!--CONTENT CONTAINER-->
+<div class="contentContainer">
+
+<div class="aboutContent">
+
+<h1><a name="support">Support</a></h1>
+
+<p>This application is being updated all the time, to fix issues and include support for more apps and pages. Some current limitations include:
+<ul>
+  <li>Only works with the default theme, called "Verse Theme (Default)" or "Hikari".</li>
+  <li>We are working to add support for bi-directional languages.</li>
+  <li>We are working to improve keyboard focus.</li>
+  <li>We are continuing to add support for more apps and pages. Read <a href="./updatehistory.html">Update History</a> for a complete list of styled applications, page, and recent updates.</li>
+</ul>
+</p>
+
+<h2><a class="anchor" name="faq">FAQ</a></h2>
+<h4>Question: Why don't I see visual updates after I enable Visual Update 1?</h4>
+
+<p><span style="font-weight:600;">Answer: </span>Check that you also have Customizer enabled.</p>
+
+<h4>Question: Which customizations appear if both an org extension and Visual Update 1 are enabled?</h4>
+<p>Which customizations appear or win if an Organization extension with company updates and the Visual Update 1 for HCL Connections application are enabled? Put another way, what is the sequence or order of changes when enabling Apps and extensions.</p>
+<p><span style="font-weight:600;">Answer: </span>Which customizations appear or win is based on the order in which extensions get injected into the page by Connections Customizer. Customizer makes a request to the App Registry and it returns a list of extensions by name, in alphabetical order. The changes are applied in alphabetical order, overriding changes made earlier in the alphabet.</p>
+
+<p>The App Registry includes the Visual Update 1 for HCL Connections application. A company adds an extension to the App Registry, to override styles, and it is called "Xtended Company Theme". The Visual Update 1 for HCL Connections application is loaded and applied first. Next the "Xtended Company Theme" gets loaded with its CSS and/or JS overriding any of the Visual Update 1 for HCL Connections changes.</p>
+
+<!--apps supported-->
+<h2><a class="anchor" name="supported">Apps supported</a></h2>
+<p>Visual Update 1 for HCL Connections is supported only when the application files are installed and configured as-is, with no change and in which all the following criteria are met: (1) Only the Hakari or Verse Theme (Default) is enabled; (2) No additional customizations are configured. Implementations added manually through an organization extension, combined with additional customizations, and/or contained code which was modified from its original state will not receive support considerations.</p>
+
+<p>Bi directional language support is not included in this release. Visual updates applies only to applications stated in official communications and will not extend to custom widgets added to Connections. HCL plans to regularly add improvements to the visual update and will share communications accordingly.</p>
+
+<!--Browsers supported-->
+<h2><a class="anchor" name="browsers">Browsers supported</a></h2>
+<p>Our goal is to support the same browsers Connections supports</a>.</p>
+
+<p>However, due to limited resources and the 'as-is' nature of this application, we have not completed thorough cross-browser testing. We test every update on Chrome. We have completed rounds of testing on Firefox, Safari, and Microsoft Internet Explorer 11. Otherwise, we rely on user feedback to identify issues.</p>
+
+<p>If an issue is found for a particular browser, let us know and we will do our best to fix the issue. To report an issue, see the next section on Getting Support.</p>
+
+<!--Getting support-->
+<h2><a class="anchor" name="getsupport">Getting support</a></h2>
+<p>Support for Customizer applications follows the same policy as any other customization to the HCL
+Connections UI. <b>HCL Support can address questions about the customization process, but
+cannot address questions about the particulars of your customization.</b></p>
+<p>If you have a question or have found a reproducible issue in the styling, not Connections functionality, you can open an issue in the <a href="https://github.com/ibmcnxdev/cnx-custom-theme/issues" target="_blank">GitHub repository</a>.</p>
+</div>
+
+<div class="breadcrumb">
+  <p><a href="./index.html">Back to main</a> | <a href="#top">Back to top</a></p>
+</div>
+
+</div>
+<!--END CONTENT CONTAINER-->
+
+<!--FOOTER CONTAINER-->
+<div class="footerContainer">
+  <p>Copyright 2017, 2019, HCL Technologies Limited</p>
+</div>
+<!--END FOOTER CONTAINER-->
+
+</body>
+</html>

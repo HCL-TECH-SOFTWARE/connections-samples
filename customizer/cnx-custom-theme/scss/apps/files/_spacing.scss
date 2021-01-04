@@ -1,0 +1,393 @@
+//Titlebar area of Files
+//NEW FILES UI SEPT 2018
+.lconnFiles .lotusTopNav {
+  .lotusTitleBar {
+    .lotusColLeft.newButton,
+    .lotusColLeft,
+    .lotusPlaceBar {
+      width: auto !important;
+    }
+    .lotusHeader#lotusContentHeaderTitleBar {
+      padding-left: 15px;
+    }
+  }
+}
+//End of general updates to accommodate new UI
+
+.lotusui30 .lotusContent .lotusHeader .lotusMeta{
+  padding-top:0px!important;
+}
+#lotusContentHeaderTitleBar{
+  margin-left:3px;
+  padding-left:48px;
+  #scene-title{
+    padding-top:9px!important;
+  }
+}
+.lotusui30_layout .lotusContent .filesList > div{
+  padding-left: 3px !important;
+  margin-left:0!important;
+}
+.filesList{
+  div[dojoattachpoint="streamNode"]{
+    > div{
+      margin-left:-4px!important;
+    }
+    table{
+      margin-left:-14px!important;
+    }
+    table:not(.lotusTable){
+      margin-left:-4px!important;
+      background-color: $background-main;
+    }
+  }
+}
+.lotusPlaceBar,
+.lotusPlaceBar.lotusGlobalActionBar {
+  margin-right:0!important;
+  width:100%!important;
+}
+.lotusColLeft{
+  margin-right:0!important;
+  width: $leftnav-width!important;
+  padding: 0 !important;
+}
+.widgetContainer[style] + div .lotusContent.wpthemeNarrow.wpthemeNarrowPlus {
+  padding-left: 48px !important;
+}
+
+#lotusContentSceneActions{
+  margin-bottom:3px!important;
+  .lotusBtn:not(.lotusBtnDisabled){
+    margin-bottom:0px!important;
+    margin-left:0!important;
+    margin-right:12px!important;
+    &:last-child{
+      margin-right:0!important;
+    }
+  }
+}
+
+//FILES SEPT 2018 OVERRIDES: DEPENDENT ON GATEKEEPER CLASSES
+html.lconnFiles.files-enable-recent-view,
+html.lconnFiles.files-enable-refine-panel,
+html.lconnFiles.files-enable-simplify-left-nav {
+
+  //Toolbar
+  .lotusTopNav {
+    #lotusToolBar {
+
+      //Left side of toolbar: folder and filter panel switcher
+      .toolActions {
+        width: 182px;
+        box-sizing: content-box !important;
+        //Panel icon selection and focus
+        .actionOn:after {
+          border-bottom: 3px solid $border-selected;
+        }
+        a:focus {
+          box-shadow: 0px 0px 0px 1px $border-focus;
+        }
+      }
+      &.colLeftHidden .toolActions,
+      &.colLeftSlideIn .toolActions {
+        width: 60px !important;
+      }
+
+      //Right side of toolbar
+      #lotusContentSceneActions {
+        width: calc(100% - (182px + 70px)) !important;
+        div[role="toolbar"] {
+          margin-top: 2px;
+        }
+        //2153 Toolbar separator. Comment out because fixes on i1 but breaks in production
+        /*&:before {
+          left: 20px;
+        }*/
+
+        //Batch actions
+        .lotusBtn {
+          border: 0 !important;
+          color: $text-01 !important;
+          @include font-size($body...);
+          padding: 8px 12px !important;
+          &:first-of-type {
+            padding-left: 16px !important;
+          }
+          &:focus, &:hover {
+            text-decoration: underline !important;
+            box-shadow: 0 0 0 1px transparent, 0 0 0 2px transparent !important;
+            background-color: $background-main !important;
+          }
+        }
+
+        //Display icon selection and focus
+        #qkrViewControl {
+          position: absolute;
+          right: 16px;
+          .viewOn:after {
+            border-bottom: 3px solid $border-selected;
+            top: 6px;
+          }
+          a:focus {
+            box-shadow: 0px 0px 0px 1px $border-focus;
+            outline: none !important;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.lconnFilesGridItem{
+  margin-top:12px!important;
+  margin-bottom:12px!important;
+  margin-right:22px!important;
+}
+
+.lotusPaging[dojoattachpoint="bottomPageNode"]{
+  border-top:1px solid $border-separator!important;
+  padding-top:40px!important;
+}
+.card-back{
+  .title,.desc{
+    position:relative!important;
+    top:8px!important;
+  }
+}
+.lotusFeed.lotusAction{
+  margin-left:3px!important;
+}
+.lotusTileOn,.lotusDetailsOn,.lotusSummaryOn{
+  border:none!important;
+  border-bottom:2px solid!important;
+  position:relative!important;
+  top:1px!important;
+}
+
+.lotusTable{
+  tr[id^="dojoUnique"],
+  tr.hentry.dojoDndItem,
+  &#filesByUserFeedContentContainerFeedTableContainer tr{
+    border-top:1px solid $border-separator!important;
+    td{
+      padding-top:12px!important;
+      padding-bottom:12px!important;
+    }
+  }
+}
+
+#listcustomizer > div{
+  padding-left:0px!important;
+}
+#listcustomizer .lotusFormFooter{
+  input[role="button"]{
+    margin-right:8px!important;
+    margin-left:0px!important;
+  }
+}
+.filesList{
+  .lotusPerson.vcard{
+    .menu_drop_icon{
+      position:relative!important;
+      top:2px!important;
+      left:2px!important;
+    }
+  }
+}
+//Adressing #288
+div[dojoattachpoint="streamNode"]{
+  margin-top:1rem!important;
+}
+.lotusTable{
+  tr.hentry:nth-child(2){
+    border-top: 1px solid $border-focus!important;
+  }
+}
+tr.lotusSort{
+  text-transform: uppercase!important;
+  //a for links, spans for regular headers
+  span:not(.lotusAltText), a, ul li{
+    color: $text-02!important;
+    font-weight:normal!important;
+    border:1px solid transparent!important;
+  }
+  span[hastooltip^="dijit"]:not(.lotusAltText), a{
+    padding:0.5rem 1.2rem!important;
+
+  }
+  span:not(.lotusAltText){
+    display:inline-block!important;
+  }
+  ul li:nth-child(1){
+    padding-left:0!important;
+  }
+  a{
+    $distance-x: calc(100% - 10px);
+    background-position: $distance-x 13px!important;
+    padding-right:1.5rem!important;
+    padding-left:.9rem!important;
+  }
+  a:hover{
+    background-color: $table-header-background-hover !important;
+    color:$table-header-text-hover !important;
+    border-radius:$border-radius-tabs!important;
+    text-decoration: none!important;
+  }
+  a:focus{
+    text-decoration:none!important;
+    border: 1px solid $table-header-border-hover !important;
+    border-radius:$border-radius-tabs!important;
+  }
+  a.lotusDescending,a.lotusAscending{
+    background-size:8px 8px!important;
+  }
+  a.lotusDescending{
+    background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $table-header-icon) !important;
+    &:hover{
+      background-image: svg-url-with-replaced-fill($svg-chevron-down, '#000000', $table-header-icon-hover) !important;
+    }
+  }
+  a.lotusAscending{
+    background-image: svg-url-with-replaced-fill($svg-chevron-up, '#000000', $table-header-icon) !important;
+    &:hover{
+      background-image: svg-url-with-replaced-fill($svg-chevron-up, '#000000', $table-header-icon-hover) !important;
+    }
+  }
+}
+tr.lotusSort{
+  td.lotusFirstCell{
+    position:relative!important;
+    top: 5px!important;
+    padding-bottom: 24px!important;
+  }
+}
+
+div.filesListFilled #scene-body {
+  tr:not(.hentry) {
+    td.lotusFirstCell {
+      top: 0 !important;
+      .lotusCheckbox {
+        padding-top: 6px;
+        margin-top: 2px;
+      }
+    }
+  }
+  tr.hentry {
+    td.lotusFirstCell input {
+      margin: 0 !important;
+    }
+  }
+}
+
+tr.hentry{
+  td.lotusAlignRight{
+    padding-right:1.5rem!important;
+  }
+  td:not(.lotusFirstCell):not(.lotusAlignRight){
+    padding-left:0.9rem!important;
+  }
+}
+div[dojoattachpoint="streamNode"]{
+  ul > li:nth-child(1){
+    padding-right:1rem!important;
+  }
+}
+
+.lotusTable tbody{
+  tr.dojoDndItem:not(.hentry):not(.lotusDetails){
+    td:nth-child(4){
+      padding-top:19px!important;
+    }
+    td:nth-child(5),
+    td:nth-child(6),
+    td:nth-child(7) {
+      padding-top:22px!important;
+    }
+  }
+}
+a#withme{
+  //Hikari color changed for some reason
+  color:#292929!important
+}
+
+//Finished addressing #288
+
+
+// override a style from files
+.filesList .lotusPaging + div[dojoattachpoint="streamNode"] {
+  > div,
+  table.lotusTable {
+    margin-left: 0 !important;
+  }
+}
+
+// set up gallery modal
+div[id^="lconn_files_widget_PersonalFolderPicker_"] {
+  .lconnRightSide.lconnPickerCompact {
+    height: auto !important;
+  }
+  div[dojoattachpoint="streamNode"] {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  &[id$="_content_searchBar"] {
+    div[id^="lconn_files_widget_PersonalFolderPicker_"][id$="_content_searchDiv"] {
+      margin-top: 0 !important;
+      span.lotusBtnImg {
+        margin-right: 5px;
+        margin-top: 4px;
+      }
+    }
+  }
+  div[id^="lconn_share_widget_Breadcrumb"] {
+    div.lconnBreadcrumbitem.lconnBreadcrumbnode:focus {
+      outline: 1px solid $border-focus;
+    }
+  }
+}
+
+//Sept 2018 Files UI Updates
+.lconnFiles {
+
+  //Recently Visited - Quick find field
+  .filesSearchBar {
+    width: calc(100% - 70px);
+    .dijitTextBox, .dijitTextBoxFocused {
+      border: 0 !important;
+    }
+  }
+
+  //New toolbar
+  .lotusToolBar {
+    padding-left: 2.35rem !important;
+  }
+}
+
+.files-independent-scrollbars-compatible .lotusui30_body .lotusMain {
+  padding-right: 0;
+
+  #Members,
+  #ideationsListContainer,
+  div[id^="com_ibm_form_integrations_formiwidget_widget_SurveysListFullpage_"],
+  #activityList,
+  .dfCommunityForums,
+  #calendar_view,
+  #fullRecomm {
+    padding-right: 50px;
+
+    .lotusTabContainer {
+      margin-right: 0 !important;
+    }
+  }
+  #Members table.lotusLayout.lotusHeader {
+    padding-right: 0 !important;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .files-independent-scrollbars-compatible .lotusui30 .lotusChunk15 {
+      max-width: 100%;
+  }
+}

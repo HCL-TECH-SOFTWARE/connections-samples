@@ -1,0 +1,26 @@
+{
+    "name": "Disable ICC Content Creation",
+    "title": "Disable ICC Content Creation",
+    "description": "Hide browser buttons and links that create content",
+    "services": [
+      "Customizer"
+    ],
+    "extensions": [
+      {
+        "payload": {
+            "include-files": [
+                "disable-content-creation/disable-icc-content-creation.js"
+            ],
+            "include-repo":{
+                "name": "global-samples"
+            },
+            "cache-headers": {
+                "cache-control": "max-age=43200"
+            }
+        },
+        "name": "Disable Content Creation Extension",
+        "type": "com.ibm.customizer.ui",
+        "path": "global"
+      }
+    ]
+  }

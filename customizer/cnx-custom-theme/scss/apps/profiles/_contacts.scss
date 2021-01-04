@@ -1,0 +1,46 @@
+// add people to group modal
+.lotusDialogContent .scAddToGroup {
+  .lotusIndent10 {
+    padding: 0 0 .5rem !important;
+  }
+}
+
+//edit contacts
+.iconAdd:focus {
+  outline: 1px solid $border-focus !important;
+}
+div:not(#_profileEditScene_div) .profileDataTable {
+  .icon30:not(.iconLocation30) {
+    margin-top: .85rem;
+  }
+  li.lotusFirst.iconNode {
+    margin-top: .85rem !important;
+  }
+  input.lotusText {
+    margin-top: .85rem !important;
+  }
+  .profileFields .addressFormLi {
+    border-bottom: none !important;
+    + .addressFormLi {
+      border-top: 1px solid $background-side;
+    }
+  }
+}
+
+// fix too-close dropdown arrow for sorting contacts
+.lotusPaging span.endWithSpace + a img {
+  margin-left: .25rem;
+}
+
+#friendsFullPageSection table .lotusFirstRow ~ tr,
+#friendsFullPageSection table tr + .lotusResultRow,
+#followTabContent table .lotusFirstRow ~ tr {
+  border-top: 1px solid $border-separator;
+}
+#friendsFullPageSection table .lotusHidden ~ tr td,
+#followTabContent table .lotusHidden ~ tr td {
+  padding: 1rem .5rem 1rem 0;
+}
+#friendsFullPageSection table .lotusResultRow td {
+  padding: 1rem 1rem 0 0;
+}

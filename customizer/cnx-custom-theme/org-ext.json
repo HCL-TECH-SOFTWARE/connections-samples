@@ -1,0 +1,23 @@
+{
+  "name": "Visual Update 1 for HCL Connections",
+  "title": "Visual Update 1 for HCL Connections",
+  "description": "Customizer extension to re-theme HCL Connections.",
+  "services": [
+    "Customizer"
+  ],
+  "extensions": [
+    {
+      "name": "Visual Update 1 for HCL Connections",
+      "type": "com.ibm.customizer.ui",
+      "path": "global",
+      "payload": {
+        "include-files": [
+          "periscope.js"
+        ],
+        "include-repo": {
+          "name":"cnx-custom-theme"
+        }
+      }
+    }
+  ]
+}

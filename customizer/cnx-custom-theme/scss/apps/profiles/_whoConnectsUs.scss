@@ -1,0 +1,63 @@
+// who connects us?
+div[id^="lconn_sand_ImageStream_"] {
+  img {
+    border-radius: $border-radius-avatar !important;
+  }
+  > div {
+    padding-top: 4px !important;
+  }
+  span {
+    z-index: 1;
+    position: relative;
+    img {
+      height: 56px;
+      width: 56px;
+      padding: 0 !important;
+    }
+  }
+  span:nth-child(2) {
+    margin: 0 -1.25rem;
+    z-index: 2;
+    img {
+      height: 80px;
+      width: 80px;
+    }
+  }
+  a {
+    color: $color-black !important;
+  }
+}
+#sand_socialPath {
+  img {
+    border-radius: $border-radius-avatar !important;
+  }
+  // font sizes for names in "who connects us"
+  div[dojoattachpoint="msgPersonSelf"],
+  p[role="img"] {
+    font-size: $body-sm-font-size;
+  }
+  .vcard a {
+    font-size: $body-rem;
+  } // end font sizes
+  div:not(.lotusCenter) + p[role="presentation"] {
+    margin: 0 auto;
+    width: 1px;
+    overflow: hidden;
+    border-right: 1px dotted $color-gray-50;
+    height: .875rem;
+    img {
+      opacity: 0;
+    }
+  }
+  div[dojoattachpoint="evidenceContainer"] {
+    border-top: 0 !important;
+    img {
+      margin-bottom: 1.5rem;
+    }
+    a, b {
+      color: $text-01 !important;
+      font-weight: normal !important;
+      font-size: $body-sm-font-size;
+    }
+  }
+}

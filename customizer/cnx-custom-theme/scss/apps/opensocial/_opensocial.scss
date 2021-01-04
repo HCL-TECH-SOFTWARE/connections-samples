@@ -1,0 +1,24 @@
+// OpenSocial settings
+
+// overrides for min-width and top margin for embedded ee iframe body
+body.lotusui:not(.cke_editable),
+.lotusui30_body.scloud3:not(.compactMode):not(.concord),
+.lotusui30_body {
+  margin-top: 0 !important;
+  min-width: 0 !important;
+  li.lotusAddComment div.lotusPostHover {
+    &:focus {
+      outline: none !important;
+    }
+  }
+}
+
+// tighten spacing
+div#gadgetDiv  .lotusContent {
+  padding-left: 0px!important;
+}
+
+// remove bullet background image
+.lotusui30 .lotusFlyoutInner .lotusInlinelist li:before {
+  background: none !important;
+}

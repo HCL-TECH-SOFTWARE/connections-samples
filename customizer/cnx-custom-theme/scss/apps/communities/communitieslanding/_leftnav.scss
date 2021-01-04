@@ -1,0 +1,18 @@
+.lotusMain .lotusColLeft {
+  .lotusHeading {
+    padding-left: $leftnav-horizontal-padding;
+  }
+
+  #lconn_communities_catalog_widgets_PlacesNavigation_0 .lotusMenu li a {
+    white-space: pre-line;
+  }
+
+  #lconn_communities_catalog_widgets_TagFilter_0 {
+    margin: 0 !important;
+
+    h2 {
+      padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+      padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
+    }
+  }
+}

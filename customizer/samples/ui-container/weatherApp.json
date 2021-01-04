@@ -1,0 +1,20 @@
+{
+    "name": "Weather Container Injection Sample",
+    "title": "Weather Container Injection Sample",
+    "description": "Sample container injection application",
+    "services": [
+        "Customizer"
+    ],
+    "extensions": [
+        {
+            "name": "Dublin Weather Container Injection",
+            "type": "com.ibm.customizer.ui.container",
+            "payload": {
+                "url": "https://forecast.io/embed/#lat=53.3498&lon=6.2603&name=Dublin&units=uk",
+                "sandbox": "allow-scripts allow-same-origin",
+                "height": "250px"
+            },
+            "path": "homepage"
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+// Tooltip icons that appear in forms
+
+// Focus state on toolbip icons
+//Invite guest
+a[id^="bssui_tooltip_"],
+//Account settings
+#appPasswordInfoHelp,
+#appPasswordNameHelp,
+#enableBiDiInfoHelp,
+//Tags _help
+#tagsHelpLink,
+//Blog help links
+a[id*="HelpLink"],
+//Notification settings, share file/folder
+a[id*="_HelpLauncher_"],
+a[id*="_helpLink"],
+a[class*="_help_link"],
+//dogear help
+#subsHelpIcon,
+#tagHelpIcon,
+#peopleHelpIcon,
+#subscribeHelp1,
+#feedHelpIcon,
+//Meetings landing page
+.mtgHelp,
+// forum tag tooltip
+#tagHelper,
+#helpOwner {
+  img:not(.iconsOther24-bannerHelpNormal24) { //Not help icon in the navbar
+    height:12px !important;
+    width:12px !important;
+    background-image: svg-url-with-replaced-fill($svg-tooltip, '#000000', $icon-default) !important;
+    background-position: center center !important;
+    background-size: contain !important;
+  }
+  &:focus img {
+    outline:1px solid $icon-default !important;
+    outline-offset:2px;
+  }
+}
+
+//Tooltip placement overrides
+// Account settings - bidi
+#enableBiDiInfoHelp img {
+  vertical-align:top !important;
+}
+
+#tagHelper {
+  margin-top: .25rem;
+}

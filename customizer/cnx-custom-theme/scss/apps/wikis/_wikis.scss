@@ -1,0 +1,53 @@
+input[id^="lconn_wikis_widget_MembershipOptions"] {
+  height: 32px !important;
+}
+
+
+.dijitLayoutContainer.dijitDialog {
+  min-height: 350px;
+
+  .dijitDialogPaneContent.dijitAlignCenter {
+    top: 0 !important;
+    min-height: 100% !important;
+    height: auto !important;
+  }
+
+  .lotusDialogBorder  {
+    max-width: 100% !important;
+
+
+    > .lotusDialog > div[id^="lconn_share"].lotusDialogHeader {
+      position: relative !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }
+  }
+}
+
+//1542 Wiki summary member list in left nav
+.lconnWikisMembersSummary {
+	margin-left: 40px !important;
+}
+
+
+//1476 Wiki page comment button
+div[widgetid^="lconn_wikis_widget_CommentsMentions"] .lotusChunk {
+    padding-left: 4px !important;
+}
+
+.renameTitleDivStyle:focus {
+  outline: 1px solid $border-focus;
+}
+
+//1912 Wikis side widget spacings and font sizes
+.communities-widget-appearance .lotusui30 {
+  div:not(#profilePaneLeft):not(#profilePaneRight):not(#profileBody):not(#tabsWidget1_widgetId_container)>.lotusWidget2 {
+    h2:first-child {
+      padding: 0 !important;
+      @include font-size($header...);
+    }
+    div[dojoattachpoint="streamNode"] {
+      padding-top: 0 !important;
+    }
+  }
+}

@@ -1,0 +1,350 @@
+body.lotusui:not(.cke_editable):not(.lotusBookmarklet),
+body.meetingBody:not(.cke_editable),
+.lotusui30_body .lotusFrame,
+.lotusui30_body .lotusMain,
+.lotusui30_body .lotusMain,
+.lotusui30 .lotusTitleBar2 .lotusWrapper,
+.lotusui30 .lotusTitleBar .lotusRightCorner,
+.bhcNoticeInner {
+  min-width: 800px !important;
+  max-width: 100%;
+}
+
+.lotusui30 .tabNavBar .lotusPlaceBar .lotusRightCorner,
+.lotusui30 .tabNavBar .lotusTitleBar2 .lotusWrapper {
+  min-width: 100% !important;
+}
+
+.lotusui30_body .lotusMain:not([role="tabpanel"]),
+.lotusui30 .lotusTitleBar2 .lotusWrapper,
+.lotusui30 .lotusTitleBar .lotusRightCorner,
+.lotusui30 .lotusFooter,
+#lotusFrame #lotusFooter.lotusFooter,
+.lotusFrame #lotusFooter.lotusFooter {
+  box-sizing: border-box !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  max-width: 100%;
+}
+
+.lotusui30 .lotusFooter,
+#footer,
+#lotusFooter {
+  max-width: 100% !important;
+  min-width: 500px !important;
+}
+
+.lotusCommunities .target {
+  min-height: 50px !important;
+}
+
+@media (max-width: 1360px) {
+  .lotusui30_body .lotusWidget_3columnsTopMenuLayout #lotusMain[role="tabpanel"],
+  .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout #lotusMain[role="tabpanel"] {
+    padding-left: 40px !important;
+    box-sizing: border-box !important;
+  }
+}
+@media screen and (max-width: 1060px) {
+  .lotusui30 .lotusBanner .lotusInner,
+  .lotusui30 .lotusBannerExt .lotusWrapper,
+  .lotusui30 .lotusPlaceBar .lotusRightCorner,
+  .lotusui30 .lotusTitleBar .lotusRightCorner,
+  .lotusui30 .lotusTitleBar2 .lotusWrapper,
+  .lotusui30 .lotusTitleBarExt .lotusWrapper {
+    min-width: 800px !important;
+  }
+  .lotusui30_layout .lotusMain .lotusContent:before {
+    right: 0 !important;
+    width: auto !important;
+  }
+  #lotusContent.wpthemeWide {
+    margin-left: 1rem !important;
+
+    .lotusColRight ~ & {
+      float: right;
+      width: calc(100% - 270px - 1rem) !important;
+    }
+  }
+  #lotusMain {
+    #lotusContent.wpthemeWide {
+      width: 100% !important;
+      min-width: 100% !important;
+      box-sizing: border-box !important;
+    }
+    #lotusColLeft ~ #lotusContent.wpthemeWide {
+      width: calc(100% - #{$leftnav-width}) !important;
+      min-width: calc(100% - #{$leftnav-width}) !important;
+      box-sizing: border-box !important;
+    }
+    #lotusColLeft ~ .lotusColRight:not([style^="display: none;"]) ~ #lotusContent.wpthemeWide {
+      width: calc(100% - 475px) !important;
+      min-width: calc(100% - 475px) !important;
+    }
+    &.lotusWidget_3columnLayout {
+      padding-right: 40px !important;
+    }
+  }
+  body #lotusMain {
+    .lotusColRight {
+      width: 200px !important;
+      min-width: 200px !important;
+      box-sizing: border-box !important;
+    }
+    + #lotusContent {
+      width: calc(100% - 488px) !important;
+      min-width: calc(100% - 488px) !important;
+      float: right;
+      box-sizing: border-box !important;
+    }
+  }
+  // profile page
+  #profileBody,
+  .activityStreamPage #lotusContent {
+    width: calc(100% - 505px) !important;
+    min-width: calc(100% - 505px) !important;
+    float: right;
+    box-sizing: border-box !important;
+  }
+  #profilePaneRight,
+  .activityStreamPage #lotusColRight {
+    width: 150px !important;
+    min-width: 150px !important;
+    box-sizing: border-box !important;
+    margin-left: 2.45rem !important;
+
+    #recent-friends-container .lotusChunk .lotusNetworkPerson {
+      width: 50%;
+    }
+  }
+  .scloud3 .lotusMain .lotusContent.lotusContentST:not(.wpthemeBanner):not(.wpthemeNarrow) {
+    padding-left: 0 !important;
+  }
+  .verseTheme .stmeetingCenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 100% !important;
+
+    > div.verseStMeetings,
+    > div.verseContentInfo {
+      float: none !important;
+      width: 50% !important;
+    }
+
+    #joinUrl {
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }
+
+    .verseColsRight {
+      margin-left: 5% !important;
+    }
+  }
+  .lotusColRight.wpthemeNarrow.wpthemeNarrowOrig,
+  #mainContentDiv .lotusColRight {
+    width: 150px !important;
+    margin-left: 35px !important;
+
+    .widgetTitle > span {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+  .lotusColLeft.wpthemeThin ~ #lotusMainColumns .wpthemeBanner + .lotusColRight.wpthemeNarrow.wpthemeNarrowOrig {
+    width: 100% !important;
+  }
+  .lotusColLeft.wpthemeThin ~ #lotusMainColumns {
+    margin-left: $leftnav-width !important;
+
+    #lotusContent {
+      box-sizing: border-box !important;
+    }
+  }
+  .lotusWidget_3columnLayoutWithBanner .lotusColLeft.wpthemeThin ~ #lotusMainColumns {
+    #lotusColBanner,
+    #lotusColRight,
+    #lotusContent {
+      padding-left: 3rem !important;
+    }
+  }
+}
+@media (min-width: 1061px) {
+  .lotusWidget_3columnLayoutWithBanner .lotusColLeft.wpthemeThin ~ #lotusMainColumns {
+    #lotusColBanner,
+    #lotusContent {
+      padding-left: 3rem !important;
+    }
+  }
+  .lotusWidget_3columnsWithBannerTopMenuLayout .lotusMain,
+  .lotusWidget_3columnsTopMenuLayout .lotusMain {
+    width: calc(100% - 80px) !important;
+    max-width: 1360px !important;
+  }
+}
+@media (min-width: 1061px) and (max-width: 1360px) {
+  .lotusColRight.wpthemeNarrow.wpthemeNarrowOrig,
+  .lotusMain .lotusColRight {
+    width: 250px !important;
+  }
+}
+// communities responsive breakpoint:
+@media (max-width: 899px) {
+  #lotusMain {
+    box-sizing: border-box !important;
+  }
+  .lotusui30_body .lotusWidget_3columnsTopMenuLayout,
+  .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout {
+    #lotusColLeft.wpthemeNarrow,
+    #lotusColBanner ~ #lotusColLeft.wpthemeNarrow,
+    .lotusContent.wpthemeNarrow.wpthemeNarrowPlus,
+    #lotusColRight.lotusColRight.wpthemeNarrow.wpthemeNarrowPlus,
+    #contentArea {
+      float: none !important;
+      margin: 0 !important;
+      width: 100% !important;
+      max-width: 100%;
+    }
+    #tabNavBar {
+      padding-left: 0 !important;
+    }
+  }
+}
+// communities responsive breakpoint:
+@media (min-width: 900px) and (max-width: 1270px) {
+  .lotusui30_body .lotusWidget_3columnsTopMenuLayout,
+  .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout {
+    #lotusColLeft.wpthemeNarrow,
+    #lotusColBanner ~ #lotusColLeft.wpthemeNarrow {
+      float: left !important;
+      width: calc(50% - 15px) !important;
+      max-width: calc(50% - 15px);
+    }
+    .lotusContent.wpthemeNarrow.wpthemeNarrowPlus{
+      float: left !important;
+    }
+    #lotusColRight.lotusColRight.wpthemeNarrow.wpthemeNarrowPlus{
+      float: right !important;
+    }
+    #contentArea {
+      width: 100% !important;
+    }
+    #tabNavBar {
+      padding-left: 0 !important;
+    }
+  }
+
+  .lotusui30_body .lotusWidget_3columnsTopMenuLayout {
+    .lotusContent.wpthemeNarrow.wpthemeNarrowPlus,
+    #lotusColRight.lotusColRight.wpthemeNarrow.wpthemeNarrowPlus {
+      margin: 0 !important;
+      width: calc(50% - 15px) !important;
+      max-width: calc(50% - 15px);
+      vertical-align: top;
+      display: inline-block !important;
+      box-sizing: border-box !important;
+    }
+  }
+
+  .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout {
+    #lotusMainColumns {
+      float: right !important;
+      width: calc(50% - 17px) !important;
+    }
+    .lotusContent.wpthemeNarrow.wpthemeNarrowPlus,
+    #lotusColRight.lotusColRight.wpthemeNarrow.wpthemeNarrowPlus {
+      width: 100% !important;
+      max-width: 100%;
+      box-sizing: border-box !important;
+    }
+  }
+}
+// communities repsonsive breakpoint:
+@media (min-width: 1271px) {
+  .lotusui30_body .lotusWidget_3columnsTopMenuLayout,
+  .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout {
+    #lotusColLeft.wpthemeNarrow,
+    #lotusColBanner ~ #lotusColLeft.wpthemeNarrow {
+      width: calc(33% - 15px) !important;
+      max-width: calc(33% - 15px);
+    }
+  }
+
+  .lotusui30_body .lotusWidget_3columnsTopMenuLayout {
+    .lotusContent.wpthemeNarrow.wpthemeNarrowPlus,
+    #lotusColRight.lotusColRight.wpthemeNarrow.wpthemeNarrowPlus {
+      margin: 0 !important;
+      width: calc(33% - 15px) !important;
+      max-width: calc(33% - 15px);
+      vertical-align: top;
+      display: inline-block !important;
+      box-sizing: border-box !important;
+    }
+  }
+
+  .lotusui30_body .lotusWidget_3columnsWithBannerTopMenuLayout {
+    #lotusMainColumns {
+      width: calc(66% - 17px) !important;
+    }
+    .lotusContent.wpthemeNarrow.wpthemeNarrowPlus,
+    #lotusColRight.lotusColRight.wpthemeNarrow.wpthemeNarrowPlus {
+      width: calc(50% - 16px) !important;
+      max-width: calc(50% - 16px);
+      box-sizing: border-box !important;
+    }
+  }
+  .lotusWidget_3columnsTopMenuLayout #contentArea,
+  .lotusWidget_3columnsWithBannerTopMenuLayout #contentArea {
+    width: 100% !important;
+  }
+}
+
+// ideation blog vote number column
+@media (max-width: 1060px) {
+  .blog #entries .lotusTable.blogsFixedTable tr td[style="width:95px"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 95px !important;
+  }
+  html .blog #entries .ideaVotingDiv > .ideaVotingNumber,
+  html .blog #entries .ideaVotingDivDisabled > .ideaVotingNumber {
+    @include font-size(1.75rem, 600);
+  }
+  html .blog #entries .ideaVotingDiv .ideaVotingButtonDiv > .ideaVotingButton {
+    @include font-size(1rem, 600);
+  }
+}
+
+// communities page bug fix
+div[id^="lconn_communities_catalog_widgets_ResultsDisplayWidget_"] {
+  &, table, tbody, tr {
+    width: 100% !important;
+    max-width: 100%;
+    display: block;
+  }
+}
+
+// forum widget overflow fix
+.widgetContainer .forumPagedList h4.lotusBreakWord.lotusEllipsis {
+  width: auto !important;
+  white-space: normal !important;
+  line-height: 1.2em;
+}
+
+// make left column in communites be the correct width - this is not the real left col, it's the backgorund pseudo content
+.communities-widget-appearance .lotusWidget_2columnLayout .lotusColLeft:after,
+.communities-widget-appearance .lotusWidget_3columnLayout .lotusColLeft:after,
+.communities-widget-appearance .lotusWidget_3columnLayoutWithBanner .lotusColLeft:after {
+  border-right-width: $leftnav-width !important;
+}
+
+// classic home page responsive changes
+.activityStreamPage.lotusMain {
+  #lotusColLeft {
+    width: 264px !important;
+  }
+  .lotusui30_layout & .lotusColLeft:after {
+    border-right-width: 264px !important;
+  }
+}

@@ -1,0 +1,391 @@
+.filesList,
+.filesListFilled, //Community Files
+.ics-viewer,
+#filesReader,
+.lotusStream,
+.icSearchPane,
+.icSearchResultsPage,
+.qkrDropAvatar,
+#pageDetails #wikiContentDiv,
+#wikiPageAttachments,
+.blog,
+.lconnPicker,
+.lconnCommLanding,
+.lotusForum,
+#calendar_event_viewer,
+.widgetContainer,
+.lotusDialogContent._qkrDialogCompact {
+  .ic-thumb-folder{
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.lconn-ftype16,
+.lconn-ftype32,
+.lconn-ftype64,
+.ics-viewer-banner .ics-viewer-title .iconsFileTypes16,
+.iconsFileTypes32
+.iconsFileTypes64,
+.lconnSprite-iconFolderClose32,
+.lconnSprite-iconFolderPrivate32,
+.lconnSprite-iconFolderShared32,
+.lconnSprite-iconFolderPublic32,
+.ic-thumb-folder,
+img[class*="Presentation"],
+img[class*="Wikis"],
+img[class*="Blogs"],
+img[class*="Files"],
+img[class*="Activities"],
+img[class*="Forums"],
+img[class*="Bookmarks"],
+img[class*="Calendar"] {
+  &,
+  .ics-viewer &  {
+    background-position: 0 0!important;
+    border-radius: 0px !important;
+    background-size: contain;
+  }
+}
+
+.lconn-ftype16, .iconsFileTypes16{
+  background-size: 16px 16px!important;
+  overflow: hidden;
+  width: 16px;
+  height: 16px;
+  padding: 16px 16px 0 0;
+  box-sizing: border-box !important;
+}
+.ics-viewer-title{
+  .lconn-ftype16, .iconsFileTypes16{
+    background-size: 24px 24px!important;
+    position:relative!important;
+    top:-4px!important;
+    left:-4px!important;
+    width:24px!important;
+    height:24px!important;
+  }
+}
+.lconnSprite-iconFolderClose24,
+.lconnSprite-iconFolderPrivate24,
+.lconnSprite-iconFolderShared24,
+.lconnSprite-iconFolderPublic24 {
+  background-repeat: no-repeat !important;
+}
+.lconn-ftype32, .iconsFileTypes32,
+.lconnSprite-iconFolderClose32,
+.lconnSprite-iconFolderPrivate32,
+.lconnSprite-iconFolderShared32,
+.lconnSprite-iconFolderPublic32 {
+  background-size: 32px 32px!important;
+  overflow: hidden;
+  width: 32px;
+  height: 32px;
+  padding-left: 32px;
+  box-sizing: border-box !important;
+  background-repeat: no-repeat;
+}
+#scene-body { //for CR4 table view
+  .lconnSprite-iconFolderPrivate32,
+  .lconnSprite-iconFolderShared32,
+  .lconnSprite-iconFolderPublic32 {
+    padding-left: 0 !important;
+  }
+}
+.lconn-ftype64, .iconsFileTypes64{
+  background-size: 64px 64px!important;
+}
+.lconn-ftype32-docx,
+.lconn-ftype32-xlsx,
+.lconn-ftype32-pptx{
+  position: relative;
+  overflow: hidden;
+  width: 32px;
+  height: 32px;
+  padding: 32px 32px 0 0;
+  box-sizing: border-box !important;
+}
+.lconn-ftype16-docx,
+.lconn-ftype16-xlsx,
+.lconn-ftype16-pptx{
+  position: relative;
+  overflow: hidden;
+  width: 16px;
+  height: 16px;
+  padding: 16px 16px 0 0;
+  box-sizing: border-box !important;
+}
+
+img[class*="ftype"],
+img[class*="Default"]{
+  background-image:svg-url-with-replaced-fill($svg-icon-unknown, '#000000', $icon-file-type-default) !important;
+}
+// Image types
+img[class$="bmp"],
+img[class$="eps"],
+img[class$="gif"],
+img[class$="ico"],
+img[class$="jpg"],
+img[class$="jpeg"],
+img[class$="png"],
+img[class$="psd"],
+img[class$="svg"],
+img[class$="tif"],
+img[class$="tiff"],
+img[class$="Graphic16"],
+img[class$="Graphic32"],
+img[class$="Graphic64"],
+span[class$="bmp"],
+span[class$="eps"],
+span[class$="gif"],
+span[class$="ico"],
+span[class$="jpg"],
+span[class$="jpeg"],
+span[class$="png"],
+span[class$="psd"],
+span[class$="svg"],
+span[class$="tif"],
+span[class$="tiff"],
+span[class$="Graphic16"],
+span[class$="Graphic32"],
+span[class$="Graphic64"] {
+  background-image:svg-url-with-replaced-fill($svg-icon-image, '#000000', $icon-file-type-image) !important;
+}
+// Word processing document type
+img[class$="docx"],
+img[class$="doc"],
+img[class$="dot"],
+img[class$="odt"],
+img[class$="rtf"],
+img[class$="txt"],
+img[class*="WordProcessingDocs"],
+img[src*="ibmdocs_wordprocessing_16.png"],
+span[class$="docx"],
+span[class$="doc"],
+span[class$="dot"],
+span[class$="odt"],
+span[class$="rtf"],
+span[class$="txt"],
+span[class*="WordProcessingDocs"] {
+  background-image:svg-url-with-replaced-fill($svg-icon-document, '#000000', $icon-file-type-document) !important;
+}
+// Spreadsheet type
+img[class$="xlsx"],
+img[class$="xls"],
+img[class$="xlt"],
+img[class$="ods"],
+img[class*="DataDocs"],
+img[src*="ibmdocs_spreadsheets_16.png"],
+.ics-viewer .iconsFileTypes16-ftData16, // overrides a stubborn selector in hikari
+span[class$="xlsx"],
+span[class$="xls"],
+span[class$="xlt"],
+span[class$="ods"],
+span[class*="DataDocs"] {
+  background-image:svg-url-with-replaced-fill($svg-icon-spreadsheet, '#000000', $icon-file-type-spreadsheet) !important;
+}
+// Presentation type
+img[class$="pptx"],
+img[class$="ppt"],
+img[class$="key"],
+img[class$="odp"],
+img[class*="Presentation"],
+img[src*="ibmdocs_presentations_16.png"],
+.ics-viewer .iconsFileTypes16-ftPresentation16, // overrides a stubborn selector in hikari
+span[class$="pptx"],
+span[class$="ppt"],
+span[class$="key"],
+span[class$="odp"],
+span[class*="Presentation"] {
+  &,
+  .ics-viewer & {
+    background-image:svg-url-with-replaced-fill($svg-icon-presentation, '#000000', $icon-file-type-presentation) !important;
+  }
+}
+// PDF type
+img[class$="pdf"],
+img[class*="Pdf"],
+span[class$="pdf"],
+span[class*="Pdf"]{
+  background-image:svg-url-with-replaced-fill($svg-icon-pdf, '#000000', $icon-file-type-pdf) !important;
+}
+// Archive type
+img[class$="jar"],
+img[class$="zip"],
+img[class*="Compressed"],
+span[class$="jar"],
+span[class$="zip"],
+span[class*="Compressed"] {
+  background-image:svg-url-with-replaced-fill($svg-icon-compressed, '#000000', $icon-file-type-archive) !important;
+}
+
+// Folder type
+img[class*="Folder"],
+img[class*="folder"]:not(.ic-thumb-folder),
+span[class*="Folder"]:not(.lconnCommunityFolder),
+span[class*="folder"]:not(.ic-thumb-folder) {
+  background-position: 0 0 !important;
+  min-width: 1.5rem !important;
+  min-height: 1.15rem !important;
+  // put the default folder icon everywhere, then override below for public, private, shared, community, etc
+  background-image:svg-url-with-replaced-fill($svg-icon-folder, '#000000', $icon-file-type-folder) !important;
+}
+img[class*="iconFolderPublic"] {
+    background-image:svg-url-with-replaced-fill($svg-icon-folder-public, '#000000', $icon-file-type-folder) !important;
+}
+img[class*="iconFolderPrivate"] {
+    background-image:svg-url-with-replaced-fill($svg-icon-folder-private, '#000000', $icon-file-type-folder) !important;
+}
+img[class*="iconFolderShared"] {
+    background-image:svg-url-with-replaced-fill($svg-icon-folder-shared, '#000000', $icon-file-type-folder) !important;
+}
+img[class*="iconFolderCommunity"] {
+    background-image:svg-url-with-replaced-fill($svg-icon-folder-community, '#000000', $icon-file-type-folder) !important;
+}
+// Audio type
+img[class$="mp3"],
+img[class$="wav"],
+img[class$="wma"],
+img[class*="Audio"],
+span[class$="mp3"],
+span[class$="wav"],
+span[class$="wma"],
+span[class*="Audio"] {
+  background-image:svg-url-with-replaced-fill($svg-icon-audio, '#000000', $icon-file-type-audio) !important;
+}
+// Video type
+img[class$="avi"],
+img[class$="mp4"],
+img[class$="mov"],
+img[class$="wmv"],
+img[class$="m4v"],
+img[class*="Video"],
+span[class$="avi"],
+span[class$="mp4"],
+span[class$="mov"],
+span[class$="wmv"],
+span[class$="m4v"],
+span[class*="Video"] {
+  background-image:svg-url-with-replaced-fill($svg-icon-video, '#000000', $icon-file-type-video) !important;
+}
+// Code type
+img[class$="css"],
+img[class$="dmg"],
+img[class$="exe"],
+img[class$="html"],
+img[class$="java"],
+img[class$="js"],
+img[class$="json"],
+img[class$="scss"],
+img[class$="xml"],
+img[class*="Code"],
+span[class$="css"]:not(.freedom-base-mixin-css),
+span[class$="dmg"],
+span[class$="exe"],
+span[class$="html"]:not(.cke_dialog_ui_html),
+span[class$="java"],
+span[class$="js"],
+span[class$="json"],
+span[class$="scss"],
+span[class$="xml"],
+span[class*="Code"] {
+  background-image:svg-url-with-replaced-fill($svg-icon-code, '#000000', $icon-file-type-code) !important;
+}
+img[class*="Wikis"],
+span[class*="Wikis"] {
+  background-image:svg-url-with-replaced-fill($svg-icon-wiki, '#000000', $icon-file-type-wiki) !important;
+}
+img[class*="Blogs"],
+span[class*="Blogs"] {
+  background-image:svg-url-with-replaced-fill($svg-icon-blog, '#000000', $icon-file-type-blog) !important;
+}
+img[class*="Files"],
+span[class*="Files"]:not(.lconnNavCommunityFiles) {
+  background-image:svg-url-with-replaced-fill($svg-icon-files, '#000000', $icon-file-type-files) !important;
+}
+img[class*="Activities"],
+span[class*="Activities"] {
+  background-image:svg-url-with-replaced-fill($svg-icon-activity, '#000000', $icon-file-type-activity) !important;
+}
+img[class*="Forums"],
+span[class*="Forums"] {
+  background-image:svg-url-with-replaced-fill($svg-icon-forum, '#000000', $icon-file-type-forum) !important;
+}
+img[class*="Bookmarks"],
+span[class*="Bookmarks"] {
+  background-image:svg-url-with-replaced-fill($svg-icon-bookmark, '#000000', $icon-file-type-bookmark) !important;
+}
+img[class*="Calendar"],
+span[class*="Calendar"]:not([class*="dijitCalendar"]) {
+  background-image:svg-url-with-replaced-fill($svg-icon-calendar, '#000000', $icon-file-type-calendar) !important;
+}
+
+//Fixing size of the icons that show up on search results
+.icSearchResultsPage{
+  .iconsFileTypes64,
+  .lconn-ftype64{
+    background-position:12px 12px!important;
+  }
+  .otherPeople64{
+    background-image:none!important;
+  }
+  .iconsFileTypes64,
+  .lconn-ftype64,
+  img[class*="Wikis"],
+  img[class*="Blogs"],
+  img[class*="Files"],
+  img[class*="Activities"],
+  img[class*="Forums"],
+  img[class*="Bookmarks"],
+  img[class*="Calendar"] {
+    background-size:40px 40px!important;
+  }
+}
+//Fixing size of the icons that show up search pane results
+.icSearchPane{
+  img[class*="Wikis"],
+  img[class*="Blogs"],
+  img[class*="Files"],
+  img[class*="Activities"],
+  img[class*="Forums"],
+  img[class*="Bookmarks"],
+  img[class*="Calendar"] {
+    //the svgs get cut off if they are 32 px?
+    background-size:30px 30px!important;
+  }
+}
+//Fix for issue 519, Files add files to a folder dialog having messed up
+// file type icons.
+.lconnPicker .lconnPickerSourceArea,
+.lconnPickerSourceArea{
+  img[class*="Folder"]{
+    background-position: center center!important;
+    background-size:20px 20px!important;
+    background-repeat:no-repeat!important;
+  }
+}
+//This is for files only since the small icons are offset in the picker dialog
+#body .lconnPickerSourceArea{
+  .lconn-ftype16{
+    background-position:3px 3px!important;
+  }
+}
+//Fix for issue 605, Files upload files
+#body .lconnFileUpload img.lconnFileUploadIcon{
+  background-position:0px!important;
+}
+
+//Fix for the spacing within file type icons in a Wiki page
+#pageDetails #wikiContentDiv .lconn-ftype16,
+.blog .lconn-ftype16{
+  margin-right:4px!important;
+  position:relative!important;
+  top:-1px!important;
+}
+
+// Add right margin for file icons in event viewer - 1285
+#calendar_event_viewer {
+  img.lconn-ftype16 {
+    margin-right: 4px !important;
+  }
+}

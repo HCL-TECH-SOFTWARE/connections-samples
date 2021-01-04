@@ -1,0 +1,27 @@
+{
+  "extensions": [
+    {
+      "application": "News River Sectioned Sample",
+      "payload": {
+        "include-files": [
+          "newsRiver/newsRiverSectioned.user.js"
+        ],
+        "include-repo": {
+          "name": "global-samples"
+        },
+        "cache-headers": {
+          "cache-control": "max-age=0"
+        }
+      },
+      "name": "News River Sectioned Extension",
+      "type": "com.ibm.customizer.ui",
+      "path": "homepage"
+    }
+  ],
+  "name": "News River Sectioned Sample",
+  "description": "Draws news river in sections surrounded with Pink border",
+  "services": [
+    "Customizer"
+  ],
+  "title": "News River Sectioned Sample"
+}

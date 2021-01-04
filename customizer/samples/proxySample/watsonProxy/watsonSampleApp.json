@@ -1,0 +1,41 @@
+{
+    "name": "Watson Proxy Sample",
+    "title": "Watson Proxy Sample",
+    "description": "Sample proxy app for Customizer",
+    "services": [
+        "Customizer"
+    ],
+    "extensions": [
+        {
+            "name": "Watson  Proxy Sample",
+            "type": "com.ibm.customizer.proxy",
+            "payload": {
+                "whitelist": [
+                    {
+                        "method": [
+                            "GET",
+                            "POST"
+                        ],
+                        "domain": "watsonplatform.net"
+                    }
+                ]
+            }
+        },
+        {
+            "name": "Watson Proxy UI extension",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "proxySample/watsonProxy/watsonProxySample.js"
+                ],
+                "include-repo": {
+                    "name": "global-samples"
+                },
+                "cache-headers": {
+                    "cache-control": "max-age=0"
+                }
+            },
+            "path": "homepage"
+        }
+    ]
+}

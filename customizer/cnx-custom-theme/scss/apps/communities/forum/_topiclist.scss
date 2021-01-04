@@ -1,0 +1,116 @@
+#dfTopicList, //List of forum topics in community
+#dfOpenQuestionList, //List of open forum questions in community
+#dfAnsweredQuestionList, //List of answered forum questions in community
+#topicList,
+#dfForumList,
+#forum, //List of forum topics inside forum
+#updatesArea, // stand-alone forums list 
+#category .dfForums  // stand-alone public forums list 
+{
+  //Forum topics list
+  .forumPagedList,
+  .lotusPagedContent {
+    //pinned rows
+    tr.lotusPinnedRow {
+      &.lotusMore {
+        border-bottom:4px solid $background-main;
+      }
+      td {
+        background-color: $background-pinned-row !important;
+      }
+      td.lotusFirstCell {
+        //border-left:5px solid $border-selected;
+        .lconnSprite-iconPin16 {
+          background-image: svg-url-with-replaced-fill($svg-pin-checked, '#000000', $icon-black) !important;
+          background-position: center;
+          height:24px;
+          width:24px;
+          margin:0px 8px 0px 8px !important;
+        }
+      }
+    }
+    > .lotusTable > colgroup > col:nth-child(2) {
+      width: 52px !important;
+    }
+    //spacing around forum topic icons
+    .normalTopic td:first-of-type {
+      padding-top:18px !important;
+    }
+  }
+  //Style forum topic icons
+  .lconnSprite-iconQuestion16,
+  .lconnSprite-iconComment16,
+  .lconnSprite-iconAnswered16,
+  .lconnSprite-iconForumsItem16,
+  .lconnSprite-iconPin16 {
+    background-position:center;
+    height:24px;
+    width:24px;
+    margin:0px 8px 0px 8px !important;
+  }
+  .lconnSprite-iconQuestion16 {
+    background-image: svg-url-with-replaced-fill($svg-forum-question, '#000000', $icon-default) !important;
+  }
+  .lconnSprite-iconComment16,
+  .lconnSprite-iconForumsItem16 {
+    background-image: svg-url-with-replaced-fill($svg-forum-comment, '#000000', $icon-default) !important;
+  }
+  .lconnSprite-iconAnswered16 {
+    background-image: svg-url-with-replaced-fill($svg-forum-answered, '#000000', $success) !important;
+  }
+  .lconnSprite-iconPin16 {
+    background-image: svg-url-with-replaced-fill($svg-pin-checked, '#000000', $icon-black) !important;
+  }
+  //space around start a topic button
+  .lotusBtnContainer span.lotusBtn {
+    margin-top: 8px !important;
+    margin-left: 1px !important;
+  }
+  .lotusMeta {
+    @include font-size($caption...);
+    color:$text-02;
+  }
+}
+
+#topicList .lotusHeader {
+  margin-bottom: .5rem;
+  overflow: visible !important;
+  .forumTags > div {
+    > span, label {
+      margin: 0;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    // hide spinner:
+    .lotusHidden {
+      display: none !important;
+    }
+    form[style="display: inline;"] {
+      display: inline-block !important;
+      margin: 0 !important;
+
+      input[type="submit"] {
+        @include btnprimary;
+        padding: 6px 16px !important;
+        font-weight: 500 !important;
+        font-size: 0.675rem !important;
+      }
+      a[role="button"] {
+        @include btnsecondary;
+        padding: 6px 16px !important;
+        font-weight: 500 !important;
+        font-size: 0.675rem !important;
+      }
+    }
+  }
+}
+
+#topicList > .lotusFilters > *:not(script) {
+  display: inline-block;
+  vertical-align: middle;
+}
+#category .dfForums .lotusTable.dfForumTable {
+  colgroup col[style="width:32px"] {
+    width: 52px !important;
+  }
+}

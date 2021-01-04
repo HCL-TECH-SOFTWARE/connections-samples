@@ -1,0 +1,48 @@
+// profile page share update actions fix
+div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="_textBoxContainer"] + div[dojoattachpoint="actionAreaNode"] .lotusActions .lotusInlinelist li:not[dojoattachpoint="remainingCharsLabelNode"] {
+	display: inline-block !important;
+	vertical-align: middle;
+}
+// share an update:
+#shareboxContainer {
+  a[dojoattachpoint="removeAttachmentNode"] {
+    border: 0 !important;
+    padding: 0 !important;
+    &:hover {
+      background: transparent !important;
+    }
+  }
+  div[dojoattachpoint="actionAreaNode"] {
+    height: auto !important;
+  }
+  a[dojoattachpoint="attachActionButtonNode"] {
+    padding: 0 !important;
+    border: 0 !important;
+    font-weight: 500 !important;
+    &:hover, &:focus {
+      background: transparent !important;
+      border: 0 !important;
+      color: $link-default !important;
+      text-decoration: underline !important;
+    }
+  }
+  span[dojoattachpoint="fileAttachmentDetailsNode"] {
+		font-size: $body-mini-font-size;
+    span {
+      display: inline-block;
+      padding: 0 .75rem 0 0;
+      position: relative;
+
+      + span:before {
+        content: '|';
+        display: block;
+        position: absolute;
+        left: -7px;
+        top: 0;
+      }
+			&:last-child {
+				padding: 0;
+			}
+    }
+  }
+}

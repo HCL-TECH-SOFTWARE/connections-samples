@@ -1,0 +1,280 @@
+[id^="widget_lconn_share_widget_MemberInput_"][id$="_people"],
+[id^="widget_lconn_share_widget_MemberInput_"][id$="_communities"],
+[id^="lconn_share_widget_MemberInput_"][id$="_people"],
+[id^="lconn_share_widget_MemberInput_"][id$="_communities"],
+[id^="lconn_core_AddGroups_"][id$="PeopleTypeAhead"],
+input[id^="lconn_share_widget_TagTypeAhead_"],
+input[id^="lconn_share_widget_Dialog_"][id$="_name"],
+.lotusFieldWrapper input:not(#generateAppPassword):not(#enableBiDi):not(#activitiesAddButton):not([type="radio"]):not([type="checkbox"]),
+#concordnewfiledoc,
+#concordnewfilesheet,
+#concordnewfilepres,
+input.lotusText,
+.blog input[type="text"]:not([aria-control^="lconn_search_searchPanel_"]),
+.dijitTextBox .typeaheadInput input,
+#communityTypeAhead,
+#editbookmarkTagTypeAheadContainer input.dijitTextBox,
+#bookmarkAddForm input.dijitTextBox,
+#companyInfoEdit input //Org page edit mode
+{
+	@include textinput;
+}
+
+//Blog jump to page override textinput
+.blog input[type="text"]#jumpToPage_text,
+.blog input[type="text"]:not([aria-control^="lconn_search_searchPanel_"])[name="jumpToPage_text"] {
+  min-width: 46px !important;
+  padding-right: 0 !important;
+}
+
+//Blog insert image dialog - URL field
+.blog {
+  .dijitValidationTextBox {
+    margin-top: 8px !important;
+    input[type="text"] {
+      padding-top: 8px !important;
+      border-bottom: none !important;
+    }
+  }
+}
+
+// Align labels to the middle
+.lotusFormLabel.lotusNowrap {
+	vertical-align:middle !important;
+}
+
+// search contacts & search directory inputs
+.contactsSearch {
+	border: none !important;
+	input.lotusText.scSearchInput {
+		padding-left: 2rem !important;
+		margin-left: -.7rem;
+	}
+}
+.lconn_directorySearchBox {
+	.lconn_searchIcon, .dijitPlaceHolder {
+		margin-top: .5rem;
+	}
+	.dijitPlaceHolder {
+		margin: 0 0 10px 30px;
+		//font-size: $body-font-size;
+	}
+	.lconn_searchBox {
+		border: none !important;
+		height: auto !important;
+		padding-left: 0 !important;
+		.dijitInputContainer {
+			overflow: visible !important;
+		}
+		input.dijitInputInner {
+			@include textinput;
+			padding-left: 2rem !important;
+		}
+	}
+}
+
+
+//contacts search input fix
+.sc .contactsSearch {
+	border: 0;
+}
+
+// share a file modal search fix
+div[id^="lconn_files_widget_FilePickerCompactInner_"][id$="_content_searchDiv"] {
+	border: none !important;
+	input.lotusText {
+		@include textinput;
+		padding-bottom:0.75rem !important;
+		height:auto !important;
+	}
+}
+div[id^="lconn_news_microblogging_sharebox_InputForm_"][id$="myactions"] {
+	margin: 1rem auto 2rem;
+	.lotusInlinelist {
+		display: inline-block !important;
+		height: auto !important;
+		margin-top: 0 !important;
+		&.lotusRight {
+			float: right !important;
+			// better align add a file button on status posts
+			&:not(.ublogActionsList) {
+				padding: .75rem 0;
+			}
+		}
+		&.floatLeft {
+			float: left !important;
+		}
+	}
+}
+
+// share a file (from somebody else's profile page) input and select fixes
+.sc .profileDataTable,
+.lotusDialogWrapper .profileFields .lotusText:not(textarea),
+div[id^="lconn_files_widget_FilePickerCompactInner_"] input.lotusText {
+	margin: .275rem 0 0 !important;
+	padding: 0 !important;
+}
+div[id^="lconn_files_widget_FilePickerCompactInner_"][id$="content_ViewMenuAndSearchBar"] {
+  height: auto !important;
+  span.lotusBtnImg {
+    height: 2.25rem !important;
+    width: auto !important;
+    input {
+      display: block;
+      width: 1rem !important;
+      height: 1rem !important;
+      margin: .75rem 0;
+    }
+  }
+}
+div[id^="lconn_files_widget_FilePickerCompactInner_"][id$="_content_ViewMenuAndSearchBar"],
+div[id^="lconn_files_widget_FilePickerCompactInner_"][id$="_content_searchBar"] {
+	height: auto !important;
+	&:after {
+		content: '';
+		width: 100%;
+		display: block;
+		clear: both;
+	}
+}
+
+// profiles tags are an exception right now
+#socialTagName,
+#lconnTagWidgetcommonTagsTypeAhead,
+#contactsTagWidgetcommonTagsTypeAhead,
+input[id^="lconnTagWidget_"][id$="commonTagsTypeAhead"] {
+	@include textinput;
+	width: calc(100% - 30px) !important;
+	min-width: 1rem !important;
+
+	+ .lotusBtnImg {
+		&:hover {
+			opacity: 1 !important;
+		}
+		.lotusSearchButton {
+			background-image:svg-url-with-replaced-fill($svg-search, '#000000', $icon-default) !important;
+			background-position: center center !important	;
+			background-size: contain;
+		}
+	}
+}
+
+input[id^="com_ibm_sc_widget_SocialContactsSearchTypeAhead_"] {
+	@include textinput;
+}
+
+//Folders shared with me > Created by search field
+.lconnFiles .lotusSearch {
+  .dijitTextBox#widget_filterSharesByUser,
+  .typeaheadInput {
+    background: transparent !important;
+  }
+  .dijitTextBox#widget_filterSharesByUser {
+    border: none !important;
+  }
+  .typeaheadInput {
+    padding-left: 0 !important;
+  }
+}
+
+// directory search on scroll fix:
+.lotusui30 .lconn_directoryPage .lconn_searchNode.fixed {
+	background-color: $background-main !important;
+	border-bottom: 0 !important;
+	box-shadow: 3px 1px 5px $box-shadow-30;
+	margin-left: -20px;
+	padding-left: 20px;
+}
+
+// share file to a folder dialog
+div[id^="lconn_files_widget_PersonalFolderPicker_"][id$="_content_searchDiv"] {
+	border: 0 !important;
+	height: auto !important;
+	margin-top: 9px !important;
+
+	.lotusText {
+		height: auto !important;
+		vertical-align: baseline;
+	}
+
+	span.lotusBtnImg {
+		padding: 0 !important;
+		vertical-align: baseline;
+	}
+}
+
+// Share with people in folder and upload dialog
+div[id^="lconn_share_widget_Dialog_"] .lotusDialog .lotusFormFieldRow td > div[id^="widget_lconn_share_widget_MemberInput_"][id$="_people"] {
+	&, &:focus {
+		outline: none !important;
+		padding: 0 0 12px 0 !important;
+		border: 0 !important;
+		margin: 0 !important;
+	}
+}
+.bhcPeopleTypeAheadMenu .bhcBizCardText div {
+	max-width: 24.75rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+// advanced search
+div[id^="widget_bhc_PeopleTypeAhead_"] {
+	border: none !important;
+	.typeaheadInput {
+		background-image: svg-url-with-replaced-fill($svg-search, '#000000', $icon-default) !important;
+		background-repeat: no-repeat !important;
+		background-position: left center !important;
+		background-size: 1rem !important;
+
+		input {
+			margin: 0 0 1px -1rem !important;
+			padding-left: 2rem !important;
+			padding-top: 4px !important;
+			padding-right: 0 !important;
+			width: 100% !important;
+			box-sizing: content-box !important;
+		}
+	}
+}
+
+// communities add members
+#Members {
+	#addGroupsWidgetPeopleTypeAhead,
+	#bhc_lconn_core_PeopleTypeAhead,
+	#addMembersWidgetPeopleTypeAhead {
+		padding-bottom: .75rem !important;
+    width: auto !important;
+	}
+	#widget_bhc_lconn_core_PeopleTypeAhead {
+		border: none !important;
+		vertical-align: top;
+		margin-left: 0;
+
+		div.typeaheadInput {
+			padding-left: 0 !important;
+			padding-bottom: 1px;
+			background-image: none !important;
+		}
+	}
+	#bhc_lconn_core_PeopleTypeAhead,
+	#addMembersWidgetPeopleTypeAhead {
+		padding-left: 1.5rem !important;
+		padding-right: 0 !important;
+		background-image: svg-url-with-replaced-fill($svg-search, '#000000', $icon-default) !important;
+		background-repeat: no-repeat !important;
+		background-position: left top !important;
+		background-size: 1rem !important;
+		height: auto !important;
+		margin-left: .75rem;
+	}
+  .dijitFocused,
+  .dijitTextBoxFocused {
+    outline: none !important;
+  }
+}
+#MembersPanel .lotusForm {
+	#filterString {
+		@include textinput;
+	}
+}

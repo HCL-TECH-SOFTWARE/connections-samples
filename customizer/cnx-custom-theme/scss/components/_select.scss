@@ -1,0 +1,82 @@
+// Drop down, select, combo boxes
+select:not([style="display:none"]):not([style="display: none;"]):not(.lotusHidden) {
+	@include select;
+}
+// selects in file picker dialogs
+.lotusDialogWrapper.lconnPicker .lconnPickerSourceArea select {
+	min-width: 1px !important;
+}
+// Workaround for ComboBox in Create Contact
+.profileDataTable .dijitComboBox.lotusIndent10 .dijitInputField.dijitInputContainer [id^="dijit_form_ComboBox_"] {
+	&:focus {
+		border-bottom: 2px solid $border-field-focus !important;
+	}
+}
+
+// select in survey main page
+div[id*="SurveysList"] {
+  span.asFilterMenu select {
+    display: inline !important;
+    min-width: 1px !important;
+  }
+}
+
+// Share file
+[id^="lconn_share_widget_MemberInput_"] {
+	// Files > Upload > Advanced Options > People or Communities
+	// Share folder select
+	[id*="_searchSourceDropdown"],
+	[id*="_roleDropdown"] {
+		&:not(.lotusHidden) {
+			@include select;
+		}
+	}
+}
+
+// File transfer owner
+td[id^="lconn_share_widget_InlineContainer"] {
+	a.lotusFilter {
+		position: inherit !important;
+	}
+}
+
+// share a file (from somebody else's profile page)
+.dijitComboBoxMenuPopup .dijitMenuItem {
+	//font-size: $body-font-size !important;
+}
+select[id^="compactpicker_select_"]:not([style="display:none"]):not([style="display: none;"]) {
+	min-width: 0 !important;
+}
+
+// share file from community landing overview page widget
+select[id^="compactpicker_select_"] {
+	min-width: 45% !important;
+}
+
+// selects on add members form
+#addMembersRow {
+	#addPeopleOrGroupsSelect,
+	#addMembersSelectBox:not([style="display: block"]) {
+		display: inline-block !important;
+		margin: 0 .5rem 0 .25rem !important;
+	}
+}
+
+// communities wiki versions compare
+#versionHistory .lotusVersions {
+	select {
+		min-width: 1px !important;
+		margin: 0 .5rem .5rem !important;
+		display: inline-block !important;
+	}
+	div[dojoattachpoint="compareNode"] a,
+	div[dojoattachpoint="deleteNode"] a {
+		display: block;
+		margin-bottom: 1rem;
+	}
+}
+
+// lang edit select in Firefox
+// #langEdit #languageWrapper #language #language_selectedLabel {
+//   @include select;
+// }

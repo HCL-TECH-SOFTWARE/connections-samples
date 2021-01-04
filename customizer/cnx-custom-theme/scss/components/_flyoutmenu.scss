@@ -1,0 +1,56 @@
+body.lotusui30 .dijitMenuPopup .dijitMenuTable {
+  overflow: hidden;
+  tr:focus,
+  tr.dijitMenuItemFocused,
+  tr.dijitMenuItemSelected.dijitMenuItemFocused:not(.dijitMenuItemHover) {
+    .dijitMenuItemLabel { position: relative; }
+    .dijitMenuItemLabel:after {
+      background-color: transparent !important;
+      border-top: 1px solid $border-focus;
+      border-bottom: 1px solid $border-focus;
+      content: '';
+      display: block;
+      z-index: 0;
+      height: calc(100% - 2px);
+      left: -1rem;
+      position: absolute;
+      right: -1.5rem;
+      width: auto;
+      top: 0;
+    }    
+    td {
+      &,
+      &.dijitMenuItemLabel,
+      &.dijitReset {
+        border-color: $background-main !important;
+        color: $text-01 !important;
+      }
+      &.dijitMenuItemIconCell {
+        border-color: $background-main !important;
+      }
+    }
+  }
+  tr:hover,
+  tr.dijitMenuItemHover,
+  tr.dijitMenuItemHover.dijitMenuItemSelected:not(.dijitMenuItemFocused) {
+    td {
+      border-color: $border-separator !important;
+      &.dijitMenuItemIconCell {
+        border-color: $background-main !important;
+      }
+    }
+  }
+  tr.dijitReset.dijitMenuItemSelected.dijitMenuItem {
+    .dijitMenuItemIconCell {
+      border-color: $background-main !important;
+    }
+  }
+  tr.dijitReset.dijitMenuItem {
+    .dijitMenuItemIcon {
+      display: none;
+    }
+    .dijitMenuItemLabel {
+      color: $text-01 !important;
+    }
+  }
+} 

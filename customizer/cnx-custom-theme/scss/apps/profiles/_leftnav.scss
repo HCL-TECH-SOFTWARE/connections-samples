@@ -1,0 +1,172 @@
+.lotusMain{
+  #lotusColLeft,
+  .lotusColLeft {
+    .dijitTreeNode {
+      position: relative;
+    }
+    .lotusMenuSection > ul > li,
+    .lotusSection .dijitTreeNode {
+        padding: 0 !important;
+        margin: 0!important;
+        a {
+          padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+          padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
+          margin: 0 !important;
+          display: block;
+          border: none !important;
+          transition:$leftnav-border-slide!important;
+          &:hover, &:focus {
+            background-color:$background-side-hover !important;
+            border: none !important;
+          }
+        }
+        .dijitTreeNodeSelected {
+          border: none !important;
+          span {
+            border: none !important;
+            padding: 0 !important;
+          }
+        }
+        &.lotusSelected,
+        &:focus {
+          border: none !important;
+          a {
+            border: none !important;
+            border-left:$leftnav-active-border-thickness solid $border-selected !important;
+            padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) - #{$leftnav-active-border-thickness})!important;
+            font-weight: 700 !important;
+            span {
+              border: none !important;
+              padding: 0 !important;
+            }
+          }
+        }
+      }
+  }
+}
+.lotusInner > .lotusMenuSection{
+  margin-bottom:0!important;
+  padding-bottom:0!important;
+}
+//Changing tags, groups
+.sc.hikari.lotusui30 #lotusColLeft {
+  .lotusSection,
+  div[id^="scGroupTree"] {
+    margin: 0 !important;
+    h2 {
+      margin-left:0!important;
+      padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+      padding-left: calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding})) !important;
+      margin-bottom:0!important;
+      &:not([aria-labelledby^="lconnTagCloudFilter_"]):hover,
+      &:not([aria-labelledby^="lconnTagCloudFilter_"]):focus {
+        background-color:$background-side-hover !important;
+      }
+      span {
+        font-size: $body-sm-font-size !important;
+        font-weight: normal !important;
+      }
+    }
+    .lotusSectionBody {
+      padding: 0 !important;
+      max-width: 100%;
+      margin: 0 !important;
+      #contactsTagWidget {
+        padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
+      }
+      > div {
+        *:focus, *:active {
+          outline: 0 !important;
+        }
+        padding: 0 !important;
+      }
+    }
+    .lotusSprite:focus {
+      outline: 1px solid $border-focus !important;
+    }
+    .dijitTreeNode .dijitTreeRow {
+      padding-top:$leftnav-vertical-padding!important;
+      padding-bottom:$leftnav-vertical-padding!important;
+      padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) + 21px)!important;
+      border:none!important;
+      transition: font-weight .23s ease;
+      &.dijitTreeNodeSelected {
+        padding-left:calc(((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) - #{$leftnav-active-border-thickness}) + 21px)!important;
+        transition:$leftnav-border-slide;
+        border-left:4px solid $border-selected !important;
+        a{
+          margin-left:0!important;
+        }
+      }
+      span,
+      &.dijitTreeNodeSelected span {
+        &:focus, &:active {
+          outline: 0 !important;
+        }
+      }
+      span.dijitTreeContent {
+        padding: 0 !important;
+      }
+    }
+  }
+
+  .groupActionBar,
+  div[id^="scGroupTree"] .lotusSectionBody .groupActionBar {
+    padding-top:$leftnav-vertical-padding!important;
+    padding-bottom:$leftnav-vertical-padding!important;
+    padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) + 21px)!important;
+
+    a {
+      @include link-dark();
+    }
+  }
+}
+#profilePaneLeft .lotusWidget2 {
+  padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+}
+.sc.hikari.lotusui30 #lotusColLeft .lotusSection .lotusSectionBody#lconnTagCloudContent {
+  padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+  padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
+  >div {
+    padding-left: $leftnav-horizontal-padding !important;
+  }
+  #contactsTagWidget {
+    padding-left: 0 !important;
+  }
+}
+
+.lotusMain {
+  .lotusColLeft {
+    .lotusMenu > ul > li {
+        padding: 0 !important;
+        margin: 0!important;
+        a {
+          padding: $leftnav-vertical-padding $leftnav-horizontal-padding !important;
+          padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
+          margin: 0 !important;
+          display: block;
+          border: none !important;
+          transition:$leftnav-border-slide!important;
+          @include link-override();
+          &:hover, &:focus {
+            background-color:$background-side-hover !important;
+            border: none !important;
+          }
+        }
+        &.lotusSelected,
+        &:focus {
+          border: none !important;
+          a {
+            border: none !important;
+            border-left:$leftnav-active-border-thickness solid $border-selected !important;
+            padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}) - #{$leftnav-active-border-thickness})!important;
+            font-weight: 700 !important;
+            span {
+              border: none !important;
+              padding: 0 !important;
+            }
+          }
+        }
+      }
+  }
+}

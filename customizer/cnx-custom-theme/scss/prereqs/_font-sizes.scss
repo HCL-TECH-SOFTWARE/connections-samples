@@ -1,0 +1,48 @@
+//Description - Document all font-sizes used here and include a usage comment
+//****PREVIEW NOTE: FONT SIZES NOT BEING WIDELY USED UNTIL WE CAN LOOK AT THE WHOLE SYSTEM
+
+//---NEW---
+//size and weight of each font style
+//$name: font-size, font-weight
+$head1: 36px, 600;
+$head2: 28px, 500;
+$title: 20px, 600;
+$apptitle:20px, 400;
+$emptystate: 20px, 300;
+$header: 16px, 600;
+$body: 14px, 400; //Guide has 16px but that is too large for the overall site right now
+$bodylink: 14px, 600;
+$tabs: 14px, 600; //Used on tabs
+$caption: 12px, 500;
+$footer:10px, 400;
+
+//mixin usage: @include font-size($style...) -- ... is required to pass in the list
+@mixin font-size($size, $weight) {
+  font-size:$size !important;
+  font-weight:$weight !important;
+}
+
+
+//--OLD WAY - DEPRECATED---
+// Heading font-sizes
+$head0-font-size:2.375rem;
+$head1-font-size:1.75rem;
+$head2-font-size:1.625rem;
+$title-font-size:1.3125rem;
+
+// Tab font-sizes
+$tab-font-size: 0.875rem;
+
+// Body text font-sizes
+$body-rem: 1rem;
+$body-font-size:12.8px; //typical body text size
+$body-lg-font-size:1.2rem;  //in case larger text size is needed
+$body-md-font-size:0.9rem;
+$body-sm-font-size:0.875rem; // 14px
+$body-mini-font-size:0.75rem; // 12px very small text size for small details
+
+// Form element sizes - should use body size unless there is an exception
+$input-size: $body-font-size;
+
+// type-ahead
+$typeahead-name-font-size: 0.825rem;

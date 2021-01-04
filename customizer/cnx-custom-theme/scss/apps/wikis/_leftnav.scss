@@ -1,0 +1,98 @@
+#lotusColLeft {
+  #lconnWikisNavTree {
+    overflow-x: hidden;
+  }
+  #lconnWikisNavTree > .dijitTreeIsRoot > .dijitTreeContainer > .dijitTreeIsRoot.dijitTreeNode,
+  #sideNav > .lotusNavTree > .dijitTreeContainer:not(#lconnWikisNavTree) > .dijitTreeIsRoot > .dijitTreeContainer > .dijitTreeIsRoot.dijitTreeNode {
+    padding-left:calc((#{$leftnav-indent-padding} + #{$leftnav-horizontal-padding}))!important;
+  }
+  #sideNav > .lotusNavTree > .dijitTreeContainer:not(#lconnWikisNavTree) > .dijitTreeIsRoot > .dijitTreeContainer > .dijitTreeIsRoot.dijitTreeNode .dijitTreeRow {
+    text-indent: -20px;
+  }
+  .navDiv#sideNav .dijitTreeNode .dijitTreeRow {
+    padding-top: $leftnav-vertical-padding !important;
+    padding-bottom: $leftnav-vertical-padding !important;
+    border: none !important;
+    transition: font-weight .23s ease;
+    font-weight: normal !important;
+    font-size: $body-sm-font-size;
+    text-indent: -25px; // offsets drag handles and twisties
+    overflow: visible;
+    padding-right: 2px;
+
+    .dijitTreeContent,
+    .dijitExpandoText:not([dojoattachpoint="expandoNodeText"]) {
+      display: inline-block;
+      overflow: hidden;
+      padding-left: 25px !important; // to offset the text-indent...
+      text-overflow: ellipsis;
+      vertical-align: middle;
+      white-space: nowrap;
+      @supports (-moz-appearance:none) {
+        width: calc(100% - 18px) !important; // Issue #2419; FF fix for severely truncated items
+      }
+      width: calc(100% - 4px) !important; // Issue #2419; fix for severely truncated items
+
+      .dijitTreeLabel {
+        font-size: $body-sm-font-size;
+        font-weight: normal !important;
+        line-height: 1.5;
+
+        &:hover {
+          text-decoration: none !important;
+        }
+      }
+    }
+
+    &.dijitTreeRowSelected {
+      background: transparent !important;
+
+      &::before {
+        border-left: 4px solid $border-selected !important;
+      }
+    }
+    span,
+    &.dijitTreeRowSelected span {
+      &:focus, &:active {
+        outline: 0 !important;
+      }
+    }
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0px;
+      height: $leftnav-line-item-height;
+      width: 100%;
+      z-index: 0;
+      margin-top: -($leftnav-vertical-padding);
+    }
+    &:hover::before {
+      background-color:$background-side-hover;
+    }
+    > * {
+      z-index: 1;
+      position: relative;
+    }
+    &, &.dijitTreeRowSelected {
+      position: static;
+    }
+  }
+  .dijitTreeContainer .dijitTreeContainer .dijitTreeContainer {
+    padding-left: 6px !important;
+  }
+}
+
+//1758 Search icon for Wiki > Index > Pages > Go to Page...
+div[id^="filter_wiki.filter.allpages"] .lotusSearch {
+  input#pagenavsearchbox {
+    height: auto;
+  }
+  .lotusBtnImg {
+    width: 25px !important;
+    padding-top: 0 !important;
+    .lotusAltText {
+      display: none !important;
+    }
+  }
+}
