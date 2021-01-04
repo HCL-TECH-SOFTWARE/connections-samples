@@ -14,9 +14,6 @@ For community templates go [here][2]
 &nbsp;
 &nbsp;
 
-  
-
-
 ---
 [HCL Connections Documentation](https://help.hcltechsw.com/connections/v7/index.html)
 
