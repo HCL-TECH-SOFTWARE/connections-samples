@@ -1,0 +1,26 @@
+{
+    "app_id": "io.appspokes.wrike",
+    "name": "Wrike Embedded Experience",
+    "title": "Wrike Embedded Experience",
+    "description": "Wrike Embedded Experience",
+    "services": [
+        "Communities"
+    ],
+    "state": "disabled",
+    "extensions": [
+        {
+            "ext_id": "io.appspokes.wrike.as_event",
+            "name": "Wrike Embedded Experience",
+            "description": "Wrike Embedded Experience",
+            "type": "gadget",
+            "payload": {
+                "extends": "as_event",
+                "mime_type": "",
+                "icon": "https://wrike.appspokes.net/assets/images/wrike.png",
+                "description": "Wrike Embedded Experience",
+                "text": "Wrike Embedded Experience",
+                "url": "https://wrike.appspokes.net/stream/experience/render"
+            }
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+  "app_id": "io.appspokes.asana.v3",
+  "description": "Asana",
+  "name": "Asana",
+  "services": [
+    "Communities"
+  ],
+  "state": "disabled",
+  "title": "Asana",
+  "extensions": [
+    {
+      "description": "Asana - My Tasks",
+      "ext_id": "io.appspokes.asana.v3.mytasks",
+      "name": "Asana - My Tasks",
+      "type": "community_widget",
+      "payload": {
+        "defId": "Asana - My Tasks",
+        "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+        "modes": "view",
+        "primaryWidget": "true",
+        "showInPalette": "true",
+        "uniqueInstance": "false",
+        "itemSet": [
+          {
+            "name": "width",
+            "value": "100%"
+          },
+          {
+            "name": "height",
+            "value": "600px"
+          },
+          {
+            "name": "url",
+            "value": "https://asana-dev.appspokes.net/communityapp/tasks/render"
+          }
+        ],
+        "urls": {},
+        "url": "https://apps.na.collabserv.com/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+      }
+    },
+    {
+      "name": "Asana Embedded Experience",
+      "description": "Asana Embedded Experience",
+      "ext_id": "io.appspokes.asana.v3.embedded",
+      "type": "gadget",
+      "payload": {
+        "extends": "as_event",
+        "icon": "https://asana-dev.appspokes.net/assets/images/asana.png",
+        "mime_type": "",
+        "name": "Asana Embedded Experience",
+        "title": "Asana Embedded Experience",
+        "url": "https://asana-dev.appspokes.net/stream/experience/render"
+      }
+    }
+  ]
+}

@@ -1,0 +1,463 @@
+{
+  "app_id": "com.cisco.spark.v3",
+  "description": "%Spark_description",
+  "entitlement": "isv_spark",
+  "icon": "",
+  "name": "Spark",
+  "services": [
+    "TopNavigationBar", "Profiles"
+  ],
+  "state": "disabled",
+  "title": "%Spark_title",
+  "translations": {
+    "": {
+      "Spark_title": "Spark",
+      "Spark_description": "App for containing Spark extensions for Connections"
+    },
+    "en": {
+      "Spark_title": "Spark",
+      "Spark_description": "App for containing Spark extensions for Connections"
+    },
+    "ar": {
+      "Spark_title": "Spark",
+      "Spark_description": "تطبيق لاحتواء امتدادات Spark الى Connections"
+    },
+    "ca": {
+      "Spark_title": "Spark",
+      "Spark_description": "Aplicació que conté les extensions del Spark per al Connections"
+    },
+    "zh": {
+      "Spark_title": "Spark",
+      "Spark_description": "将包含 Connections 的 Spark 扩展的应用程序"
+    },
+    "zh-tw": {
+      "Spark_title": "Spark",
+      "Spark_description": "包含 Connections 之 Spark 延伸規格的應用程式"
+    },
+    "cs": {
+      "Spark_title": "Spark",
+      "Spark_description": "Aplikace pro obsažení rozšíření Spark pro produkt Connections"
+    },
+    "da": {
+      "Spark_title": "Spark",
+      "Spark_description": "App til opbevaring af Spark-udvidelser til Connections"
+    },
+    "de": {
+      "Spark_title": "Spark",
+      "Spark_description": "App für enthaltende Spark-Erweiterungen für Connections"
+    },
+    "el": {
+      "Spark_title": "Spark",
+      "Spark_description": "Εφαρμογή που περιέχει τις επεκτάσεις του Spark για το Connections"
+    },
+    "es": {
+      "Spark_title": "Spark",
+      "Spark_description": "Aplicación que contiene las extensiones de Spark para Connections"
+    },
+    "fi": {
+      "Spark_title": "Spark",
+      "Spark_description": "Sovellus, joka sisältää Connections-ohjelman Spark-laajennukset"
+    },
+    "fr": {
+      "Spark_title": "Spark",
+      "Spark_description": "Application destinée à contenir les extensions Spark pour Connections"
+    },
+    "he": {
+      "Spark_title": "Spark",
+      "Spark_description": "יישומון המכיל את הרחבות Spark עבור Connections"
+    },
+    "hr": {
+      "Spark_title": "Spark",
+      "Spark_description": "Aplikacija koja sadrži Spark proširenja za Connections"
+    },
+    "hu": {
+      "Spark_title": "Spark",
+      "Spark_description": "A Connections megoldáshoz Spark bővítményeket tartalmazó alkalmazás"
+    },
+    "it": {
+      "Spark_title": "Spark",
+      "Spark_description": "App per contenere le estensioni Spark per Connections"
+    },
+    "ja": {
+      "Spark_title": "Spark",
+      "Spark_description": "Connections 用の Spark 拡張を含めるためのアプリ"
+    },
+    "ko": {
+      "Spark_title": "Spark",
+      "Spark_description": "Connections용 Spark 확장을 포함하기 위한 앱"
+    },
+    "nl": {
+      "Spark_title": "Spark",
+      "Spark_description": "Container-app voor Spark-extensies voor Connections"
+    },
+    "no": {
+      "Spark_title": "Spark",
+      "Spark_description": "App for Spark-utvidelser for Connections"
+    },
+    "pl": {
+      "Spark_title": "Spark",
+      "Spark_description": "Apka zawierająca rozszerzenia aplikacji Spark dla programu Connections"
+    },
+    "pt": {
+      "Spark_title": "Spark",
+      "Spark_description": "Aplicação para conter extensões do Spark para o Connections"
+    },
+    "pt-br": {
+      "Spark_title": "Spark",
+      "Spark_description": "Aplicativo que contém extensões de Spark para Connections"
+    },
+    "ru": {
+      "Spark_title": "Spark",
+      "Spark_description": "Приложение для расширений Spark для Connections"
+    },
+    "sk": {
+      "Spark_title": "Spark",
+      "Spark_description": "Appka na obsiahnutie rozšírení Spark pre Connections"
+    },
+    "sl": {
+      "Spark_title": "Spark",
+      "Spark_description": "Aplikacija za vsebovanje razširitev Spark za Connections"
+    },
+    "sr": {
+      "Spark_title": "Spark",
+      "Spark_description": "Aplikacija koja sadrži Spark proširenje za Connections"
+    },
+    "sv": {
+      "Spark_title": "Spark",
+      "Spark_description": "App med Spark-tillägg för Connections"
+    },
+    "th": {
+      "Spark_title": "Spark",
+      "Spark_description": "แอ็พสำหรับการเก็บส่วนขยาย Spark สำหรับ Connections"
+    },
+    "tr": {
+      "Spark_title": "Spark",
+      "Spark_description": "Connections için Spark uzantılarını dahil etmek için uygulama"
+    }
+  },
+  "extensions": [{
+      "translations": {
+        "": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "Extension to display Spark icon on Top Navbar"
+        },
+        "en": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "Extension to display Spark icon on Top Navbar"
+        },
+        "ar": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "الامتداد لعرض شارة Spark بخط التجول العلوي"
+        },
+        "ca": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "Extensió per mostrar la icona del Spark a la barra de navegació superior"
+        },
+        "zh": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "用于在顶级导航栏上显示 Spark 图标的扩展"
+        },
+        "zh-tw": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "在「頂端導覽列」上顯示 Spark 圖示的延伸規格"
+        },
+        "cs": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "Rozšíření pro zobrazení ikony Spark v horním navigačním panelu"
+        },
+        "da": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "Udvidelse til at vise Spark-ikon på topnavigationslinje"
+        },
+        "de": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "Erweiterung zum Anzeigen des Spark-Symbols in Top Navbar"
+        },
+        "el": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "Εφαρμογή που επιτρέπει την εμφάνιση του εικονιδίου του Spark στη γραμμή πλοήγησης στο πάνω μέρος της σελίδας."
+        },
+        "es": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "Extensión para mostrar el icono de Spark en la barra de navegación superior"
+        },
+        "fi": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "Laajennus, joka tuo Spark-kuvakkeen näkyviin ylänavigointipalkkiin"
+        },
+        "fr": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "Extension permettant d'afficher l'icône Spark dans la barre de navigation supérieure"
+        },
+        "he": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "הרחבה להצגת איקון Spark בסרגל הניווט העליון"
+        },
+        "hr": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "Proširenje za prikaz Spark ikone na gornjem Navbaru"
+        },
+        "hu": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "A Spark ikont a navigációs sáv tetején megjelenítő bővítmény"
+        },
+        "it": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "Estensione per visualizzare l'icona di Spark nella barra di navigazione superiore"
+        },
+        "ja": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "トップナビゲーションバーに Spark アイコンを表示するための拡張"
+        },
+        "ko": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "최상위 탐색줄에 Spark 아이콘을 표시하기 위한 확장"
+        },
+        "nl": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "Extensie voor weergave van Spark-pictogram op navigatiebalk"
+        },
+        "no": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "Utvidelser for å vise Spark-ikon på navigeringslinjen øverst"
+        },
+        "pl": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "Rozszerzenie do wyświetlania ikony Spark na górnym pasku nawigacyjnym"
+        },
+        "pt": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "Extensão para apresentar o ícone do Spark na barra de navegação superior"
+        },
+        "pt-br": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "Extensão para exibir o ícone de Spark na barra de navegação superior"
+        },
+        "ro": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "Extensie pentru afişare pictogramă Spark în bara de navigare de sus"
+        },
+        "ru": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "Расширение для отображения значка Spark в верхней панели навигации"
+        },
+        "sk": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "Rozšírenie na zobrazenie ikony Spark na hornej navigačnej lište"
+        },
+        "sl": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "Razširitev za prikaz ikone Spark v zgornji navigacijski vrstici"
+        },
+        "sr": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "Proširenje za prikaz ikone Spark na gornjoj traci za navigaciju"
+        },
+        "sv": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "Tillägg för visning av Spark-ikon i navigeringsfältet"
+        },
+        "th": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "ส่วนขยายเพื่อแสดงไอคอน Spark บน Top Navbar"
+        },
+        "tr": {
+          "SparkNavbarChat-Connections_title": "Spark",
+          "SparkNavbarChat-Connections_description": "Üst Gezinme Çubuğunda Spark simgesini görüntülemek için uzantı"
+        }
+      },
+      "type": "com.ibm.action.link",
+      "title": "%SparkNavbarChat-Connections_title",
+      "payload": {
+        "url": "",
+        "target": "SparkChat",
+        "Xtarget": "",
+        "icon": "data:image/svg+xml;base64,PHN2ZyBjbGFzcz0nY2hhdC1pbWFnZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyBmaWxsPSd3aGl0ZScgdmlld0JveD0nMCAwIDIwIDIwJz48cGF0aCBjbGFzcz0nY2hhdC1pbWFnZS1vdXRsaW5lJyBkPSdNMTAgMEM1LjYgMCAyIDMuNiAyIDhjMCA0LjEgMy4xIDcuNCA3IDcuOVYyMGw2LjgtNi41QzE3LjEgMTIuMSAxOCAxMC4xIDE4IDhjMC00LjQtMy42LTgtOC04em01IDEyLjlsLTUgNC43VjE1Yy0zLjkgMC03LTMuMS03LTdzMy4xLTcgNy03IDcgMy4xIDcgN2MwIDEuOS0uOCAzLjYtMiA0Ljl6Jy8+PC9zdmc+",
+        "link": "https://web.ciscospark.com"
+      },
+      "path": "com.ibm.navbar.order.300000",
+      "name": "Spark Navbar Chat",
+      "ext_id": "com.cisco.spark.v3.navbar",
+      "description": "%SparkNavbarChat-Connections_title"
+    },
+    {
+      "translations": {
+        "": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "Extension to display Spark icon on Connections bizcard",
+          "SparkBizcardChat-Connections_text": "Chat"
+        },
+        "en": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "Extension to display Spark icon on Connections bizcard",
+          "SparkBizcardChat-Connections_text": "Chat"
+        },
+        "ar": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "الامتداد لعرض شارة Spark ببطاقة تعارف Connections",
+          "SparkBizcardChat-Connections_text": "محادثة"
+
+        },
+        "ca": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "Extensió per mostrar la icona del Spark a la targeta de presentació del Connections",
+          "SparkBizcardChat-Connections_text": "Xat"
+        },
+        "zh": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "用于在 Connections 名片上显示 Spark 图标的扩展",
+          "SparkBizcardChat-Connections_text": "交谈"
+        },
+        "zh-tw": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "在 Connections 名片上顯示 Spark 圖示的延伸規格",
+          "SparkBizcardChat-Connections_text": "會談"
+        },
+        "cs": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "Rozšíření pro zobrazení ikony Spark na vizitce produktu Connections",
+          "SparkBizcardChat-Connections_text": "Konverzace"
+        },
+        "da": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "Udvidelse til at vise Spark-ikon på Connections-visitkort",
+          "SparkBizcardChat-Connections_text": "Snak"
+        },
+        "de": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "Erweiterung zum Anzeigen des Spark-Symbols auf Connections BizCard",
+          "SparkBizcardChat-Connections_text": "Chatten"
+        },
+        "el": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "Εφαρμογή που επιτρέπει την εμφάνιση του εικονιδίου του Spark στις επαγγελματικές κάρτες του Connections.",
+          "SparkBizcardChat-Connections_text": "Συνομιλία"
+        },
+        "es": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "Extensión para mostrar el icono de Spark en la tarjeta de presentación de Connections",
+          "SparkBizcardChat-Connections_text": "Conversación"
+        },
+        "fi": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "Laajennus, joka tuo Spark-kuvakkeen näkyviin Connections BizCard -sovellukseen",
+          "SparkBizcardChat-Connections_text": "Jutella"
+        },
+        "fr": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "Extension permettant d'afficher l'icône Spark sur la carte de visite Connections",
+          "SparkBizcardChat-Connections_text": "Discussion"
+        },
+        "he": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "הרחבה להצגת איקון Spark בכרטיס הביקור של Connections",
+          "SparkBizcardChat-Connections_text": "צ'אט"
+        },
+        "hr": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "Proširenje za prikaz Spark ikone na Connections posjetnici",
+          "SparkBizcardChat-Connections_text": "Razgovor"
+        },
+        "hu": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "A Spark ikont a Connections névjegykártyán megjelenítő bővítmény",
+          "SparkBizcardChat-Connections_text": "Csevegés"
+        },
+        "it": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "Estensione per visualizzare l'icona di Spark nel biglietto da visita di Connections",
+          "SparkBizcardChat-Connections_text": "Conversazione"
+        },
+        "ja": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "Connections ビジネスカードに Spark アイコンを表示するための拡張",
+          "SparkBizcardChat-Connections_text": "チャット"
+        },
+        "ko": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "Connections 비즈니스 카드에 Spark 아이콘을 표시하기 위한 확장",
+          "SparkBizcardChat-Connections_text": "대화"
+        },
+        "nl": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "Extensie voor weergave van Spark-chatpictogram op Connections-visitekaartje",
+          "SparkBizcardChat-Connections_text": "Chatten"
+        },
+        "no": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "Utvidelser for å vise Spark-ikon på visittkort i Connections",
+          "SparkBizcardChat-Connections_text": "Samtale"
+        },
+        "pl": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "Rozszerzenie do wyświetlania ikony Spark na wizytówce programu Connections",
+          "SparkBizcardChat-Connections_text": "Czat"
+        },
+        "pt": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "Extensão para apresentar o ícone do Spark no cartão de visita do Connections",
+          "SparkBizcardChat-Connections_text": "Conversação"
+        },
+        "pt-br": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "Extensão para exibir o ícone de Spark no cartão de visita do Connections",
+          "SparkBizcardChat-Connections_text": "Bate-papo"
+        },
+        "ro": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "Extensie pentru afişare pictogramă Spark în cartea de vizită Connections",
+          "SparkBizcardChat-Connections_text": "Conversație"
+        },
+        "ru": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "Расширение для отображения значка Spark в Connections bizcard",
+          "SparkBizcardChat-Connections_text": "Чат"
+        },
+        "sk": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "Rozšírenie na zobrazenie ikony Spark na firemnej vizitke Connections",
+          "SparkBizcardChat-Connections_text": "Rozhovor"
+        },
+        "sl": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "Razširitev za prikaz ikone Spark na vizitki Connections",
+          "SparkBizcardChat-Connections_text": "Klepet"
+        },
+        "sr": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "Proširenje za prikaz ikone Spark na Connections vizitkarti",
+          "SparkBizcardChat-Connections_text": "Ćaskanje"
+        },
+        "sv": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "Tillägg för visning av Spark-ikon på Connections-visitkort",
+          "SparkBizcardChat-Connections_text": "Chatt"
+        },
+        "th": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "ส่วนขยายเพื่อแสดงไอคอน Spark บน Connections bizcard",
+          "SparkBizcardChat-Connections_text": "สนทนา"
+        },
+        "tr": {
+          "SparkBizcardChat-Connections_title": "Spark",
+          "SparkBizcardChat-Connections_description": "Connections kartvizit özelliğinde Spark simgesini görüntülemek için uzantı",
+          "SparkBizcardChat-Connections_text": "Sohbet"
+        }
+      },
+      "type": "com.ibm.appreg.ext.templatedLink",
+      "title": "%SparkBizcardChat-Connections_title",
+      "payload": {
+        "url": "",
+        "target": "SparkChat",
+        "text": "%nls:SparkBizcardChat-Connections_text",
+        "icon": "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDIwIDIwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQogIDxwYXRoIHN0eWxlPSJmaWxsOiAjRkZGIiBkPSJNMTAsMEM1LjYsMCwyLDMuNiwyLDhjMCw0LjEsMy4xLDcuNCw3LDcuOVYyMGw2LjgtNi41QzE3LjEsMTIuMSwxOCwxMC4xLDE4LDhDMTgsMy42LDE0LjQsMCwxMCwweiBNMTUsMTIuOSAJbC01LDQuN1YxNWMtMy45LDAtNy0zLjEtNy03czMuMS03LDctN3M3LDMuMSw3LDdDMTcsOS45LDE2LjIsMTEuNiwxNSwxMi45eiIvPg0KICA8Y2lyY2xlIHN0eWxlPSJmaWxsOiAjMzI1QzgwIiBjeD0iMTAiIGN5PSI4IiByPSI3Ii8+DQogIDxwb2x5Z29uIHN0eWxlPSJmaWxsOiAjMzI1QzgwIiBwb2ludHM9IjEwLDE0LjIgMTAsMTcuNiAxNSwxMi45ICIvPg0KPC9zdmc+",
+        "href": "/integrations/sparkDM?id=${emails}",
+        "locator": "chat"
+      },
+      "object": "com.ibm.appreg.object.person",
+      "name": "Spark Bizcard Chat - Connections",
+      "ext_id": "com.cisco.spark.v3.bizcard.chat",
+      "description": "%SparkBizcardChat-Connections_description"
+    }
+  ]
+}

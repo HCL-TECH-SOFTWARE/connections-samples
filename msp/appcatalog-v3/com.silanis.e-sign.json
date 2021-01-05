@@ -1,0 +1,77 @@
+{
+    "name": "Silanis e-Sign Documents",
+    "title": "Silanis electronic document signing",
+    "description": "Electronically sign a Symphony, PDF, or Word document",
+    "app_id": "com.silanis.e-sign",
+    "services": [
+        "Files"
+    ],
+    "state": "disabled",
+    "extensions": [
+        {
+            "name": "Silanis e-Sign Doc (PDF)",
+            "description": "Electronically sign a PDF document",
+            "ext_id": "com.silanis.e-sign.doc.pdf",
+            "type": "com.ibm.action.link",
+            "payload": {
+                "icon": "https://apps.na.collabserv.com/ext/img/isv/ISV-SILANIS/ISV-SILANIS_small.gif",
+                "url": "https://apps.e-signlive.com/auth?provider=lotuslive&target=https://apps.e-signlive.com/apps/esigndoc/lotuslive/${file_id}",
+                "extends": "file_menu",
+                "type": "action",
+                "mime_type": "application/pdf"
+            }
+        },
+        {
+            "name": "Silanis e-Sign Doc (OpenXML)",
+            "description": "Electronically sign an OpenXML document",
+            "ext_id": "com.silanis.e-sign.doc.oxml",
+            "type": "com.ibm.action.link",
+            "payload": {
+                "icon": "https://apps.na.collabserv.com/ext/img/isv/ISV-SILANIS/ISV-SILANIS_small.gif",
+                "url": "https://apps.e-signlive.com/auth?provider=lotuslive&target=https://apps.e-signlive.com/apps/esigndoc/lotuslive/${file_id}",
+                "extends": "file_menu",
+                "type": "action",
+                "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            }
+        },
+        {
+            "name": "Silanis e-Sign Doc (ODT)",
+            "description": "Electronically sign an ODT document",
+            "ext_id": "com.silanis.e-sign.doc.odt",
+            "type": "com.ibm.action.link",
+            "payload": {
+                "icon": "https://apps.na.collabserv.com/ext/img/isv/ISV-SILANIS/ISV-SILANIS_small.gif",
+                "url": "https://apps.e-signlive.com/auth?provider=lotuslive&target=https://apps.e-signlive.com/apps/esigndoc/lotuslive/${file_id}",
+                "extends": "file_menu",
+                "type": "action",
+                "mime_type": "application/vnd.oasis.opendocument.text"
+            }
+        },
+        {
+            "name": "Silanis e-Sign Doc (Word)",
+            "description": "Electronically sign a Word document",
+            "ext_id": "com.silanis.e-sign.doc.word",
+            "type": "com.ibm.action.link",
+            "payload": {
+                "icon": "https://apps.na.collabserv.com/ext/img/isv/ISV-SILANIS/ISV-SILANIS_small.gif",
+                "url": "https://apps.e-signlive.com/auth?provider=lotuslive&target=https://apps.e-signlive.com/apps/esigndoc/lotuslive/${file_id}",
+                "extends": "file_menu",
+                "type": "action",
+                "mime_type": "application/msword"
+            }
+        },
+        {
+            "name": "Silanis e-Room Navbar Link",
+            "description": "Launch secure document signing space",
+            "type": "com.ibm.action.link",
+            "ext_id": "com.silanis.e-room.menu.link",
+            "path": "com.ibm.navbar.order.95000",
+            "payload": {
+                "text": "e-SignRoom",
+                "link": "https://apps.e-signlive.com/auth?provider=lotuslive&target=https://apps.e-signlive.com/packages/inbox",
+                "icon": "",
+                "tooltip": ""
+            }
+        }
+    ]
+}

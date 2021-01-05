@@ -1,0 +1,429 @@
+{
+  "app_id": "com.cisco.jabber.v3.verse",
+  "description": "%Jabber-Verse_description",
+  "entitlement": "isv_jabber",
+  "icon": "",
+  "name": "Jabber-Verse",
+  "services": [
+    "TopNavigationBar"
+  ],
+  "state": "disabled",
+  "title": "%Jabber-Verse_title",
+  "translations": {
+    "": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "App for containing Jabber extensions for Verse"
+    },
+    "en": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "App for containing Jabber extensions for Verse"
+    },
+    "ar": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "تطبيق لاحتواء امتدادات Jabber الى Verse"
+    },
+    "ca": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "Aplicació que conté les extensions del Jabber per al Verse"
+    },
+    "zh": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "将包含 Verse 的 Jabber 扩展的应用程序"
+    },
+    "zh-tw": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "包含 Verse 之 Jabber 延伸規格的應用程式"
+    },
+    "cs": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "Aplikace pro obsažení rozšíření Jabber pro produkt Verse"
+    },
+    "da": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "App til opbevaring af Jabber-udvidelser til Verse"
+    },
+    "de": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "App für enthaltende Jabber-Erweiterungen für Verse"
+    },
+    "el": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "Εφαρμογή που περιέχει τις επεκτάσεις του Jabber για το Verse"
+    },
+    "es": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "Aplicación que contiene las extensiones de Jabber para Verse"
+    },
+    "fi": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "Sovellus, joka sisältää Verse-ohjelman Jabber-laajennukset"
+    },
+    "fr": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "Application destinée à contenir les extensions Jabber pour Verse"
+    },
+    "he": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "יישומון המכיל את הרחבות Jabber עבור Verse"
+    },
+    "hr": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "Aplikacija koja sadrži Jabber proširenja za Verse"
+    },
+    "hu": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "A Verse alkalmazáshoz Jabber bővítményeket tartalmazó alkalmazás "
+    },
+    "it": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "App per contenere le estensioni Jabber per Verse"
+    },
+    "ja": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "Verse 用の Jabber 拡張を含めるためのアプリ"
+    },
+    "ko": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "Verse용 Jabber 확장을 포함하기 위한 앱"
+    },
+    "nl": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "Container-app voor Jabber-extensies voor Verse"
+    },
+    "no": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "App for Jabber-utvidelser for Verse"
+    },
+    "pl": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "Apka zawierająca rozszerzenia programu Jabber dla programu Verse"
+    },
+    "pt": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "Aplicação para conter extensões do Jabber para o Verse"
+    },
+    "pt-br": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "Aplicativo que contém extensões de Jabber para Verse"
+    },
+    "ro": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "Aplicaţie pentru conţinerea extensiilor Jabber pentru Verse"
+    },
+    "ru": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "Приложение для расширений Jabber для Verse"
+    },
+    "sk": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "Appka na obsiahnutie rozšírení Jabber pre Verse"
+    },
+    "sl": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "Aplikacija za vsebovanje razširitev Jabber za Verse"
+    },
+    "sr": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "Aplikacija koja sadrži Jabber proširenje za Verse"
+    },
+    "sv": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "App med Jabber-tillägg för Verse"
+    },
+    "th": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "แอ็พสำหรับการเก็บส่วนขยาย Jabber สำหรับ Verse"
+    },
+    "tr": {
+      "Jabber-Verse_title": "Jabber-Verse",
+      "Jabber-Verse_description": "Verse için Jabber uzantılarını dahil etmek için uygulama"
+    }
+
+  },
+  "extensions": [{
+      "translations": {
+        "": {
+          "JabberBizcardChat-Verse_title": "Jabber for Verse BizCard",
+          "JabberBizcardChat-Verse_description": "Extension to display Jabber icon on Verse bizcard"
+        },
+        "en": {
+          "JabberBizcardChat-Verse_title": "Jabber for Verse BizCard",
+          "JabberBizcardChat-Verse_description": "Extension to display Jabber icon on Verse bizcard"
+        },
+        "ar": {
+          "JabberBizcardChat-Verse_title": "Jabber for Verse BizCard",
+          "JabberBizcardChat-Verse_description": "الامتداد لعرض شارة Jabber ببطاقة تعارف Verse"
+        },
+        "ca": {
+          "JabberBizcardChat-Verse_title": "Jabber per al Verse BizCard",
+          "JabberBizcardChat-Verse_description": "Extensió per mostrar la icona del Jabber a la targeta de presentació del Verse"
+        },
+        "zh": {
+          "JabberBizcardChat-Verse_title": "Jabber for Verse BizCard",
+          "JabberBizcardChat-Verse_description": "用于在 Verse 名片上显示 Jabber 图标的扩展"
+        },
+        "zh-tw": {
+          "JabberBizcardChat-Verse_title": "Verse 名片的 Jabber",
+          "JabberBizcardChat-Verse_description": "在 Verse 名片上顯示 Jabber 圖示的延伸規格"
+        },
+        "cs": {
+          "JabberBizcardChat-Verse_title": "Jabber pro vizitku Verse",
+          "JabberBizcardChat-Verse_description": "Rozšíření pro zobrazení ikony Jabber na vizitce produktu Verse"
+        },
+        "da": {
+          "JabberBizcardChat-Verse_title": "Jabber for Verse-visitkort",
+          "JabberBizcardChat-Verse_description": "Udvidelse til at vise Jabber-ikon på Verse-visitkort"
+        },
+        "de": {
+          "JabberBizcardChat-Verse_title": "Jabber für Verse BizCard",
+          "JabberBizcardChat-Verse_description": "Erweiterung zum Anzeigen des Jabber-Symbols auf Verse BizCard"
+        },
+        "el": {
+          "JabberBizcardChat-Verse_title": "Jabber για επαγγελματικές κάρτες Verse",
+          "JabberBizcardChat-Verse_description": "Εφαρμογή που επιτρέπει την εμφάνιση του εικονιδίου του Jabber στις επαγγελματικές κάρτες του Verse"
+        },
+        "es": {
+          "JabberBizcardChat-Verse_title": "Jabber para Verse BizCard",
+          "JabberBizcardChat-Verse_description": "Extensión para mostrar el icono de Jabber en la tarjeta de presentación de Verse"
+        },
+        "fi": {
+          "JabberBizcardChat-Verse_title": "Verse BizCard -sovelluksen Jabber-laajennus",
+          "JabberBizcardChat-Verse_description": "Laajennus, joka tuo Jabber-kuvakkeen näkyviin Verse BizCard -sovellukseen"
+        },
+        "fr": {
+          "JabberBizcardChat-Verse_title": "Jabber pour Verse BizCard",
+          "JabberBizcardChat-Verse_description": "Extension permettant d'afficher l'icône Jabber sur la carte de visite Verse"
+        },
+        "he": {
+          "JabberBizcardChat-Verse_title": "Jabber עבור כרטיס הביקור של Verse",
+          "JabberBizcardChat-Verse_description": "הרחבה להצגת איקון Jabber בכרטיס הביקור של Verse"
+        },
+        "hr": {
+          "JabberBizcardChat-Verse_title": "Jabber za Verse BizCard",
+          "JabberBizcardChat-Verse_description": "Proširenje za prikaz Jabber ikone na Verse posjetnici"
+        },
+        "hu": {
+          "JabberBizcardChat-Verse_title": "Jabber for Verse BizCard",
+          "JabberBizcardChat-Verse_description": "A Jabber ikont a Verse névjegykártyán megjelenítő bővítmény"
+        },
+        "it": {
+          "JabberBizcardChat-Verse_title": "Jabber per biglietto da visita Verse",
+          "JabberBizcardChat-Verse_description": "Estensione per visualizzare l'icona di Jabber nel biglietto da visita Verse"
+        },
+        "ja": {
+          "JabberBizcardChat-Verse_title": "Verse ビジネスカード用の Jabber",
+          "JabberBizcardChat-Verse_description": "Verse ビジネスカードに Jabber アイコンを表示するための拡張"
+        },
+        "ko": {
+          "JabberBizcardChat-Verse_title": "Verse BizCard용 Jabber",
+          "JabberBizcardChat-Verse_description": "Verse 비즈니스 카드에 Jabber 아이콘을 표시하기 위한 확장"
+        },
+        "nl": {
+          "JabberBizcardChat-Verse_title": "Jabber voor Verse BizCard",
+          "JabberBizcardChat-Verse_description": "Extensie voor weergave van Jabber-pictogram op Verse-visitekaartje"
+        },
+        "no": {
+          "JabberBizcardChat-Verse_title": "Jabber for Verse BizCard",
+          "JabberBizcardChat-Verse_description": "Utvidelser for å vise Jabber-ikon på visittkort i Verse"
+        },
+        "pl": {
+          "JabberBizcardChat-Verse_title": "Ikona Jabber na wizytówce w programie Verse",
+          "JabberBizcardChat-Verse_description": "Rozszerzenie do wyświetlania ikony Jabber na wizytówce programu Verse"
+        },
+        "pt": {
+          "JabberBizcardChat-Verse_title": "Jabber para cartão de visita do Verse",
+          "JabberBizcardChat-Verse_description": "Extensão para apresentar o ícone do Jabber no cartão de visita do Verse"
+        },
+        "pt-br": {
+          "JabberBizcardChat-Verse_title": "Jabber for Verse BizCard",
+          "JabberBizcardChat-Verse_description": "Extensão para exibir o ícone de Jabber no cartão de visita do Verse"
+        },
+        "ro": {
+          "JabberBizcardChat-Verse_title": "Jabber pentru cartea de vizită Verse",
+          "JabberBizcardChat-Verse_description": "Extensie pentru afişare pictogramă Jabber în cartea de vizită Verse"
+        },
+        "ru": {
+          "JabberBizcardChat-Verse_title": "Jabber для Verse BizCard",
+          "JabberBizcardChat-Verse_description": "Расширение для отображения значка Jabber в Verse bizcard"
+        },
+        "sk": {
+          "JabberBizcardChat-Verse_title": "Jabber pre firemnú vizitku Verse",
+          "JabberBizcardChat-Verse_description": "Rozšírenie na zobrazenie ikony Jabber na firemnej vizitke Verse"
+        },
+        "sl": {
+          "JabberBizcardChat-Verse_title": "Jabber za vizitko Verse",
+          "JabberBizcardChat-Verse_description": "Razširitev za prikaz ikone Jabber na vizitki Verse"
+        },
+        "sr": {
+          "JabberBizcardChat-Verse_title": "Jabber za Verse vizitkartu",
+          "JabberBizcardChat-Verse_description": "Proširenje za prikaz ikone Jabber na Verse vizitkarti"
+        },
+        "sv": {
+          "JabberBizcardChat-Verse_title": "Jabber for Verse BizCard",
+          "JabberBizcardChat-Verse_description": "Tillägg för visning av Jabber-ikon på Verse-visitkort"
+        },
+        "th": {
+          "JabberBizcardChat-Verse_title": "Jabber สำหรับ Verse BizCard",
+          "JabberBizcardChat-Verse_description": "ส่วนขยายเพื่อแสดงไอคอน Jabber บน Verse bizcard"
+        },
+        "tr": {
+          "JabberBizcardChat-Verse_title": "Verse Kartvizit için Jabber",
+          "JabberBizcardChat-Verse_description": "Verse kartvizit özelliğinde Jabber simgesini görüntülemek için uzantı"
+        }
+      },
+      "type": "com.ibm.appreg.ext.templatedLink",
+      "title": "%JabberBizcardChat-Verse_title",
+      "payload": {
+        "url": "",
+        "text": "Jabber",
+        "icon": "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDIwIDIwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQogIDxwYXRoIHN0eWxlPSJmaWxsOiAjRkZGIiBkPSJNMTAsMEM1LjYsMCwyLDMuNiwyLDhjMCw0LjEsMy4xLDcuNCw3LDcuOVYyMGw2LjgtNi41QzE3LjEsMTIuMSwxOCwxMC4xLDE4LDhDMTgsMy42LDE0LjQsMCwxMCwweiBNMTUsMTIuOSAJbC01LDQuN1YxNWMtMy45LDAtNy0zLjEtNy03czMuMS03LDctN3M3LDMuMSw3LDdDMTcsOS45LDE2LjIsMTEuNiwxNSwxMi45eiIvPg0KICA8Y2lyY2xlIHN0eWxlPSJmaWxsOiAjMzI1QzgwIiBjeD0iMTAiIGN5PSI4IiByPSI3Ii8+DQogIDxwb2x5Z29uIHN0eWxlPSJmaWxsOiAjMzI1QzgwIiBwb2ludHM9IjEwLDE0LjIgMTAsMTcuNiAxNSwxMi45ICIvPg0KPC9zdmc+",
+        "href": "xmpp://${!emails}",
+        "locator": "chat"
+      },
+      "object": "com.ibm.appreg.object.person",
+      "name": "Jabber BizCard Chat - Verse",
+      "ext_id": "com.cisco.jabber.v3.verse.bizcard.chat",
+      "description": "%JabberBizcardChat-Verse_description"
+    },
+    {
+      "translations": {
+        "": {
+          "HideConnectionsChatforJabber-Verse_title": "Hide Connections Chat in Verse",
+          "HideConnectionsChatforJabber-Verse_description": "Hides the Connections Chat UI elements in Verse"
+        },
+        "en": {
+          "HideConnectionsChatforJabber-Verse_title": "Hide Connections Chat in Verse",
+          "HideConnectionsChatforJabber-Verse_description": "Hides the Connections Chat UI elements in Verse"
+        },
+        "ar": {
+          "HideConnectionsChatforJabber-Verse_title": "اخفاء محادثة Connections في Verse",
+          "HideConnectionsChatforJabber-Verse_description": "يتم اخفاء عناصر واجهة تعامل محادثة Connections في Verse"
+        },
+        "ca": {
+          "HideConnectionsChatforJabber-Verse_title": "Ocultar el Xat del Connections al Verse",
+          "HideConnectionsChatforJabber-Verse_description": "Oculta els elements de la interfície d'usuari del Xat del Connections al Verse"
+        },
+        "zh": {
+          "HideConnectionsChatforJabber-Verse_title": "在 Verse 中隐藏 Connections Chat",
+          "HideConnectionsChatforJabber-Verse_description": "在 Verse 中隐藏 Connections Chat UI 元素"
+        },
+        "zh-tw": {
+          "HideConnectionsChatforJabber-Verse_title": "在 Verse 中隱藏 Connections Chat",
+          "HideConnectionsChatforJabber-Verse_description": "在 Verse 中隱藏 Connections Chat 使用者介面元素"
+        },
+        "cs": {
+          "HideConnectionsChatforJabber-Verse_title": "Skrýt konverzaci produktu Connections v produktu Verse",
+          "HideConnectionsChatforJabber-Verse_description": "Skryje prvky uživatelského rozhraní Konverzace produktu Connections v produktu Verse"
+        },
+        "da": {
+          "HideConnectionsChatforJabber-Verse_title": "Skjul Connections Chat i Verse",
+          "HideConnectionsChatforJabber-Verse_description": "Skjuler UI-elementerne til Connections Chat i Verse"
+        },
+        "de": {
+          "HideConnectionsChatforJabber-Verse_title": "Connections Chat in Verse ausblenden",
+          "HideConnectionsChatforJabber-Verse_description": "Blendet die Connections Chat-UI-Elemente in Verse aus"
+        },
+        "el": {
+          "HideConnectionsChatforJabber-Verse_title": "Απόκρυψη υπηρεσίας Connections Chat στο Verse",
+          "HideConnectionsChatforJabber-Verse_description": "Αποκρύπτει τα στοιχεία του περιβάλλοντος χρήστη της υπηρεσίας Connections Chat στο Verse"
+        },
+        "es": {
+          "HideConnectionsChatforJabber-Verse_title": "Ocultar Connections Chat en Verse",
+          "HideConnectionsChatforJabber-Verse_description": "Oculta los elementos de la interfaz de usuario de Connections Chat en Verse"
+        },
+        "fi": {
+          "HideConnectionsChatforJabber-Verse_title": "Piilota Connections Chat -sovellus Verse-ohjelmassa",
+          "HideConnectionsChatforJabber-Verse_description": "Piilottaa Connections Chat -sovelluksen käyttöliittymäobjektit Verse-ohjelmassa"
+        },
+        "fr": {
+          "HideConnectionsChatforJabber-Verse_title": "Masquer Connections Chat dans Verse",
+          "HideConnectionsChatforJabber-Verse_description": "Masque les éléments d'interface utilisateur Connections Chat dans Verse"
+        },
+        "he": {
+          "HideConnectionsChatforJabber-Verse_title": "הסתרת Connections Chat בתוך Verse",
+          "HideConnectionsChatforJabber-Verse_description": "הסתרת רכיבי ממשק המשתמש של Connections Chat בתוך Verse"
+        },
+        "hr": {
+          "HideConnectionsChatforJabber-Verse_title": "Sakrij Connections Chat u Verse",
+          "HideConnectionsChatforJabber-Verse_description": "Skriva Connections Chat elemente korisničkog sučelja u Verse"
+        },
+        "hu": {
+          "HideConnectionsChatforJabber-Verse_title": "Connections Chat elrejtése a Verse alkalmazásban ",
+          "HideConnectionsChatforJabber-Verse_description": "Elrejti a Connections Chat felhasználói felület elemeit a Verse alkalmazásban"
+        },
+        "it": {
+          "HideConnectionsChatforJabber-Verse_title": "Nascondi Connections Chat in Verse",
+          "HideConnectionsChatforJabber-Verse_description": "Nasconde gli elementi dell'interfaccia utente di Connections Chat in Verse"
+        },
+        "ja": {
+          "HideConnectionsChatforJabber-Verse_title": "Verse で Connections Chat を非表示にする",
+          "HideConnectionsChatforJabber-Verse_description": "Verse で Connections Chat UI エレメントを非表示にする"
+        },
+        "ko": {
+          "HideConnectionsChatforJabber-Verse_title": "Verse에서 Connections Chat 숨기기",
+          "HideConnectionsChatforJabber-Verse_description": "Verse에서 Connections Chat UI 요소를 숨깁니다."
+        },
+        "nl": {
+          "HideConnectionsChatforJabber-Verse_title": "Connections Chat verbergen in Verse",
+          "HideConnectionsChatforJabber-Verse_description": "Verbergt de UI-elementen van Connections Chat in Verse"
+        },
+        "no": {
+          "HideConnectionsChatforJabber-Verse_title": "Skjul Connections Chat i Verse",
+          "HideConnectionsChatforJabber-Verse_description": "Skjuler UI-elementene for Connections Chat i Verse"
+        },
+        "pl": {
+          "HideConnectionsChatforJabber-Verse_title": "Ukryj aplikację Connections Chat w programie Verse",
+          "HideConnectionsChatforJabber-Verse_description": "Ukrywa elementy interfejsu użytkownika aplikacji Connections Chat w programie Verse"
+        },
+        "pt": {
+          "HideConnectionsChatforJabber-Verse_title": "Ocultar o Connections Chat no Verse",
+          "HideConnectionsChatforJabber-Verse_description": "Oculta elementos da IU do Connections Chat no Verse"
+        },
+        "pt-br": {
+          "HideConnectionsChatforJabber-Verse_title": "Ocultar bate-papo do Connections no Verse",
+          "HideConnectionsChatforJabber-Verse_description": "Oculta os elementos da IU do bate-papo do Connections no Verse"
+        },
+        "ro": {
+          "HideConnectionsChatforJabber-Verse_title": "Ascundere Connections Chat în Verse",
+          "HideConnectionsChatforJabber-Verse_description": "Ascunde elementele de interfaţă utilizator (UI) Connections în Verse"
+        },
+        "ru": {
+          "HideConnectionsChatforJabber-Verse_title": "Скрыть чат Connections в Verse",
+          "HideConnectionsChatforJabber-Verse_description": "Скрывает элементы пользовательского интерфейса чата Connections в Verse"
+        },
+        "sk": {
+          "HideConnectionsChatforJabber-Verse_title": "Skryť Connections Chat vo Verse",
+          "HideConnectionsChatforJabber-Verse_description": "Skryje elementy UI Connections Chat vo Verse"
+        },
+        "sl": {
+          "HideConnectionsChatforJabber-Verse_title": "Skrij Connections Chat v Versu",
+          "HideConnectionsChatforJabber-Verse_description": "Skrije elemente uporabniškega vmesnika Connections Chat v Versu"
+        },
+        "sr": {
+          "HideConnectionsChatforJabber-Verse_title": "Sakrivanje Connections Chat u aplikaciji Verse",
+          "HideConnectionsChatforJabber-Verse_description": "Sakriva elemente korisničkog interfejsa Connections Chat u aplikaciji Verse"
+        },
+        "sv": {
+          "HideConnectionsChatforJabber-Verse_title": "Dölj Connections Chat i Verse",
+          "HideConnectionsChatforJabber-Verse_description": "Döljer Connections Chat-gränssnittselement i Verse"
+        },
+        "th": {
+          "HideConnectionsChatforJabber-Verse_title": "ซ่อน Connections Chat ใน Verse",
+          "HideConnectionsChatforJabber-Verse_description": "ซ่อนอิลิเมนต์ Connections Chat UI ใน Verse"
+        },
+        "tr": {
+          "HideConnectionsChatforJabber-Verse_title": "Verse'te Connections Sohbet Uygulamasını Gizle",
+          "HideConnectionsChatforJabber-Verse_description": "Verse'te Connections Sohbet kullanıcı arabirimi öğelerini gizler"
+        }
+      },
+      "type": "com.ibm.appreg.ext.disableSametime",
+      "title": "%HideConnectionsChatforJabber-Verse_title",
+      "payload": {
+        "url": ""
+      },
+      "name": "Hide Connections Chat for Jabber - Verse",
+      "ext_id": "com.ibm.verse.jabber.v3.action.disableSametime",
+      "description": "%HideConnectionsChatforJabber-Verse_description"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "app_id": "io.appspokes.gitlab.v3",
+  "description": "GitLab",
+  "name": "GitLab",
+  "services": [
+    "Communities"
+  ],
+  "state": "disabled",
+  "title": "GitLab",
+  "extensions": [
+    {
+      "description": "GitLab Contributors",
+      "ext_id": "io.appspokes.gitlab.v3.contributors",
+      "name": "GitLab Contributors",
+      "type": "community_widget",
+      "payload": {
+        "urls": {},
+        "defId": "GitLab Contributors",
+        "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+        "modes": "view",
+        "primaryWidget": "true",
+        "showInPalette": "true",
+        "uniqueInstance": "false",
+        "itemSet": [
+          {
+            "name": "width",
+            "value": "100%"
+          },
+          {
+            "name": "height",
+            "value": "600px"
+          },
+          {
+            "name": "url",
+            "value": "https://gitlab-dev.appspokes.net/stats"
+          }
+        ],
+        "url": "https://apps.collabservintegration.com/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+      }
+    },
+    {
+      "description": "GitLab Commits",
+      "ext_id": "io.appspokes.gitlab.v3.commits",
+      "name": "GitLab Commits",
+      "type": "community_widget",
+      "payload": {
+        "urls": {},
+        "defId": "GitLab Commits",
+        "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+        "modes": "view",
+        "primaryWidget": "true",
+        "showInPalette": "true",
+        "itemSet": [
+          {
+            "name": "height",
+            "value": "600px"
+          },
+          {
+            "name": "width",
+            "value": "100%"
+          },
+          {
+            "name": "url",
+            "value": "https://gitlab-dev.appspokes.net/commits"
+          }
+        ],
+        "uniqueInstance": "false",
+        "url": "https://apps.collabservintegration.com/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+      }
+    },
+    {
+      "description": "GitLab Issues",
+      "ext_id": "io.appspokes.gitlab.v3.issues",
+      "name": "GitLab Issues",
+      "type": "community_widget"
+      "payload": {
+        "urls": {},
+        "defId": "GitLab Issues",
+        "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+        "modes": "view",
+        "primaryWidget": "true",
+        "showInPalette": "true",
+        "uniqueInstance": "false",
+        "itemSet": [
+          {
+            "name": "url",
+            "value": "https://gitlab-dev.appspokes.net/issues"
+          },
+          {
+            "name": "height",
+            "value": "600px"
+          },
+          {
+            "name": "width",
+            "value": "100%"
+          }
+        ],
+        "url": "https://apps.collabservintegration.com/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+      }
+    },
+    {
+      "name": "GitLab Embedded Experience",
+      "description": "GitLab Embedded Experience",
+      "enabled": "true",
+      "ext_id": "io.appspokes.gitlab.v3.embedded",
+      "type": "gadget",
+      "payload": {
+        "extends": "as_event",
+        "icon": "https://gitlab-dev.appspokes.net/assets/images/gitlab.png",
+        "mime_type": "",
+        "text": "GitLab Embedded Experience",
+        "url": "https://gitlab-dev.appspokes.net/stream/experience/render"
+      }
+    }
+  ]
+}

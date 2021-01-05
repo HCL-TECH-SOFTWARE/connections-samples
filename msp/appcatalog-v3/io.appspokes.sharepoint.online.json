@@ -1,0 +1,113 @@
+{
+	"app_id": "io.appspokes.sharepoint.online",
+	"name": "SharePoint",
+	"title": "Salesforce",
+	"description": "Salesforce",
+	"services": [
+		"Communities"
+	],
+	"state": "disabled",
+	"extensions": [
+		{
+			"ext_id": "io.appspokes.sharepoint.as_event",
+			"name": "SharePoint Online Embedded Experience",
+			"title": "SharePoint Online Embedded Experience",
+			"description": "SharePoint Online Embedded Experience",
+			"type": "gadget",
+			"payload": {
+				"icon": "https://sharepoint-online.appspokes.net/assets/images/sharepoint.png",
+				"url": "https://sharepoint-online.appspokes.net/stream/experience/render"
+			}
+		},
+		{
+			"ext_id": "io.appspokes.sharepoint.list",
+			"name": "SharePoint Online List",
+			"title": "SharePoint Online List",
+			"description": "SharePoint Online List",
+			"type": "community_widget",
+			"payload": {
+				"defId": "SharePoint Online List",
+				"themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+				"modes": "view",
+				"primaryWidget": "true",
+				"showInPalette": "true",
+				"uniqueInstance": "false",
+				"itemSet": [
+					{
+						"name": "height",
+						"value": "600px"
+					},
+					{
+						"name": "width",
+						"value": "100%"
+					},
+					{
+						"name": "url",
+						"value": "https://sharepoint-online.appspokes.net/communityapp/lists/index"
+					}
+				],
+				"url": "/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+			}
+		},
+		{
+			"ext_id": "io.appspokes.sharepoint.file.list",
+			"name": "SharePoint Online File List",
+			"title": "SharePoint Online File List",
+			"description": "SharePoint Online File List",
+			"type": "community_widget",
+			"payload": {
+				"defId": "SharePoint Online File List",
+				"themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+				"modes": "view",
+				"primaryWidget": "true",
+				"showInPalette": "true",
+				"itemSet": [
+					{
+						"name": "width",
+						"value": "100%"
+					},
+					{
+						"name": "height",
+						"value": "600px"
+					},
+					{
+						"name": "url",
+						"value": "https://sharepoint-online.appspokes.net/communityapp/filelist/index"
+					}
+				],
+				"uniqueInstance": "false",
+				"url": "/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+			}
+		},
+		{
+			"ext_id": "io.appspokes.sharepoint.file.search",
+			"name": "SharePoint Online File Search",
+			"title": "SharePoint Online File Search",
+			"description": "SharePoint Online File Search",
+			"type": "community_widget",
+			"payload": {
+				"defId": "SharePoint Online File Search",
+				"themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+				"modes": "view",
+				"primaryWidget": "true",
+				"showInPalette": "true",
+				"uniqueInstance": "false",
+				"itemSet": [
+					{
+						"name": "url",
+						"value": "https://sharepoint-online.appspokes.net/communityapp/search/index"
+					},
+					{
+						"name": "height",
+						"value": "600px"
+					},
+					{
+						"name": "width",
+						"value": "100%"
+					}
+				],
+				"url": "/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+			}
+		}
+	]
+}

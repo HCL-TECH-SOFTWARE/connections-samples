@@ -1,0 +1,85 @@
+{
+  "app_id": "io.appspokes.wordpress",
+  "name": "WordPress",
+  "title": "WordPress",
+  "description": "WordPress",
+  "services": [
+    "Communities"
+  ],
+  "state": "disabled",
+  "extensions": [
+    {
+      "ext_id": "io.appspokes.wordpress.as_event",
+      "name": "WordPress Embedded Experience",
+      "description": "WordPress Embedded Experience",
+      "type": "gadget",
+      "payload": {
+        "extends": "as_event",
+        "mime_type": "",
+        "icon": "https://wordpress.appspokes.net/assets/images/wordpress.png",
+        "description": "WordPress Embedded Experience",
+        "text": "WordPress Embedded Experience",
+        "enabled": "true",
+        "url": "https://wordpress.appspokes.net/stream/experience/render"
+      }
+    },
+    {
+      "ext_id": "io.appspokes.wordpress.comments",
+      "name": "WordPress Comments",
+      "description": "WordPress Comments",
+      "type": "community_widget",
+      "payload": {
+        "defId": "WordPress Comments",
+        "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+        "modes": "view",
+        "primaryWidget": "true",
+        "showInPalette": "true",
+        "itemSet": [
+          {
+            "name": "url",
+            "value": "https://community_widget/comments"
+          },
+          {
+            "name": "width",
+            "value": "100%"
+          },
+          {
+            "name": "height",
+            "value": "600px"
+          }
+        ],
+        "uniqueInstance": "false",
+        "url": "/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+      }
+    },
+    {
+      "ext_id": "io.appspokes.wordpress.posts",
+      "name": "WordPress Posts",
+      "description": "WordPress Posts",
+      "type": "community_widget",
+      "payload": {
+        "defId": "WordPress Posts",
+        "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+        "modes": "view",
+        "primaryWidget": "true",
+        "showInPalette": "true",
+        "itemSet": [
+          {
+            "name": "width",
+            "value": "100%"
+          },
+          {
+            "name": "url",
+            "value": "https://wordpress.appspokes.net/posts"
+          },
+          {
+            "name": "height",
+            "value": "600px"
+          }
+        ],
+        "uniqueInstance": "false",
+        "url": "/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+      }
+    }
+  ]
+}

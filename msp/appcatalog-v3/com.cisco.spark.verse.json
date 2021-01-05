@@ -1,0 +1,429 @@
+{
+  "app_id": "com.cisco.spark.verse.v3",
+  "description": "%Spark-Verse_description",
+  "entitlement": "isv_spark",
+  "icon": "",
+  "name": "Spark-Verse",
+  "services": [
+    "TopNavigationBar", "Profiles"
+  ],
+  "state": "disabled",
+  "title": "%Spark-Verse_title",
+  "translations": {
+    "": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "App for containing Spark extensions for Verse"
+    },
+    "en": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "App for containing Spark extensions for Verse"
+    },
+    "ar": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "تطبيق لاحتواء امتدادات Spark الى Verse"
+    },
+    "ca": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "Aplicació que conté les extensions del Spark per al Verse"
+    },
+    "zh": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "将包含 Verse 的 Spark 扩展的应用程序"
+    },
+    "zh-tw": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "包含 Verse 之 Spark 延伸規格的應用程式"
+    },
+    "cs": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "Aplikace pro obsažení rozšíření Spark pro produkt Verse"
+    },
+    "da": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "App til opbevaring af Spark-udvidelser til Verse"
+    },
+    "de": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "App für enthaltende Spark-Erweiterungen für Verse"
+    },
+    "el": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "Εφαρμογή που περιέχει τις επεκτάσεις του Spark για το Verse."
+    },
+    "es": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "Aplicación que contiene las extensiones de Spark para Verse"
+    },
+    "fi": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "Sovellus, joka sisältää Verse-ohjelman Spark-laajennukset"
+    },
+    "fr": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "Application destinée à contenir les extensions Spark pour Verse"
+    },
+    "he": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "יישומון המכיל את הרחבות Spark עבור Verse"
+    },
+    "hr": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "Aplikacija koja sadrži Spark proširenja za Verse"
+    },
+    "hu": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "A Verse alkalmazáshoz Spark bővítményeket tartalmazó alkalmazás "
+    },
+    "it": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "App per contenere le estensioni Spark per Verse"
+    },
+    "ja": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "Verse 用の Spark 拡張を含めるためのアプリ"
+    },
+    "ko": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "Verse용 Spark 확장을 포함하기 위한 앱"
+    },
+    "nl": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "Container-app voor Spark-extensies voor Verse"
+    },
+    "no": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "App for Spark-utvidelser for Verse"
+    },
+    "pl": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "Apka zawierająca rozszerzenia aplikacji Spark dla programu Verse"
+    },
+    "pt": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "Aplicação para conter extensões do Spark para o Verse"
+    },
+    "pt-br": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "Aplicativo que contém extensões de Spark para Verse"
+    },
+    "ro": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "Aplicaţie pentru conţinerea extensiilor Spark pentru Verse"
+    },
+    "ru": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "Приложение для расширений Spark для Verse"
+    },
+    "sk": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "Appka na obsiahnutie rozšírení Spark pre Verse"
+    },
+    "sl": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "Aplikacija za vsebovanje razširitev Spark za Verse"
+    },
+    "sr": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "Aplikacija koja sadrži Spark proširenje za Verse"
+    },
+    "sv": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "App med Spark-tillägg för Verse"
+    },
+    "th": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "แอ็พสำหรับการเก็บส่วนขยาย Spark สำหรับ Verse"
+    },
+    "tr": {
+      "Spark-Verse_title": "Spark-Verse",
+      "Spark-Verse_description": "Verse için Spark uzantılarını dahil etmek için uygulama"
+    }
+  },
+  "extensions": [{
+      "translations": {
+        "": {
+          "SparkBizcardChat-Verse_title": "Spark for Verse BizCard",
+          "SparkBizcardChat-Verse_description": "Extension to display Spark icon on Verse bizcard"
+        },
+        "en": {
+          "SparkBizcardChat-Verse_title": "Spark for Verse BizCard",
+          "SparkBizcardChat-Verse_description": "Extension to display Spark icon on Verse bizcard"
+        },
+        "ar": {
+          "SparkBizcardChat-Verse_title": "Spark for Verse BizCard",
+          "SparkBizcardChat-Verse_description": "الامتداد لعرض شارة Spark ببطاقة تعارف Verse"
+        },
+        "ca": {
+          "SparkBizcardChat-Verse_title": "Spark per al Verse BizCard",
+          "SparkBizcardChat-Verse_description": "Extensió per mostrar la icona del Spark a la targeta de presentació del Verse"
+        },
+        "zh": {
+          "SparkBizcardChat-Verse_title": "Spark for Verse BizCard",
+          "SparkBizcardChat-Verse_description": "用于在 Verse 名片上显示 Spark 图标的扩展"
+        },
+        "zh-tw": {
+          "SparkBizcardChat-Verse_title": "Verse 名片的 Spark",
+          "SparkBizcardChat-Verse_description": "在 Verse 名片上顯示 Spark 圖示的延伸規格"
+        },
+        "cs": {
+          "SparkBizcardChat-Verse_title": "Spark pro vizitku Verse",
+          "SparkBizcardChat-Verse_description": "Rozšíření pro zobrazení ikony Spark na vizitce produktu Verse"
+        },
+        "da": {
+          "SparkBizcardChat-Verse_title": "Spark for Verse-visitkort",
+          "SparkBizcardChat-Verse_description": "Udvidelse til at vise Spark-ikon på Verse-visitkort"
+        },
+        "de": {
+          "SparkBizcardChat-Verse_title": "Spark für Verse BizCard",
+          "SparkBizcardChat-Verse_description": "Erweiterung zum Anzeigen des Spark-Symbols auf Verse BizCard"
+        },
+        "el": {
+          "SparkBizcardChat-Verse_title": "Spark για επαγγελματικές κάρτες Verse",
+          "SparkBizcardChat-Verse_description": "Εφαρμογή που επιτρέπει την εμφάνιση του εικονιδίου του Spark στις επαγγελματικές κάρτες του Verse."
+        },
+        "es": {
+          "SparkBizcardChat-Verse_title": "Spark para Verse BizCard",
+          "SparkBizcardChat-Verse_description": "Extensión para mostrar el icono de Spark en la tarjeta de presentación de Verse"
+        },
+        "fi": {
+          "SparkBizcardChat-Verse_title": "Verse BizCard -sovelluksen Spark-kuvake",
+          "SparkBizcardChat-Verse_description": "Laajennus, joka tuo Spark-kuvakkeen näkyviin Verse BizCard -sovellukseen"
+        },
+        "fr": {
+          "SparkBizcardChat-Verse_title": "Spark pour Verse BizCard",
+          "SparkBizcardChat-Verse_description": "Extension permettant d'afficher l'icône Spark sur la carte de visite Verse"
+        },
+        "he": {
+          "SparkBizcardChat-Verse_title": "Spark עבור כרטיס הביקור של Verse",
+          "SparkBizcardChat-Verse_description": "הרחבה להצגת איקון Spark בכרטיס הביקור של Verse"
+        },
+        "hr": {
+          "SparkBizcardChat-Verse_title": "Spark za Verse BizCard",
+          "SparkBizcardChat-Verse_description": "Proširenje za prikaz Spark ikone na Verse posjetnici"
+        },
+        "hu": {
+          "SparkBizcardChat-Verse_title": "Spark for Verse BizCard",
+          "SparkBizcardChat-Verse_description": "A Spark ikont a Verse névjegykártyán megjelenítő bővítmény"
+        },
+        "it": {
+          "SparkBizcardChat-Verse_title": "Spark per biglietto da visita Verse",
+          "SparkBizcardChat-Verse_description": "Estensione per visualizzare l'icona di Spark nel biglietto da visita Verse"
+        },
+        "ja": {
+          "SparkBizcardChat-Verse_title": "Verse ビジネスカード用の Spark",
+          "SparkBizcardChat-Verse_description": "Verse ビジネスカードに Spark アイコンを表示するための拡張"
+        },
+        "ko": {
+          "SparkBizcardChat-Verse_title": "Verse BizCard용 Spark",
+          "SparkBizcardChat-Verse_description": "Verse 비즈니스 카드에 Spark 아이콘을 표시하기 위한 확장"
+        },
+        "nl": {
+          "SparkBizcardChat-Verse_title": "Spark voor Verse BizCard",
+          "SparkBizcardChat-Verse_description": "Extensie voor weergave van Spark-pictogram op Verse-visitekaartje"
+        },
+        "no": {
+          "SparkBizcardChat-Verse_title": "Spark for Verse BizCard",
+          "SparkBizcardChat-Verse_description": "Utvidelser for å vise Spark-ikon på visittkort i Verse"
+        },
+        "pl": {
+          "SparkBizcardChat-Verse_title": "Ikona Spark na wizytówce w programie Verse",
+          "SparkBizcardChat-Verse_description": "Rozszerzenie do wyświetlania ikony Spark na wizytówce programu Verse"
+        },
+        "pt": {
+          "SparkBizcardChat-Verse_title": "Spark para cartão de visita do Verse",
+          "SparkBizcardChat-Verse_description": "Extensão para apresentar o ícone do Spark no cartão de visita do Verse"
+        },
+        "pt-br": {
+          "SparkBizcardChat-Verse_title": "Spark for Verse BizCard",
+          "SparkBizcardChat-Verse_description": "Extensão para exibir o ícone de Spark no cartão de visita do Verse"
+        },
+        "ro": {
+          "SparkBizcardChat-Verse_title": "Spark pentru cartea de vizită Verse",
+          "SparkBizcardChat-Verse_description": "Extensie pentru afişare pictogramă Spark în cartea de vizită Verse"
+        },
+        "ru": {
+          "SparkBizcardChat-Verse_title": "Spark для Verse BizCard",
+          "SparkBizcardChat-Verse_description": "Расширение для отображения значка Spark в Verse bizcard"
+        },
+        "sk": {
+          "SparkBizcardChat-Verse_title": "Spark pre firemnú vizitku Verse",
+          "SparkBizcardChat-Verse_description": "Rozšírenie na zobrazenie ikony Spark na firemnej vizitke Verse"
+        },
+        "sl": {
+          "SparkBizcardChat-Verse_title": "Spark za vizitko Verse",
+          "SparkBizcardChat-Verse_description": "Razširitev za prikaz ikone Spark na vizitki Verse"
+        },
+        "sr": {
+          "SparkBizcardChat-Verse_title": "Spark za Verse vizitkartu",
+          "SparkBizcardChat-Verse_description": "Proširenje za prikaz ikone Spark na Verse vizitkarti"
+        },
+        "sv": {
+          "SparkBizcardChat-Verse_title": "Spark for Verse BizCard",
+          "SparkBizcardChat-Verse_description": "Tillägg för visning av Spark-ikon på Verse-visitkort"
+        },
+        "th": {
+          "SparkBizcardChat-Verse_title": "Spark สำหรับ Verse BizCard",
+          "SparkBizcardChat-Verse_description": "ส่วนขยายเพื่อแสดงไอคอน Spark บน Verse bizcard"
+        },
+        "tr": {
+          "SparkBizcardChat-Verse_title": "Verse Kartvizit için Spark",
+          "SparkBizcardChat-Verse_description": "Verse kartvizit özelliğinde Spark simgesini görüntülemek için uzantı"
+        }
+      },
+      "type": "com.ibm.appreg.ext.templatedLink",
+      "title": "%SparkBizcardChat-Verse_title",
+      "payload": {
+        "url": "",
+        "text": "Chat",
+        "icon": "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDIwIDIwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQogIDxwYXRoIHN0eWxlPSJmaWxsOiAjRkZGIiBkPSJNMTAsMEM1LjYsMCwyLDMuNiwyLDhjMCw0LjEsMy4xLDcuNCw3LDcuOVYyMGw2LjgtNi41QzE3LjEsMTIuMSwxOCwxMC4xLDE4LDhDMTgsMy42LDE0LjQsMCwxMCwweiBNMTUsMTIuOSAJbC01LDQuN1YxNWMtMy45LDAtNy0zLjEtNy03czMuMS03LDctN3M3LDMuMSw3LDdDMTcsOS45LDE2LjIsMTEuNiwxNSwxMi45eiIvPg0KICA8Y2lyY2xlIHN0eWxlPSJmaWxsOiAjMzI1QzgwIiBjeD0iMTAiIGN5PSI4IiByPSI3Ii8+DQogIDxwb2x5Z29uIHN0eWxlPSJmaWxsOiAjMzI1QzgwIiBwb2ludHM9IjEwLDE0LjIgMTAsMTcuNiAxNSwxMi45ICIvPg0KPC9zdmc+",
+        "href": "${!bssUrl}/integrations/sparkDM?id=${emails}",
+        "locator": "chat",
+        "target": "SparkChat"
+      },
+      "object": "com.ibm.appreg.object.person",
+      "name": "Spark BizCard Chat - Verse",
+      "ext_id": "com.cisco.spark.verse.v3.bizcard.chat",
+      "description": "%SparkBizcardChat-Verse_description"
+    },
+    {
+      "translations": {
+        "": {
+          "HideConnectionsChatforSpark-Verse_title": "Hide Connections Chat in Verse",
+          "HideConnectionsChatforSpark-Verse_description": "Hides the Connections Chat UI elements in Verse"
+        },
+        "en": {
+          "HideConnectionsChatforSpark-Verse_title": "Hide Connections Chat in Verse",
+          "HideConnectionsChatforSpark-Verse_description": "Hides the Connections Chat UI elements in Verse"
+        },
+        "ar": {
+          "HideConnectionsChatforSpark-Verse_title": "اخفاء محادثة Connections في Verse",
+          "HideConnectionsChatforSpark-Verse_description": "يتم اخفاء عناصر واجهة تعامل محادثة Connections في Verse"
+        },
+        "ca": {
+          "HideConnectionsChatforSpark-Verse_title": "Ocultar el Xat del Connections al Verse",
+          "HideConnectionsChatforSpark-Verse_description": "Oculta els elements de la interfície d'usuari del Xat del Connections al Verse"
+        },
+        "zh": {
+          "HideConnectionsChatforSpark-Verse_title": "在 Verse 中隐藏 Connections Chat",
+          "HideConnectionsChatforSpark-Verse_description": "在 Verse 中隐藏 Connections Chat UI 元素"
+        },
+        "zh-tw": {
+          "HideConnectionsChatforSpark-Verse_title": "在 Verse 中隱藏 Connections Chat",
+          "HideConnectionsChatforSpark-Verse_description": "在 Verse 中隱藏 Connections Chat 使用者介面元素"
+        },
+        "cs": {
+          "HideConnectionsChatforSpark-Verse_title": "Skrýt konverzaci produktu Connections v produktu Verse",
+          "HideConnectionsChatforSpark-Verse_description": "Skryje prvky uživatelského rozhraní Konverzace produktu Connections v produktu Verse."
+        },
+        "da": {
+          "HideConnectionsChatforSpark-Verse_title": "Skjul Connections Chat i Verse",
+          "HideConnectionsChatforSpark-Verse_description": "Skjuler UI-elementerne til Connections Chat i Verse"
+        },
+        "de": {
+          "HideConnectionsChatforSpark-Verse_title": "Connections Chat in Verse ausblenden",
+          "HideConnectionsChatforSpark-Verse_description": "Blendet die Connections Chat-UI-Elemente in Verse aus"
+        },
+        "el": {
+          "HideConnectionsChatforSpark-Verse_title": "Απόκρυψη υπηρεσίας Connections Chat στο Verse",
+          "HideConnectionsChatforSpark-Verse_description": "Αποκρύπτει τα στοιχεία του περιβάλλοντος χρήστη της υπηρεσίας Connections Chat στο Verse."
+        },
+        "es": {
+          "HideConnectionsChatforSpark-Verse_title": "Ocultar Connections Chat en Verse",
+          "HideConnectionsChatforSpark-Verse_description": "Oculta los elementos de la interfaz de usuario de Connections Chat en Verse"
+        },
+        "fi": {
+          "HideConnectionsChatforSpark-Verse_title": "Piilota Connections Chat -sovellus Verse-ohjelmassa",
+          "HideConnectionsChatforSpark-Verse_description": "Piilottaa Connections Chat -sovelluksen käyttöliittymäobjektit Verse-ohjelmassa"
+        },
+        "fr": {
+          "HideConnectionsChatforSpark-Verse_title": "Masquer Connections Chat dans Verse",
+          "HideConnectionsChatforSpark-Verse_description": "Masque les éléments d'interface utilisateur Connections Chat dans Verse"
+        },
+        "he": {
+          "HideConnectionsChatforSpark-Verse_title": "הסתרת Connections Chat בתוך Verse",
+          "HideConnectionsChatforSpark-Verse_description": "הסתרת רכיבי ממשק המשתמש של Connections Chat בתוך Verse"
+        },
+        "hr": {
+          "HideConnectionsChatforSpark-Verse_title": "Sakrij Connections Chat u Verse",
+          "HideConnectionsChatforSpark-Verse_description": "Skriva Connections Chat elemente korisničkog sučelja u Verse"
+        },
+        "hu": {
+          "HideConnectionsChatforSpark-Verse_title": "Connections Chat elrejtése a Verse alkalmazásban ",
+          "HideConnectionsChatforSpark-Verse_description": "Elrejti a Connections Chat felhasználói felület elemeit a Verse alkalmazásban"
+        },
+        "it": {
+          "HideConnectionsChatforSpark-Verse_title": "Nascondi Connections Chat in Verse",
+          "HideConnectionsChatforSpark-Verse_description": "Nasconde gli elementi dell'interfaccia utente di Connections Chat in Verse"
+        },
+        "ja": {
+          "HideConnectionsChatforSpark-Verse_title": "Verse で Connections Chat を非表示にする",
+          "HideConnectionsChatforSpark-Verse_description": "Verse で Connections Chat UI エレメントを非表示にする"
+        },
+        "ko": {
+          "HideConnectionsChatforSpark-Verse_title": "Verse에서 Connections Chat 숨기기",
+          "HideConnectionsChatforSpark-Verse_description": "Verse에서 Connections Chat UI 요소를 숨깁니다."
+        },
+        "nl": {
+          "HideConnectionsChatforSpark-Verse_title": "Connections Chat verbergen in Verse",
+          "HideConnectionsChatforSpark-Verse_description": "Verbergt de UI-elementen van Connections Chat in Verse"
+        },
+        "no": {
+          "HideConnectionsChatforSpark-Verse_title": "Skjul Connections Chat i Verse",
+          "HideConnectionsChatforSpark-Verse_description": "Skjuler UI-elementene for Connections Chat i Verse"
+        },
+        "pl": {
+          "HideConnectionsChatforSpark-Verse_title": "Ukryj aplikację Connections Chat w programie Verse",
+          "HideConnectionsChatforSpark-Verse_description": "Ukrywa elementy interfejsu użytkownika aplikacji Connections Chat w programie Verse"
+        },
+        "pt": {
+          "HideConnectionsChatforSpark-Verse_title": "Ocultar o Connections Chat no Verse",
+          "HideConnectionsChatforSpark-Verse_description": "Oculta elementos da IU do Connections Chat no Verse"
+        },
+        "pt-br": {
+          "HideConnectionsChatforSpark-Verse_title": "Ocultar bate-papo do Connections no Verse",
+          "HideConnectionsChatforSpark-Verse_description": "Oculta os elementos da IU do bate-papo do Connections no Verse"
+        },
+        "ro": {
+          "HideConnectionsChatforSpark-Verse_title": "Ascundere Connections Chat în Verse",
+          "HideConnectionsChatforSpark-Verse_description": "Ascunde elementele de interfaţă utilizator (UI) Connections în Verse"
+        },
+        "ru": {
+          "HideConnectionsChatforSpark-Verse_title": "Скрыть чат Connections в Verse",
+          "HideConnectionsChatforSpark-Verse_description": "Скрывает элементы пользовательского интерфейса чата Connections в Verse"
+        },
+        "sk": {
+          "HideConnectionsChatforSpark-Verse_title": "Skryť Connections Chat vo Verse",
+          "HideConnectionsChatforSpark-Verse_description": "Skryje elementy UI Connections Chat vo Verse"
+        },
+        "sl": {
+          "HideConnectionsChatforSpark-Verse_title": "Skrij Connections Chat v Versu",
+          "HideConnectionsChatforSpark-Verse_description": "Skrije elemente uporabniškega vmesnika Connections Chat v Versu"
+        },
+        "sr": {
+          "HideConnectionsChatforSpark-Verse_title": "Sakrivanje Connections Chat u aplikaciji Verse",
+          "HideConnectionsChatforSpark-Verse_description": "Sakriva elemente korisničkog interfejsa Connections Chat u aplikaciji Verse"
+        },
+        "sv": {
+          "HideConnectionsChatforSpark-Verse_title": "Dölj Connections Chat i Verse",
+          "HideConnectionsChatforSpark-Verse_description": "Döljer Connections Chat-gränssnittselement i Verse"
+        },
+        "th": {
+          "HideConnectionsChatforSpark-Verse_title": "ซ่อน Connections Chat ใน Verse",
+          "HideConnectionsChatforSpark-Verse_description": "ซ่อนอิลิเมนต์ Connections Chat UI ใน Verse"
+        },
+        "tr": {
+          "HideConnectionsChatforSpark-Verse_title": "Verse'te Connections Sohbet Uygulamasını Gizle",
+          "HideConnectionsChatforSpark-Verse_description": "Verse'te Connections Sohbet UI öğelerini gizler"
+        }
+      },
+      "type": "com.ibm.appreg.ext.disableSametime",
+      "title": "%HideConnectionsChatforSpark-Verse_title",
+      "payload": {
+        "url": ""
+      },
+      "name": "Hide Connections Chat for Spark - Verse",
+      "ext_id": "com.ibm.verse.spark.action.disableSametime",
+      "description": "%HideConnectionsChatforSpark-Verse_description"
+    }
+  ]
+}

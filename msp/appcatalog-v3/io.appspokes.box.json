@@ -1,0 +1,116 @@
+{
+  "app_id": "io.appspokes.box.v3",
+  "description": "Box",
+  "name": "Box",
+  "services": [
+    "Communities"
+  ],
+  "state": "disabled",
+  "title": "Box",
+  "extensions": [
+    {
+      "description": "Box List",
+      "ext_id": "io.appspokes.box.v3.list",
+      "name": "Box List",
+      "type": "community_widget",
+      "payload": {
+        "urls": {},
+        "defId": "Box List",
+        "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+        "modes": "view",
+        "primaryWidget": "true",
+        "showInPalette": "true",
+        "itemSet": [
+          {
+            "name": "url",
+            "value": "https://box-dev.appspokes.net/communityapp/filelist/index"
+          },
+          {
+            "name": "height",
+            "value": "600px"
+          },
+          {
+            "name": "width",
+            "value": "100%"
+          }
+        ],
+        "uniqueInstance": "false",
+        "url": "https://apps.na.collabserv.com/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+      }
+    },
+    {
+      "description": "Box Favorites",
+      "ext_id": "io.appspokes.box.v3.favorites",
+      "name": "Box Favorites",
+      "type": "community_widget",
+      "payload": {
+        "urls": {},
+        "defId": "Box Favorites",
+        "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+        "modes": "view",
+        "primaryWidget": "true",
+        "showInPalette": "true",
+        "uniqueInstance": "false",
+        "itemSet": [
+          {
+            "name": "url",
+            "value": "https://box-dev.appspokes.net/communityapp/favorites/index"
+          },
+          {
+            "name": "width",
+            "value": "100%"
+          },
+          {
+            "name": "height",
+            "value": "600px"
+          }
+        ],
+        "url": "https://apps.na.collabserv.com/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+      }
+    },
+    {
+      "ext_id": "io.appspokes.box.v3.search",
+      "name": "Box Search",
+      "description": "Box Search",
+      "type": "community_widget",
+      "payload": {
+        "urls": {},
+        "defId": "Box Search",
+        "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+        "modes": "view",
+        "primaryWidget": "true",
+        "showInPalette": "true",
+        "uniqueInstance": "false",
+        "itemSet": [
+          {
+            "name": "height",
+            "value": "600px"
+          },
+          {
+            "name": "url",
+            "value": "https://box-dev.appspokes.net/communityapp/search/index"
+          },
+          {
+            "name": "width",
+            "value": "100%"
+          }
+        ],
+        "url": "https://apps.na.collabserv.com/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+      }
+    },
+    {
+      "name": "Box Embedded Experience",
+      "description": "Box Embedded Experience",
+      "ext_id": "io.appspokes.box.v3.embedded",
+      "type": "gadget",
+      "payload": {
+        "extends": "as_event",
+        "icon": "https://box-dev.appspokes.net/assets/images/box.png",
+        "mime_type": "",
+        "name": "Box Embedded Experience",
+        "text": "Box Embedded Experience",
+        "url": "https://box-dev.appspokes.net/stream/experience/render"
+      }
+    }
+  ]
+}

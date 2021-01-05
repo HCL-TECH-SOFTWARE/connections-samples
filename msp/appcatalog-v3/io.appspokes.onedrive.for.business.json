@@ -1,0 +1,72 @@
+{
+    "app_id": "io.appspokes.onedrive.for.business",
+    "name": "OneDrive for Business",
+    "title": "OneDrive for Business",
+    "description": "OneDrive for Business",
+    "services": [
+        "Communities"
+    ],
+    "state": "disabled",
+    "extensions": [
+        {
+            "ext_id": "io.appspokes.onedrive.list",
+            "name": "OneDrive for Business File List",
+            "title": "OneDrive for Business File List",
+            "description": "OneDrive for Business File List",
+            "type": "community_widget",
+            "payload": {
+			    "defId": "OneDrive for Business File List",
+			    "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+			    "modes": "view",
+			    "primaryWidget": "true",
+			    "showInPalette": "true",
+			    "itemSet": [
+			      {
+			        "name": "url",
+			        "value": "https://onedrive-for-business.appspokes.net/communityapp/filelist/index"
+			      },
+			      {
+			        "name": "width",
+			        "value": "100%"
+			      },
+			      {
+			        "name": "height",
+			        "value": "600px"
+			      }
+			    ],
+			    "uniqueInstance": "false",
+			    "url": "/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+            }
+        },
+        {
+            "ext_id": "io.appspokes.onedrive.search",
+            "name": "OneDrive for Business File Search",
+            "title": "OneDrive for Business File Search",
+            "description": "OneDrive for Business File Search",
+            "type": "community_widget",
+            "payload": {
+			    "defId": "OneDrive for Business File Search",
+			    "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+			    "modes": "view",
+			    "primaryWidget": "true",
+			    "showInPalette": "true",
+			    "itemSet": [
+			      {
+			        "name": "url",
+			        "value": "https://onedrive-for-business.appspokes.net/communityapp/search/index"
+			      },
+			      {
+			        "name": "height",
+			        "value": "600px"
+			      },
+			      {
+			        "name": "width",
+			        "value": "100%"
+			      }
+			    ],
+			    "uniqueInstance": "false",
+			    "url": "/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+            }
+        }
+    ]
+}

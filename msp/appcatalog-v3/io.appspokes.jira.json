@@ -1,0 +1,148 @@
+[
+  {
+    "app_id": "io.appspokes.jira.v3",
+    "description": "Atlassian JIRA",
+    "name": "Atlassian JIRA",
+    "services": [
+      "Communities"
+    ],
+    "state": "disabled",
+    "title": "Atlassian JIRA",
+    "extensions": [
+      {
+        "description": "JIRA Agile Board",
+        "ext_id": "io.appspokes.jira.v3.board",
+        "name": "JIRA Agile Board",
+        "type": "community_widget",
+        "payload": {
+          "urls": {},
+          "defId": "JIRA Agile Board",
+          "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+          "modes": "view fullpage",
+          "primaryWidget": "true",
+          "showInPalette": "true",
+          "itemSet": [
+            {
+              "name": "height",
+              "value": "1000px"
+            },
+            {
+              "name": "width",
+              "value": "100%"
+            },
+            {
+              "name": "url",
+              "value": "https://jira-dev.appspokes.net/communityapp/jira/boardapp/view"
+            }
+          ],
+          "uniqueInstance": "false",
+          "url": "https://apps.na.collabserv.comconnections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+        }
+      },
+      {
+        "description": "JIRA Chart",
+        "ext_id": "io.appspokes.jira.v3.chart",
+        "name": "JIRA Chart",
+        "type": "community_widget",
+        "payload": {
+          "urls": {},
+          "defId": "JIRA Chart",
+          "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+          "modes": "view",
+          "primaryWidget": "true",
+          "showInPalette": "true",
+          "uniqueInstance": "false",
+          "itemSet": [
+            {
+              "name": "height",
+              "value": "600px"
+            },
+            {
+              "name": "url",
+              "value": "https://jira-dev.appspokes.net/communityapp/jira/chartapp/view"
+            },
+            {
+              "name": "width",
+              "value": "100%"
+            }
+          ],
+          "url": "https://apps.na.collabserv.com/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+        }
+      },
+      {
+        "description": "JIRA List",
+        "ext_id": "io.appspokes.jira.v3.list",
+        "name": "JIRA List",
+        "type": "community_widget",
+        "payload": {
+          "urls": {},
+          "defId": "JIRA List",
+          "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+          "modes": "view",
+          "primaryWidget": "true",
+          "showInPalette": "true",
+          "itemSet": [
+            {
+              "name": "width",
+              "value": "100%"
+            },
+            {
+              "name": "url",
+              "value": "https://jira-dev.appspokes.net/communityapp/jira/listapp/view"
+            },
+            {
+              "name": "height",
+              "value": "600px"
+            }
+          ],
+          "uniqueInstance": "false",
+          "url": "https://apps.na.collabserv.com/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+        }
+      },
+      {
+        "description": "JIRA Search",
+        "ext_id": "io.appspokes.jira.v3.search",
+        "name": "JIRA Search",
+        "type": "community_widget",
+        "payload": {
+          "urls": {},
+          "defId": "JIRA Search",
+          "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+          "modes": "view",
+          "primaryWidget": "true",
+          "showInPalette": "true",
+          "itemSet": [
+            {
+              "name": "width",
+              "value": "100%"
+            },
+            {
+              "name": "height",
+              "value": "600px"
+            },
+            {
+              "name": "url",
+              "value": "https://jira-dev.appspokes.net/communityapp/jira/searchapp/view"
+            }
+          ],
+          "uniqueInstance": "false",
+          "url": "https://apps.na.collabserv.com/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+        }
+      },
+      {
+        "name": "Atlassian JIRA Embedded Experience",
+        "description": "Atlassian JIRA Embedded Experience",
+        "ext_id": "io.appspokes.jira.v3.embedded",
+        "type": "gadget",
+        "payload": {
+          "extends": "as_event",
+          "icon": "https://jira-dev.appspokes.net/assets/images/jira.png",
+          "mime_type": "",
+          "name": "Atlassian JIRA Embedded Experience",
+          "text": "Atlassian JIRA Embedded Experience",
+          "url": "https://jira-dev.appspokes.net/stream/experience/render"
+        }
+      }
+    ]
+  }
+]

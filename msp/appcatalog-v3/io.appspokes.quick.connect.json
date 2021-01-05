@@ -1,0 +1,42 @@
+{
+    "app_id": "io.appspokes.quick.connect",
+    "name": "AppSpokes QuickConnect",
+    "title": "AppSpokes QuickConnect",
+    "description": "AppSpokes QuickConnect",
+    "services": [
+        "Communities"
+    ],
+    "state": "disabled",
+    "extensions": [
+        {
+            "ext_id": "io.appspokes.quick.connect",
+            "name": "AppSpokes QuickConnect",
+            "title": "AppSpokes QuickConnect",
+            "description": "AppSpokes QuickConnect",
+            "type": "community_widget",
+            "payload": {
+			    "defId": "AppSpokes QuickConnect",
+			    "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+			    "modes": "view",
+			    "primaryWidget": "true",
+			    "showInPalette": "true",
+			    "uniqueInstance": "false",
+			    "itemSet": [
+			      {
+			        "name": "url",
+			        "value": "https://quick-connect.appspokes.net/communityapp/appspokes/connect/render"
+			      },
+			      {
+			        "name": "height",
+			        "value": "600px"
+			      },
+			      {
+			        "name": "width",
+			        "value": "100%"
+			      }
+			    ],
+			    "url": "/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+            }
+        }
+    ]
+}

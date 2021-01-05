@@ -1,0 +1,84 @@
+{
+  "app_id": "io.appspokes.google.drive.v3",
+  "description": "Google Drive",
+  "name": "Google Drive",
+  "services": [
+    "Communities"
+  ],
+  "state": "disabled",
+  "title": "Google Drive",
+  "extensions": [
+    {
+      "description": "Google Drive List",
+      "ext_id": "io.appspokes.google.drive.v3.list",
+      "name": "Google Drive List",
+      "type": "community_widget",
+      "payload": {
+        "urls": {},
+        "defId": "Google Drive List",
+        "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+        "modes": "view",
+        "primaryWidget": "true",
+        "showInPalette": "true",
+        "itemSet": [
+          {
+            "name": "width",
+            "value": "100%"
+          },
+          {
+            "name": "url",
+            "value": "https://googledrive-dev.appspokes.net/communityapp/filelist/index"
+          },
+          {
+            "name": "height",
+            "value": "600px"
+          }
+        ],
+        "uniqueInstance": "false",
+        "url": "https://apps.collabservintegration.com/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+      }
+    },
+    {
+      "description": "Google Drive Search",
+      "ext_id": "io.appspokes.google.drive.v3.search",
+      "name": "Google Drive Search",
+      "type": "community_widget",
+      "payload": {
+        "urls": {},
+        "defId": "Google Drive Search",
+        "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+        "modes": "view",
+        "primaryWidget": "true",
+        "showInPalette": "true",
+        "itemSet": [
+          {
+            "name": "height",
+            "value": "600px"
+          },
+          {
+            "name": "width",
+            "value": "100%"
+          },
+          {
+            "name": "url",
+            "value": "https://googledrive-dev.appspokes.net/communityapp/search/index"
+          }
+        ],
+        "uniqueInstance": "false",
+        "url": "https://apps.collabservintegration.com/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+      }
+    },
+    {
+      "description": "Google Drive Embedded Experience",
+      "ext_id": "io.appspokes.google.drive.v3.embedded",
+      "type": "gadget",
+      "payload": {
+        "extends": "as_event",
+        "icon": "https://googledrive-dev.appspokes.net/assets/images/googledrive.png",
+        "mime_type": "",
+        "text": "Google Drive Embedded Experience",
+        "url": "https://googledrive-dev.appspokes.net/stream/experience/render"
+      }
+    }
+  ]
+}

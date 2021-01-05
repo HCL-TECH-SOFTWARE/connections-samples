@@ -1,0 +1,641 @@
+{
+   "extensions": [
+      {
+         "translations": {
+            "": {
+               "HostWebExMeeting.title": "Host WebEx Meeting",
+               "HostWebExMeeting.description": "Host WebEx meeting link",
+               "HostWebExMeeting.text": "Host WebEx Meeting"
+            },
+            "en": {
+               "HostWebExMeeting.title": "Host WebEx Meeting",
+               "HostWebExMeeting.description": "Host WebEx meeting link",
+               "HostWebExMeeting.text": "Host WebEx Meeting"
+            },
+            "ar": {
+               "HostWebExMeeting.title": "اجتماع WebEx للنظام الرئيسي",
+               "HostWebExMeeting.description": "رابط اجتماع WebEx للنظام الرئيسي",
+               "HostWebExMeeting.text": "اجتماع WebEx للنظام الرئيسي"
+            },
+            "ca": {
+               "HostWebExMeeting.title": "Seu de reunió de WebEx",
+               "HostWebExMeeting.description": "Organitzador de WebEx enllaç de la reunió",
+               "HostWebExMeeting.text": "Seu de reunió de WebEx"
+            },
+            "zh": {
+               "HostWebExMeeting.title": "主持 WebEx 会议",
+               "HostWebExMeeting.description": "主持 WebEx 会议链接",
+               "HostWebExMeeting.text": "主持 WebEx 会议"
+            },
+            "zh-tw": {
+               "HostWebExMeeting.title": "主持 WebEx 會議",
+               "HostWebExMeeting.description": "主持 WebEx 會議鏈結",
+               "HostWebExMeeting.text": "主持 WebEx 會議"
+            },
+            "cs": {
+               "HostWebExMeeting.title": "Hostovat schůzku WebEx",
+               "HostWebExMeeting.description": "Hostovat odkaz na schůzku WebEx",
+               "HostWebExMeeting.text": "Hostovat schůzku WebEx"
+            },
+            "da": {
+               "HostWebExMeeting.title": "Afhold WebEx-møde",
+               "HostWebExMeeting.description": "Link til WebEx-møde",
+               "HostWebExMeeting.text": "Afhold WebEx-møde"
+            },
+            "de": {
+               "HostWebExMeeting.title": "WebEx Meeting hosten",
+               "HostWebExMeeting.description": "Link zum Hosten von WebEx Meeting",
+               "HostWebExMeeting.text": "WebEx Meeting hosten"
+            },
+            "el": {
+               "HostWebExMeeting.title": "Διοργάνωση σύσκεψης WebEx",
+               "HostWebExMeeting.description": "Διασύνδεση διοργάνωσης σύσκεψης WebEx",
+               "HostWebExMeeting.text": "Διοργάνωση σύσκεψης WebEx"
+            },
+            "es": {
+               "HostWebExMeeting.title": "Reunión de Host WebEx",
+               "HostWebExMeeting.description": "Enlace de reunión de Host WebEx",
+               "HostWebExMeeting.text": "Reunión de Host WebEx"
+            },
+            "fi": {
+               "HostWebExMeeting.title": "Aloita WebEx-kokous",
+               "HostWebExMeeting.description": "Aloita WebEx-kokous -linkki",
+               "HostWebExMeeting.text": "Aloita WebEx-kokous"
+            },
+            "fr": {
+               "HostWebExMeeting.title": "Héberger WebEx Meeting",
+               "HostWebExMeeting.description": "Lien pour héberger WebEx Meeting",
+               "HostWebExMeeting.text": "Héberger WebEx Meeting"
+            },
+            "he": {
+               "HostWebExMeeting.title": "אירוח פגישת WebEx",
+               "HostWebExMeeting.description": "קישור לאירוח פגישת WebEx",
+               "HostWebExMeeting.text": "אירוח פגישת WebEx"
+            },
+            "hr": {
+               "HostWebExMeeting.title": "Host za WebEx Meeting",
+               "HostWebExMeeting.description": "Poveznica za Host za WebEx Meeting",
+               "HostWebExMeeting.text": "Host za WebEx Meeting"
+            },
+            "hu": {
+               "HostWebExMeeting.title": "WebEx találkozó hosztolása",
+               "HostWebExMeeting.description": "WebEx találkozó hivatkozás hosztolása",
+               "HostWebExMeeting.text": "WebEx találkozó hosztolása"
+            },
+            "it": {
+               "HostWebExMeeting.title": "Ospita riunione WebEx",
+               "HostWebExMeeting.description": "Ospita collegamento a una riunione WebEx",
+               "HostWebExMeeting.text": "Ospita riunione WebEx"
+            },
+            "ja": {
+               "HostWebExMeeting.title": "WebEx Meeting の開催",
+               "HostWebExMeeting.description": "WebEx Meeting の開催リンク",
+               "HostWebExMeeting.text": "WebEx Meeting の開催"
+            },
+            "ko": {
+               "HostWebExMeeting.title": "호스트 WebEx 미팅",
+               "HostWebExMeeting.description": "호스트 WebEx 미팅 링크",
+               "HostWebExMeeting.text": "호스트 WebEx 미팅"
+            },
+            "nl": {
+               "HostWebExMeeting.title": "WebEx-vergadering hosten",
+               "HostWebExMeeting.description": "Link voor hosten van WebEx-vergadering",
+               "HostWebExMeeting.text": "WebEx-vergadering hosten"
+            },
+            "no": {
+               "HostWebExMeeting.title": "Verts WebEx Møte",
+               "HostWebExMeeting.description": "Verts WebEx Møte-kobling",
+               "HostWebExMeeting.text": "Verts WebEx Møte"
+            },
+            "pl": {
+               "HostWebExMeeting.title": "Organizuj spotkanie WebEx",
+               "HostWebExMeeting.description": "Odsyłacz Organizuj spotkanie WebEx",
+               "HostWebExMeeting.text": "Organizuj spotkanie WebEx"
+            },
+            "pt": {
+               "HostWebExMeeting.title": "Organizar reunião do WebEx",
+               "HostWebExMeeting.description": "Ligação para organizar reuniões do WebEx",
+               "HostWebExMeeting.text": "Organizar reunião do WebEx"
+            },
+            "pt-br": {
+               "HostWebExMeeting.title": "Organizar WebEx reuniões",
+               "HostWebExMeeting.description": "Link de reunião de Host WebEx",
+               "HostWebExMeeting.text": "Organizar WebEx reuniões"
+            },
+            "ro": {
+               "HostWebExMeeting.title": "Gazdă WebEx Meeting",
+               "HostWebExMeeting.description": "Legătură la gazdă întrunire WebEx",
+               "HostWebExMeeting.text": "Gazdă WebEx Meeting"
+            },
+            "ru": {
+               "HostWebExMeeting.title": "Хост собраний WebEx",
+               "HostWebExMeeting.description": "Ссылка на хост для собраний WebEx",
+               "HostWebExMeeting.text": "Хост собраний WebEx"
+            },
+            "sk": {
+               "HostWebExMeeting.title": "Hosťovať schôdzu WebEx",
+               "HostWebExMeeting.description": "Odkaz na hosťovanie schôdze WebEx",
+               "HostWebExMeeting.text": "Hosťovať schôdzu WebEx"
+            },
+            "sl": {
+               "HostWebExMeeting.title": "Gostite srečanje WebEx",
+               "HostWebExMeeting.description": "Gostite povezavo za srečanje WebEx",
+               "HostWebExMeeting.text": "Gostite srečanje WebEx"
+            },
+            "sr": {
+               "HostWebExMeeting.title": "Hostovanje WebEx sastanka",
+               "HostWebExMeeting.description": "Link za hostovanje WebEx sastanka",
+               "HostWebExMeeting.text": "Hostovanje WebEx sastanka"
+            },
+            "sv": {
+               "HostWebExMeeting.title": "Håll WebEx-möte",
+               "HostWebExMeeting.description": "WebEx-möteslänk",
+               "HostWebExMeeting.text": "Håll WebEx-möte"
+            },
+            "th": {
+               "HostWebExMeeting.title": "โฮสต์ WebEx ประชุม",
+               "HostWebExMeeting.description": "ลิงก์ โฮสต์ WebEx ประชุม",
+               "HostWebExMeeting.text": "โฮสต์ WebEx ประชุม"
+            },
+            "tr": {
+               "HostWebExMeeting.title": "WebEx Toplantısı Düzenle",
+               "HostWebExMeeting.description": "WebEx toplantısı düzenleme bağlantısı",
+               "HostWebExMeeting.text": "WebEx Toplantısı Düzenle"
+            }
+         },
+         "path": "WebExMenu.2",
+         "title": "%HostWebExMeeting.title",
+         "ext_id": "com.cisco.webex.menu.hostmeeting",
+         "type": "com.ibm.action.menu.link",
+         "name": "Host WebEx Meeting",
+         "description": "%HostWebExMeeting.description",
+         "payload": {
+            "text": "%nls:HostWebExMeeting.text",
+            "target": "WebExPMR",
+            "link": "${!bssUrl}/integrations/webexPMR?site=${webex_site}",
+            "parameters": {
+               "webex_site": "${webex_site}",
+               "webex_site_prefix": "${webex_site_prefix}"
+            }
+         }
+      },
+      {
+         "translations": {
+            "": {
+               "WebExMeetingsDashboard.title": "WebEx Meetings",
+               "WebExMeetingsDashboard.description": "Launch WebEx meeting link",
+               "WebExMeetingsDashboard.text": "WebEx Meetings"
+            },
+            "en": {
+               "WebExMeetingsDashboard.title": "WebEx Meetings",
+               "WebExMeetingsDashboard.description": "Launch WebEx meeting link",
+               "WebExMeetingsDashboard.text": "WebEx Meetings"
+            },
+            "ar": {
+               "WebExMeetingsDashboard.title": "اجتماعات WebEx",
+               "WebExMeetingsDashboard.description": "استعراض رابط اجتماع WebEx",
+               "WebExMeetingsDashboard.text": "اجتماعات WebEx"
+            },
+            "ca": {
+               "WebExMeetingsDashboard.title": "Reunió de WebEx",
+               "WebExMeetingsDashboard.description": "Llança l'enllaç de les reunions del WebEx",
+               "WebExMeetingsDashboard.text": "Reunió de WebEx"
+            },
+            "zh": {
+               "WebExMeetingsDashboard.title": "WebEx 会议",
+               "WebExMeetingsDashboard.description": "启动 WebEx 会议链接",
+               "WebExMeetingsDashboard.text": "WebEx 会议"
+            },
+            "zh-tw": {
+               "WebExMeetingsDashboard.title": "WebEx 會議",
+               "WebExMeetingsDashboard.description": "啟動 WebEx 會議鏈結",
+               "WebExMeetingsDashboard.text": "WebEx 會議"
+            },
+            "cs": {
+               "WebExMeetingsDashboard.title": "Schůzky WebEx",
+               "WebExMeetingsDashboard.description": "Spustit odkaz na schůzku WebEx",
+               "WebExMeetingsDashboard.text": "Schůzky WebEx"
+            },
+            "da": {
+               "WebExMeetingsDashboard.title": "WebEx-møder",
+               "WebExMeetingsDashboard.description": "Åbn WebEx-mødelink",
+               "WebExMeetingsDashboard.text": "WebEx-møder"
+            },
+            "de": {
+               "WebExMeetingsDashboard.title": "WebEx-Treffen",
+               "WebExMeetingsDashboard.description": "Link zum Starten von WebEx Meeting",
+               "WebExMeetingsDashboard.text": "WebEx-Treffen"
+            },
+            "el": {
+               "WebExMeetingsDashboard.title": "σύσκεψης WebEx",
+               "WebExMeetingsDashboard.description": "Διασύνδεση εκκίνησης σύσκεψης WebEx",
+               "WebExMeetingsDashboard.text": "σύσκεψης WebEx"
+            },
+            "es": {
+               "WebExMeetingsDashboard.title": "Reuniones WebEx",
+               "WebExMeetingsDashboard.description": "Lanza el enlace de reuniones de WebEx",
+               "WebExMeetingsDashboard.text": "Reuniones WebEx"
+            },
+            "fi": {
+               "WebExMeetingsDashboard.title": "WebEx-kokoukset",
+               "WebExMeetingsDashboard.description": "Aloita WebEx-kokous -linkki",
+               "WebExMeetingsDashboard.text": "WebEx-kokoukset"
+            },
+            "fr": {
+               "WebExMeetingsDashboard.title": "Réunions WebEx",
+               "WebExMeetingsDashboard.description": "Lance le lien de la réunion WebEx",
+               "WebExMeetingsDashboard.text": "Réunions WebEx"
+            },
+            "he": {
+               "WebExMeetingsDashboard.title": "WebEx פגישות",
+               "WebExMeetingsDashboard.description": "קישור לשיגור פגישת WebEx",
+               "WebExMeetingsDashboard.text": "WebEx פגישות"
+            },
+            "hr": {
+               "WebExMeetingsDashboard.title": "Sastanci WebEx",
+               "WebExMeetingsDashboard.description": "Pokreni poveznicu za WebEx Meeting",
+               "WebExMeetingsDashboard.text": "Sastanci WebEx"
+            },
+            "hu": {
+               "WebExMeetingsDashboard.title": "WebEx találkozók",
+               "WebExMeetingsDashboard.description": "WebEx találkozó hivatkozás indítása",
+               "WebExMeetingsDashboard.text": "WebEx találkozók"
+            },
+            "it": {
+               "WebExMeetingsDashboard.title": "Riunioni WebEx",
+               "WebExMeetingsDashboard.description": "Avvia collegamento a riunione WebEx",
+               "WebExMeetingsDashboard.text": "Riunioni WebEx"
+            },
+            "ja": {
+               "WebExMeetingsDashboard.title": "WebExミーティング",
+               "WebExMeetingsDashboard.description": "WebEx Meeting の開始リンク",
+               "WebExMeetingsDashboard.text": "WebExミーティング"
+            },
+            "ko": {
+               "WebExMeetingsDashboard.title": "WebEx 회의",
+               "WebExMeetingsDashboard.description": "WebEx 미팅 링크 실행",
+               "WebExMeetingsDashboard.text": "WebEx 회의"
+            },
+            "nl": {
+               "WebExMeetingsDashboard.title": "WebEx Vergaderingen",
+               "WebExMeetingsDashboard.description": "Link voor starten van WebEx-vergadering",
+               "WebExMeetingsDashboard.text": "WebEx Vergaderingen"
+            },
+            "no": {
+               "WebExMeetingsDashboard.title": "WebEx-møter",
+               "WebExMeetingsDashboard.description": "Kobling for å starte WebEx-møte",
+               "WebExMeetingsDashboard.text": "WebEx-møter"
+            },
+            "pl": {
+               "WebExMeetingsDashboard.title": "WebEx Spotkania",
+               "WebExMeetingsDashboard.description": "Odsyłacz Uruchom spotkanie WebEx",
+               "WebExMeetingsDashboard.text": "WebEx Spotkania"
+            },
+            "pt": {
+               "WebExMeetingsDashboard.title": "Reuniões WebEx",
+               "WebExMeetingsDashboard.description": "Ligação para iniciar reuniões do WebEx",
+               "WebExMeetingsDashboard.text": "Reuniões WebEx"
+            },
+            "pt-br": {
+               "WebExMeetingsDashboard.title": "Reuniãos WebEx",
+               "WebExMeetingsDashboard.description": "Ativar link de reunião de WebEx",
+               "WebExMeetingsDashboard.text": "Reuniãos WebEx"
+            },
+            "ro": {
+               "WebExMeetingsDashboard.title": "WebEx Reuniuni",
+               "WebExMeetingsDashboard.description": "Lansare legătură la întrunire WebEx",
+               "WebExMeetingsDashboard.text": "WebEx Reuniuni"
+            },
+            "ru": {
+               "WebExMeetingsDashboard.title": "Собрания WebEx",
+               "WebExMeetingsDashboard.description": "Ссылка для запуска собраний WebEx",
+               "WebExMeetingsDashboard.text": "Собрания WebEx"
+            },
+            "sk": {
+               "WebExMeetingsDashboard.title": "Schôdzky WebEx",
+               "WebExMeetingsDashboard.description": "Odkaz na spustenie schôdze WebEx",
+               "WebExMeetingsDashboard.text": "Schôdzky WebEx"
+            },
+            "sl": {
+               "WebExMeetingsDashboard.title": "Srečanja WebEx",
+               "WebExMeetingsDashboard.description": "Zaženite povezavo za srečanje WebEx",
+               "WebExMeetingsDashboard.text": "Srečanja WebEx"
+            },
+            "sr": {
+               "WebExMeetingsDashboard.title": "WebEx Sastanka",
+               "WebExMeetingsDashboard.description": "Link za pokretanje WebEx sastanka",
+               "WebExMeetingsDashboard.text": "WebEx Sastanka"
+            },
+            "sv": {
+               "WebExMeetingsDashboard.title": "WebEx-möten",
+               "WebExMeetingsDashboard.description": "Starta WebEx-möte",
+               "WebExMeetingsDashboard.text": "WebEx-möten"
+            },
+            "th": {
+               "WebExMeetingsDashboard.title": "การประชุม WebEx",
+               "WebExMeetingsDashboard.description": "เรียกใช้ลิงก์ WebEx Meeting",
+               "WebExMeetingsDashboard.text": "การประชุม WebEx"
+            },
+            "tr": {
+               "WebExMeetingsDashboard.title": "WebEx Toplantıları",
+               "WebExMeetingsDashboard.description": "WebEx toplantısı başlatma bağlantısı",
+               "WebExMeetingsDashboard.text": "WebEx Toplantıları"
+            }
+         },
+         "path": "WebExMenu.1",
+         "title": "%WebExMeetingsDashboard.title",
+         "ext_id": "com.cisco.webex.menu.webexmeetings",
+         "type": "com.ibm.action.menu.link",
+         "name": "WebEx Meetings Dashboard",
+         "description": "%WebExMeetingsDashboard.description",
+         "payload": {
+            "text": "%nls:WebExMeetingsDashboard.text",
+            "target": "WebExDashboard",
+            "link": "https://${webex_site}/",
+            "parameters": {
+               "webex_site": "${webex_site}"
+            }
+         }
+      },
+      {
+         "translations": {
+            "": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "WebEx apps menu"
+            },
+            "en": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "WebEx apps menu"
+            },
+            "ar": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "قائمة تطبيقات WebEx"
+            },
+            "ca": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "Menú d'aplicacions del WebEx"
+            },
+            "zh": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "WebEx 应用程序菜单"
+            },
+            "zh-tw": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "WebEx 應用程式功能表"
+            },
+            "cs": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "Nabídka aplikací WebEx"
+            },
+            "da": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "Menu til WebEx-apps"
+            },
+            "de": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "WebEx-Apps - Menü"
+            },
+            "el": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "Μενού εφαρμογών WebEx"
+            },
+            "es": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "Menú de aplicaciones de WebEx"
+            },
+            "fi": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "WebEx-sovellusvalikko"
+            },
+            "fr": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "Menu des applications WebEx"
+            },
+            "he": {
+               "WebExMenu.title": "ebEx",
+               "WebExMenu.description": "תפריט יישומוני WebEx"
+            },
+            "hr": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "WebEx izbornik aplikacija"
+            },
+            "hu": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "WebEx alkalmazások menü"
+            },
+            "it": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "Menu per le app WebEx"
+            },
+            "ja": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "WebEx アプリメニュー"
+            },
+            "ko": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "WebEx 앱 메뉴"
+            },
+            "nl": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "Menu voor WebEx-apps"
+            },
+            "no": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "Meny for WebEx-apper"
+            },
+            "pl": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "Menu apek programu WebEx"
+            },
+            "pt": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "Menu de aplicações do WebEx"
+            },
+            "pt-br": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "Menu dos aplicativos WebEx"
+            },
+            "ro": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "Meniul aplicaţiilor WebEx"
+            },
+            "ru": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "Меню приложений WebEx"
+            },
+            "sk": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "Ponuka appiek WebEx"
+            },
+            "sl": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "WebEx meni za aplikacije"
+            },
+            "sr": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "meni WebEx aplikacija"
+            },
+            "sv": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "WebEx-appmeny"
+            },
+            "th": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "เมนูแอ็พ WebEx"
+            },
+            "tr": {
+               "WebExMenu.title": "WebEx",
+               "WebExMenu.description": "WebEx uygulama menüsü"
+            }
+         },
+         "path": "com.ibm.navbar.order.48500",
+         "title": "%WebExMenu.title",
+         "ext_id": "com.cisco.webex.menu",
+         "type": "com.ibm.action.menu",
+         "name": "WebExMenu",
+         "description": "%WebExMenu.description",
+         "payload": {}
+      }
+   ],
+   "translations": {
+      "": {
+         "WebExMeetings.title": "WebEx Meetings",
+         "WebExMeetings.description": "App for containing WebEx extensions for Connections"
+      },
+      "en": {
+         "WebExMeetings.title": "WebEx Meetings",
+         "WebExMeetings.description": "App for containing WebEx extensions for Connections"
+      },
+      "ar": {
+         "WebExMeetings.title": "اجتماعات WebEx",
+         "WebExMeetings.description": "تطبيق لاحتواء امتدادات WebEx الى Connections"
+      },
+      "ca": {
+         "WebExMeetings.title": "Reunió de WebEx",
+         "WebExMeetings.description": "Aplicació que conté les extensions del WebEx per al Connections"
+      },
+      "zh": {
+         "WebExMeetings.title": "WebEx 会议",
+         "WebExMeetings.description": "将包含 Connections 的 WebEx 扩展的应用程序"
+      },
+      "zh-tw": {
+         "WebExMeetings.title": "WebEx 會議",
+         "WebExMeetings.description": "包含 Connections 之 WebEx 延伸規格的應用程式"
+      },
+      "cs": {
+         "WebExMeetings.title": "Schůzky WebEx",
+         "WebExMeetings.description": "Aplikace pro obsažení rozšíření WebEx pro produkt Connections"
+      },
+      "da": {
+         "WebExMeetings.title": "WebEx-møder",
+         "WebExMeetings.description": "App til opbevaring af WebEx-udvidelser til Connections"
+      },
+      "de": {
+         "WebExMeetings.title": "WebEx-Treffen",
+         "WebExMeetings.description": "App für enthaltende WebEx-Erweiterungen für Connections"
+      },
+      "el": {
+         "WebExMeetings.title": "σύσκεψης WebEx",
+         "WebExMeetings.description": "Εφαρμογή που περιέχει τις επεκτάσεις του WebEx για το Connections"
+      },
+      "es": {
+         "WebExMeetings.title": "Reuniones WebEx",
+         "WebExMeetings.description": "Aplicación que contiene las extensiones de WebEx para Connections"
+      },
+      "fi": {
+         "WebExMeetings.title": "WebEx-kokoukset",
+         "WebExMeetings.description": "Sovellus, joka sisältää Connections-ohjelman WebEx-laajennukset"
+      },
+      "fr": {
+         "WebExMeetings.title": "Réunions WebEx",
+         "WebExMeetings.description": "Application destinée à contenir les extensions WebEx pour Connections"
+      },
+      "he": {
+         "WebExMeetings.title": "WebEx פגישות",
+         "WebExMeetings.description": "יישומון המכיל את הרחבות WebEx עבור Connections"
+      },
+      "hr": {
+         "WebExMeetings.title": "Sastanci WebEx",
+         "WebExMeetings.description": "Aplikacija koja sadrži WebEx proširenja za Connections"
+      },
+      "hu": {
+         "WebExMeetings.title": "WebEx találkozók",
+         "WebExMeetings.description": "A Connections megoldáshoz WebEx bővítményeket tartalmazó alkalmazás"
+      },
+      "it": {
+         "WebExMeetings.title": "Riunioni WebEx",
+         "WebExMeetings.description": "App per contenere le estensioni WebEx per Connections"
+      },
+      "ja": {
+         "WebExMeetings.title": "WebExミーティング",
+         "WebExMeetings.description": "Connections 用の WebEx 拡張を含めるためのアプリ"
+      },
+      "ko": {
+         "WebExMeetings.title": "WebEx 회의",
+         "WebExMeetings.description": "Connections용 WebEx 확장을 포함하기 위한 앱"
+      },
+      "nl": {
+         "WebExMeetings.title": "WebEx Vergaderingen",
+         "WebExMeetings.description": "Container-app voor WebEx-extensies voor Connections"
+      },
+      "no": {
+         "WebExMeetings.title": "WebEx-møter",
+         "WebExMeetings.description": "App for WebEx-utvidelser for Connections"
+      },
+      "pl": {
+         "WebExMeetings.title": "WebEx Spotkania",
+         "WebExMeetings.description": "Apka zawierająca rozszerzenia programu WebEx dla programu Connections"
+      },
+      "pt": {
+         "WebExMeetings.title": "Reuniões WebEx",
+         "WebExMeetings.description": "Aplicação para conter extensões do WebEx para o Connections"
+      },
+      "pt-br": {
+         "WebExMeetings.title": "Reuniãos WebEx",
+         "WebExMeetings.description": "Aplicativo que contém extensões de WebEx para Connections"
+      },
+      "ro": {
+         "WebExMeetings.title": "WebEx Reuniuni",
+         "WebExMeetings.description": "Aplicaţie pentru conţinerea extensiilor WebEx pentru Connections"
+      },
+      "ru": {
+         "WebExMeetings.title": "Собрания WebEx",
+         "WebExMeetings.description": "Приложение для расширений WebEx для Connections"
+      },
+      "sk": {
+         "WebExMeetings.title": "Schôdzky WebEx",
+         "WebExMeetings.description": "Appka na obsiahnutie rozšírení WebEx pre Connections"
+      },
+      "sl": {
+         "WebExMeetings.title": "Srečanja WebEx",
+         "WebExMeetings.description": "Aplikacija za vsebovanje razširitev WebEx za Connections"
+      },
+      "sr": {
+         "WebExMeetings.title": "WebEx Sastanka",
+         "WebExMeetings.description": "Aplikacija koja sadrži WebEx proširenje za Connections"
+      },
+      "sv": {
+         "WebExMeetings.title": "WebEx-möten",
+         "WebExMeetings.description": "App med WebEx-tillägg för Connections"
+      },
+      "th": {
+         "WebExMeetings.title": "การประชุม WebEx",
+         "WebExMeetings.description": "แอ็พสำหรับการเก็บส่วนขยาย WebEx สำหรับ Connections"
+      },
+      "tr": {
+         "WebExMeetings.title": "WebEx Toplantıları",
+         "WebExMeetings.description": "Connections için WebEx uzantılarını dahil etmek için uygulama"
+      }
+   },
+   "title": "%WebExMeetings.title",
+   "icon": "",
+   "app_id": "com.cisco.webex.v3",
+   "name": "WebExMeetings",
+   "description": "%WebExMeetings.description",
+   "entitlement": "isv_webex",
+   "payload": {},
+   "state": "disabled",
+   "services": [
+      "TopNavigationBar"
+   ]
+}
