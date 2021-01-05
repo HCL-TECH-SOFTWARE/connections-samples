@@ -5,7 +5,7 @@ The customize-bizcard extension allows you to add, modify, or delete the submenu
 
 The following shows an example customization where 2 new links (Google Me, Chat with Bill) have been added:
 
-<img src="../../doc/images/custom-bizcard.png" width="300x"/> 
+<img src="/customizer/docs/images/custom-bizcard.png" width="300x"/> 
 
 ## Event Listener
 
@@ -62,7 +62,7 @@ The customize-profile extension allows you to add, modify, or delete the buttons
 
 The following shows an example customization where a button (Bill's Files) has been added:
 
-<img src="../../doc/images/custom-profile.png" width="300x"/> 
+<img src="/customizer/docs/images/custom-profile.png" width="300x"/> 
 
 ## Customization Examples
 The main script uses the waitFor() function as described above in the bizcard customization section to provide examples of how to create a button, modify a button and delete a button.
@@ -94,6 +94,6 @@ In order for Customizer to insert these customizations, extensions should be reg
 5. Paste in the content of the file [customize-bizcard.json](./customize-bizcard.json) or [customize-profile.json](./customize-profile.json) file.
 6. If necessary, modify the **include-files path and file name** to match the location and name of the JS file on the MSP environment.
    
-See section [2.5.1 Hosting the Custom JS / CSS Files](../../doc/README.md/#251-hosting-the-custom-js--css-files) of the main [Connections Cloud Application Extension Migration](../../doc/README.md) documentation for more details about where to host the custom JS/CSS files.
+See section [2.5.1 Hosting the Custom JS / CSS Files](/msp/doc/README.md/#251-hosting-the-custom-js--css-files) of the main [Connections Cloud Application Extension Migration](/msp/doc/README.md) documentation for more details about where to host the custom JS/CSS files.
 
 
