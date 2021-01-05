@@ -3,7 +3,7 @@
 ## Overview
 The new_file_menu extension displays new custom item(s) in the "New" dropdown menu in Files; example below shows Contract and Support Issue links added.
 
-<img src="../../doc/images/new-file-custom-actions.png" width="250x"/>
+<img src="/customizer/docs/images/new-file-custom-actions.png" width="250x"/>
 
 ## Modifying the New File Extension Example JS Script
 Below is a list of parameters which need to be supplied in the example JS script provided in this repository:
@@ -65,7 +65,7 @@ In order for Customizer to insert this customization:
 5. Paste in the content of the file [new-file-menu.json](./new-file-menu.json) file.
 6. If necessary, modify the **include-files path and file name** to match the location and name of the JS script file on the MSP environment.
    
-See section [2.5.1 Hosting the Custom JS / CSS Files](../../doc/README.md/#251-hosting-the-custom-js--css-files) of the main [Connections Cloud Application Extension Migration](../../doc/README.md) documentation for more details about where to host the custom JS/CSS files.
+See section [2.5.1 Hosting the Custom JS / CSS Files](/msp/doc/README.md/#251-hosting-the-custom-js--css-files) of the main [Connections Cloud Application Extension Migration](/msp/doc/README.md) documentation for more details about where to host the custom JS/CSS files.
 
 ## Troubleshooting / Validation
 Below are some common troubleshooting issues and how to potentially solve those issues and validate that the custom extension script is working properly. Addition console log statements can be added to the custom JS script to help with debugging.
