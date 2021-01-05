@@ -18,5 +18,5 @@ For community templates go [here][2]
 [HCL Connections Documentation](https://help.hcltechsw.com/connections/v7/index.html)
 
 
-[1]: https://github.com/HCL-TECH-SOFTWARE/connections-samples/customizer/README.md
-[2]: https://github.com/HCL-TECH-SOFTWARE/connections-samples/community-templates/README.md
+[1]: https://github.com/HCL-TECH-SOFTWARE/connections-samples/blob/main/customizer/README.md
+[2]: https://github.com/HCL-TECH-SOFTWARE/connections-samples/blob/main/community-templates/README.md
