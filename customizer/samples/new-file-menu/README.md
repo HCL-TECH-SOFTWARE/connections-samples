@@ -62,7 +62,7 @@ In order for Customizer to insert this customization:
 2. Launch the appregistry UI at **/appreg/apps** URL (requires admin access).
 3. Create a **New App** definition.
 4. Go to the **Code Editor** section and remove the JSON outline.
-5. Paste in the content of the file [new-file-menu.json](./new-file-menu.json) file.
+5. Paste in the content of the file [custom-new-file-menu.json](./custom-new-file-menu.json) file.
 6. If necessary, modify the **include-files path and file name** to match the location and name of the JS script file on the MSP environment.
    
 See section [2.5.1 Hosting the Custom JS / CSS Files](/msp/doc/README.md/#251-hosting-the-custom-js--css-files) of the main [Connections Cloud Application Extension Migration](/msp/doc/README.md) documentation for more details about where to host the custom JS/CSS files.
