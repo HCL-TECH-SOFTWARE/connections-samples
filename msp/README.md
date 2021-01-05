@@ -8,4 +8,4 @@ In this repository:
 
 - Catalog app [extensions](appcatalog-v3) for use with Connections MSP environments.
 
-- [Examples](customizations) for extending the UI using Customizer. 
+- [Examples](../customizer/samples) for extending the UI using Customizer. 
