@@ -165,7 +165,7 @@ Download the json file for each of the applications that were in Connections Clo
 | Cisco WebEx                        | [com.cisco.webex.json](../appcatalog-v3/com.cisco.webex.json)                                         |
 | Cisco WebEx Mobile for iOS         | Not Available                                                                                      |
 | Community Engagement Center        | [com.hcl.icec.json](../appcatalog-v3/com.hcl.cec.json)
-| Customizer Nifty Scripties         | [com.nifty.scripties.json](https://github.com/ibmcnxdev/global-samples/blob/master/nifty-scripties/niftyScriptiesApp.json)                                |
+| Customizer Nifty Scripties         | [com.nifty.scripties.json](/customizer/samples/nifty-scripties/niftyScriptiesApp.json)                                |
 | DropBox                            | [io.appspokes.dropbox.json](../appcatalog-v3/io.appspokes.dropbox.json)                               |
 | GitHub                             | [io.appspokes.github.json](../appcatalog-v3/io.appspokes.github.json)                                 |
 | GitLab                             | [io.appspokes.gitlab.json](../appcatalog-v3/io.appspokes.gitlab.json)                                 |
@@ -181,7 +181,7 @@ Download the json file for each of the applications that were in Connections Clo
 | SharePoint Online                  | [io.appspokes.sharepoint.online.json](../appcatalog-v3/io.appspokes.sharepoint.online.json)           |
 | SugarCRM                           | Not Available                                                                                      |
 | TalkTeam                           | [com.e-office.talkteam.json](../appcatalog-v3/com.e-office.talkteam.json)                             |
-| Visual Update 1 for HCL CNX        | [com.ibm.connections.periscope.json](https://github.com/ibmcnxdev/cnx-custom-theme/blob/master/vu1-include-css.json) |
+| Visual Update 1 for HCL CNX        | [com.ibm.connections.periscope.json](/customizer/cnx-custom-theme/vu1-include-css.json) |
 | WordPress                          | [io.appspokes.wordpress.json](../appcatalog-v3/io.appspokes.wordpress.json)                           |
 | Wrike                              | [io.appspokes.wrike.json](../appcatalog-v3/io.appspokes.wrike.json)                                   |
 | Zendesk                            | [io.appspokes.zendesk.json](../appcatalog-v3/io.appspokes.zendesk.json)                               |
@@ -406,10 +406,10 @@ Below you will find example implementations for the extension types that should 
 
 | Extension Type                      | Link to Example                                              |
 | ----------------------------------- | ------------------------------------------------------------ |
-| File Menu (file_menu)               | [File Menu Examples](../customizations/file_menu)               |
-| New File Menu (new_file_menu)       | [New File Menu Examples](../customizations/new_file_menu)       |
-| Person Component (person_component) | [Person Component Examples](../customizations/person_component) |
-| Top Navigation Bar (service_menu)   | [Top Navigation Bar Examples](../customizations/service_menu)   |
+| File Menu (file_menu)               | [File Menu Examples](/customizer/samples/file-menu)               |
+| New File Menu (new_file_menu)       | [New File Menu Examples](/customizer/samples/new-file-menu)       |
+| Person Component (person_component) | [Person Component Examples](/customizer/samples/person-component) |
+| Top Navigation Bar (service_menu)   | [Top Navigation Bar Examples](/customizer/samples/service-menu)   |
 
 Use these examples, and for each of the existing extensions of these types that need to be converted, make a copy of the example files and update with the specific text, url links and other attributes that mimick what the old extensions previously contained.
 
@@ -543,7 +543,7 @@ The following is an example for adding a menu and links to the top navigation ba
 
 ```
 
-1. Take the navbar customization [example](/customizer/samples/service-menu/custom-navbar.js). 
+1. Take the navbar customization [example](/customizer/samples/service-menu/customize-navbar.js). 
 
    Update the example JS with the relevant label and link attributes from the original extension as shown above, to look something like below. Modified lines where changes were made for labels and text are highlighted with -->> just for the purposes of this documentation.
 
