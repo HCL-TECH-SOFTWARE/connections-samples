@@ -12,10 +12,10 @@ Some folders contain json extension definitions that enable integrations with ot
 ### Issues
 Any queries or problems with the examples should be logged as [Issues][4] in this repository.
 
-(1) https://github.com/hclcnx/customizer/blob/master/docs/HCLConnectionsCustomizer.md#fine-grained-filtering-based-on-user-identity
+(1) https://github.com/HCL-TECH-SOFTWARE/connections-samples/blob/main/customizer/docs/HCLConnectionsCustomizer.md#fine-grained-filtering-based-on-user-identity
 
 (2) https://ds-infolib.hcltechsw.com/ldd/appdevwiki.nsf/xpDocViewer.xsp?lookupName=Dev+Guide+topics#action=openDocument&res_title=Managing_extensions_for_Customizercom_Orient_Mecom_or_Important_To_Me&content=pdcontent&sa=true
 
-(3) https://github.com/hclcnx/customizer/blob/master/docs/HCLConnectionsCustomizer.md#figure-2-hcl-connections-developers-organization-on-github
+(3) https://github.com/HCL-TECH-SOFTWARE/connections-samples/blob/main/customizer/docs/HCLConnectionsCustomizer.md#figure-2-hcl-connections-developers-organization-on-github
 
-(4) https://github.com/hclcnx/global-samples/issues
+(4) https://github.com/HCL-TECH-SOFTWARE/connections-samples/issues
