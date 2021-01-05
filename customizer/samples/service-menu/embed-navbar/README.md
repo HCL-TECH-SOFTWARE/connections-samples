@@ -18,7 +18,7 @@ The script and CSS files are common to all tenants and only need be set up for t
     get-navbar.js | Script to embed navbar in iFrame on web page
     navbar.html	| (Optional) Example / test page
 
-    <img src="../../../doc/images/embed-nav-files.png" width="400x"/> 
+    <img src="/customizer/docs/images/embed-nav-files.png" width="400x"/> 
 
     The files can be found in this repo directory; there are minified versions of the .js files with .min.js names. Adjust the extension json to use that file name if preferred.
 
@@ -32,11 +32,11 @@ Each customer must set up their own Customizer extension in the app registry sin
 
     Notice that url match rule which indicates that although this is on the /homepage path, it is only actioned by Customizer when the url contains pageHeader, so it will not affect any other /homepage/.... requests.
 
-    <img src="../../../doc/images/embed-nav-extension.png" width="300x"/>
+    <img src="/customizer/docs/images/embed-nav-extension.png" width="300x"/>
 
 2. When the request for **/homepage/web/pageHeader** is made, the response should contain src tags for the two included files and they should be seen to be loaded in the browser network trace:
  
-    <img src="../../../doc/images/embed-nav-trace.png" width="600x"/>
+    <img src="/customizer/docs/images/embed-nav-trace.png" width="600x"/>
 
 Manually test this in the browser to make sure the two files are being loaded.
 
@@ -71,11 +71,11 @@ Now when this page is loaded, the following process should occur:
 
 2. It determines the set of parameters passed or default values - these are output as browser console debug messages to validate the correct default or passed values are being used:
    
-   <img src="../../../doc/images/embed-nav-debug.png" width="600x"/>
+   <img src="/customizer/docs/images/embed-nav-debug.png" width="600x"/>
 
 3. It creates an iFrame element, sets the properties based on the parameters, attaches to the current page at the anchor id specified and renders the content - per the example navbar.html it should look something like this:
 
-    <img src="../../../doc/images/embed-nav-example-iframe.png" width="900x"/>
+    <img src="/customizer/docs/images/embed-nav-example-iframe.png" width="900x"/>
 
 Notice in this case that the Customizer extension to modify the navigation bar by adding WebEx links has been maintained.
 
