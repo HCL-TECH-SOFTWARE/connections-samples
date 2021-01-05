@@ -17,7 +17,7 @@ Any bugs, feature requests and other observations should be reported as [issues]
 
 [1]: https://github.com/HCL-TECH-SOFTWARE/connections-samples/blob/main/customizer/docs/HCLConnectionsCustomizer.md
 [2]: https://github.com/HCL-TECH-SOFTWARE/connections-samples/tree/main/customizer/samples
-[3]: https://github.com/HCL-TECH-SOFTWARE/connections-samples/customizer/issues
+[3]: https://github.com/HCL-TECH-SOFTWARE/connections-samples/issues
 [4]: https://www.youtube.com/playlist?list=PLaDSIoof-i95DcgxaxGgl3tdziBdyEfuE
 [5]: https://help.hcltechsw.com/connections/v6/admin/install/r_Orient_Me_upgrade_CR1.html?hl=6.0.0.4
 
