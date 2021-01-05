@@ -7,7 +7,7 @@ The file_menu extension allows a new file menu to be added for a file. This exte
 
 More Actions | File Preview
 ------------ | ------------
-<img src="../../doc/images/files-more-actions-custom.png" width="400x"/> | <img src="../../doc/images/files-preview-more-custom.png" width="400x"/>
+<img src="/customizer/docs/images/files-more-actions-custom.png" width="400x"/> | <img src="/customizer/docs/images/files-preview-more-custom.png" width="400x"/>
 
 
 ## Modifying the File Extension Example JS Script
@@ -84,7 +84,7 @@ In order for Customizer to insert this customization:
 5. Paste in the content of the file [custom-files-menu.json](./custom-files-menu.json) file.
 6. If necessary, modify the **include-files path and file name** to match the location and name of the JS script file on the MSP environment.
    
-See section [2.5.1 Hosting the Custom JS / CSS Files](../../doc/README.md/#251-hosting-the-custom-js--css-files) of the main [Connections Cloud Application Extension Migration](../../doc/README.md) documentation for more details about where to host the custom JS/CSS files.
+See section [2.5.1 Hosting the Custom JS / CSS Files](/msp/doc/README.md/#251-hosting-the-custom-js--css-files) of the main [Connections Cloud Application Extension Migration](/msp/doc/README.md) documentation for more details about where to host the custom JS/CSS files.
 
 ## Troubleshooting / Validation
 Below are some common troubleshooting issues and how to potentially solve those issues and validate that the custom extension script is working properly. Addition console log statements can be added to the custom JS script to help with debugging.
