@@ -11,7 +11,7 @@ Sample community templates, you know, to use, try, modify :-) Enjoy!
 |Template Name| Purpose| Thumbnail| Download link |
 |---|---|---|---|
 | Max Service | | ![](https://raw.githubusercontent.com/HCL-TECH-SOFTWARE/connections-samples/main/community-templates/thumbnails/MaxServiceTemplate.jpg?raw=true) | [download Max Service](https://github.com/HCL-TECH-SOFTWARE/connections-samples/blob/main/community-templates/templates/1607710547614_868aeec2-525d-41a3-9c58-5f49b841c3c7.zip) |
-| Car Expo | | ![](https://raw.githubusercontent.com/HCL-TECH-SOFTWARE/connections-samples/main/community-templates/thumbnails/CarExpo.jpg?raw=true)| [download Car Expo](https://github.com/HCL-TECH-SOFTWARE/connections-samples/blob/main/community-templates/templates/1607538264532_27372e34-55aa-408e-86bb-b10b622f26b4.zip) |
+| Car Expo | | ![](https://github.com/HCL-TECH-SOFTWARE/connections-samples/blob/main/community-templates/thumbnails/CarExpo.jpg)| [download Car Expo](https://github.com/HCL-TECH-SOFTWARE/connections-samples/blob/main/community-templates/templates/1607538264532_27372e34-55aa-408e-86bb-b10b622f26b4.zip) |
 | Work N Fun | | ![](https://raw.githubusercontent.com/HCL-TECH-SOFTWARE/connections-samples/main/community-templates/thumbnails/WorknFun.jpg?raw=true)| [download Work N Fun](https://github.com/HCL-TECH-SOFTWARE/connections-samples/blob/main/community-templates/templates/1607557980409_b9c878e9-2736-4e1f-8a65-208a5a4c1f4f.zip)
 
 
