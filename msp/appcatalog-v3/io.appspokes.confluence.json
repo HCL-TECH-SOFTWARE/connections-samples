@@ -1,0 +1,146 @@
+{
+  "app_id": "io.appspokes.confluence.v3",
+  "description": "Confluence",
+  "name": "Confluence",
+  "services": [
+    "Communities"
+  ],
+  "state": "disabled",
+  "title": "Confluence",
+  "extensions": [
+    {
+      "description": "Confluence List",
+      "ext_id": "io.appspokes.confluence.v3.list",
+      "name": "Confluence List",
+      "type": "community_widget",
+      "payload": {
+        "urls": {},
+        "defId": "Confluence List",
+        "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+        "modes": "view",
+        "primaryWidget": "true",
+        "showInPalette": "true",
+        "uniqueInstance": "false",
+        "itemSet": [
+          {
+            "name": "url",
+            "value": "https://confluence-dev.appspokes.net/communityapp/confluence/listapp/view"
+          },
+          {
+            "name": "height",
+            "value": "600px"
+          },
+          {
+            "name": "width",
+            "value": "100%"
+          }
+        ],
+        "url": "https://apps.collabservintegration.com/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+      }
+    },
+    {
+      "description": "Confluence Recent Updates",
+      "ext_id": "io.appspokes.confluence.v3.updates",
+      "name": "Confluence Recent Updates",
+      "type": "community_widget",
+      "payload": {
+        "urls": {},
+        "defId": "Confluence Recent Updates",
+        "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+        "modes": "view",
+        "primaryWidget": "true",
+        "showInPalette": "true",
+        "uniqueInstance": "false",
+        "itemSet": [
+          {
+            "name": "width",
+            "value": "100%"
+          },
+          {
+            "name": "height",
+            "value": "600px"
+          },
+          {
+            "name": "url",
+            "value": "https://confluence-dev.appspokes.net/communityapp/confluence/recentupdates/view"
+          }
+        ],
+        "url": "https://apps.collabservintegration.com/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+      }
+    },
+    {
+      "description": "Confluence Search",
+      "ext_id": "io.appspokes.confluence.v3.search",
+      "name": "Confluence Search",
+      "type": "community_widget",
+      "payload": {
+        "urls": {},
+        "defId": "Confluence Search",
+        "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+        "modes": "view",
+        "primaryWidget": "true",
+        "showInPalette": "true",
+        "itemSet": [
+          {
+            "name": "url",
+            "value": "https://confluence-dev.appspokes.net/communityapp/confluence/searchapp/view"
+          },
+          {
+            "name": "height",
+            "value": "600px"
+          },
+          {
+            "name": "width",
+            "value": "100%"
+          }
+        ],
+        "uniqueInstance": "false",
+        "url": "https://apps.collabservintegration.com/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+      }
+    },
+    {
+      "description": "Confluence Wiki",
+      "ext_id": "io.appspokes.confluence.v3.wiki",
+      "name": "Confluence Wiki",
+      "type": "community_widget",
+      "payload": {
+        "urls": {},
+        "defId": "Confluence Wiki",
+        "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+        "modes": "fullpage",
+        "primaryWidget": "true",
+        "showInPalette": "true",
+        "uniqueInstance": "false",
+        "itemSet": [
+          {
+            "name": "width",
+            "value": "100%"
+          },
+          {
+            "name": "height",
+            "value": "600px"
+          },
+          {
+            "name": "url",
+            "value": "https://confluence-dev.appspokes.net/communityapp/confluence/wikiapp/view"
+          }
+        ],
+        "url": "https://apps.collabservintegration.com/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+      }
+    },
+    {
+      "name": "Confluence Embedded Experience",
+      "description": "Confluence Embedded Experience",
+      "ext_id": "io.appspokes.confluence.v3.embedded",
+      "type": "gadget",
+      "payload": {
+        "extends": "as_event",
+        "icon": "https://confluence-dev.appspokes.net/assets/images/confluence.png",
+        "mime_type": "",
+        "name": "Confluence Embedded Experience",
+        "text": "Confluence Embedded Experience",
+        "url": "https://confluence-dev.appspokes.net/stream/experience/render"
+      }
+    }
+  ]
+}

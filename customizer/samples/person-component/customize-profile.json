@@ -1,0 +1,23 @@
+{
+  "name": "Profile Customization",
+  "title": "Customize profile page",
+  "description": "Add custom button to profile",
+  "services": [
+      "Customizer"
+  ],
+  "extensions": [
+      {
+          "name": "Add custom profile button",
+          "type": "com.ibm.customizer.ui",
+          "payload": {
+              "include-files": [
+                  "customizeProfile/customize-profile.js"
+              ],
+              "cache-headers": {
+                  "cache-control": "max-age=43200"
+              }
+          },
+          "path": "profiles"
+      }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "WebEx Navbar Customization",
+  "title": "WebEx Navbar",
+  "description": "Mimic Connections Cloud navbar integration with WebEx",
+  "services": [
+      "Customizer"
+  ],
+  "extensions": [
+      {
+          "name": "Add WebEx links",
+          "type": "com.ibm.customizer.ui",
+          "payload": {
+              "include-files": [
+                  "webex-navbar/webex-navbar.js"
+              ],
+              "cache-headers": {
+                  "cache-control": "max-age=43200"
+              }
+          },
+          "path": "global"
+      }
+  ]
+}

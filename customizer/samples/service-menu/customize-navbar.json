@@ -1,0 +1,23 @@
+{
+  "name": "Navbar Customization",
+  "title": "Customize navigation bar",
+  "description": "Add custom buttons to navbar",
+  "services": [
+      "Customizer"
+  ],
+  "extensions": [
+      {
+          "name": "Add custom links",
+          "type": "com.ibm.customizer.ui",
+          "payload": {
+              "include-files": [
+                  "customizeNavbar/custom-navbar.js"
+              ],
+              "cache-headers": {
+                  "cache-control": "max-age=43200"
+              }
+          },
+          "path": "global"
+      }
+  ]
+}

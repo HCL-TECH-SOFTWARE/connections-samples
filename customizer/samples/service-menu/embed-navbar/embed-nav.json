@@ -1,0 +1,26 @@
+{
+  "name": "CNX Navbar",
+  "title": "CNX Navbar",
+  "description": "Updates for embedded CNX navbar",
+  "services": [
+    "Customizer"
+  ],
+  "extensions": [
+    { "name": "Embed Navbar Extension",
+      "type": "com.ibm.customizer.ui",
+      "path": "homepage",
+      "payload": {
+        "include-files": [
+          "embed-navbar/embed-nav.js",
+          "embed-navbar/embed-nav.css"
+        ],
+        "match": {
+          "url": "pageHeader"
+        },
+        "cache-headers": {
+          "cache-control": "max-age=43200"
+        }
+      }
+    }
+  ]
+}

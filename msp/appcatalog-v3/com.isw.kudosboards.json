@@ -1,0 +1,72 @@
+{    "name": "Kudos Boards",
+    "title": "Kudos Boards",
+    "description": "Kudos Boards community and activity stream extensions",
+    "app_id" : "com.isw.kudosboards",
+    "services": [
+        "Communities"
+    ],
+    "state": "disabled",
+    "extensions": [
+        {
+            "name": "Kudos Community Boards Widget",
+            "description": "To show community Boards",
+            "ext_id":"com.isw.kudosboards.community.widget",
+            "type": "community_widget",
+            "payload": {
+                "urls": {
+                    "icon_url": "https://kudosboards.com/favicon.ico",
+                    "url": "https://kudosboards.com/boards/community/smartcloud"
+                },
+                "defId": "Kudos Community Boards",
+                "themes": "wpthemeNarrow wpthemeWide wpthemeBanner",
+                "modes": "view fullpage",
+                "primaryWidget": "true",
+                "showInPalette": "true",
+                "itemSet": [
+                    {
+                        "name": "url",
+                        "value": "https://kudosboards.com/boards/community/smartcloud"
+                    },
+                    {
+                        "name": "height",
+                        "value": "500px"
+                    },
+                    {
+                        "name": "width",
+                        "value": "100%"
+                    }
+                ],
+                "url": "/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+            }
+        },
+        {
+            "name":"Kudos Boards Navbar Link",
+            "description":"Launch Kudos boards link",
+            "type":"com.ibm.action.link",
+            "ext_id":"com.isw.kudosboards.menu.kudosboards",
+            "path":"com.ibm.navbar.order.95000",
+            "payload":{
+                "text": "Kudos Boards",
+                "link": "https://kudosboards.com/api/auth/smartcloud/a3|g3|s3",
+                "icon": "",
+                "tooltip": ""
+            }
+        },
+        {
+            "name": "Kudos Boards Activity Stream Events",
+            "description": "Provide activity stream entries for Kudos Board events",
+            "ext_id":"com.isw.kudosboards.as_event",
+            "type": "gadget",
+            "payload": {
+                "extends": "as_event",
+                "mime_type": "",
+                "icon": "https://kudosboards.com/favicon.ico",
+                "tooltip": "AS entry for Board",
+                "description": "AS entry for Boards",
+                "new_window": "false",
+                "text": "Boards AS",
+                "url": "https://kudosboards.com/stream/smartcloud"
+            }
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Bizcard Customization",
+  "title": "Customize bizcard menu",
+  "description": "Add custom menu items to bizcard",
+  "services": [
+      "Customizer"
+  ],
+  "extensions": [
+      {
+          "name": "Add custom bizcard menu",
+          "type": "com.ibm.customizer.ui",
+          "payload": {
+              "include-files": [
+                  "customizeBizcard/customize-bizcard.js"
+              ],
+              "cache-headers": {
+                  "cache-control": "max-age=43200"
+              }
+          },
+          "path": "global"
+      }
+  ]
+}

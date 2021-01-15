@@ -1,0 +1,23 @@
+{
+    "name": "Files Menu Customization",
+    "title": "Customize files action menu",
+    "description": "Add custom action to files menu",
+    "services": [
+        "Customizer"
+    ],
+    "extensions": [
+        {
+            "name": "Add custom files action",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "filesMenu/custom-files-menu.js"
+                ],
+                "cache-headers": {
+                    "cache-control": "max-age=43200"
+                }
+            },
+            "path": "files"
+        }
+    ]
+  }

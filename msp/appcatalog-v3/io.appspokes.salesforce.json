@@ -1,0 +1,132 @@
+{
+    "app_id": "io.appspokes.salesforce",
+    "name": "Salesforce",
+    "title": "Salesforce",
+    "description": "Salesforce",
+    "services": [
+        "Communities"
+    ],
+    "state": "disabled",
+    "extensions": [
+        {
+            "ext_id": "io.appspokes.salesforce.chart",
+            "name": "Salesforce Chart",
+            "title": "Salesforce Chart",
+            "description": "Salesforce Chart",
+            "type": "community_widget",
+            "payload": {
+                "defId": "Salesforce Chart",
+                "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+                "modes": "view",
+                "primaryWidget": "true",
+                "showInPalette": "true",
+                "itemSet": [
+                    {
+                        "name": "url",
+                        "value": "https://salesforce.appspokes.net/communityapp/sfdc/chartapp/render"
+                    },
+                    {
+                        "name": "height",
+                        "value": "600px"
+                    },
+                    {
+                        "name": "width",
+                        "value": "100%"
+                    }
+                ],
+                "uniqueInstance": "false",
+                "url": "/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+            }
+        },
+        {
+            "ext_id": "io.appspokes.salesforce.list",
+            "name": "Salesforce List",
+            "title": "Salesforce List",
+            "description": "Salesforce List",
+            "type": "community_widget",
+            "payload": {
+                "defId": "Salesforce List",
+                "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+                "modes": "view",
+                "primaryWidget": "true",
+                "showInPalette": "true",
+                "itemSet": [
+                    {
+                        "name": "height",
+                        "value": "600px"
+                    },
+                    {
+                        "name": "width",
+                        "value": "100%"
+                    },
+                    {
+                        "name": "url",
+                        "value": "https://salesforce.appspokes.net/communityapp/sfdc/listapp/render"
+                    }
+                ],
+                "uniqueInstance": "false",
+                "url": "/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+            }
+        },
+        {
+            "ext_id": "io.appspokes.salesforce.recent",
+            "name": "Salesforce Recently Viewed",
+            "title": "Salesforce Recently Viewed",
+            "description": "Salesforce Recently Viewed",
+            "type": "community_widget",
+            "payload": {
+                "defId": "Salesforce Recently Viewed",
+                "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+                "modes": "view",
+                "primaryWidget": "true",
+                "showInPalette": "true",
+                "uniqueInstance": "false",
+                "itemSet": [
+                    {
+                        "name": "url",
+                        "value": "https://salesforce.appspokes.net/communityapp/sfdc/recentapp/render"
+                    },
+                    {
+                        "name": "height",
+                        "value": "600px"
+                    },
+                    {
+                        "name": "width",
+                        "value": "100%"
+                    }
+                ],
+                "url": "/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+            }
+        },
+        {
+            "ext_id": "io.appspokes.salesforce.search",
+            "name": "Salesforce Search",
+            "title": "Salesforce Search",
+            "description": "Salesforce Search",
+            "type": "community_widget",
+            "payload": {
+                "defId": "Salesforce Search",
+                "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+                "modes": "view",
+                "primaryWidget": "true",
+                "showInPalette": "true",
+                "itemSet": [
+                    {
+                        "name": "width",
+                        "value": "100%"
+                    },
+                    {
+                        "name": "height",
+                        "value": "600px"
+                    },
+                    {
+                        "name": "url",
+                        "value": "https://salesforce.appspokes.net/communityapp/sfdc/searchapp/render"
+                    }
+                ],
+                "uniqueInstance": "false",
+                "url": "/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+            }
+        }
+    ]
+}

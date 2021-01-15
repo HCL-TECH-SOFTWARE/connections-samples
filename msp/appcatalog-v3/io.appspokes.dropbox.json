@@ -1,0 +1,55 @@
+{
+  "app_id": "io.appspokes.dropbox.v3",
+  "description": "Dropbox",
+  "name": "Dropbox",
+  "services": [
+    "Communities"
+  ],
+  "state": "disabled",
+  "title": "Dropbox",
+  "extensions": [
+    {
+      "description": "Dropbox List App",
+      "ext_id": "io.appspokes.dropbox.v3.list",
+      "name": "Dropbox List App",
+      "type": "community_widget",
+      "payload": {
+        "urls": {},
+        "defId": "Dropbox List App",
+        "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+        "modes": "view",
+        "primaryWidget": "true",
+        "showInPalette": "true",
+        "itemSet": [
+          {
+            "name": "width",
+            "value": "100%"
+          },
+          {
+            "name": "url",
+            "value": "https://dropbox-dev.appspokes.net/communityapp/filelist/index"
+          },
+          {
+            "name": "height",
+            "value": "600px"
+          }
+        ],
+        "uniqueInstance": "false",
+        "url": "https://apps.collabservintegration.com/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+      }
+    },
+    {
+      "name": "Dropbox Embedded Experience",
+      "description": "Dropbox Embedded Experience",
+      "ext_id": "io.appspokes.dropbox.v3.embedded",
+      "type": "gadget",
+      "payload": {
+        "extends": "as_event",
+        "icon": "https://dropbox-dev.appspokes.net/assets/images/dropbox.png",
+        "mime_type": "",
+        "name": "Dropbox Embedded Experience",
+        "url": "https://dropbox-dev.appspokes.net/stream/experience/render"
+      }
+    }
+  ]
+}

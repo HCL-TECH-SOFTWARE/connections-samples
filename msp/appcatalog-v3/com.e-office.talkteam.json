@@ -1,0 +1,69 @@
+{
+    "app_id": "com.e-office.talkteam",
+    "name": "TalkTeam",
+    "title": "TalkTeam",
+    "description": "TalkTeam",
+    "services": [
+        "Communities"
+    ],
+    "state": "enabled",
+    "payload": {
+        "pre-migration": {
+            "migration-type": "navbar",
+            "migration-date": "1492899198274"
+        }
+    },
+    "extensions": [
+        {
+            "ext_id": "com.e-office.talkteam.menu",
+            "name": "TalkTeam",
+            "title": "TalkTeam",
+            "description": "TalkTeam",
+            "type": "com.ibm.action.link",
+            "payload": {
+                "link": "https://app-na.talkteam.org/index.jsp",
+                "icon": "https://app-na.talkteam.org/talkteam/static/images/talkteam_logo.png",
+                "tooltip": "TalkTeam",
+                "window_features": "location=yes,resizable=yes,scrollbars=yes,titlebar=yes,height=600,width=1024,left=200,top=200"
+            }
+        },
+        {
+            "ext_id": "com.e-office.talkteam.widget",
+            "name": "TalkTeam Widget",
+            "title": "TalkTeam Widget",
+            "type": "community_widget",
+            "payload": {
+                "defId": "TalkTeam CommunityWidget",
+                "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+                "modes": "view fullpage",
+                "primaryWidget": "true",
+                "showInPalette": "true",
+                "iconUrl": "https://app-na.talkteam.org/static/images/talkteam_logo.png",
+                "uniqueInstance": "true",
+                "itemSet": [
+                    {
+                        "name": "url",
+                        "value": "https://app-na.talkteam.org/cloudWidget.jsp"
+                    },
+                    {
+                        "name": "talkteamurl",
+                        "value": "https://app-na.talkteam.org/"
+                    },
+                    {
+                        "name": "height",
+                        "value": "400px"
+                    },
+                    {
+                        "name": "width",
+                        "value": "100%"
+                    }
+                ],
+                "url": "/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml",
+                "urls": {
+                    "icon_url": "https://app-na.talkteam.org/static/images/talkteam_logo.png",
+                    "url": "https://app-na.talkteam.org/talkteamIWidgetCloud.xml"
+                }
+            }
+        }
+    ]
+}

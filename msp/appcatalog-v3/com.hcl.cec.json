@@ -1,0 +1,27 @@
+{   "name": "Connections Engagement Center",
+    "title": "Connections Engagement Center",
+    "description": "CEC community extension",
+    "app_id" : "com.hcl.cec",
+    "services": [
+        "Communities"
+    ],
+    "state": "disabled",
+    "extensions": [
+        {
+            "name": "CEC Community Widget",
+            "description": "CEC communities app widget",
+            "ext_id": "com.hcl.cec.community.widget",
+            "type": "community_widget",
+            "payload": {
+                "defId": "Connections Engagement Center",
+                "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+                "modes": "view fullpage",
+                "primaryWidget": "true",
+                "showInPalette": "true",
+                "iconUrl": "https://sampleconnectionswidget.mybluemix.net/icon.png",
+                "uniqueInstance": "true",
+                "url": "{webresourcesSvcRef}/../../xcc/templates/iWidgetXCCCommunityDefinition.xml"
+            }
+        }
+    ]
+}

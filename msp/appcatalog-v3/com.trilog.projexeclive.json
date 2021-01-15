@@ -1,0 +1,24 @@
+{
+    "app_id": "com.trilog.projexeclive",
+    "name": "ProjExec Live Projects",
+    "title": "ProjExec Live Projects",
+    "description": "Add ProjExec link to top navigation bar",
+    "services": [
+        "TopNavigationBar"
+    ],
+    "state": "enabled",
+    "extensions": [
+        {
+            "ext_id": "com.trilog.projexeclive.menu",
+            "name": "ProjExec Live Projects",
+            "title": "ProjExec Live Projects",
+            "description": "Add ProjExec link to top navigation bar",
+            "type": "com.ibm.action.link",
+            "payload": {
+		        "link": "https://live.projexec.com/projexeclive/lotuslive_login.xsp",
+		        "tooltip": "",
+		        "target": "_blank"
+            }
+        }
+    ]
+}

@@ -1,0 +1,116 @@
+{
+  "app_id": "io.appspokes.github.v3",
+  "description": "GitHub",
+  "name": "GitHub",
+  "services": [
+    "Communities"
+  ],
+  "state": "disabled",
+  "title": "GitHub",
+  "extensions": [
+    {
+      "name": "GitHub Commits",
+      "description": "GitHub Commits",
+      "ext_id": "io.appspokes.github.v3.list",
+      "type": "community_widget",
+      "payload": {
+        "urls": {},
+        "defId": "GitHub Commits",
+        "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+        "modes": "view",
+        "primaryWidget": "true",
+        "showInPalette": "true",
+        "uniqueInstance": "false",
+        "itemSet": [
+          {
+            "name": "height",
+            "value": "600px"
+          },
+          {
+            "name": "width",
+            "value": "100%"
+          },
+          {
+            "name": "url",
+            "value": "https://github-dev.appspokes.net/commits"
+          }
+        ],
+        "url": "https://apps.collabservintegration.com/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+      }
+    },
+    {
+      "name": "GitHub Stats",
+      "description": "GitHub Stats",
+      "ext_id": "io.appspokes.github.v3.stats",
+      "type": "community_widget",
+      "payload": {
+        "urls": {},
+        "defId": "GitHub Stats",
+        "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+        "modes": "view",
+        "primaryWidget": "true",
+        "showInPalette": "true",
+        "uniqueInstance": "false",
+        "itemSet": [
+          {
+            "name": "height",
+            "value": "600px"
+          },
+          {
+            "name": "url",
+            "value": "https://github-dev.appspokes.net/stats"
+          },
+          {
+            "name": "width",
+            "value": "100%"
+          }
+        ],
+        "type": "community_widget",
+        "url": "https://apps.collabservintegration.com/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+      }
+    },
+    {
+      "name": "GitHub Issues",
+      "description": "GitHub Issues",
+      "ext_id": "io.appspokes.github.v3.issues",
+      "type": "community_widget",
+      "payload": {
+        "urls": {},
+        "defId": "GitHub Issues",
+        "themes": "wpthemeThin wpthemeNarrow wpthemeWide wpthemeBanner",
+        "modes": "view",
+        "primaryWidget": "true",
+        "showInPalette": "true",
+        "itemSet": [
+          {
+            "name": "url",
+            "value": "https://github-dev.appspokes.net/issues"
+          },
+          {
+            "name": "height",
+            "value": "600px"
+          },
+          {
+            "name": "width",
+            "value": "100%"
+          }
+        ],
+        "uniqueInstance": "false",
+        "url": "https://apps.collabservintegration.com/connections/resources/web/com.ibm.social.urliWidget.web.resources/widget/urlWidget.xml"
+      }
+    },
+    {
+      "name": "GitHub Embedded Experience",
+      "description": "GitHub Embedded Experience",
+      "ext_id": "io.appspokes.github.v3.embedded",
+      "type": "gadget",
+      "payload": {
+        "extends": "as_event",
+        "icon": "https://github-dev.appspokes.net/assets/images/github.png",
+        "mime_type": "",
+        "text": "GitHub Embedded Experience",
+        "url": "https://github-dev.appspokes.net/stream/experience/render"
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+    "name": "New File Menu Customization",
+    "title": "Customize new file action menu",
+    "description": "Add custom action to new file menu",
+    "services": [
+        "Customizer"
+    ],
+    "extensions": [
+        {
+            "name": "Add custom new file action",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "newFileMenu/custom-new-file-menu.js"
+                ],
+                "cache-headers": {
+                    "cache-control": "max-age=43200"
+                }
+            },
+            "path": "files"
+        }
+    ]
+  }

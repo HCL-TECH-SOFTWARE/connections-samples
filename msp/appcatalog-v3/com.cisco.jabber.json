@@ -1,0 +1,819 @@
+{
+  "app_id": "com.cisco.jabber.v3",
+  "description": "%Jabber_description",
+  "entitlement": "isv_jabber",
+  "icon": "",
+  "name": "Jabber",
+  "state": "disabled",
+  "services": [
+    "TopNavigationBar", "Connections"
+  ],
+  "title": "%Jabber_title",
+  "translations": {
+    "": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "App for containing Jabber extensions for Connections"
+    },
+    "en": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "App for containing Jabber extensions for Connections"
+    },
+    "ar": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "تطبيق لاحتواء امتدادات Jabber الى Connections"
+    },
+    "ca": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "Aplicació que conté les extensions del Jabber per al Connections"
+    },
+    "zh": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "将包含 Connections 的 Jabber 扩展的应用程序"
+    },
+    "zh-tw": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "包含 Connections 之 Jabber 延伸規格的應用程式"
+    },
+    "cs": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "Aplikace pro obsažení rozšíření Jabber pro produkt Connections"
+    },
+    "da": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "App til opbevaring af Jabber-udvidelser til Connections"
+    },
+    "de": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "App für enthaltende Jabber-Erweiterungen für Connections"
+    },
+    "el": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "Εφαρμογή που περιέχει τις επεκτάσεις του Jabber για το Connections"
+    },
+    "es": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "Aplicación que contiene las extensiones de Jabber para Connections"
+    },
+    "fi": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "Sovellus, joka sisältää Connections-ohjelman Jabber-laajennukset"
+    },
+    "fr": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "Application destinée à contenir les extensions Jabber pour Connections"
+    },
+    "he": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "יישומון המכיל את הרחבות Jabber עבור Connections"
+    },
+    "hr": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "Aplikacija koja sadrži Jabber proširenja za Connections"
+    },
+    "hu": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "A Connections megoldáshoz Jabber bővítményeket tartalmazó alkalmazás"
+    },
+    "it": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "App per contenere le estensioni Jabber per Connections"
+    },
+    "ja": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "Connections 用の Jabber 拡張を含めるためのアプリ"
+    },
+    "ko": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "Connections용 Jabber 확장을 포함하기 위한 앱"
+    },
+    "nl": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "Container-app voor Jabber-extensies voor Connections"
+    },
+    "no": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "App for Jabber-utvidelser for Connections"
+    },
+    "pl": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "Apka zawierająca rozszerzenia programu Jabber dla programu Connections"
+    },
+    "pt": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "Aplicação para conter extensões do Jabber para o Connections"
+    },
+    "pt-br": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "Aplicativo que contém extensões de Jabber para Connections"
+    },
+    "ro": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "Aplicaţie pentru conţinerea extensiilor Jabber pentru Connections"
+    },
+    "ru": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "Приложение для расширений Jabber для Connections"
+    },
+    "sk": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "Appka na obsiahnutie rozšírení Jabber pre Connections"
+    },
+    "sl": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "Aplikacija za vsebovanje razširitev Jabber za Connections"
+    },
+    "sr": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "Aplikacija koja sadrži Jabber proširenje za Connections"
+    },
+    "sv": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "App med Jabber-tillägg för Connections"
+    },
+    "th": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "แอ็พสำหรับการเก็บส่วนขยาย Jabber สำหรับ Connections"
+    },
+    "tr": {
+      "Jabber_title": "Jabber",
+      "Jabber_description": "Connections için Jabber uzantılarını dahil etmek için uygulama"
+    }
+  },
+  "extensions": [{
+      "translations": {
+        "": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "Extension to display Jabber icon on Top Navbar"
+        },
+        "en": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "Extension to display Jabber icon on Top Navbar"
+        },
+        "ar": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "الامتداد لعرض شارة Jabber بخط التجول العلوي"
+        },
+        "ca": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "Extensió per mostrar la icona del Jabber a la barra de navegació superior"
+        },
+        "zh": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "用于在顶级导航栏上显示 Jabber 图标的扩展"
+        },
+        "zh-tw": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "在「頂端導覽列」上顯示 Jabber 圖示的延伸規格"
+        },
+        "cs": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "Rozšíření pro zobrazení ikony Jabber v horním navigačním panelu"
+        },
+        "da": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "Udvidelse til at vise Jabber-ikon på topnavigationslinje"
+        },
+        "de": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "Erweiterung zum Anzeigen des Jabber-Symbols in Top Navbar"
+        },
+        "el": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "Εφαρμογή που επιτρέπει την εμφάνιση του εικονιδίου του Jabber στη γραμμή πλοήγησης στο πάνω μέρος της σελίδας"
+        },
+        "es": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "Extensión para mostrar el icono de Jabber en la barra de navegación superior"
+        },
+        "fi": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "Laajennus, joka tuo Jabber-kuvakkeen näkyviin ylänavigointipalkkiin"
+        },
+        "fr": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "Extension permettant d'afficher l'icône Jabber dans la barre de navigation supérieure"
+        },
+        "he": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "הרחבה להצגת איקון Jabber בסרגל הניווט העליון"
+        },
+        "hr": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "Proširenje za prikaz Jabber ikone na gornjem Navbaru"
+        },
+        "hu": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "A Jabber ikont a navigációs sáv tetején megjelenítő bővítmény"
+        },
+        "it": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "Estensione per visualizzare l'icona di Jabber nella barra di navigazione superiore"
+        },
+        "ja": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "トップナビゲーションバーに Jabber アイコンを表示するための拡張"
+        },
+        "ko": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "최상위 탐색줄에 Jabber 아이콘을 표시하기 위한 확장"
+        },
+        "nl": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "Extensie voor weergave van Jabber-pictogram op navigatiebalk"
+        },
+        "no": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "Utvidelser for å vise Jabber-ikon på navigeringslinjen øverst"
+        },
+        "pl": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "Rozszerzenie do wyświetlania ikony Jabber na górnym pasku nawigacyjnym"
+        },
+        "pt": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "Extensão para apresentar o ícone do Jabber na barra de navegação superior"
+        },
+        "pt-br": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "Extensão para exibir o ícone de Jabber na barra de navegação superior"
+        },
+        "ro": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "Extensie pentru afişare pictogramă Jabber în bara de navigare de sus"
+        },
+        "ru": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "Расширение для отображения значка Jabber в верхней панели навигации"
+        },
+        "sk": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "Rozšírenie na zobrazenie ikony Jabber na hornej navigačnej lište"
+        },
+        "sl": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "Razširitev za prikaz ikone Jabber v zgornji navigacijski vrstici"
+        },
+        "sr": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "Proširenje za prikaz ikone Jabber na gornjoj traci za navigaciju"
+        },
+        "sv": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "Tillägg för visning av Jabber-ikon i navigeringsfältet"
+        },
+        "th": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "ส่วนขยายเพื่อแสดงไอคอน Jabber บน Top Navbar"
+        },
+        "tr": {
+          "JabberNavbarChat-Connections_title": "Jabber",
+          "JabberNavbarChat-Connections_description": "Üst Gezinme Çubuğunda Jabber simgesini görüntülemek için uzantı"
+        }
+      },
+      "type": "com.ibm.action.link",
+      "title": "%JabberNavbarChat-Connections_title",
+      "payload": {
+        "url": "",
+        "target": "",
+        "Xtarget": "",
+        "icon": "data:image/svg+xml;base64,PHN2ZyBjbGFzcz0nY2hhdC1pbWFnZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyBmaWxsPSd3aGl0ZScgdmlld0JveD0nMCAwIDIwIDIwJz48cGF0aCBjbGFzcz0nY2hhdC1pbWFnZS1vdXRsaW5lJyBkPSdNMTAgMEM1LjYgMCAyIDMuNiAyIDhjMCA0LjEgMy4xIDcuNCA3IDcuOVYyMGw2LjgtNi41QzE3LjEgMTIuMSAxOCAxMC4xIDE4IDhjMC00LjQtMy42LTgtOC04em01IDEyLjlsLTUgNC43VjE1Yy0zLjkgMC03LTMuMS03LTdzMy4xLTcgNy03IDcgMy4xIDcgN2MwIDEuOS0uOCAzLjYtMiA0Ljl6Jy8+PC9zdmc+",
+        "link": "xmpp://"
+      },
+      "path": "com.ibm.navbar.order.300000",
+      "name": "Jabber Navbar Chat - Connections",
+      "ext_id": "com.cisco.jabber.v3.navbar",
+      "description": "%JabberNavbarChat-Connections_title"
+    },
+    {
+      "translations": {
+        "": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "Extension to display Jabber icon on Connections bizcard",
+          "JabberBizcardChat-Connections_text": "Chat"
+        },
+        "en": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "Extension to display Jabber icon on Connections bizcard",
+          "JabberBizcardChat-Connections_text": "Chat"
+        },
+        "ar": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "الامتداد لعرض شارة Jabber ببطاقة تعارف Connections",
+          "JabberBizcardChat-Connections_text": "محادثة"
+        },
+        "ca": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "Extensió per mostrar la icona del Jabber a la targeta de presentació del Connections",
+          "JabberBizcardChat-Connections_text": "Xat"
+        },
+        "zh": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "用于在 Connections 名片上显示 Jabber 图标的扩展",
+          "JabberBizcardChat-Connections_text": "交谈"
+        },
+        "zh-tw": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "在 Connections 名片上顯示 Jabber 圖示的延伸規格",
+          "JabberBizcardChat-Connections_text": "會談"
+        },
+        "cs": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "Rozšíření pro zobrazení ikony Jabber na vizitce produktu Connections",
+          "JabberBizcardChat-Connections_text": "Konverzace"
+        },
+        "da": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "Udvidelse til at vise Jabber-ikon på Connections-visitkort",
+          "JabberBizcardChat-Connections_text": "Snak"
+        },
+        "de": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "Erweiterung zum Anzeigen des Jabber-Symbols auf Connections BizCard",
+          "JabberBizcardChat-Connections_text": "Chatten"
+        },
+        "el": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "Εφαρμογή που επιτρέπει την εμφάνιση του εικονιδίου του Jabber στις επαγγελματικές κάρτες του Connections",
+          "JabberBizcardChat-Connections_text": "Συνομιλία"
+        },
+        "es": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "Extensión para mostrar el icono de Jabber en la tarjeta de presentación de Connections",
+          "JabberBizcardChat-Connections_text": "Conversación"
+        },
+        "fi": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "Laajennus, joka tuo Jabber-kuvakkeen näkyviin käyntikorttiin",
+          "JabberBizcardChat-Connections_text": "Jutella"
+        },
+        "fr": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "Extension permettant d'afficher l'icône Jabber sur la carte de visite Connections",
+          "JabberBizcardChat-Connections_text": "Discussion"
+        },
+        "he": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "הרחבה להצגת איקון Jabber בכרטיס הביקור של Connections",
+          "JabberBizcardChat-Connections_text": "צ'אט"
+        },
+        "hr": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "Proširenje za prikaz Jabber ikone na Connections posjetnici",
+          "JabberBizcardChat-Connections_text": "Razgovor"
+        },
+        "hu": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "A Jabber ikont a Connections névjegykártyán megjelenítő bővítmény",
+          "JabberBizcardChat-Connections_text": "Csevegés"
+        },
+        "it": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "Estensione per visualizzare l'icona di Jabber nel biglietto da visita di Connections",
+          "JabberBizcardChat-Connections_text": "Conversazione"
+        },
+        "ja": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "Connections ビジネスカードに Jabber アイコンを表示するための拡張",
+          "JabberBizcardChat-Connections_text": "チャット"
+        },
+        "ko": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "Connections 비즈니스 카드에 Jabber 아이콘을 표시하기 위한 확장",
+          "JabberBizcardChat-Connections_text": "대화"
+        },
+        "nl": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "Extensie voor weergave van Jabber-chatpictogram op Connections-visitekaartje",
+          "JabberBizcardChat-Connections_text": "Chatten"
+        },
+        "no": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "Utvidelser for å vise Jabber-ikon på visittkort i Connections",
+          "JabberBizcardChat-Connections_text": "Samtale"
+        },
+        "pl": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "Rozszerzenie do wyświetlania ikony Jabber na wizytówce programu Connections",
+          "JabberBizcardChat-Connections_text": "Czat"
+        },
+        "pt": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "Extensão para apresentar o ícone do Jabber no cartão de visita do Connections",
+          "JabberBizcardChat-Connections_text": "Conversação"
+        },
+        "pt-br": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "Extensão para exibir o ícone de Jabber no cartão de visita do Connections",
+          "JabberBizcardChat-Connections_text": "Bate-papo"
+        },
+        "ro": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "Extensie pentru afişare pictogramă Jabber în cartea de vizită Connections",
+          "JabberBizcardChat-Connections_text": "Conversație"
+        },
+        "ru": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "Расширение для отображения значка Jabber в Connections bizcard",
+          "JabberBizcardChat-Connections_text": "Чат"
+        },
+        "sk": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "Rozšírenie na zobrazenie ikony Jabber na firemnej vizitke Connections",
+          "JabberBizcardChat-Connections_text": "Rozhovor"
+        },
+        "sl": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "Razširitev za prikaz ikone Jabber na vizitki Connections",
+          "JabberBizcardChat-Connections_text": "Klepet"
+        },
+        "sr": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "Proširenje za prikaz ikone Jabber na Connections vizitkarti",
+          "JabberBizcardChat-Connections_text": "Ćaskanje"
+        },
+        "sv": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "Tillägg för visning av Jabber-ikon på Connections-visitkort",
+          "JabberBizcardChat-Connections_text": "Chatt"
+        },
+        "th": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "ส่วนขยายเพื่อแสดงไอคอน Jabber บน Connections bizcard",
+          "JabberBizcardChat-Connections_text": "สนทนา"
+        },
+        "tr": {
+          "JabberBizcardChat-Connections_title": "Jabber",
+          "JabberBizcardChat-Connections_description": "Connections kartvizit özelliğinde Jabber simgesini görüntülemek için uzantı",
+          "JabberBizcardChat-Connections_text": "Sohbet"
+        }
+      },
+      "type": "com.ibm.appreg.ext.templatedLink",
+      "title": "%JabberBizcardChat-Connections_title",
+      "payload": {
+        "url": "",
+        "text": "%nls:JabberBizcardChat-Connections_text",
+        "icon": "data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDIwIDIwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQogIDxwYXRoIHN0eWxlPSJmaWxsOiAjRkZGIiBkPSJNMTAsMEM1LjYsMCwyLDMuNiwyLDhjMCw0LjEsMy4xLDcuNCw3LDcuOVYyMGw2LjgtNi41QzE3LjEsMTIuMSwxOCwxMC4xLDE4LDhDMTgsMy42LDE0LjQsMCwxMCwweiBNMTUsMTIuOSAJbC01LDQuN1YxNWMtMy45LDAtNy0zLjEtNy03czMuMS03LDctN3M3LDMuMSw3LDdDMTcsOS45LDE2LjIsMTEuNiwxNSwxMi45eiIvPg0KICA8Y2lyY2xlIHN0eWxlPSJmaWxsOiAjMzI1QzgwIiBjeD0iMTAiIGN5PSI4IiByPSI3Ii8+DQogIDxwb2x5Z29uIHN0eWxlPSJmaWxsOiAjMzI1QzgwIiBwb2ludHM9IjEwLDE0LjIgMTAsMTcuNiAxNSwxMi45ICIvPg0KPC9zdmc+",
+        "href": "xmpp://${!emails}",
+        "locator": "chat"
+      },
+      "object": "com.ibm.appreg.object.person",
+      "name": "Jabber BizCard Chat - Connections",
+      "ext_id": "com.cisco.jabber.v3.bizcard.chat",
+      "description": "%JabberBizcardChat-Connections_description"
+    },
+    {
+      "translations": {
+        "": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "Extension to display Jabber phone call icon on Connections bizcard",
+          "JabberBizcardPhoneCall-Connections_text": "Phone call"
+        },
+        "en": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "Extension to display Jabber phone call icon on Connections bizcard",
+          "JabberBizcardPhoneCall-Connections_text": "Phone call"
+        },
+        "ar": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "امتداد لعرض شارة اتصال Jabber الهاتفي في بطاقة تعارف Connections الشخصية",
+          "JabberBizcardPhoneCall-Connections_text": "اتصال هاتفي "
+        },
+        "ca": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "Extensió per visualitzar la icona de trucada de telèfon del Jabber a la targeta de presentació del Connections",
+          "JabberBizcardPhoneCall-Connections_text": "Trucada de telèfon"
+        },
+        "cs": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "Rozšíření pro zobrazení ikony telefonního hovoru produktu Jabber na vizitce produktu Connections",
+          "JabberBizcardPhoneCall-Connections_text": "Telefonní hovor"
+        },
+        "da": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "Udvidelse til at få vist ikon for Jabber-telefonopkald på Connections-visitkort",
+          "JabberBizcardPhoneCall-Connections_text": "TelefonOpkald"
+        },
+        "de": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "Erweiterung zum Anzeigen von Jabber-Anrufsymbol auf Connections-Visistenkarte",
+          "JabberBizcardPhoneCall-Connections_text": "Anruf"
+        },
+        "el": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "Επέκταση για την εμφάνιση του εικονιδίου τηλεφωνικών κλήσεων του Jabber στην επαγγελματική κάρτα στο Connections",
+          "JabberBizcardPhoneCall-Connections_text": "Τηλεφωνική κλήση"
+        },
+        "es": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "Extensión para visualizar el icono de llamada telefónica de Jabber en la tarjeta de presentación de Connections",
+          "JabberBizcardPhoneCall-Connections_text": "Llamada telefónica"
+        },
+        "fi": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "Laajennus, jonka avulla järjestelmä näyttää Jabber-äänipuhelukuvakkeen Connections-käyntikortissa",
+          "JabberBizcardPhoneCall-Connections_text": "Äänipuhelu"
+        },
+        "fr": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "Extension pour afficher une icône d'appel téléphonique Jabber sur la carte de visite Connections",
+          "JabberBizcardPhoneCall-Connections_text": "Appel téléphonique"
+        },
+        "he": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "הרחבה להצגת איקון שיחת טלפון של Jabber בכרטיס הביקור של Connections",
+          "JabberBizcardPhoneCall-Connections_text": "שיחת טלפון"
+        },
+        "hr": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "Proširenje za prikaz ikone Jabber telefonskog poziva na Connections posjetnici",
+          "JabberBizcardPhoneCall-Connections_text": "Telefonski poziv"
+        },
+        "hu": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "Bővítmény a Jabber telefonhívás ikonjának megjelenítéséhez a Connections névjegykártyán",
+          "JabberBizcardPhoneCall-Connections_text": "Telefonhívás"
+        },
+        "it": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "Estensione per visualizzare l'icona della telefonata Jabber sul biglietto da visita di Connections",
+          "JabberBizcardPhoneCall-Connections_text": "Telefonata "
+        },
+        "ja": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "Jabber 電話コールのアイコンを IBM Connections ビジネス・カード上に表示するための拡張",
+          "JabberBizcardPhoneCall-Connections_text": "電話コール"
+        },
+        "ko": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "Connections 비즈카드에 Jabber 전화 통화 아이콘을 표시하기 위한 확장",
+          "JabberBizcardPhoneCall-Connections_text": "전화 호출"
+        },
+        "nb": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "Utvidelse for å vise ikon for Jabber-telefonsamtaler på Connections-visittkort",
+          "JabberBizcardPhoneCall-Connections_text": "Telefonsamtale"
+        },
+        "nl": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "Extensie voor weergave van pictogram voor Jabber-telefoonoproep op Connections-visitekaartje",
+          "JabberBizcardPhoneCall-Connections_text": "Telefoonoproep"
+        },
+        "pl": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "Rozszerzenie służące do wyświetlania ikony połączenia telefonicznego programu Jabber na wizytówce programu Connections.",
+          "JabberBizcardPhoneCall-Connections_text": "Połączenie telefoniczne"
+        },
+        "pt-br": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "Extensão para exibição do ícone de telefonema do Jabber no cartão de visita do Connections",
+          "JabberBizcardPhoneCall-Connections_text": "Telefonema"
+        },
+        "pt": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "Extensão para apresentar o ícone de chamada telefónica Jabber no cartão de visita do Connections",
+          "JabberBizcardPhoneCall-Connections_text": "Chamada telefónica"
+        },
+        "ro": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "Extensie pentru afişarea pictogramei de apel telefonic Jabber pe cartea de vizită Connections",
+          "JabberBizcardPhoneCall-Connections_text": "Apel telefonic"
+        },
+        "ru": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "Расширение, показывающее значок вызова Jabber на визитной карточке Connections",
+          "JabberBizcardPhoneCall-Connections_text": "Телефонный звонок"
+        },
+        "sk": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "Rozšírenie na zobrazenie ikony telefonického hovoru Jabber na firemnej vizitke Connections",
+          "JabberBizcardPhoneCall-Connections_text": "Telefonický hovor"
+        },
+        "sl": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "Razširitev za prikaz ikone telefonskega klica Jabber na vizitki Connections",
+          "JabberBizcardPhoneCall-Connections_text": "Telefonski klic"
+        },
+        "sr": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "Proširenje za prikazivanje ikone Jabber telefonskog poziva na vizitkarti platrofme Connections",
+          "JabberBizcardPhoneCall-Connections_text": "Telefonski poziv"
+        },
+        "sv": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "Tillägg för visning av Jabber-telefonsamtalsikon på Connections-visitkort",
+          "JabberBizcardPhoneCall-Connections_text": "Telefonsamtal"
+        },
+        "th": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "ส่วนขยายเพื่อแสดงไอคอนโทรศัพท์ Jabber บนนามบัตร Connections",
+          "JabberBizcardPhoneCall-Connections_text": "โทรศัพท์"
+        },
+        "tr": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "Connections kartvizitinde Jabber telefonla arama simgesini görüntülemek için uzantı",
+          "JabberBizcardPhoneCall-Connections_text": "Telefonla arama"
+        },
+        "zh": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "此扩展功能会在 Connections 名片上显示 Jabber 电话通话图标",
+          "JabberBizcardPhoneCall-Connections_text": "电话通话"
+        },
+        "zh-tw": {
+          "JabberBizcardPhoneCall-Connections_title": "Jabber",
+          "JabberBizcardPhoneCall-Connections_description": "此延伸功能會在 Connections 名片上顯示 Jabber 通話圖示",
+          "JabberBizcardPhoneCall-Connections_text": "通話"
+        }
+      },
+      "type": "com.ibm.appreg.ext.templatedLink",
+      "title": "%JabberBizcardPhoneCall-Connections_title",
+      "payload": {
+        "url": "",
+        "text": "%nls:JabberBizcardPhoneCall-Connections_text",
+        "icon": "",
+        "href": "sip://${!phone}",
+        "locator": "phone_call"
+      },
+      "object": "com.ibm.appreg.object.person",
+      "name": "Jabber BizCard Phone Call - Connections",
+      "ext_id": "com.cisco.jabber.v3.bizcard.call.phone",
+      "description": "%JabberBizcardPhoneCall-Connections_description"
+    },
+    {
+      "translations": {
+        "": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "Extension to display Jabber video call icon on Connections bizcard",
+          "JabberBizcardVideoCall-Connections_text": "Video Call"
+        },
+        "en": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "Extension to display Jabber video call icon on Connections bizcard",
+          "JabberBizcardVideoCall-Connections_text": "Video Call"
+        },
+        "ar": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "امتداد لعرض شارة اتصال Jabber المرئي في بطاقة تعارف Connections الشخصية",
+          "JabberBizcardVideoCall-Connections_text": "اتصال مرئي "
+        },
+        "ca": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "Extensió per visualitzar la icona de trucada de vídeo del Jabber a la targeta de presentació del Connections",
+          "JabberBizcardVideoCall-Connections_text": "Trucada de vídeo"
+        },
+        "cs": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "Rozšíření pro zobrazení ikony audiovizuálního volání produktu Jabber na vizitce produktu Connections",
+          "JabberBizcardVideoCall-Connections_text": "Audiovizuální volání"
+        },
+        "da": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "Udvidelse til at få vist ikon for Jabber-videoopkald på Connections-visitkort",
+          "JabberBizcardVideoCall-Connections_text": "Videoopkald"
+        },
+        "de": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "Erweiterung zum Anzeigen von Jabber-Videokonferenzsymbol auf Connections-Visistenkarte",
+          "JabberBizcardVideoCall-Connections_text": "Videokonferenz "
+        },
+        "el": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "Επέκταση για την εμφάνιση του εικονιδίου βιντεοκλήσεων του Jabber στην επαγγελματική κάρτα στο Connections",
+          "JabberBizcardVideoCall-Connections_text": "Βιντεοκλήση"
+        },
+        "es": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "Extensión para visualizar el icono de llamada de vídeo de Jabber en la tarjeta de presentación de Connections",
+          "JabberBizcardVideoCall-Connections_text": "Llamada de vídeo"
+        },
+        "fi": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "Laajennus, jonka avulla järjestelmä näyttää Jabber-videopuhelukuvakkeen Connections-käyntikortissa",
+          "JabberBizcardVideoCall-Connections_text": "Videopuhelu"
+        },
+        "fr": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "Extension pour afficher une icône d'appel vidéo Jabber sur la carte de visite Connections",
+          "JabberBizcardVideoCall-Connections_text": "Appel vidéo"
+        },
+        "he": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "הרחבה להצגת איקון שיחת וידיאו של Jabber בכרטיס הביקור של Connections",
+          "JabberBizcardVideoCall-Connections_text": "שיחת וידיאו"
+        },
+        "hr": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "Proširenje za prikaz ikone Jabber video poziva na Connections posjetnici",
+          "JabberBizcardVideoCall-Connections_text": "Video poziv"
+        },
+        "hu": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "Bővítmény a Jabber videohívás ikonjának megjelenítéséhez a Connections névjegykártyán",
+          "JabberBizcardVideoCall-Connections_text": "Videohívás"
+        },
+        "it": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "Estensione per visualizzare l'icona della videochiamata Jabber sul biglietto da visita di Connections",
+          "JabberBizcardVideoCall-Connections_text": "Videochiamata"
+        },
+        "ja": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "Jabber ビデオ・コールのアイコンを IBM Connections ビジネス・カード上に表示するための拡張",
+          "JabberBizcardVideoCall-Connections_text": "ビデオ・コール"
+        },
+        "ko": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "Connections 비즈카드에 Jabber 비디오 통화 아이콘을 표시하기 위한 확장",
+          "JabberBizcardVideoCall-Connections_text": "비디오 통화"
+        },
+        "nb": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "Utvidelse for å vise ikon for Jabber-bildesamtaler på Connections-visittkort",
+          "JabberBizcardVideoCall-Connections_text": "Bildesamtale"
+        },
+        "nl": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "Extensie voor weergave van pictogram voor Jabber-videogesprek op Connections-visitekaartje",
+          "JabberBizcardVideoCall-Connections_text": "Videogesprek"
+        },
+        "pl": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "Rozszerzenie służące do wyświetlania ikony połączenia wideo programu Jabber na wizytówce programu Connections.",
+          "JabberBizcardVideoCall-Connections_text": "Połączenie wideo"
+        },
+        "pt-br": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "Extensão para exibição do ícone de chamada de víeo do Jabber no cartão de visita do Connections",
+          "JabberBizcardVideoCall-Connections_text": "Chamada de Vídeo"
+        },
+        "pt": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "Extensão para apresentar o ícone de chamada de vídeo Jabber no cartão de visita do Connections",
+          "JabberBizcardVideoCall-Connections_text": "Chamada de vídeo"
+        },
+        "ro": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "Extensie pentru afişarea pictogramei de apel video Jabber pe cartea de vizită Connections",
+          "JabberBizcardVideoCall-Connections_text": "Apel video"
+        },
+        "ru": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "Расширение, показывающее значок видеовызова Jabber на визитной карточке Connections",
+          "JabberBizcardVideoCall-Connections_text": "Видеозвонок"
+        },
+        "sk": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "Rozšírenie na zobrazenie ikony videohovoru Jabber na firemnej vizitke Connections",
+          "JabberBizcardVideoCall-Connections_text": "Videohovor"
+        },
+        "sl": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "Razširitev za prikaz ikone video klica Jabber na vizitki Connections",
+          "JabberBizcardVideoCall-Connections_text": "Video klic"
+        },
+        "sr": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "Proširenje za prikazivanje ikone Jabber video poziva na vizitkarti platrofme Connections",
+          "JabberBizcardVideoCall-Connections_text": "Video poziv"
+        },
+        "sv": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "Tillägg för visning av Jabber-videosamtalsikon på Connections-visitkort",
+          "JabberBizcardVideoCall-Connections_text": "Videosamtal"
+        },
+        "th": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "ส่วนขยายเพื่อแสดงไอคอนการประชุมทางวิดีโอ Jabber บนนามบัตร Connections",
+          "JabberBizcardVideoCall-Connections_text": "การประชุมทางวิดีโอ"
+        },
+        "tr": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "Connections kartvizitinde Jabber görüntülü arama simgesini görüntülemek için uzantı",
+          "JabberBizcardVideoCall-Connections_text": "Görüntülü Arama"
+        },
+        "zh": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "此扩展功能会在 Connections 名片上显示 Jabber 视频通话图标",
+          "JabberBizcardVideoCall-Connections_text": "视频通话"
+        },
+        "zh-tw": {
+          "JabberBizcardVideoCall-Connections_title": "Jabber",
+          "JabberBizcardVideoCall-Connections_description": "此延伸功能會在 Connections 名片上顯示 Jabber 視訊通話圖示",
+          "JabberBizcardVideoCall-Connections_text": "視訊通話"
+        }
+      },
+      "type": "com.ibm.appreg.ext.templatedLink",
+      "title": "%JabberBizcardVideoCall-Connections_title",
+      "payload": {
+        "url": "",
+        "text": "%nls:JabberBizcardVideoCall-Connections_text",
+        "icon": "",
+        "href": "sip://${!emails}",
+        "locator": "video_call"
+      },
+      "object": "com.ibm.appreg.object.person",
+      "name": "Jabber BizCard Video Call - Connections",
+      "ext_id": "com.cisco.jabber.v3.bizcard.call.video",
+      "description": "%JabberBizcardVideoCall-Connections_description"
+    }
+  ]
+}
