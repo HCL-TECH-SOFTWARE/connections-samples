@@ -12,7 +12,10 @@ Customizer is now generally available on Connections Cloud for tenants of the No
  
 Customizer is also available for on-premises customers since the release of [Component Pack for V6.0.0.4][5] in January 2018.
 
-### 4. Provide Feedback
+### 4. History
+The customizer sample files in 'samples' were initially published (and maintained) in the [hclcnxdev/global-samples][6] connections repo on github.
+
+### 5. Provide Feedback
 Any bugs, feature requests and other observations should be reported as [issues][3] in this repository. 
 
 [1]: https://github.com/HCL-TECH-SOFTWARE/connections-samples/blob/main/customizer/docs/HCLConnectionsCustomizer.md
@@ -20,4 +23,5 @@ Any bugs, feature requests and other observations should be reported as [issues]
 [3]: https://github.com/HCL-TECH-SOFTWARE/connections-samples/issues
 [4]: https://www.youtube.com/playlist?list=PLaDSIoof-i95DcgxaxGgl3tdziBdyEfuE
 [5]: https://help.hcltechsw.com/connections/v6/admin/install/r_Orient_Me_upgrade_CR1.html?hl=6.0.0.4
+[6]: https://github.com/hclcnxdev/global-samples
 
