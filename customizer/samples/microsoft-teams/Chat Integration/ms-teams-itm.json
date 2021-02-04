@@ -23,7 +23,7 @@
                 "fr": {
                     "ImportantToMeTeamsIntegrationSIP.label": "Teams appel",
                     "ImportantToMeTeamsIntegrationChat.label": "Teams bavarder",
-                    "ImportantToMeTeamsIntegrationWebChat.label": "Teams bavarder web"
+                    "ImportantToMeTeamsIntegrationWebChat.label": "Teams bavarder Web"
                 }
             },
             "type": "com.ibm.itm.entry.person.default",

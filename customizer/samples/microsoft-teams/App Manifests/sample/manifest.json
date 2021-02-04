@@ -94,8 +94,80 @@
         "defaultLanguageTag": "en",
         "additionalLanguages": [
             {
+                "languageTag": "ar",
+                "file": "ar.json"
+            },
+            {
+                "languageTag": "ca",
+                "file": "ca.json"
+            },
+            {
+                "languageTag": "cs",
+                "file": "cs.json"
+            },
+            {
+                "languageTag": "de",
+                "file": "de.json"
+            },
+            {
                 "languageTag": "en",
                 "file": "en.json"
+            },
+            {
+                "languageTag": "es",
+                "file": "es.json"
+            },
+            {
+                "languageTag": "fi",
+                "file": "fi.json"
+            },
+            {
+                "languageTag": "fr",
+                "file": "fr.json"
+            },
+            {
+                "languageTag": "he",
+                "file": "he.json"
+            },
+            {
+                "languageTag": "it",
+                "file": "it.json"
+            },
+            {
+                "languageTag": "ja",
+                "file": "ja.json"
+            },
+            {
+                "languageTag": "ko",
+                "file": "ko.json"
+            },
+            {
+                "languageTag": "nl",
+                "file": "nl.json"
+            },
+            {
+                "languageTag": "pl",
+                "file": "pl.json"
+            },
+            {
+                "languageTag": "pt",
+                "file": "pt.json"
+            },
+            {
+                "languageTag": "ru",
+                "file": "ru.json"
+            },
+            {
+                "languageTag": "th",
+                "file": "th.json"
+            },
+            {
+                "languageTag": "zh-TW",
+                "file": "zh-TW.json"
+            },
+            {
+                "languageTag": "zh",
+                "file": "zh.json"
             }
         ]
     }

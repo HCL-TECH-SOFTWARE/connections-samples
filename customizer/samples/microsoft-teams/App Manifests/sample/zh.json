@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.Localization.schema.json",
+  "name.short": "Connections",
+  "name.full": "HCL Connections",
+  "description.short": "面向 Microsoft Teams 的 HCL Connections",
+  "description.full": "HCL Connections 提供了一个协作平台，可让您的员工保持相互联系并参与到其中。HCL Connections 使用基于角色的内容和工具帮助创建个性化、精心设计的数字办公室，从而保证您的团队集中精力实现业务目标和目的。\n\n使用此应用可轻松访问某个频道中您最喜爱的 HCL Connections 社区，或使用“消息传送扩展”与您组织中的其他 Microsoft Teams 用户共享 Connections 内容。",
+  "composeExtensions[0].commands[0].title": "Connections 共享",
+  "composeExtensions[0].commands[0].description": "与其他 Microsoft Teams 用户共享 Connections 内容"
+}
