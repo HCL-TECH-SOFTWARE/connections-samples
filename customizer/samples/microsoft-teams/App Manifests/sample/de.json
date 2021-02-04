@@ -1,0 +1,9 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.Localization.schema.json",
+  "name.short": "Connections",
+  "name.full": "HCL Connections",
+  "description.short": "HCL Connections für Microsoft Teams",
+  "description.full": "HCL Connections bietet eine kollaborative Plattform, die Ihre Mitarbeiter in Verbindung und engagiert hält. HCL Connections hilft Ihnen, ein personalisiertes, durchdachtes, digitales Büro mit rollenbasierten Inhalten und Tools zu schaffen, damit sich Ihre Teams auf das Erreichen von Geschäftszielen und -vorgaben konzentrieren können.\n\nVerwenden Sie diese App, um einfach auf Ihre bevorzugten HCL Connections Communitys in einem Kanal zuzugreifen, oder verwenden Sie die Messaging-Erweiterung, um Inhalte von Connections mit anderen Benutzern von Microsoft Teams in Ihrem Unternehmen zu teilen.",
+  "composeExtensions[0].commands[0].title": "Connections teilen",
+  "composeExtensions[0].commands[0].description": "Inhalte von Connections mit anderen Benutzern von Microsoft Teams teilen"
+}

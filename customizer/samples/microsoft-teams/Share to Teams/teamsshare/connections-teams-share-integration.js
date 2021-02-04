@@ -126,15 +126,22 @@
 
             if (message.indexOf('{PAGE_HREF}' >= 0)) {
                 // remove href string from message string and add url to link
-                message = message.replace('{PAGE_HREF}', '');
-
                 var currentUrl = window.location.href;
-                _linkHtml = '<div class="teams-share-button" data-msg-text="' + message + '" data-href="' + currentUrl + '" data-preview="true"></div>';
+                _linkHtml = '<div class="teams-share-button" data-msg-text="" data-href="' + currentUrl + '" data-preview="true"></div>';
             } else {
-                _linkHtml = '<div class="teams-share-button" data-msg-text="' + message + '" data-preview="true"></div>';
+                _linkHtml = '<div class="teams-share-button" data-msg-text="" data-preview="true"></div>';
             }
 
             return _linkHtml;
+        }
+
+        function _insertMessageToTeamsHtml(message,elem){
+            var teams_share_button= elem.querySelector(".teams-share-button");
+
+            if (message.indexOf('{PAGE_HREF}' >= 0)) {
+                message = message.replace('{PAGE_HREF}', '');
+            } 
+            teams_share_button.setAttribute("data-msg-text",message);
         }
 
         var createTeamsShareHtml = function () {
@@ -165,6 +172,7 @@
                     secondMenuLink = elem.querySelectorAll('li')[0];
                 }
                 elem.insertBefore(menuLink, secondMenuLink);
+                _insertMessageToTeamsHtml(message,elem);
             }
             // if normal cnx ui, add teams share action next to search 
             else if (!document.querySelector("#teams-share-button-wrapper")) {
@@ -182,6 +190,7 @@
                 menuLink.title = teamsShareActionTitle;
                 menuLink.innerHTML = teamsShareHtml;
                 elem.appendChild(menuLink);
+                _insertMessageToTeamsHtml(message,elem);
             }
         }
 
@@ -237,18 +246,28 @@
         }
 
         function addTeamsShareStyleRules() {
+         var teams_button_default='#teams-share-button-wrapper { position: fixed; display: block; width: 33px; height: 33px; right: 50px; top: 70px; z-index:900; }',
+           
+         teams_button_Va= '#teams-share-button-wrapper.va { width: 40px; height: 40px; top: 58px; right: 70px; } ';
+        
+         if(dojo.locale === "ar" || dojo.locale === "ur" || dojo.locale === "he" || dojo.locale === "fa" || dojo.locale === "ku"){
+            teams_button_default='#teams-share-button-wrapper { position: fixed; display: block; width: 33px; height: 33px; left: 50px; top: 70px; z-index:900; }';
+           
+            teams_button_Va= '#teams-share-button-wrapper.va { width: 40px; height: 40px; top: 61px; left: 20px; } ';
+        }
+
             var css = '' +
                 // styles for integration next to search
                 // share wrapper styles (outter div)
-                '#teams-share-button-wrapper { position: fixed; display: block; width: 33px; height: 33px; right: 50px; top: 70px; z-index:900; }' +
+                teams_button_default +
                 // button div styles
                 '#teams-share-button-wrapper .teams-share-button { height: 35px; width: 35px; background: #ffffff; border-radius: 50%; } ' +
                 '#teams-share-button-wrapper .teams-share-button:hover { border: 1px solid #4178be; position: relative; top: -1px; left: -1px; } ' +
                 // icon styles
-                '.teams-share-button img { height: 32px; width: 32px; padding: 1px; cursor: pointer; }' +
+                '.teams-share-button img { height: 32px; width: 32px; padding: 1px; cursor: pointer; }' 
 
                 // style updates for visual update styling
-                '#teams-share-button-wrapper.va { width: 40px; height: 40px; top: 58px; right: 70px; } ' +
+                 + teams_button_Va +
                 '#teams-share-button-wrapper.va .teams-share-button { height: 33px; width: 33px; border: rgb(225 227 229) solid 1px; box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px 0px; } ' +
                 '#teams-share-button-wrapper.va .teams-share-button img { height: 31px; width: 31px; }' +
                 '#teams-share-button-wrapper.va .teams-share-button:hover { border: 1px solid #3C6DF0; top: 0px; left: 0px; } ' +
@@ -356,7 +375,7 @@
         var getNls = function (cb) {
             _log('>', 'util.getNls');
             var locale = dojo.locale;
-            if (locale.length > 2) {
+            if (locale.length > 2 && locale != "pt-br" && locale != "zh-tw") {
                 locale = locale.substring(0, 2);
             }
             if (locale == null || locale === '') {
@@ -398,10 +417,19 @@
         });
 
         window.onscroll = function () {
-            if (!isVisualUpdateApplied()) {
-                document.querySelector("#teams-share-button-wrapper").style.top = document.querySelector(".icSearchPaneButton").style.top;
-            }
+                document.querySelector("#teams-share-button-wrapper").style.top = document.querySelector(".icSearchPaneButton").offsetTop+"px";
         }
+
+        waitFor(function(){
+           
+            waitFor(function(){
+
+                document.querySelector("#teams-share-button-wrapper").style.top = document.querySelector(".icSearchPaneButton").offsetTop+"px";
+
+            },"#teams-share-button-wrapper");
+
+        },".icSearchPaneButton");
+
     } catch (e) {
         console.log(e);
     }
