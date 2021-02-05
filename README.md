@@ -15,7 +15,7 @@ For community templates go [here][2]
 &nbsp;
 
 ---
-[HCL Connections Documentation](https://help.hcltechsw.com/connections/v7/index.html)
+For [HCL Connections Documentation](https://help.hcltechsw.com/connections/v7/index.html)
 
 
 [1]: https://github.com/HCL-TECH-SOFTWARE/connections-samples/blob/main/customizer/README.md
