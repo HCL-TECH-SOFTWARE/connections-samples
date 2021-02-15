@@ -3,9 +3,9 @@
 ## Overview
 The web meeting extension allows a meeting icon to be placed on the navigation bar for quick access to a user's own web conference.
 
-By default the script works by looking for a URL link labelled **Meeting** in the link roll of the user's profile and then extracting the URL and associating that with the navigation bar icon.
+By default the script works by looking for a URL link labelled **Meeting** in the **My Links** section of a user's profile (also known as the link roll) and then extracting the URL and associating that with the navigation bar icon.
 
-Once this extension is deployed by the administrator, it is very easy for a user to opt into using this feature; they simply create the **Meeting** link entry in their profile link roll.
+Once this extension is deployed by the administrator, it is very easy for a user to opt into using this feature; they simply create the **Meeting** link entry in the My Links section of their profile.
 
 Once that link is created, the icon will show up in the navigation bar.
 
@@ -16,7 +16,7 @@ This extension will work with **any meeting provider** where the meeting is acce
 Provider | Typical Meeting URL
 -------- | -------------------
 Cisco WebEx | `https://site.webex.com/join/meetingName`
-Connections Cloud | See (1) below
+IBM Connections Cloud | See (1) below
 HCL Sametime | `https://sametime.host.com/meetingName`
 Jitsi Meet | `https://meet.jit.si/meetingName`
 LogMeIn GotoMeeting | `https://www.gotomeet.me/meetingName`
@@ -35,7 +35,7 @@ In the **webMeeting.js** file, the variable **electedAttribute** is used to dete
 
 Variable Name | Purpose
 ------------- | -------
-**LINKROLL** | (default) In this case the script looks for a link named 'Meeting' (spelled exactly as written) in which each user will add the URL of the meeting service of their choice.
+**LINKROLL** | (default) In this case the script looks for a link named 'Meeting' (spelled exactly as written) in which each user will add the URL of the meeting service of their choice.  The user's add this link in the **My Links** section of their profile page.
 **AttributeName** | The name of an existing profile attribute (e.g. *x-groupwareMail* to use the value in that attribute for this purpose instead). Users will have to insert the link to their preferred meeting service by modifying that attribute in their profile. If the attribute to be used is part of the **extended attribute set**, the name must be prefixed with a **$**.
 
 ## Modifying the Meeting Icon

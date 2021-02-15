@@ -88,7 +88,7 @@ if (document.location.pathname.startsWith('/connections/opensocial/') || documen
                             dojo.setAttr(newFather, 'id', 'lotusBannerMeeting');
                             let newA = dojo.create('a');
                             dojo.setAttr(newA, 'role', 'button');
-                            dojo.setAttr(newA, 'innerHTML', '<img src="/files/customizer/webMeetings/webMeeting.png' + __repoSuffix + '"></img>');
+                            dojo.setAttr(newA, 'innerHTML', '<img src="/files/customizer/webMeeting/webMeeting.png' + __repoSuffix + '"></img>');
                             dojo.setStyle(newA, "cursor", "pointer");
                             newA.addEventListener('click', function() {
                                 dojo.stopEvent(event);
