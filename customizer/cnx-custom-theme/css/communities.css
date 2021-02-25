@@ -12260,6 +12260,10 @@ html.catalog-ui-updated .catalog .lotusMain .lotusColLeft:not(.wpthemeNarrow) > 
   position: relative;
 }
 
+#lconn_files_action_additem_2 {
+  box-sizing: border-box !important;
+}
+
 body.catalog #lotusColLeftContents .lotusSection .lotusSectionBody {
   padding: 0 24px !important;
   padding-left: calc((15px + 24px)) !important;
