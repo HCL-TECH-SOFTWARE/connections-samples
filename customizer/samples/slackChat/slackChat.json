@@ -1,0 +1,27 @@
+{
+    "name": "Slack Chat Integration",
+    "title": "Slack Chat Integration",
+    "description": "Slack chat for profiles",
+    "services": [
+        "Customizer"
+    ],
+    "state": "enabled",
+    "extensions": [
+        {
+            "name": "slack",
+            "description": "xoxp-1779396678037-1806310693792-1794995783287-7fef9bbed944fbeb0cb69f5cfc4b1eae",
+            "type": "com.ibm.customizer.ui",
+            "payload": {
+                "include-files": [
+                    "slackChat/slackChat.css",
+                    "slackChat/slackChat.js"
+                ],
+                "cache-headers": {
+                    "cache-control": "max-age=43200"
+                }
+            },
+            "path": "global",
+            "state": "enabled"
+        }
+    ]
+}

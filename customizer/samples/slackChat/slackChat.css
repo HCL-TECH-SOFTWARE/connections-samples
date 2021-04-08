@@ -1,0 +1,48 @@
+
+.slack-chat-btn {
+    box-shadow: 0 0 0 0.2px #4178be inset;
+    border: 0.2px solid #4178be !important;
+    background-color: #fff;
+    color: #4178be;
+    text-align: center;
+    border-radius: 0;
+    background-image: none;
+    font-family: "Helvetica Neue Regular",Helvetica,Arial;
+    margin: 0 4px 3px 1px;
+    padding: 9.5px 20px;
+    font-size: 1em;
+    font-weight: 400;
+    cursor: pointer;
+    
+}
+
+
+.slack-chat-btn:hover {
+    box-shadow: 0 0 0 1px #4178be inset !important;
+    transform: translateZ(0) !important;
+    transition-duration: .3s !important;
+    transition-property: box-shadow !important;
+}
+
+.li{
+    border-left: none !important;
+    padding-left: 0 !important;
+}
+
+.slack-chat-link {
+    background-color: #fff;
+    cursor: pointer;
+    color: #1970b0;
+    font-size: 11px;
+    font: 75%/1.5 Arial, Helvetica, sans-serif;
+    border:none;
+    margin-top:-1px;
+    outline:none;
+    border-right: 1px solid #ccc;
+    border-left:none;
+}
+
+.slack-chat-link:hover {
+    text-decoration: underline;
+    text-decoration-color: #1970b0;
+}
