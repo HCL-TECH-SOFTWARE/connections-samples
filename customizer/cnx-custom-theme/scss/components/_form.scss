@@ -15,7 +15,7 @@ label {
 	.lotusText{
 		width:calc(100% - 2rem)!important;
 	}
-	html:not(.dj_safari) & td:nth-child(3){
+	html:not(.dj_safari):not(.lconnFiles) & td:nth-child(3){
 		display:none!important;
 	}
 	td:nth-child(1){
