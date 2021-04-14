@@ -5277,7 +5277,7 @@ label {
 :not([id^=lconn_profiles_invite_InvitePanel_][id$=_networkInviteForm]) .lotusFormFieldRow .lotusText {
   width: calc(100% - 2rem) !important;
 }
-html:not(.dj_safari) :not([id^=lconn_profiles_invite_InvitePanel_][id$=_networkInviteForm]) .lotusFormFieldRow td:nth-child(3) {
+html:not(.dj_safari):not(.lconnFiles) :not([id^=lconn_profiles_invite_InvitePanel_][id$=_networkInviteForm]) .lotusFormFieldRow td:nth-child(3) {
   display: none !important;
 }
 :not([id^=lconn_profiles_invite_InvitePanel_][id$=_networkInviteForm]) .lotusFormFieldRow td:nth-child(1) {
