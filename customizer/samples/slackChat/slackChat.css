@@ -1,0 +1,118 @@
+
+.slack-chat-btn {
+    box-shadow: 0 0 0 0.2px #4178be inset;
+    border: 0.2px solid #4178be !important;
+    background-color: #fff;
+    color: #4178be;
+    text-align: center;
+    border-radius: 0;
+    background-image: none;
+    font-family: "Helvetica Neue Regular",Helvetica,Arial;
+    margin: 0 0px 3px 1px;
+    padding: 9.5px 20px;
+    font-size: 1em;
+    font-weight: 400;
+    cursor: pointer;
+    
+}
+
+
+.slack-chat-btn:hover {
+    box-shadow: 0 0 0 1px #4178be inset !important;
+    transform: translateZ(0) !important;
+    transition-duration: .3s !important;
+    transition-property: box-shadow !important;
+}
+
+.li{
+    border-left: none !important;
+    padding-left: 0 !important;
+}
+
+.slack-chat-link {
+    background-color: #fff;
+    cursor: pointer;
+    color: #1970b0;
+    font-size: 11px;
+    font: 75%/1.5 Arial, Helvetica, sans-serif;
+    border:none;
+    margin-top:-1px;
+    outline:none;
+    border-right: 1px solid #ccc;
+    border-left:none;
+}
+
+.slack-chat-link:hover {
+    text-decoration: underline;
+    text-decoration-color: #1970b0;
+}
+
+
+.slack-link-more-option-bizcard {
+    background-color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 5px 331px 5px 10px;
+    text-decoration: none;
+    border-top: 1px solid #ccc !important;
+    outline:none;
+}
+
+.slack-link-more-option-bizcard:hover {
+    outline:none;
+    background-color: #e9f1f3;
+}
+
+.alert-modal-box{
+    background: #fff;
+    box-shadow: 0 1px 10px rgb(0 0 0 / 30%);
+    border: 1px solid #ccc;
+    /*border: 3px solid rgba(3, 3, 3, 0.45);*/
+    /*box-shadow: 0 0 5px rgb(34 34 34 / 50%);*/
+    border-radius: 4px;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 20000; /* Sit on top */
+    right: 500px;
+    top: 40%;
+    width: 35%; /* Full width */
+    overflow: auto;
+}
+
+.alert-modal-header{
+    font-size: 1.25em;
+    font-family: "Helvetica Neue",Helvetica,Roboto,Arial;
+    background:no-repeat #325c80;
+    color:#fff;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.closeSlackAlert {
+    color:#fff;
+    font-weight: bold;
+    font-size: 1.25em;
+  }
+
+.closeSlackAlert:hover,
+.closeSlackAlert:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.alert-modal-content {
+    margin: auto;
+    padding: 30px;
+    font-size: 1.25em;
+    font-family: "Helvetica Neue",Helvetica,Roboto,Arial;
+    color:  #4178be;
+  }
+
+.bubblePos0 {
+    left: 11px !important;
+    top: -5px !important;
+}
