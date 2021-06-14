@@ -156,6 +156,6 @@ A function for Host app to fetch the entry list by type from ITM bar.
 A demo for a mock host page to embed ITM iFrame can be found here [parent.html](./parent.html)
 
 In order to use it:
-- place the parent.html and itmBootstrap.js files in a directory on the HTTP server (or other web server of static resources accessible via your https://connections.host.name domain name to minimze cross-site issues)
+- place the parent.html and itmBootstrap.js files in a directory on the HTTP server (or other web server of static resources accessible via your https://connections.host.name domain name to minimize cross-site issues)
 - go to https://connections.host.name/path/to/parent.html
 - the ITM bar should load from Connections in an iFrame at the top of the page
