@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<!-- ***************************************************************** -->
+<!--                                                                   -->
+<!-- IBM Confidential                                                  -->
+<!--                                                                   -->
+<!-- OCO Source Materials                                              -->
+<!--                                                                   -->
+<!-- Copyright IBM Corp. 2018                                          -->
+<!--                                                                   -->
+<!-- The source code for this program is not published or otherwise    -->
+<!-- divested of its trade secrets, irrespective of what has been      -->
+<!-- deposited with the U.S. Copyright Office.                         -->
+<!--                                                                   -->
+<!-- ***************************************************************** -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>ITM iframe!</title>
+    <script src="./itmBootstrap.js"></script>
+  </head>
+  <body>
+    <div style='height: auto; border: 1px solid;' contenteditable>Mock header</div>
+    <div id="itm_root">
+    </div>
+    <div id="itmContainer2">
+    </div>
+    <button name="removeOnSelectListener" onclick="removeListener()">removeOnSelectListener</button>
+    <div><label>entry name :</label>
+    <input id='entryName' type="text"></div>
+    <div><label>action name :</label>
+    <input id='actionName' type="text"></div>
+    <div>
+      <button name="addGlobal" onclick="addGlobal()">addGlobal</button>
+    </div>
+    <div>
+      <button name="changeEntryProperty" onclick="changeEntryProperty()">changeEntryProperty</button>
+    </div>
+    <div>
+      <button name="addSecondBar" onclick="addSecondBar()">addSecondBar</button>
+    </div>
+    <div>
+      <button name="getFavorites" onclick="console.log(itmBar.fetchEntries('favorites'))">getFavorites</button>
+    </div>
+    <div>
+      <button name="getSuggestions" onclick="console.log(itmBar.fetchEntries('suggestions'))">getSuggestions</button>
+    </div>
+    <div>
+      <button name="getCustomEntries" onclick="console.log(itmBar.fetchEntries('customEntries'))">getCustomEntries</button>
+    </div>
+    <script type="text/javascript">
+    var urlParameters = window.location.search;
+    var itmConfig = {
+        rtl: urlParameters.indexOf('rtl') !== -1,
+        readOnly: urlParameters.indexOf('readOnly') !== -1,
+        hasSuggestion: !(urlParameters.indexOf('noSuggestion') !== -1),
+        isMoveable: !(urlParameters.indexOf('notMoveable') !== -1),
+        hasAction: !(urlParameters.indexOf('noAction') !== -1),
+        hasTailPlus: urlParameters.indexOf('hasTailPlus') !== -1,
+        appRegistry: urlParameters.indexOf('appRegistry') !== -1,
+        hasHoverWarning: true,
+    };
+    var itmBar = null;
+    function onLoaded(itmRef) {
+      itmBar = itmRef;
+      itmBar.callMethod('addStaticHeadEntries', [genGloablEntry()]);
+      itmBar.addEventListener('onEntrySelected', onEntrySelected);
+      itmBar.addEventListener('onEntrySelected', onEntrySelected2);
+      itmBar.addEventListener('onEntrySelected', onEntrySelected2);
+      itmBar.addEventListener('onAction', onActionSelected);
+    }
+    lconn.itm.client.itmFactory.create(itmConfig, onLoaded, 'itm_root');
+
+    function onActionSelected(entry, actionType){
+      if (entry) {
+        var entryNameEle = document.getElementById('entryName');
+        entryNameEle.value = entry.name;
+        var actionNameEle = document.getElementById('actionName');
+        actionNameEle.value = actionType;
+        //console.log('entry '+entry.name+' is selected');
+      }
+    };
+
+    function onEntrySelected(entry){
+      if (entry) {
+        var entryNameEle = document.getElementById('entryName');
+        entryNameEle.value = entry.name;
+      }
+    }
+
+    function onEntrySelected2(entry){
+      if (entry) {
+        console.log('double check '+entry.name+' is selected');
+      }
+    }
+
+    function changeEntryProperty(){
+      if (itmBar) {
+        itmBar.callMethod('changeEntryProperty', '51756', 'hasNew', true);
+      }
+    }
+
+    function removeListener(){
+      if (itmBar) {
+        itmBar.removeEventListener('onEntrySelected', onEntrySelected2);
+      }
+    }
+    function addGlobal(){
+      if (itmBar) {
+        itmBar.callMethod('addStaticHeadEntries', [genGloablEntry()]);
+      }
+    }
+
+    function genGloablEntry(){
+      var id = Date.now();
+      return {
+        id:id,
+        name:'Home',
+        type: 'global',
+        image: {
+          type: 'svg',
+          icon: 'ITMHomeSVG',
+        },
+        metadata: {
+          exId: id,
+          label:'Home',
+          counterValue:20,
+          counterLabel:'unread updates',
+        },
+      }
+    }
+
+    function onLoaded2(itmRef) {
+      console.log('onload2 is called');
+    }
+    function addSecondBar(){
+      var container = document.getElementById("itmContainer2");
+      lconn.itm.client.itmFactory.create(itmConfig, onLoaded2, container);
+    }
+    </script>
+  </body>
+</html>
