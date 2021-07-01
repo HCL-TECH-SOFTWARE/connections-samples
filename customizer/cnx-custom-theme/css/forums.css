@@ -5267,6 +5267,11 @@ label {
   color: #595859 !important;
 }
 
+/* MKS 06/30/2021 Files - New Document/Presentation/Spreadsheet dialog layout */
+div[aria-describedby=create_pres_in_ibm_docs_dec_div] .lotusFormTable tbody tr:nth-child(5) td, div[aria-describedby=create_sheet_in_ibm_docs_dec_div] .lotusFormTable tbody tr:nth-child(5) td, div[aria-describedby=create_doc_in_ibm_docs_dec_div] .lotusFormTable tbody tr:nth-child(5) td {
+  width: 450px !important;
+}
+
 :not([id^=lconn_profiles_invite_InvitePanel_][id$=_networkInviteForm]) .lotusFormFieldRow td {
   display: block !important;
   margin: 0 !important;
