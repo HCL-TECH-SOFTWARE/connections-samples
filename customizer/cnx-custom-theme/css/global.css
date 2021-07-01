@@ -30,6 +30,7 @@
   /*Component Imports*/
   /*Notificaiton panel full length*/
   /*For Files Tile view quick fix put this code somewhere more relevant once its done*/
+  /* MKS 06/30/2021 Files - New Document/Presentation/Spreadsheet dialog layout */
   /*[id^="com_ibm_oneui_controls_MessageBox_"] {
   	.lotusMessageBody {
   		max-width: 500px !important;
@@ -5185,6 +5186,9 @@
 .ics-viewer label {
   font-weight: 500 !important;
   color: #595859 !important;
+}
+.ics-viewer div[aria-describedby=create_pres_in_ibm_docs_dec_div] .lotusFormTable tbody tr:nth-child(5) td, .ics-viewer div[aria-describedby=create_sheet_in_ibm_docs_dec_div] .lotusFormTable tbody tr:nth-child(5) td, .ics-viewer div[aria-describedby=create_doc_in_ibm_docs_dec_div] .lotusFormTable tbody tr:nth-child(5) td {
+  width: 450px !important;
 }
 .ics-viewer :not([id^=lconn_profiles_invite_InvitePanel_][id$=_networkInviteForm]) .lotusFormFieldRow td {
   display: block !important;
