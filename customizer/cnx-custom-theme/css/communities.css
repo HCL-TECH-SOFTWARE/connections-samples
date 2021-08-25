@@ -10481,6 +10481,15 @@ input[type=file]:focus, input[type=file] .dijitTextBoxFocused {
   outline: none;
 }
 
+/* CNXSERV-11141-repeating-event */
+.lotusTable.recWeekdayPicker.dijitInlineTable td {
+  display: table-cell !important;
+}
+
+div.recOptions {
+  background: #FFF !important;
+}
+
 #body .lconnPickerSourceArea .headerSelector .checkbox {
   margin-top: 5px !important;
 }

@@ -39,3 +39,10 @@
     }
   }
 }
+
+/* CNXSERV-11141-repeating-event */
+.lotusTable.recWeekdayPicker.dijitInlineTable td {display: table-cell !important;}
+
+div.recOptions { background: #FFF !important;}
+
+
