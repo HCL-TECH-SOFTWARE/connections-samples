@@ -115,3 +115,19 @@ div[id^="lconn_communities_catalog_widgets_RecommendationsBox_"] {
     margin-bottom: 0;
   }
 }
+
+body.catalog input[type=text],
+body.catalog input[type=password] {
+  line-height: 1.5 !important;
+  background: none !important;
+  padding: 0 !important;
+  border: none !important;
+  border-bottom: 1px solid #d8d8d8 !important;
+  font-size: 12.8px !important;
+  padding-right: 1rem !important;
+  padding-bottom: 0.375rem !important;
+  box-sizing: border-box !important;
+  height: auto !important;
+}
+
+#icCatalogFilter {padding: 0 0 0 10px !important; line-height: 2rem !important; border-bottom: none !important; box-shadow: none !important}
