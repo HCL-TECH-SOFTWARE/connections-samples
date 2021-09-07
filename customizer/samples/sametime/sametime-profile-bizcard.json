@@ -1,0 +1,37 @@
+{
+    "name": "HCL Sametime Chat Integration",
+    "title": "HCL Sametime Chat Integration",
+    "description": "HCL Sametime chat for bizcard and profiles",
+    "services": [
+        "Connections"
+    ],
+    "extensions": [
+        {
+            "ext_id": "com.hclsametime.v3.bizcard.chat",
+            "name": "HCL Sametime Chat Integration",
+            "title": "HCL Sametime Chat Integration",
+            "description": "Enable 1-1 chat from profile and bizcard",
+            "translations": {
+                "": {
+                    "SametimeBizcardChat-Connections_text": "Chat"
+                },
+                "fr": {
+                    "SametimeBizcardChat-Connections_text": "Bavarder"
+                },
+                "en": {
+                    "SametimeBizcardChat-Connections_text": "Chat"
+                }
+            },
+            "type": "com.hcl.appreg.ext.templatedLink",
+            "payload": {
+                "url": "",
+                "text": "%nls:SametimeBizcardChat-Connections_text",
+                "href": "https://your_sametime_endpoint_host/chat/conversations/${dn}",
+                "locator": "chat",
+                "target": "SametimeChat"
+            },
+            "object": "com.hcl.appreg.object.person",
+            "state": "enabled"
+        }
+    ]
+}
