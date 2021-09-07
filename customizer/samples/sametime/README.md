@@ -25,7 +25,7 @@ The json from [sametime-profile-bizcard.json](./sametime-profile-bizcard.json) c
 
 ## Sametime user identity key
 
-If your deployment is using Sametime 11.6, then it should support the email address when starting a conversation using a URL similar to https://webchat.example.com/chat/conversations/johndoe%40example.com. However, earlier versions will not support emsil address, or you may require an identifier value that is different than the value provisioned for a Connection's profiles email address.  If this is the case, the profiles attribute `chatIdentity` can be used.  Update the URL used by the ITM and the Bizcard extensions to use the attribute `${chatIdentity}` instead of `${email}`.
+By default, the Sametime chat extensions are using the Distinguished Name attribute from Connections profiles to identify a Sametime user.  You can see this with the substitution parameter `${dn}`.  If the distinguished name value used by Connections and Sametime are different, or if you require a different value entirely, then the profiles attribute `chatIdentity` can be used.  Update the URL used by the ITM and the Bizcard extensions to use the attribute `${chatIdentity}` instead of `${dn}`.
 
 The chatIdentity attribute must be provisioned to each user's Connections profile as an extended attribute.  See the topic [Integrating Chat using chatIdentity](https://opensource.hcltechsw.com/connections-doc/v7/configuringv7features/chatIintegration/chat_integ.html) for more information.
 

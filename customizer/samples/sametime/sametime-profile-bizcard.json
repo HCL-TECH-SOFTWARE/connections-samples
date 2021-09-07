@@ -26,7 +26,7 @@
             "payload": {
                 "url": "",
                 "text": "%nls:SametimeBizcardChat-Connections_text",
-                "href": "https://your_sametime_endpoint_host/chat/conversations/${email}",
+                "href": "https://your_sametime_endpoint_host/chat/conversations/${dn}",
                 "locator": "chat",
                 "target": "SametimeChat"
             },
