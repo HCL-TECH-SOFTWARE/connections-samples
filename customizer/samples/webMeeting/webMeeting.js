@@ -162,6 +162,12 @@ if (document.location.pathname.startsWith('/connections/opensocial/') || documen
                         let feed = new dojox.atom.io.model.Feed();
                         let parser = new DOMParser();
                         feed.buildFromDom(data.documentElement);
+                        
+                        // fetching info for extension attribute start
+                        
+                                                // fetching info for extension attribute end
+                        
+                        
                         let hcardXML = parser.parseFromString(feed.entries[0].content.value, "text/html");
                         let theMeeting = null;
                         if (electedAttribute !== 'LINKROLL') {
@@ -171,6 +177,8 @@ if (document.location.pathname.startsWith('/connections/opensocial/') || documen
                                 //  Ftech the value of the EXTENDED Attributed
                                 //
                                 electedAttribute = electedAttribute.substr(1);
+                                
+                                
                                 __cBill_logger('cnxMeetingInjector : Looking for meeting url in EXTENDED Attribute ' + electedAttribute);
                                 let results = hcardXML.evaluate("//div[@class='x-extension-property-id' and text()='" + electedAttribute + "']", hcardXML.documentElement, null, XPathResult.ANY_TYPE, null );
                                 let theNode = results.iterateNext();
@@ -232,7 +240,29 @@ if (document.location.pathname.startsWith('/connections/opensocial/') || documen
                                     }
                                 }
                             }
-                        } else {
+                        }
+                        else if (electedAttribute == 'meetingIdentity') {
+                          for(let k=0; k < feed.links.length;k++){
+                            if(feed.links[k].href.includes(electedAttribute)){
+                              let theMeeting = {
+                                  url: feed.links[k].href,
+                                  handleAs: "text",
+                                  preventCache: true,
+                              };
+                              let deferred = dojo.xhrGet(theMeeting);
+                              deferred.then(function(data) {
+                              showMeetingICON(data); 
+                                  
+                            },function(){
+                              __cBill_logger('cnxMeetingInjector : error during getPROFILE  REST API');
+                              console.dir(error);
+                              
+                            });
+                            break; 
+                          }
+                         }
+                        }
+                        else {
                             //
                             //  Linkroll case.
                             //  We need first to fetch the KEY 
