@@ -13533,6 +13533,10 @@ body.catalog input[type=password] {
   box-shadow: none !important;
 }
 
+.lotusUploadFile .lotusDialog .lotusFormFieldRow td {
+  display: table-cell !important;
+}
+
 .lotusMain .lotusColLeft .lotusHeading {
   padding-left: 24px;
 }
