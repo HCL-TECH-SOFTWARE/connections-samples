@@ -13701,6 +13701,12 @@ body.catalog input[type=password] {
   display: none !important;
 }
 
+#internalOnlyPermanentWarning > div {
+  position: relative;
+  right: 585px;
+  width: 500px;
+}
+
 #selectCommForm #communityTypeAhead {
   padding-left: 2rem !important;
 }
