@@ -130,6 +130,13 @@
   }
 }
 
+// Issue on creating new Community github.com/hclcnx/cnx-custom-theme/issues/63 
+#internalOnlyPermanentWarning > div {
+    position: relative;
+    right: 585px;
+    width: 500px;
+}
+
 #selectCommForm {
   #communityTypeAhead {
     padding-left: 2rem !important;
