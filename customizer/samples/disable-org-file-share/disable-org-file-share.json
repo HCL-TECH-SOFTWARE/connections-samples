@@ -1,0 +1,25 @@
+{
+  "name": "Disable Org File Share",
+  "title": "Disable Org File Share",
+  "description": "Disable option to share files / folders with entire organization",
+  "services": [
+      "Customizer"
+  ],
+  "state": "enabled",
+  "extensions": [
+      {
+          "name": "Disable Org File Share",
+          "type": "com.ibm.customizer.ui",
+          "payload": {
+              "include-files": [
+                  "disable-org-file-share/files_org_block.js"
+              ],
+              "cache-headers": {
+                  "cache-control": "max-age=43200"
+              }
+          },
+          "path": "files",
+          "state": "enabled"
+      }
+  ]
+}
