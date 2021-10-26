@@ -3,23 +3,23 @@ This example is provided as-is and can be used to prevent a user selecting the o
 
 The script will disable the selection in the following locations when using a web browser:
 
-**File Upload Dialog**
+**File Upload Dialog**  
 The radio button is inactive.
 ![](./images/file-upload.png)
 
-**Folder Upload Dialog**
+**Folder Upload Dialog**  
 The radio button is inactive.
 ![](./images/folder-upload.png)
 
-**File Share Dialog (launched from the file list views)**
+**File Share Dialog (launched from the file list views)**  
 The radio button is inactive.
 ![](./images/file-share.png)
 
-**Folder Share Dialog (launched from the folder list views)**
+**Folder Share Dialog (launched from the folder list views)**  
 The radio button is inactive.
 ![](./images/folder-share.png)
 
-**Sharing Panel in the File Viewer**
+**Sharing Panel in the File Viewer**  
 The drop down menu option *Everyone in my organization* is not selectable.
 ![](./images/file-preview-share.png)
 
