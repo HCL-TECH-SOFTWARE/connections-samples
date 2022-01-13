@@ -3,3 +3,6 @@
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
 }
+
+// CNXSERV-13165: Fix email compose dialog layout
+#emailForm[name="composeEmailForm"] td {display: revert !important;}
