@@ -13945,6 +13945,10 @@ div[id^=lconn_news_microblogging_sharebox_InputForm_][id$=_myactions] :not(.ublo
   -moz-box-shadow: none;
 }
 
+#emailForm[name=composeEmailForm] td {
+  display: revert !important;
+}
+
 #forum > .lotusHeader .lotusBtnContainer .lotusBtnAction, #forum > .lotusBtnContainer .lotusBtnAction {
   margin: 2px 0px 0px 1px !important;
 }
