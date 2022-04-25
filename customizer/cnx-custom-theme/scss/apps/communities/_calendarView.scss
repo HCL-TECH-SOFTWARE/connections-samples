@@ -45,4 +45,7 @@
 
 div.recOptions { background: #FFF !important;}
 
-
+/* MKS CNXSERV-13772 repeat event daily display Tuesday */
+tr#calendar_event_editor_rec-recDaily td:nth-child(3) {
+    display:inline !important;
+  }
