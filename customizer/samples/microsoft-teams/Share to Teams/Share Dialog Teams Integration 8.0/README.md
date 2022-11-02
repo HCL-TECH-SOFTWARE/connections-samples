@@ -1,8 +1,7 @@
 # Enabling MS Teams within Share 8.0
 
 HCL Connections Share Dialog feature allows users to share link to connections content not only within Connections but also with other third-party applications, such as Microsoft Teams.
-Following steps allow you to enable MS Teams to be used with the Share feature of Connections 8.0.
-
+Following steps allow you to enable MS Teams.
 ## Register the extensions
 * Place connections-teams-share-extension-8.0.js to /pv-connections/customizations/share-extensions/ms-teams directory.
 ## Setup the Appregistry Extension
@@ -11,5 +10,5 @@ Following steps allow you to enable MS Teams to be used with the Share feature o
 * Copy/Import the content of ms-teams-share-extension.json file in the appreg.
 * Click Save to save the imported app.
 * A new card should be displayed in the app list; enable or disable, as necessary.
-* After enabling the extension, on clicking ‘Share’ icon, the option ‘MS Teams Share’ will appear in the dropdown. On clicking ‘MS Teams Share’, a pop up will appear and one will be able to share current connection’s page link or respective blog’s/wiki’s/forum’s link to any Team/Channel in MS Teams.
+* After enabling the extension, upon clicking ‘Share’ icon, the option ‘MS Teams Share’ will appear in the dropdown. On clicking ‘MS Teams Share’, a pop up will appear and you will be able to share current connection’s page link or respective blog’s/wiki’s/forum’s link to any Team/Channel in MS Teams.
  
