@@ -1,4 +1,4 @@
-# Enabling MS Teams within Share 8.0
+# Enabling Share to Microsoft Teams for Connections 8.0
 
 HCL Connections Share Dialog feature allows users to share link to connections content not only within Connections but also with other third-party applications, such as Microsoft Teams.
 Following steps allow you to enable MS Teams.
