@@ -1,4 +1,4 @@
-# Share to Microsoft Teams
+# Enabling Share to Microsoft Teams for Connections 7.0
 This example injects a customization to display a Microsoft integration which allows the user to easily share a link to the current page they are viewing into a Teams channel.
 
 The icon appears in the upper right corner of pages:  
