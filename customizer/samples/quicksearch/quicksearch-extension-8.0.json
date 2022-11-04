@@ -1,0 +1,41 @@
+{
+    "name": "customizedSearchDisplay",
+    "title": "Customized Search Display",
+    "description": "Properties to customize Search Display",
+    "services": [
+        "Connections"
+    ],
+    "state": "enabled",
+    "extensions": [
+        {
+            "name": "Customized Search Display",
+            "title": "Customized Search Display",
+            "description": "Properties to customize Search Display",
+            "type": "com.hcl.search.customization",
+            "payload": {
+                "env": "NOconnections",
+                "searchResultOptions": [
+                    {
+                        "isSuggestion": true,
+                        "searchURL": "http://www.google.com/search?q=${searchTerm}",
+                        "options": [
+                            {
+                                "label": "Google",
+                                "url": "http://www.google.com/search?q=${searchTerm}"
+                            },
+                            {
+                                "label": "Connection",
+                                "url": "<your-connections-host>/homepage/web/updates/#topUpdates/topUpdates/all&qs=${searchTerm}&scope=allconnections&ntf=false&p=1&ps=10&soc=%7B%7D&sk=relevance&pers=false&ppl=&t=&dr=&do=all"
+                            },
+                            {
+                                "label": "Sharepoint",
+                                "url": "<your-sharepoint-site>/search.aspx/siteall?q=${searchTerm}"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "state": "enabled"
+        }
+    ]
+}
