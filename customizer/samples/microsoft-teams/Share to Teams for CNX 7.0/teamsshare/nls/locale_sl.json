@@ -1,0 +1,5 @@
+{
+  "teamshare.default.message": "Dano v skupno rabo iz storitve HCL Connections <br/> [{PAGE_TITLE}] – {PAGE_HREF}",
+  "teamshare.files.message": "Datoteke, dane v skupno rabo, iz HCL Connections: <br/> [{PAGE_TITLE}] – {PAGE_HREF}",
+  "teamshare.action.title": "Skupna raba v Microsoft Teams"
+}

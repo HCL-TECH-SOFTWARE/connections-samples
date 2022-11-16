@@ -1,0 +1,5 @@
+{
+  "teamshare.default.message": "Podijeljeno iz aplikacije HCL Connections <br/> [{PAGE_TITLE}] - {PAGE_HREF}",
+  "teamshare.files.message": "Datoteka podijeljena iz aplikacije HCL Connections: <br/> [{PAGE_TITLE}] - {PAGE_HREF}",
+  "teamshare.action.title": "Podijeli u Microsoft Teams"
+}

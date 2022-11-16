@@ -1,0 +1,5 @@
+{
+  "teamshare.default.message": "Partajat(e) din HCL Connections <br/> [{PAGE_TITLE}] - {PAGE_HREF}",
+  "teamshare.files.message": "Fișier partajat din HCL Connections: <br/> [{PAGE_TITLE}] - {PAGE_HREF}",
+  "teamshare.action.title": "Partajați în Microsoft Teams"
+}
