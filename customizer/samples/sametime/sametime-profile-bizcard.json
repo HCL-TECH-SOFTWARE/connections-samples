@@ -1,37 +1,121 @@
 {
-    "name": "HCL Sametime Chat Integration",
-    "title": "HCL Sametime Chat Integration",
-    "description": "HCL Sametime chat for bizcard and profiles",
-    "services": [
-        "Connections"
-    ],
-    "extensions": [
-        {
-            "ext_id": "com.hclsametime.v3.bizcard.chat",
-            "name": "HCL Sametime Chat Integration",
-            "title": "HCL Sametime Chat Integration",
-            "description": "Enable 1-1 chat from profile and bizcard",
-            "translations": {
-                "": {
-                    "SametimeBizcardChat-Connections_text": "Chat"
-                },
-                "fr": {
-                    "SametimeBizcardChat-Connections_text": "Bavarder"
-                },
-                "en": {
-                    "SametimeBizcardChat-Connections_text": "Chat"
-                }
-            },
-            "type": "com.hcl.appreg.ext.templatedLink",
-            "payload": {
-                "url": "",
-                "text": "%nls:SametimeBizcardChat-Connections_text",
-                "href": "https://your_sametime_endpoint_host/chat/conversations/${dn}",
-                "locator": "chat",
-                "target": "SametimeChat"
-            },
-            "object": "com.hcl.appreg.object.person",
-            "state": "enabled"
+  "name": "HCL Sametime Chat Integration",
+  "title": "HCL Sametime Chat Integration",
+  "description": "HCL Sametime chat for bizcard and profiles",
+  "services": [
+    "Connections"
+  ],
+  "extensions": [
+    {
+      "ext_id": "com.hclsametime.v3.bizcard.chat",
+      "name": "HCL Sametime Chat Integration",
+      "title": "HCL Sametime Chat Integration",
+      "description": "Enable 1-1 chat from profile and bizcard",
+      "translations": {
+        "": {
+          "SametimeBizcardChat-Connections_text": "Chat"
+        },
+        "en": {
+          "SametimeBizcardChat-Connections_text": "Chat"
+        },
+        "ar": {
+          "SametimeBizcardChat-Connections_text": "محادثة"
+        },
+        "bg": {
+          "SametimeBizcardChat-Connections_text": "Чат"
+        },
+        "ca": {
+          "SametimeBizcardChat-Connections_text": "Xat"
+        },
+        "cs": {
+          "SametimeBizcardChat-Connections_text": "Konverzace"
+        },
+        "da": {
+          "SametimeBizcardChat-Connections_text": "Chat"
+        },
+        "de": {
+          "SametimeBizcardChat-Connections_text": "Chat"
+        },
+        "es": {
+          "SametimeBizcardChat-Connections_text": "Conversación"
+        },
+        "fi": {
+          "SametimeBizcardChat-Connections_text": "Keskustele"
+        },
+        "fr": {
+          "SametimeBizcardChat-Connections_text": "Discuter"
+        },
+        "he": {
+          "SametimeBizcardChat-Connections_text": "צ'אט"
+        },
+        "hr": {
+          "SametimeBizcardChat-Connections_text": "Razgovor"
+        },
+        "hu": {
+          "SametimeBizcardChat-Connections_text": "Csevegés"
+        },
+        "it": {
+          "SametimeBizcardChat-Connections_text": "Conversa"
+        },
+        "ja": {
+          "SametimeBizcardChat-Connections_text": "チャット"
+        },
+        "ko": {
+          "SametimeBizcardChat-Connections_text": "대화"
+        },
+        "nl": {
+          "SametimeBizcardChat-Connections_text": "Chatten"
+        },
+        "no": {
+          "SametimeBizcardChat-Connections_text": "Samtale"
+        },
+        "pl": {
+          "SametimeBizcardChat-Connections_text": "Czat"
+        },
+        "pt": {
+          "SametimeBizcardChat-Connections_text": "Conversação"
+        },
+        "pt_BR": {
+          "SametimeBizcardChat-Connections_text": "Bate-papo"
+        },
+        "ro": {
+          "SametimeBizcardChat-Connections_text": "Chat"
+        },
+        "ru": {
+          "SametimeBizcardChat-Connections_text": "Чат"
+        },
+        "sk": {
+          "SametimeBizcardChat-Connections_text": "Rozhovor"
+        },
+        "sl": {
+          "SametimeBizcardChat-Connections_text": "Klepet"
+        },
+        "sv": {
+          "SametimeBizcardChat-Connections_text": "Chatt"
+        },
+        "th": {
+          "SametimeBizcardChat-Connections_text": "แชท"
+        },
+	"tr": {
+          "SametimeBizcardChat-Connections_text": "Sohbet"
+        },
+        "zh": {
+          "SametimeBizcardChat-Connections_text": "交谈"
+        },
+        "zh_TW": {
+          "SametimeBizcardChat-Connections_text": "會談"
         }
-    ]
+      },
+      "type": "com.hcl.appreg.ext.templatedLink",
+      "payload": {
+        "url": "",
+        "text": "%nls:SametimeBizcardChat-Connections_text",
+        "href": "https://your_sametime_endpoint_host/chat/conversations/${dn}",
+        "locator": "chat",
+        "target": "SametimeChat"
+      },
+      "object": "com.hcl.appreg.object.person",
+      "state": "enabled"
+    }
+  ]
 }

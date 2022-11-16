@@ -1,0 +1,5 @@
+{
+  "teamshare.default.message": "Zdieľané z aplikácie HCL Connections <br/> [{PAGE_TITLE}] – {PAGE_HREF}",
+  "teamshare.files.message": "Súbor zdieľaný z aplikácie HCL Connections: <br/> [{PAGE_TITLE}] – {PAGE_HREF}",
+  "teamshare.action.title": "Zdieľať do aplikácie Microsoft Teams"
+}

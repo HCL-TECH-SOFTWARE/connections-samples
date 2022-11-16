@@ -1,0 +1,5 @@
+{
+  "teamshare.default.message": "Megosztva a HCL Connections programból <br/> [{PAGE_TITLE}] - {PAGE_HREF}",
+  "teamshare.files.message": "Fájl megosztva a HCL Connections programból: <br/> [{PAGE_TITLE}] - {PAGE_HREF}",
+  "teamshare.action.title": "Megosztás a Microsoft Teamsben"
+}

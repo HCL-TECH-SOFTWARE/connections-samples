@@ -1,0 +1,5 @@
+{
+  "teamshare.default.message": "Delt fra HCL Connections <br/> [{PAGE_TITLE}] - {PAGE_HREF}",
+  "teamshare.files.message": "Fil delt fra HCL Connections: <br/> [{PAGE_TITLE}] - {PAGE_HREF}",
+  "teamshare.action.title": "Del med Microsoft Teams"
+}

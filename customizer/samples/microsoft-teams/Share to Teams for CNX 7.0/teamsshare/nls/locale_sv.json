@@ -1,0 +1,5 @@
+{
+  "teamshare.default.message": "Delad från HCL Connections <br/> [{PAGE_TITLE}] - {PAGE_HREF}",
+  "teamshare.files.message": "Fil delad från HCL Connections: <br/> [{PAGE_TITLE}] - {PAGE_HREF}",
+  "teamshare.action.title": "Dela till Microsoft Teams"
+}
