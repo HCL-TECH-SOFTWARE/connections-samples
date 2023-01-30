@@ -14,14 +14,14 @@
 # Connections Application Package for Microsoft Teams
 The application manifest (and associated files) provided here [manifest.json](./sample/manifest.json) should be used as the starting point for defining the necessary Teams application which governs the integration of the Teams micro-services provided in the HCL Connections Component Pack.
 
-The app package is ultimately a zip file that can be uploaded to the Teams admin center that saves having to provide the values manually via the admin UI. It is also a backup of the application configuration at a specific point in time.
+The app package is ultimately a zip file that can be uploaded to the Teams admin center that saves having to provide the values manually via the admin UI. It is also a backup of the application configuration at a specific point in time. Adjustments can also be made to the app by uploading the zip file to the Teams Developer Portal.
 
 The following items make up the zip content (see examples [here](./sample)):
 
 | File Name | Purpose |
 | --------- | ------- |
-|Connections192x192.png|Large app icon shown on app information page (see screenshot figure 1)|
-|ConnectionsOutline32x32.png|Small app icon to launch messaging extension app from palette under conversations|
+|color.png|Large app icon shown on app information page (see screenshot figure 1)|
+|outline.png|Small app icon to launch messaging extension app from palette under conversations|
 |manifest.json|Microsoft Teams application definition / configuration (described in detail below)|
 |xx.json|JSON files containing string translations (one file per locale)
 |||
@@ -42,19 +42,26 @@ Figure 1: Application Information
 Generally, a customer would not need to change these things but if for example, internal branding of the Connections applications uses a different name or icon, then a customer could modify these values to be more consistent:
 
 ```json
-"icons": {
-  "color": "Connections192x192.png",
-  "outline": "ConnectionsOutline32x32.png"
-},
-"name": {
-  "short": "Connections",
-  "full": "HCL Connections"
-},
-"description": {
-    "short": "HCL Connections for Microsoft Teams",
-    "full": "HCL Connections delivers a collaborative platform that keeps your employees connected and engaged. HCL Connections helps create a personalized, well-designed, digital office with role-based content and tools to keep your teams focused on achieving business goals and objectives.\n\nUse this app to easily access your favorite HCL Connections communities in a channel, or use the Messaging Extension to share Connections content with other Microsoft Teams users in your organization."
-},
-"accentColor": "#01539B"
+   "name": {
+      "short": "Connections",
+      "full": "HCL Connections"
+   },
+   "developer": {
+      "name": "HCL",
+      "mpnId": "1416163",
+      "websiteUrl": "https://www.hcltechsw.com/connections",
+      "privacyUrl": "https://www.hcltechsw.com/wps/portal/legal/privacy",
+      "termsOfUseUrl": "https://www.hcltechsw.com/wps/portal/legal/terms-use"
+   },
+   "description": {
+      "short": "HCL Connections for Microsoft Teams",
+      "full": "HCL Connections delivers a collaborative platform that keeps your employees connected and engaged. HCL Connections helps create a personalized, well-designed, digital office with role-based content and tools to keep your teams focused on achieving business goals and objectives.\n\nUse this app to easily access your favorite HCL Connections communities in a channel, or use the Messaging Extension to share Connections content with other Microsoft Teams users in your organization."
+   },
+   "icons": {
+      "outline": "outline.png",
+      "color": "color.png"
+   },
+   "accentColor": "#01539B",
 ```
 Either the icon files themselves can be replaced when packaged into the final manifest zip while keeping the same file name in the json, or the icons and file names could be changed.
 <br>
@@ -72,16 +79,12 @@ Figure 2: Tab App Content
 The **configurationUrl** attribute value must be updated to include the host name at which Connections is accessed by replacing {Connections_Hostname}.
 
 ```json
-"configurableTabs": [
-        {
-            "configurationUrl": "https://%Connections_Hostname%/teams-tab",
-            "canUpdateConfiguration": true,
-            "scopes": [
-                "team",
-                "groupchat"
-            ]
-        }
-    ],
+   "configurableTabs": [{
+      "configurationUrl": "https://%Connections_Hostname%/teams-tab",
+      "canUpdateConfiguration": true,
+      "scopes": ["groupChat", "team"],
+      "context": ["channelTab"]
+   }],
 ```
 <br>
 
@@ -91,16 +94,14 @@ A bot is used to insert message content into a conversation on behalf of an appl
 The botId/applicationId is generated when the bot is registered; see [Configuring an Azure App to Support the Microsoft Teams App]() in the Connections documentation. Use that id value to replace %Connections_AzureApplicationId%.
 
 ```json
-"bots": [
-   {
+   "bots": [{
       "botId": "%Connections_AzureApplicationId%",
-      "scopes": [
-        "team"
-      ],
-      "supportsFiles": true,
-      "isNotificationOnly": false
-   }
-],
+      "scopes": ["team"],
+      "isNotificationOnly": false,
+      "supportsCalling": false,
+      "supportsVideo": false,
+      "supportsFiles": true
+   }],
 ```
 <br>
 
@@ -116,40 +117,25 @@ The **url** attribute value must be updated to include the host name at which Co
 The botId/applicationId is generated when the bot is registered; see [Configuring an Azure App to Support the Microsoft Teams App]() in the Connections documentation. Use that id value to replace %Connections_AzureApplicationId%.
 
 ```json
-"composeExtensions": [
-   {
+   "composeExtensions": [{
       "botId": "%Connections_AzureApplicationId%",
-      "canUpdateConfiguration": true,
-      "commands": [
-         {
-            "id": "shareConnectionsContent",
-            "type": "action",
-            "title": "Connections Share",
-            "description": "Share Connections content with other Microsoft Teams users",
-            "initialRun": true,
-            "fetchTask": true,
-            "context": [
-               "commandBox",
-               "compose",
-               "message"
-            ],
-            "parameters": [
-               {
-                  "name": "param",
-                  "title": "param",
-                  "description": ""
-               }
-            ],
-            "taskInfo": {
-               "title": "Connections Share",
-               "width": "medium",
-               "height": "medium",
-               "url": "https://%Connections_Hostname%/teams-share-service/api/msteams/command"
-            }
-         }
-      ]
-   }
-],
+      "commands": [{
+         "id": "shareConnectionsContent",
+         "type": "action",
+         "title": "Connections Share",
+         "description": "Share Connections content with other Microsoft Teams users",
+         "initialRun": true,
+         "fetchTask": false,
+         "context": ["commandBox", "compose", "message"],
+         "parameters": [{
+               "name": "param",
+               "title": "param",
+               "description": "Share param",
+               "inputType": "text"
+         }]
+      }],
+      "canUpdateConfiguration": true
+   }],
 ```
 
 See [section 7](#section-7---configuring-localization) for details on translation of **title** and **description** strings.
@@ -161,19 +147,17 @@ Valid domains identifies a list of target host or domain names for websites that
 Replace the %Connections_Hostname% value in the json array with either the full Connections host name or appropriate domain name.
 
 ```json
-"validDomains": [
-   "%Connections_Hostname%"
-],
+   "validDomains": ["%Connections_Hostname%"],
 ```
 <br>
 
 ## Section 6 - Configuring Web Application SSO
 Replace the correct app id and resource url values to allow SSO to work with the app:
 ```json
-"webApplicationInfo": {
-   "id": "{Connections_AzureApplicationId}",
-   "resource": "api://%Connections_Hostname%/%Connections_AzureApplicationId%"
-},
+   "webApplicationInfo": {
+      "id": "%Connections_AzureApplicationId%",
+      "resource": "api://%Connections_Hostname%/%Connections_AzureApplicationId%"
+   },
 ```
 <br>
 
@@ -186,13 +170,15 @@ Files for those three examples have been provided in this repo - for example, th
 
 ```json
 {
-    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.Localization.schema.json",
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.15/MicrosoftTeams.Localization.schema.json",
     "name.short": "Connections",
     "name.full": "HCL Connections",
     "description.short": "HCL Connections for Microsoft Teams",
     "description.full": "HCL Connections delivers a collaborative platform that keeps your employees connected and engaged. HCL Connections helps create a personalized, well-designed, digital office with role-based content and tools to keep your teams focused on achieving business goals and objectives.\n\nUse this app to easily access your favorite HCL Connections communities in a channel, or use the Messaging Extension to share Connections content with other Microsoft Teams users in your organization.",
     "composeExtensions[0].commands[0].title": "Connections Share",
-    "composeExtensions[0].commands[0].description": "Share Connections content with other Microsoft Teams users"
+    "composeExtensions[0].commands[0].description": "Share Connections content with other Microsoft Teams users",
+    "composeExtensions[0].commands[0].parameters[0].title": "param",
+    "composeExtensions[0].commands[0].parameters[0].description": "Share param"
 }
 ```
 <br>
@@ -200,23 +186,67 @@ Files for those three examples have been provided in this repo - for example, th
 Within the manifest, the files themselves are referenced so changing or adding more languages means modifying or adding the **languageTag** and **file** attributes for each of the languages needed as well as providing the translated json files:
 
 ```json
-"localizationInfo": {
-   "defaultLanguageTag": "en",
-   "additionalLanguages": [
-      {
-         "languageTag": "en",
-         "file": "en.json"
-      },
-      {
-         "languageTag": "fr",
-         "file": "fr.json"
-      },
-      {
+   "localizationInfo": {
+      "defaultLanguageTag": "en",
+      "additionalLanguages": [{
+         "languageTag": "ar",
+         "file": "ar.json"
+      }, {
+         "languageTag": "ca",
+         "file": "ca.json"
+      }, {
+         "languageTag": "cs",
+         "file": "cs.json"
+      }, {
          "languageTag": "de",
          "file": "de.json"
-      }
-   ]
-}
+      }, {
+         "languageTag": "en",
+         "file": "en.json"
+      }, {
+         "languageTag": "es",
+         "file": "es.json"
+      }, {
+         "languageTag": "fi",
+         "file": "fi.json"
+      }, {
+         "languageTag": "fr",
+         "file": "fr.json"
+      }, {
+         "languageTag": "he",
+         "file": "he.json"
+      }, {
+         "languageTag": "it",
+         "file": "it.json"
+      }, {
+         "languageTag": "ja-jp",
+         "file": "ja-jp.json"
+      }, {
+         "languageTag": "ko",
+         "file": "ko.json"
+      }, {
+         "languageTag": "nl",
+         "file": "nl.json"
+      }, {
+         "languageTag": "pl",
+         "file": "pl.json"
+      }, {
+         "languageTag": "pt",
+         "file": "pt.json"
+      }, {
+         "languageTag": "ru",
+         "file": "ru.json"
+      }, {
+         "languageTag": "th",
+         "file": "th.json"
+      }, {
+         "languageTag": "zh-tw",
+         "file": "zh-tw.json"
+      }, {
+         "languageTag": "zh",
+         "file": "zh.json"
+      }]
+   }
 ```
 For more details about localization capabilities see the link to the *Localization File JSON Schema* resource at the end of this document.
 <br>

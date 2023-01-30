@@ -1,9 +1,11 @@
 {
-  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.Localization.schema.json",
-  "name.short": "Connections",
-  "name.full": "HCL Connections",
-  "description.short": "HCL Connections pour Microsoft Teams",
-  "description.full": "HCL Connections offre une plateforme collaborative qui permet à vos employés de rester connectés et engagés. HCL Connections vous aide à créer un bureau numérique personnalisé et bien conçu, avec un contenu et des outils fondés sur les rôles, afin que vos équipes restent concentrées sur la réalisation des buts et objectifs de l'entreprise.\n\nUtilisez cette application pour accéder facilement à vos communautés HCL Connections favorites via un canal, ou utilisez l'extension de messagerie pour partager le contenu de Connections avec d'autres utilisateurs de Microsoft Teams au sein de votre organisation.",
-  "composeExtensions[0].commands[0].title": "Partage Connections",
-  "composeExtensions[0].commands[0].description": "Partager le contenu de Connections avec d'autres utilisateurs de Microsoft Teams."
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.15/MicrosoftTeams.Localization.schema.json",
+    "name.short": "Connections",
+    "name.full": "HCL Connections",
+    "description.short": "HCL Connections pour Microsoft Teams",
+    "description.full": "HCL Connections offre une plateforme collaborative qui permet à vos employés de rester connectés et engagés. HCL Connections vous aide à créer un bureau numérique personnalisé et bien conçu, avec un contenu et des outils fondés sur les rôles, afin que vos équipes restent concentrées sur la réalisation des buts et objectifs de l'entreprise.\n\nUtilisez cette application pour accéder facilement à vos communautés HCL Connections favorites via un canal, ou utilisez l'extension de messagerie pour partager le contenu de Connections avec d'autres utilisateurs de Microsoft Team au sein de votre organisation.",
+    "composeExtensions[0].commands[0].title": "Partage Connections",
+    "composeExtensions[0].commands[0].description": "Partager le contenu de Connections avec d'autres utilisateurs de Microsoft Teams.",
+    "composeExtensions[0].commands[0].parameters[0].title": "param",
+    "composeExtensions[0].commands[0].parameters[0].description": "Share param"
 }

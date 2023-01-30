@@ -1,9 +1,11 @@
 {
-  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.Localization.schema.json",
-  "name.short": "Connections",
-  "name.full": "Produkt HCL Connections",
-  "description.short": "HCL Connections pro Microsoft Teams",
-  "description.full": "HCL Connections přináší platformu pro spolupráci, díky které budou moci být vaši zaměstnanci angažovaní a ve spojení. HCL Connections pomáhá vytvářet personalizovanou, dobře navrženou, digitální kancelář s nástroji a obsahem založeným na rolích, aby vaše týmy zůstávaly soustředěné a mohly dosahovat obchodních cílů.\n\nPomocí této aplikace můžete snadno přistupovat ke svým oblíbeným komunitám HCL Connections v kanálu, případně můžete pomocí rozšíření Messaging Extension sdílet obsah aplikace Connections s ostatními uživateli aplikace Microsoft Team ve vaší organizaci.",
-  "composeExtensions[0].commands[0].title": "Sdílení produktu Connections",
-  "composeExtensions[0].commands[0].description": "Sdílet obsah produktu Connections s ostatními uživateli v Microsoft Teams"
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.15/MicrosoftTeams.Localization.schema.json",
+    "name.short": "Connections",
+    "name.full": "Produkt HCL Connections",
+    "description.short": "HCL Connections pro Microsoft Teams",
+    "description.full": "HCL Connections přináší platformu pro spolupráci, díky které budou moci být vaši zaměstnanci angažovaní a ve spojení. HCL Connections pomáhá vytvářet personalizovanou, dobře navrženou, digitální kancelář s nástroji a obsahem založeným na rolích, aby vaše týmy zůstávaly soustředěné a mohly dosahovat obchodních cílů.\n\nPomocí této aplikace můžete snadno přistupovat ke svým oblíbeným komunitám HCL Connections v kanálu, případně můžete pomocí rozšíření Messaging Extension sdílet obsah aplikace Connections s ostatními uživateli aplikace Microsoft Team ve vaší organizaci.",
+    "composeExtensions[0].commands[0].title": "Sdílení produktu Connections",
+    "composeExtensions[0].commands[0].description": "Sdílet obsah produktu Connections s ostatními uživateli v Microsoft Teams",
+    "composeExtensions[0].commands[0].parameters[0].title": "param",
+    "composeExtensions[0].commands[0].parameters[0].description": "Share param"
 }

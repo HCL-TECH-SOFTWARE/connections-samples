@@ -1,9 +1,11 @@
 {
-  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.Localization.schema.json",
-  "name.short": "Connections",
-  "name.full": "HCL Connections",
-  "description.short": "HCL Connections para Microsoft Teams",
-  "description.full": "O HCL Connections oferece uma plataforma colaborativa que mantém seus funcionários conectados e engajados. O HCL Connections ajuda a criar um escritório digital personalizado e bem projetado, com conteúdo e ferramentas baseados em funções para manter suas equipes com foco em alcançar as metas e os objetivos da empresa.\n\nUse esse aplicativo para acessar facilmente suas comunidades favoritas do HCL Connections em um canal ou use a Messaging Extension para compartilhar conteúdo do Connections com outros usuários do Microsoft Teams em sua organização.",
-  "composeExtensions[0].commands[0].title": "Connections Share",
-  "composeExtensions[0].commands[0].description": "Compartilhar conteúdo do Connections com outros usuários do Microsoft Teams"
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.15/MicrosoftTeams.Localization.schema.json",
+    "name.short": "Connections",
+    "name.full": "HCL Connections",
+    "description.short": "HCL Connections for Microsoft Teams",
+    "description.full": "O HCL Connections oferece uma plataforma colaborativa que mantém seus funcionários conectados e engajados. O HCL Connections ajuda a criar um escritório digital personalizado e bem projetado com conteúdo e ferramentas baseados em funções para manter suas equipes com foco em alcançar as metas e os objetivos da empresa.\n\nUse esse aplicativo para acessar facilmente suas comunidades favoritas do HCL Connections em um canal ou use a Messaging Extension para compartilhar conteúdo do Connections com outros usuários do Microsoft Teams em sua organização.",
+    "composeExtensions[0].commands[0].title": "Connections Share",
+    "composeExtensions[0].commands[0].description": "Compartilhar conteúdo do Connections com outros usuários do Microsoft Teams",
+    "composeExtensions[0].commands[0].parameters[0].title": "param",
+    "composeExtensions[0].commands[0].parameters[0].description": "Share param"
 }

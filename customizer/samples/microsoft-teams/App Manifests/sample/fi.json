@@ -1,9 +1,11 @@
 {
-  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.Localization.schema.json",
-  "name.short": "Connections",
-  "name.full": "HCL Connections",
-  "description.short": "HCL Connections Microsoft Teamsille",
-  "description.full": "HCL Connections tarjoaa yhteistoiminnallisen alustan, jolla työntekijäsi voivat pitää yhteyttä. HCL Connectionsilla voit luoda räätälöidyn ja hyvin suunnitellun digitaalisen toimiston, jonka roolipohjaisillä sisällöillä ja työkaluilla pidät tiimisi keskittyneenä liiketoimintatavoitteiden saavuttamiseen.\n\nTällä sovelluksella voit käyttää helposti HCL Connections -suosikkiyhteisöjäsi kanavalla. Viestintälaajennuksella voit puolestaan jakaa Connections-sisältöä muiden organisaatiosi Microsoft Teams -käyttäjien kanssa.",
-  "composeExtensions[0].commands[0].title": "Connections-jakaminen",
-  "composeExtensions[0].commands[0].description": "Jaa Connections-sisältöä muiden Microsoft Teams -käyttäjien kanssa"
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.15/MicrosoftTeams.Localization.schema.json",
+    "name.short": "Connections",
+    "name.full": "HCL Connections",
+    "description.short": "HCL Connections Microsoft Teamsille",
+    "description.full": "HCL Connections tarjoaa yhteistoiminnallisen alustan, jolla työntekijäsi voivat pitää yhteyttä. HCL Connectionsilla voit luoda räätälöidyn ja hyvin suunnitellun digitaalisen toimiston, jonka roolipohjaisillä sisällöillä ja työkaluilla pidät tiimisi keskittyneenä liiketoimintatavoitteiden saavuttamiseen.\n\nTällä sovelluksella voit käyttää helposti HCL Connections -suosikkiyhteisöjäsi kanavalla. Viestintälaajennuksella voit puolestaan jakaa Connections-sisältöä muiden organisaatiosi Microsoft Teams -käyttäjien kanssa.",
+    "composeExtensions[0].commands[0].title": "Connections-jako",
+    "composeExtensions[0].commands[0].description": "Jaa Connections-sisältöä muiden Microsoft Teams -käyttäjien kanssa",
+    "composeExtensions[0].commands[0].parameters[0].title": "param",
+    "composeExtensions[0].commands[0].parameters[0].description": "Share param"
 }
