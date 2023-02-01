@@ -1,9 +1,11 @@
 {
-  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.7/MicrosoftTeams.Localization.schema.json",
-  "name.short": "IBM Connections",
-  "name.full": "HCL Connections",
-  "description.short": "HCL Connections עבור Microsoft Teams",
-  "description.full": "HCL Connections מספק פלטפורמה שיתופית המוודאת כי עובדיך מחוברים ומעורבים. הוא מסייע ביצירת משרד דיגיטלי מותאם אישית ומתוכנן היטב, עם תכנים וכלים מבוססי תפקידים, במטרה להבטיח שהצוותים ימשיכו להתמקד בהשגת המטרות והיעדים העסקיים.\n\nהשתמשו ביישום זה כדי לגשת בקלות לקהילות HCL Connections המועדפות עליכם בערוץ, או השתמש בהרחבת ההודעות כדי לשתף תכנים של Connections עם משתמשי Microsoft Teams אחרים בארגון.",
-  "composeExtensions[0].commands[0].title": "Connections Share",
-  "composeExtensions[0].commands[0].description": "שתפו תוכן של Connections עם משתמשי Microsoft Teams אחרים"
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.15/MicrosoftTeams.Localization.schema.json",
+    "name.short": "IBM Connections",
+    "name.full": "HCL Connections",
+    "description.short": "HCL Connections for Microsoft Teams",
+    "description.full": "HCL Connections מספק פלטפורמה שיתופית המוודאת כי עובדיך מחוברים ומעורבים. הוא מסייע ביצירת משרד דיגיטלי מותאם אישית ומתוכנן היטב, עם תכנים וכלים מבוססי תפקידים, במטרה להבטיח שהצוותים ימשיכו להתמקד בהשגת המטרות והיעדים העסקיים.\n\nהשתמשו ביישום זה כדי לגשת בקלות לקהילות HCL Connections המועדפות עליכם בערוץ, או השתמש בהרחבת ההודעות כדי לשתף תכנים של Connections עם משתמשי Microsoft Teams אחרים בארגון.",
+    "composeExtensions[0].commands[0].title": "Connections Share",
+    "composeExtensions[0].commands[0].description": "שתפו תוכן של Connections עם משתמשי Microsoft Teams אחרים",
+    "composeExtensions[0].commands[0].parameters[0].title": "param",
+    "composeExtensions[0].commands[0].parameters[0].description": "Share param"
 }
