@@ -130,12 +130,12 @@
                     "ImportantToMeTeamsIntegrationChat.label": "团队交谈",
                     "ImportantToMeTeamsIntegrationWebChat.label": "团队 Web 交谈"
                 },
-                "pt_BR": {
+                "pt-BR": {
                     "ImportantToMeTeamsIntegrationSIP.label": "Chamada do Teams",
                     "ImportantToMeTeamsIntegrationChat.label": "Bate-papo do Teams",
                     "ImportantToMeTeamsIntegrationWebChat.label": "Webchat do Teams"
                 },
-                "zh_TW": {
+                "zh-TW": {
                     "ImportantToMeTeamsIntegrationSIP.label": "Teams 通話",
                     "ImportantToMeTeamsIntegrationChat.label": "Teams 會談",
                     "ImportantToMeTeamsIntegrationWebChat.label": "Teams 網路會談"
