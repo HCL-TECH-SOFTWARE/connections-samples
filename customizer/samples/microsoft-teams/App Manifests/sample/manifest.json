@@ -46,14 +46,20 @@
             "title": "Connections Share",
             "description": "Share Connections content with other Microsoft Teams users",
             "initialRun": true,
-            "fetchTask": false,
+            "fetchTask": true,
             "context": ["commandBox", "compose", "message"],
             "parameters": [{
                 "name": "param",
                 "title": "param",
                 "description": "Share param",
                 "inputType": "text"
-            }]
+            }],
+            "taskInfo": {
+                "title": "Connections Share",
+                "width": "medium",
+                "height": "medium",
+                "url": "https://%Connections_Hostname%/teams-share-service/api/msteams/command"
+            }
         }],
         "canUpdateConfiguration": true
     }],
