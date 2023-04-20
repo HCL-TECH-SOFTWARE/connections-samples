@@ -58,7 +58,7 @@
                 "title": "Connections Share",
                 "width": "medium",
                 "height": "medium",
-                "url": "https://thirdparty.hclconnections.net/teams-share-service/api/msteams/command"
+                "url": "https://%Connections_Hostname%/teams-share-service/api/msteams/command"
             }
         }],
         "canUpdateConfiguration": true
