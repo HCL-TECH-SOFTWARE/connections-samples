@@ -38,10 +38,14 @@ This information is visible to users when they look for apps to add to channels 
 ![App Info](./doc/app-info.png)  
 Figure 1: Application Information
 <br>
-
-Generally, a customer would not need to change these things but if for example, internal branding of the Connections applications uses a different name or icon, then a customer could modify these values to be more consistent:
-
+A customer should change the `packageName` to something appropriate for their installation. If a customer is updating an existing package, the `version` will need to be updated to a newer version.<br>
+Generally, a customer would not need to change the other values, but if for example, internal branding of the Connections applications uses a different name or icon, then a customer could modify the name fields to be more consistent:
 ```json
+   "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.15/MicrosoftTeams.schema.json",
+   "version": "1.0.0",
+   "manifestVersion": "1.15",
+   "id": "71f6eeec-85b1-40bc-be73-2443480d0523",
+   "packageName": "com.package.name",
    "name": {
       "short": "Connections",
       "full": "HCL Connections"
@@ -125,14 +129,20 @@ The botId/applicationId is generated when the bot is registered; see [Configurin
          "title": "Connections Share",
          "description": "Share Connections content with other Microsoft Teams users",
          "initialRun": true,
-         "fetchTask": false,
+         "fetchTask": true,
          "context": ["commandBox", "compose", "message"],
          "parameters": [{
                "name": "param",
                "title": "param",
                "description": "Share param",
                "inputType": "text"
-         }]
+         }],
+         "taskInfo": {
+               "title": "Connections Share",
+               "width": "medium",
+               "height": "medium",
+               "url": "https://%Connections_Hostname%/teams-share-service/api/msteams/command"
+         }
       }],
       "canUpdateConfiguration": true
    }],
@@ -166,7 +176,7 @@ The information presented about the application, that is described in Section 1,
 
 The files are named LL.json where LL is the 2 character locale convention, for example, en.json, de.json, fr.json, etc.
 
-Files for those three examples have been provided in this repo - for example, the [en.json](./sample/en.json) contains the following:
+Sample translations have been provided in this repo - for example, the [en.json](./sample/en.json) contains the following:
 
 ```json
 {
