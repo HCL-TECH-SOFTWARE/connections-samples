@@ -653,9 +653,8 @@ in the [Standard Samples](#standard-samples) section.
 
 >> **<span class="underline">TIP:</span>** More information on how to
 integrate your Customizer include files with Connections Cloud is
-available in video for on opencode4connections.org:
-
-	https://opencode4connections.org/oc4c/customizer.xsp?key=ccc-episode2
+available in this YoutTube video:
+>> [IBM Connections Customizer Episode 02](https://www.youtube.com/watch?v=_kGbQ7X-eN0&list=PLaDSIoof-i95DcgxaxGgl3tdziBdyEfuE&index=2&pp=iAQB)
 
 At any given time HCL Customizer has an up to date snapshot of all the code
 contained in the repositories under [github.com/hclcnx](https://github.com/hclcnx) - see Figure 2.
@@ -1485,9 +1484,9 @@ and import it into App Reg as follows:
     extension appears
 
 >> **<span class="underline">TIP:</span>** The steps outlined above are
-covered in an enablement video available online here:
+covered in an enablement video available on YouTube:
 
-https://opencode4connections.org/oc4c/customizer.xsp?key=ccc-episode1
+>> [IBM Connections Customizer Episode 01](https://www.youtube.com/watch?v=YOTmYShVdVw&list=PLaDSIoof-i95DcgxaxGgl3tdziBdyEfuE&index=1&pp=iAQB)
 
 You can experiment with the other samples in a similar way.
 
@@ -1547,7 +1546,7 @@ samples) in the Application Registry.
 
 **HCL Connections Customizer:**
 
-<https://opencode4connections.org/>
+<https://github.com/hclcnx/customizer>
  
 <https://github.com/hclcnx/global-samples>
 
