@@ -24,15 +24,15 @@
 
 [10. Fine Grained Filtering based on URLs](#fine-grained-filtering-based-on-urls)
 
-[11. Customizer App With URL Matching](#listing-6-customizer-app-with-url-matching)
+[11. Blacklisting Users By Group](#listing-6-blacklisting-users-by-group)
 
-[12. Global Customizer App With URL Matching](#listing-7-global-customizer-app-with-url-matching)
+[12. Customizer App With URL Matching](#listing-7-customizer-app-with-url-matching)
 
-[13. Filtering based on Arbitrary Selection Criteria](#filtering-based-on-arbitrary-selection-criteria)
+[13. Global Customizer App With URL Matching](#listing-8-global-customizer-app-with-url-matching)
 
-[14. Selecting Users based on EMail Address Structure](#listing-8-selecting-users-based-on-email-address-structure)
+[14. Filtering based on Arbitrary Selection Criteria](#filtering-based-on-arbitrary-selection-criteria)
 
-[15. Selecting Users based on Role](#listing-9-selecting-users-based-on-role)
+[15. Selecting Users based on Email Address Structure](#listing-9-selecting-users-based-on-email-address-structure)
 
 [16. Selecting Users based on Multiple Conditions](#listing-10-selecting-users-based-on-multiple-conditions)
 
@@ -395,6 +395,37 @@ As you would expect, you can susbstitute the `user-email` property as the match/
  criterion in Listings 4 and 5. Customizer performs the string comparisons on a case-sensitive 
  exact match basis. 
 
+### Listing 6 Blacklisting Users By Group
+```json
+"name": "exclude-group",
+"path": "exclude-group",
+"type": "com.ibm.connections.user.group",
+"payload": {
+      "user-email": [
+         "john.doe@us.acme.com",
+         "sean.doe@us.acme.com",
+      ]
+},
+"state": "enabled"
+```
+```json
+"name": "user-specific-css-adjustment",
+"path": "communities"
+"type": "com.ibm.customizer.ui",
+"payload": {
+      "include-files": [
+         "community/adjustment.css"
+      ],
+      "cache-headers": {
+         "cache-control": "max-age=5000"
+      },
+      "exclude": {
+         "user-group": "exclude-group"
+      }
+},
+```
+
+Listing 6 is another example of using a whitelist. But in this example a group of users was defined as referenced by the `exclude-group` in the first sample. Then that `exclude-group`, that was defined in the first sample, is reference in the second sample to whitelist those users; i.e. the `adjustment.css` file will not be included for any users that are part of the `exclude-group`. Otherwise the file will still be included for any other users that are not defined in the `exclude-group`.
 
 ### Fine Grained Filtering based on URLs
 
@@ -411,7 +442,7 @@ Communities `followedcommunities` URL is being processed, and so this
 extension is ignored for other Communities URLs like those shown back in
 Listing 3, i.e. `ownedcommunities`, `communityinvites`, etc.
 
-### Listing 6 Customizer App With URL Matching
+### Listing 7 Customizer App With URL Matching
 ```json
 {
    "services":[
@@ -444,7 +475,7 @@ Listing 3, i.e. `ownedcommunities`, `communityinvites`, etc.
 Similarly, the following fragment shows how a single `global` extension
 can be applied to Homepage and Communities, but nothing else:
 
-### Listing 7 Global Customizer App With URL Matching
+### Listing 8 Global Customizer App With URL Matching
 ```json
 "path":"global",
 "payload":{
@@ -494,10 +525,10 @@ the structure of their email addresses, e.g. match only users with "us.acme.com"
 and exclude all others. Thus `john.doe@us.acme.com` would be a valid selection 
 but `sean.doe@ie.acme.com` would not. It could be far too cumbersome to handle 
 this using whitelists or blacklists due to a potentially very large numbers of users, 
-the need for on-going list maintenance, and so forth. Listing 8 shows how the `condition` property
+the need for on-going list maintenance, and so forth. Listing 9 shows how the `condition` property
 can deal with such a use case:
 
-### Listing 8 Selecting Users based on EMail Address Structure
+### Listing 9 Selecting Users based on Email Address Structure
 ```json
 "path":"communities",
 "payload":{
@@ -517,28 +548,7 @@ general context, e.g. the `user-email` datum could be a http header on-cloud but
 of an API on-premises. Customizer provides abstracted keywords to identify the item of interest in 
 a generic manner. 
 
-Another example would be targetting customizations to a set of users based on their role rather
-than their identity, as shown in Listing 9:
-
-### Listing 9 Selecting Users based on Role
-```json
-"path":"communities",
-"payload":{
-   "match":{
-      "condition":{
-         "keyword": "user-role",
-         "regex": "Admin|AppDev"
-      }
-   }
-}
-```
-
-The "user-role" keyword represents a list of groups to which a user may belong. This example will apply 
-the customization only to users listed in at least one the "AppDeveloper", "CustomerAdministrator" or 
-"CustomerAdministrator" groups in Connections. Be aware also that you can specify a single `condition` 
-(as has been the case thus far) or multiple conditions that are ANDed togther at runtime, i.e.
-the `condition` is applied only if _all_ regular expressions evaluate to true. By way of example, Listing 
-8 and Listing 9 could be merged together as shown in Listing 10:
+Be aware also that you can specify a single `condition` (as has been the case thus far) or multiple conditions that are ANDed togther at runtime, i.e. the `condition` is applied only if _all_ regular expressions evaluate to true. By way of example, an additional condition could be added to Listing 9 as shown in Listing 10:
 
 ### Listing 10 Selecting Users based on Multiple Conditions
 ```json
@@ -550,8 +560,8 @@ the `condition` is applied only if _all_ regular expressions evaluate to true. B
           "regex": "@us.acme.com"
         },
 	{
-          "keyword": "user-role",
-          "regex": "Admin|AppDev"
+          "keyword": "user-name",
+          "regex": "jdoe"
         }
       ]
    }
@@ -584,7 +594,7 @@ internal Connections header and the regular expression is then applied against t
 actual header names can be a little esoteric and can also vary between HCL Connections on-cloud and on-premises, so the 
 intent of the `keyword` is both to provide an intuitive identifier and a protection against platform implementation 
 differences. There are currently four keywords recognised by Customizer conditional filtering, namely: `user-name`, 
-`user-id`, `user-email`, `user-role`. If you specify a value that is not in this list then Customizer treats it as a 
+`user-id`, `user-email`. If you specify a value that is not in this list then Customizer treats it as a 
 header name and if this is true it will apply the regular expression against the header value. 
 
 Because these conditions are evaluated against headers, whose values are constrained by **RFC2616** to only ASCII characters within the **0-255** code range, care must be taken when working with users with accented characters in their Connections profile user name like š,č, etc. Such characters fall in the extended ASCII code range above 255. 
@@ -653,8 +663,9 @@ in the [Standard Samples](#standard-samples) section.
 
 >> **<span class="underline">TIP:</span>** More information on how to
 integrate your Customizer include files with Connections Cloud is
-available in this YoutTube video:
->> [IBM Connections Customizer Episode 02](https://www.youtube.com/watch?v=_kGbQ7X-eN0&list=PLaDSIoof-i95DcgxaxGgl3tdziBdyEfuE&index=2&pp=iAQB)
+available in video for on opencode4connections.org:
+
+	https://opencode4connections.org/oc4c/customizer.xsp?key=ccc-episode2
 
 At any given time HCL Customizer has an up to date snapshot of all the code
 contained in the repositories under [github.com/hclcnx](https://github.com/hclcnx) - see Figure 2.
@@ -1484,9 +1495,9 @@ and import it into App Reg as follows:
     extension appears
 
 >> **<span class="underline">TIP:</span>** The steps outlined above are
-covered in an enablement video available on YouTube:
+covered in an enablement video available online here:
 
->> [IBM Connections Customizer Episode 01](https://www.youtube.com/watch?v=YOTmYShVdVw&list=PLaDSIoof-i95DcgxaxGgl3tdziBdyEfuE&index=1&pp=iAQB)
+https://opencode4connections.org/oc4c/customizer.xsp?key=ccc-episode1
 
 You can experiment with the other samples in a similar way.
 
@@ -1546,7 +1557,7 @@ samples) in the Application Registry.
 
 **HCL Connections Customizer:**
 
-<https://github.com/hclcnx/customizer>
+<https://opencode4connections.org/>
  
 <https://github.com/hclcnx/global-samples>
 
