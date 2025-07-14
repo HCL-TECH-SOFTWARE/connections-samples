@@ -22,9 +22,9 @@
 
 [9.  Blacklisting Users By Id](#listing-5-blacklisting-users-by-id)
 
-[10. Fine Grained Filtering based on URLs](#fine-grained-filtering-based-on-urls)
+[10. Blacklisting Users By Group](#listing-6-blacklisting-users-by-group)
 
-[11. Blacklisting Users By Group](#listing-6-blacklisting-users-by-group)
+[11. Fine Grained Filtering based on URLs](#fine-grained-filtering-based-on-urls)
 
 [12. Customizer App With URL Matching](#listing-7-customizer-app-with-url-matching)
 
@@ -425,7 +425,7 @@ As you would expect, you can susbstitute the `user-email` property as the match/
 },
 ```
 
-Listing 6 is another example of using a whitelist. But in this example a group of users was defined as referenced by the `exclude-group` in the first sample. Then that `exclude-group`, that was defined in the first sample, is reference in the second sample to whitelist those users; i.e. the `adjustment.css` file will not be included for any users that are part of the `exclude-group`. Otherwise the file will still be included for any other users that are not defined in the `exclude-group`.
+Listing 6 is another example of blacklisting users. In this example a group of users was defined as referenced by the `exclude-group` in the first sample. Then that `exclude-group`, that was defined in the first sample, is reference in the second sample to blacklist those users; i.e. the `adjustment.css` file will not be included for any users that are part of the `exclude-group`. Otherwise the file will still be included for any other users that are not defined in the `exclude-group`.
 
 ### Fine Grained Filtering based on URLs
 
